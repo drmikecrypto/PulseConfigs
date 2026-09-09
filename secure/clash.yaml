@@ -3,119 +3,23 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- name: VLESS | @PulseConfigs | 168d45
+  type: vless
+  server: 172.67.204.201
+  port: 443
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
+  network: ws
+  tls: true
+  udp: true
+  flow: ''
+  client-fingerprint: chrome
+  servername: 7-m16.CHiaN-MAi-8.KDNs.FR
 - name: HYSTERIA2 | @PulseConfigs | 649364
   type: hysteria2
   server: 130.49.161.70
   port: 443
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 5f040e
-  type: hysteria2
-  server: 45.192.12.93
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | d046b6
-  type: hysteria2
-  server: nl-two.online-vpn.online
-  port: 443
-  password: 32df539b-e48b-4f0b-8d2d-30edc856cd23
-  sni: nl-two.online-vpn.online
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 36bd8c
-  type: hysteria2
-  server: hy2.aspidnet.xyz
-  port: 443
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | babf32
-  type: hysteria2
-  server: de-four.online-vpn.online
-  port: 443
-  password: 32df539b-e48b-4f0b-8d2d-30edc856cd23
-  sni: de-four.online-vpn.online
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 7845b6
-  type: trojan
-  server: 104.17.177.143
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | b6e116
-  type: hysteria2
-  server: 162.249.125.133
-  port: 443
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 5d12d1
-  type: trojan
-  server: 45.130.125.158
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | d61458
-  type: trojan
-  server: join-telegram-channel.tirexnet.kdns.fr
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 3c523b
-  type: trojan
-  server: 104.18.152.175
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 989b76
-  type: trojan
-  server: 104.16.174.143
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | b31afc
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | a36294
-  type: trojan
-  server: www.ignitelimit.com
-  port: 443
-  password: humanity
-  network: ws
-  sni: ''
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | d7d64b
-  type: trojan
-  server: 104.16.174.36
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | d514ba
   type: trojan
@@ -126,57 +30,9 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | b9dd7f
+- name: TROJAN | @PulseConfigs | 3c523b
   type: trojan
-  server: 104.18.152.152
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 00639a
-  type: trojan
-  server: 104.18.152.244
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | a01647
-  type: hysteria2
-  server: 2.27.249.79
-  port: 443
-  password: cd74c0a406664a5bc0bac098220a2468
-  sni: nl1.sferavpn.pro
-  skip-cert-verify: false
-- name: REALITY | @PulseConfigs | 7a7ff3
-  type: vless
-  server: 193.163.203.253
-  port: 443
-  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
-    short-id: 5ee019e02e6ed99a
-  servername: yandex.ru
-- name: TROJAN | @PulseConfigs | a577bc
-  type: trojan
-  server: 104.18.152.50
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 6474cf
-  type: trojan
-  server: 198.41.223.96
+  server: 104.18.152.175
   port: 443
   password: humanity
   network: ws
@@ -201,27 +57,163 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 00639a
+  type: trojan
+  server: 104.18.152.244
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 6474cf
+  type: trojan
+  server: 198.41.223.96
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | 8b05a8
+  type: hysteria2
+  server: news.gazette.help
+  port: 443
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: news.gazette.help
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | a577bc
+  type: trojan
+  server: 104.18.152.50
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | b6e116
+  type: hysteria2
+  server: 162.249.125.133
+  port: 443
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | d7d64b
+  type: trojan
+  server: 104.16.174.36
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | fac701
+  type: trojan
+  server: 104.18.152.113
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | 1ef14b
+  type: hysteria2
+  server: 144.31.49.138
+  port: 443
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: ru1.sferavpn.pro
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 5933eb
+  type: trojan
+  server: 104.16.174.185
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | a01647
+  type: hysteria2
+  server: 2.27.249.79
+  port: 443
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: nl1.sferavpn.pro
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 54c468
+  type: trojan
+  server: 104.21.46.3
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | a36294
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+  network: ws
+  sni: ''
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | d6186e
+  type: trojan
+  server: 104.18.152.161
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 7845b6
+  type: trojan
+  server: 104.17.177.143
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 989b76
+  type: trojan
+  server: 104.16.174.143
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | f483bc
+  type: trojan
+  server: 104.18.152.207
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | b9dd7f
+  type: trojan
+  server: 104.18.152.152
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 5d12d1
+  type: trojan
+  server: 45.130.125.158
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | d0553b
   type: trojan
   server: 104.21.8.107
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 5ab1cb
-  type: trojan
-  server: 104.18.152.140
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 39f1b8
-  type: trojan
-  server: 104.16.174.121
   port: 443
   password: humanity
   network: ws
@@ -237,45 +229,9 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | bb3a7c
+- name: TROJAN | @PulseConfigs | d61458
   type: trojan
-  server: 104.18.152.219
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | d6186e
-  type: trojan
-  server: 104.18.152.161
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | ceca89
-  type: trojan
-  server: 104.17.111.8
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 061f9c
-  type: trojan
-  server: 104.18.152.155
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | e09f63
-  type: trojan
-  server: 104.16.174.101
+  server: join-telegram-channel.tirexnet.kdns.fr
   port: 443
   password: humanity
   network: ws
@@ -300,63 +256,38 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | d96cd9
-  type: trojan
-  server: 104.16.174.71
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | a158a2
-  type: trojan
-  server: 162.159.136.234
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
+  - VLESS | @PulseConfigs | 168d45
   - HYSTERIA2 | @PulseConfigs | 649364
-  - HYSTERIA2 | @PulseConfigs | 5f040e
-  - HYSTERIA2 | @PulseConfigs | d046b6
-  - HYSTERIA2 | @PulseConfigs | 36bd8c
-  - HYSTERIA2 | @PulseConfigs | babf32
-  - TROJAN | @PulseConfigs | 7845b6
-  - HYSTERIA2 | @PulseConfigs | b6e116
-  - TROJAN | @PulseConfigs | 5d12d1
-  - TROJAN | @PulseConfigs | d61458
-  - TROJAN | @PulseConfigs | 3c523b
-  - TROJAN | @PulseConfigs | 989b76
-  - TROJAN | @PulseConfigs | b31afc
-  - TROJAN | @PulseConfigs | a36294
-  - TROJAN | @PulseConfigs | d7d64b
   - TROJAN | @PulseConfigs | d514ba
-  - TROJAN | @PulseConfigs | b9dd7f
-  - TROJAN | @PulseConfigs | 00639a
-  - HYSTERIA2 | @PulseConfigs | a01647
-  - REALITY | @PulseConfigs | 7a7ff3
-  - TROJAN | @PulseConfigs | a577bc
-  - TROJAN | @PulseConfigs | 6474cf
+  - TROJAN | @PulseConfigs | 3c523b
   - TROJAN | @PulseConfigs | dae7fb
   - TROJAN | @PulseConfigs | 05f65e
-  - TROJAN | @PulseConfigs | d0553b
-  - TROJAN | @PulseConfigs | 5ab1cb
-  - TROJAN | @PulseConfigs | 39f1b8
-  - TROJAN | @PulseConfigs | ff2b1a
-  - TROJAN | @PulseConfigs | bb3a7c
+  - TROJAN | @PulseConfigs | 00639a
+  - TROJAN | @PulseConfigs | 6474cf
+  - HYSTERIA2 | @PulseConfigs | 8b05a8
+  - TROJAN | @PulseConfigs | a577bc
+  - HYSTERIA2 | @PulseConfigs | b6e116
+  - TROJAN | @PulseConfigs | d7d64b
+  - TROJAN | @PulseConfigs | fac701
+  - HYSTERIA2 | @PulseConfigs | 1ef14b
+  - TROJAN | @PulseConfigs | 5933eb
+  - HYSTERIA2 | @PulseConfigs | a01647
+  - TROJAN | @PulseConfigs | 54c468
+  - TROJAN | @PulseConfigs | a36294
   - TROJAN | @PulseConfigs | d6186e
-  - TROJAN | @PulseConfigs | ceca89
-  - TROJAN | @PulseConfigs | 061f9c
-  - TROJAN | @PulseConfigs | e09f63
+  - TROJAN | @PulseConfigs | 7845b6
+  - TROJAN | @PulseConfigs | 989b76
+  - TROJAN | @PulseConfigs | f483bc
+  - TROJAN | @PulseConfigs | b9dd7f
+  - TROJAN | @PulseConfigs | 5d12d1
+  - TROJAN | @PulseConfigs | d0553b
+  - TROJAN | @PulseConfigs | ff2b1a
+  - TROJAN | @PulseConfigs | d61458
   - TROJAN | @PulseConfigs | f8510e
   - TROJAN | @PulseConfigs | fed89c
-  - TROJAN | @PulseConfigs | d96cd9
-  - TROJAN | @PulseConfigs | a158a2
 rules:
 - MATCH,PROXY
