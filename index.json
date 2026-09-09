@@ -1,26 +1,27 @@
 {
   "project": "PulseConfigs",
   "version": 1,
-  "generated_at": "2026-09-09T00:20:36Z",
+  "generated_at": "2026-09-09T05:06:27Z",
   "update_interval_minutes": 15,
   "owner_repo": "drmikecrypto/PulseConfigs",
   "counts": {
     "all": 18482,
-    "verified": 134,
-    "fast": 134,
-    "secure": 46,
+    "verified": 121,
+    "fast": 121,
+    "secure": 42,
     "top100": 100,
     "top5": 5,
-    "reality": 2462,
+    "reality": 2499,
     "vision": 1828,
     "by_protocol": {
-      "shadowsocks": 2553,
-      "vmess": 1522,
-      "trojan": 1715,
-      "hysteria2": 210,
-      "vless": 12478,
+      "shadowsocks": 2526,
+      "vmess": 1526,
+      "trojan": 1710,
+      "hysteria2": 203,
+      "vless": 12512,
       "socks": 2,
-      "tuic": 2
+      "tuic": 2,
+      "wireguard": 1
     }
   },
   "urls": {
@@ -139,6 +140,16 @@
         "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/tuic_base64.txt",
         "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/tuic_base64.txt",
         "path": "protocols/tuic_base64.txt"
+      },
+      "wireguard": {
+        "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/wireguard.txt",
+        "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/wireguard.txt",
+        "path": "protocols/wireguard.txt"
+      },
+      "wireguard_base64": {
+        "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/wireguard_base64.txt",
+        "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/wireguard_base64.txt",
+        "path": "protocols/wireguard_base64.txt"
       }
     }
   },
@@ -197,7 +208,9 @@
       "hysteria2": "protocols/hysteria2.txt",
       "hysteria2_base64": "protocols/hysteria2_base64.txt",
       "tuic": "protocols/tuic.txt",
-      "tuic_base64": "protocols/tuic_base64.txt"
+      "tuic_base64": "protocols/tuic_base64.txt",
+      "wireguard": "protocols/wireguard.txt",
+      "wireguard_base64": "protocols/wireguard_base64.txt"
     },
     "features": {
       "reality": "features/reality.txt",
