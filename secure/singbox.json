@@ -12,30 +12,6 @@
       "tag": "block"
     },
     {
-      "type": "vless",
-      "tag": "VLESS | @PulseConfigs | bc3710",
-      "server": "104.16.10.100",
-      "server_port": 443,
-      "uuid": "44eae030-290b-4083-8102-6f8bab05701b",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "cfvvv-ev1.pages.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "cfvvv-ev1.pages.dev"
-        }
-      }
-    },
-    {
       "type": "vmess",
       "tag": "VMESS | @PulseConfigs | a858c0",
       "server": "www.shopify.com",
@@ -51,38 +27,20 @@
     },
     {
       "type": "vless",
-      "tag": "VLESS | @PulseConfigs | 136b43",
-      "server": "104.24.0.184",
+      "tag": "VISION | @PulseConfigs | 3dfa8a",
+      "server": "50.7.120.162",
       "server_port": 443,
-      "uuid": "44eae030-290b-4083-8102-6f8bab05701b",
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision-udp443",
       "tls": {
         "enabled": true,
-        "server_name": "cfvvv-ev1.pages.dev",
+        "server_name": "nl-dedic-mori.failspace.top",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "unsafe"
+          "fingerprint": "firefox"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "cfvvv-ev1.pages.dev"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "HYSTERIA2 | @PulseConfigs | 2bd708",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
       }
     },
     {
@@ -99,8 +57,194 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | f8ad18",
-      "server": "104.18.15.230",
+      "tag": "TROJAN | @PulseConfigs | d6f836",
+      "server": "172.67.221.242",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "REALITY | @PulseConfigs | 4acca9",
+      "server": "88.216.220.88",
+      "server_port": 443,
+      "uuid": "a8e3155b-ceb1-4fcb-bc0c-2e77ec005401",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "files.noneok.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "q3kOYHdjmqWLLYj8oikvna1bTjofk45ktegGaJE611g",
+          "short_id": "d3b394558cfe0266"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.StreamService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "REALITY | @PulseConfigs | cc7d09",
+      "server": "files.noneok.com",
+      "server_port": 443,
+      "uuid": "a8e3155b-ceb1-4fcb-bc0c-2e77ec005401",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "files.noneok.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "q3kOYHdjmqWLLYj8oikvna1bTjofk45ktegGaJE611g",
+          "short_id": "d3b394558cfe0266"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.StreamService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "REALITY | @PulseConfigs | c6cbf4",
+      "server": "api.noneok.com",
+      "server_port": 443,
+      "uuid": "a8e3155b-ceb1-4fcb-bc0c-2e77ec005401",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.noneok.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "S8O8R938N960cpQfIIDXsJTxeGAkbVv6PlIqP0-d30w",
+          "short_id": "1ea59febb8d4fc8e"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.StreamService"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 20856c",
+      "server": "172.67.188.109",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 9df9f1",
+      "server": "8.47.69.0",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 959590",
+      "server": "104.16.174.117",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 59d664",
+      "server": "104.18.152.229",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | eeb074",
+      "server": "104.26.14.137",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 1132e1",
+      "server": "172.67.149.60",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "HYSTERIA2 | @PulseConfigs | 8b05a8",
+      "server": "news.gazette.help",
+      "server_port": 443,
+      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
+      "tls": {
+        "enabled": true,
+        "server_name": "news.gazette.help",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | b9dd7f",
+      "server": "104.18.152.152",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | a577bc",
+      "server": "104.18.152.50",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -122,66 +266,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "HYSTERIA2 | @PulseConfigs | 477726",
-      "server": "2.27.249.79",
-      "server_port": 443,
-      "password": "cd74c0a406664a5bc0bac098220a2468",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl1.sferavpn.pro",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 24c200",
-      "server": "104.16.174.72",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | c8ea8c",
-      "server": "104.16.174.22",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 959590",
-      "server": "104.16.174.117",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | bc0943",
-      "server": "104.18.152.187",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 45879b",
       "server": "104.16.73.213",
@@ -194,9 +278,21 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "HYSTERIA2 | @PulseConfigs | a70245",
+      "server": "162.249.125.133",
+      "server_port": 443,
+      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-new.aspidnet.xyz",
+        "insecure": false
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 9cfd29",
-      "server": "104.16.174.6",
+      "tag": "TROJAN | @PulseConfigs | 08fe10",
+      "server": "172.67.74.2",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -207,8 +303,70 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 05f65e",
-      "server": "104.16.174.124",
+      "tag": "TROJAN | @PulseConfigs | e2e8fa",
+      "server": "141.101.90.101",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "HYSTERIA2 | @PulseConfigs | b6e116",
+      "server": "162.249.125.133",
+      "server_port": 443,
+      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-new.aspidnet.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "REALITY | @PulseConfigs | 071e93",
+      "server": "150.40.126.19",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "rs2.univesalsrv.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tL16MVY08r-7YDXb1_gxuBBWInpSFp97ZLJ_ax3R2iE",
+          "short_id": "1469af2040b7c323"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "media.v1.ObjectService"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 54c468",
+      "server": "104.21.46.3",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | df4379",
+      "server": "104.18.22.63",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -243,8 +401,8 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 7184dd",
-      "server": "104.26.15.137",
+      "tag": "TROJAN | @PulseConfigs | bc0943",
+      "server": "104.18.152.187",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -254,15 +412,29 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | a577bc",
-      "server": "104.18.152.50",
+      "type": "vless",
+      "tag": "REALITY | @PulseConfigs | e59be6",
+      "server": "md5.univesalsrv.com",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": false
+        "server_name": "md5.univesalsrv.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "99MRki6b93wC-hhDHe9yq3IXE3KtPGw4RkFAnpI-8gg",
+          "short_id": "aa9884f2982b7d3c"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "app.v1.PushService"
       }
     },
     {
@@ -279,14 +451,37 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | b9dd7f",
-      "server": "104.18.152.152",
+      "tag": "TROJAN | @PulseConfigs | b79ce7",
+      "server": "104.16.174.12",
       "server_port": 443,
       "password": "humanity",
       "tls": {
         "enabled": true,
         "server_name": "www.ignitelimit.com",
         "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "REALITY | @PulseConfigs | 0305d1",
+      "server": "13.143.137.164",
+      "server_port": 9443,
+      "uuid": "953358cb-82ba-4296-960d-6d2ec3468f4c",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "plaincanvas.videoclothing.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ",
+          "short_id": "e336c9a786fae301"
+        }
       }
     },
     {
@@ -303,8 +498,8 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 08fe10",
-      "server": "172.67.74.2",
+      "tag": "TROJAN | @PulseConfigs | f8ad18",
+      "server": "104.18.15.230",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -314,14 +509,14 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | df4379",
-      "server": "104.18.22.63",
+      "type": "hysteria2",
+      "tag": "HYSTERIA2 | @PulseConfigs | c8cfc4",
+      "server": "144.31.49.138",
       "server_port": 443,
-      "password": "humanity",
+      "password": "cd74c0a406664a5bc0bac098220a2468",
       "tls": {
         "enabled": true,
-        "server_name": "www.ignitelimit.com",
+        "server_name": "ru1.sferavpn.pro",
         "insecure": false
       }
     },
@@ -339,8 +534,8 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 59d664",
-      "server": "104.18.152.229",
+      "tag": "TROJAN | @PulseConfigs | c8ea8c",
+      "server": "104.16.174.22",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -350,62 +545,21 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 198786",
-      "server": "104.20.6.134",
+      "type": "hysteria2",
+      "tag": "HYSTERIA2 | @PulseConfigs | 1ef14b",
+      "server": "144.31.49.138",
       "server_port": 443,
-      "password": "humanity",
+      "password": "cd74c0a406664a5bc0bac098220a2468",
       "tls": {
         "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "VLESS | @PulseConfigs | 76bec6",
-      "server": "b2n.ir",
-      "server_port": 2087,
-      "uuid": "c75775e9-cf53-47b6-9d1d-29c3a46633fd",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ratatouille.rahmatokaduie.ir",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | ff878c",
-      "server": "104.17.111.1",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
+        "server_name": "ru1.sferavpn.pro",
         "insecure": false
       }
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | d6f836",
-      "server": "172.67.221.242",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | e2e8fa",
-      "server": "141.101.90.101",
+      "tag": "TROJAN | @PulseConfigs | b31afc",
+      "server": "216.24.57.7",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -428,8 +582,8 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 5955b6",
-      "server": "www.speedtest.org",
+      "tag": "TROJAN | @PulseConfigs | 7184dd",
+      "server": "104.26.15.137",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -440,8 +594,8 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 1a06c2",
-      "server": "join-telegram-channel-tirexnet.trex.kdns.fr",
+      "tag": "TROJAN | @PulseConfigs | 198786",
+      "server": "104.20.6.134",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -451,69 +605,75 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | b79ce7",
-      "server": "104.16.174.12",
+      "type": "vless",
+      "tag": "REALITY | @PulseConfigs | 2655fe",
+      "server": "46.8.103.64",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "8f67e374-53d9-43bb-85c9-a459a959cd1b",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 281973",
-      "server": "104.18.152.233",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": false
+        "server_name": "reserve-1.lunoa.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zcB60qKELnjt8HqO_3lAE2qV1d-C8aZ7NXNSHv_iDV8",
+          "short_id": "1f763fda79312e53"
+        }
       }
     },
     {
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
-        "VLESS | @PulseConfigs | bc3710",
         "VMESS | @PulseConfigs | a858c0",
-        "VLESS | @PulseConfigs | 136b43",
-        "HYSTERIA2 | @PulseConfigs | 2bd708",
+        "VISION | @PulseConfigs | 3dfa8a",
         "HYSTERIA2 | @PulseConfigs | 649364",
-        "TROJAN | @PulseConfigs | f8ad18",
-        "HYSTERIA2 | @PulseConfigs | a01647",
-        "HYSTERIA2 | @PulseConfigs | 477726",
-        "TROJAN | @PulseConfigs | 24c200",
-        "TROJAN | @PulseConfigs | c8ea8c",
+        "TROJAN | @PulseConfigs | d6f836",
+        "REALITY | @PulseConfigs | 4acca9",
+        "REALITY | @PulseConfigs | cc7d09",
+        "REALITY | @PulseConfigs | c6cbf4",
+        "TROJAN | @PulseConfigs | 20856c",
+        "TROJAN | @PulseConfigs | 9df9f1",
         "TROJAN | @PulseConfigs | 959590",
-        "TROJAN | @PulseConfigs | bc0943",
+        "TROJAN | @PulseConfigs | 59d664",
+        "TROJAN | @PulseConfigs | eeb074",
+        "TROJAN | @PulseConfigs | 1132e1",
+        "HYSTERIA2 | @PulseConfigs | 8b05a8",
+        "TROJAN | @PulseConfigs | b9dd7f",
+        "TROJAN | @PulseConfigs | a577bc",
+        "HYSTERIA2 | @PulseConfigs | a01647",
         "TROJAN | @PulseConfigs | 45879b",
-        "TROJAN | @PulseConfigs | 9cfd29",
-        "TROJAN | @PulseConfigs | 05f65e",
+        "HYSTERIA2 | @PulseConfigs | a70245",
+        "TROJAN | @PulseConfigs | 08fe10",
+        "TROJAN | @PulseConfigs | e2e8fa",
+        "HYSTERIA2 | @PulseConfigs | b6e116",
+        "REALITY | @PulseConfigs | 071e93",
+        "TROJAN | @PulseConfigs | 54c468",
+        "TROJAN | @PulseConfigs | df4379",
         "TROJAN | @PulseConfigs | d514ba",
         "TROJAN | @PulseConfigs | 8900a3",
-        "TROJAN | @PulseConfigs | 7184dd",
-        "TROJAN | @PulseConfigs | a577bc",
+        "TROJAN | @PulseConfigs | bc0943",
+        "REALITY | @PulseConfigs | e59be6",
         "TROJAN | @PulseConfigs | c3da14",
-        "TROJAN | @PulseConfigs | b9dd7f",
-        "TROJAN | @PulseConfigs | 061f9c",
-        "TROJAN | @PulseConfigs | 08fe10",
-        "TROJAN | @PulseConfigs | df4379",
-        "TROJAN | @PulseConfigs | 8bc951",
-        "TROJAN | @PulseConfigs | 59d664",
-        "TROJAN | @PulseConfigs | 198786",
-        "VLESS | @PulseConfigs | 76bec6",
-        "TROJAN | @PulseConfigs | ff878c",
-        "TROJAN | @PulseConfigs | d6f836",
-        "TROJAN | @PulseConfigs | e2e8fa",
-        "TROJAN | @PulseConfigs | f8510e",
-        "TROJAN | @PulseConfigs | 5955b6",
-        "TROJAN | @PulseConfigs | 1a06c2",
         "TROJAN | @PulseConfigs | b79ce7",
-        "TROJAN | @PulseConfigs | 281973"
+        "REALITY | @PulseConfigs | 0305d1",
+        "TROJAN | @PulseConfigs | 061f9c",
+        "TROJAN | @PulseConfigs | f8ad18",
+        "HYSTERIA2 | @PulseConfigs | c8cfc4",
+        "TROJAN | @PulseConfigs | 8bc951",
+        "TROJAN | @PulseConfigs | c8ea8c",
+        "HYSTERIA2 | @PulseConfigs | 1ef14b",
+        "TROJAN | @PulseConfigs | b31afc",
+        "TROJAN | @PulseConfigs | f8510e",
+        "TROJAN | @PulseConfigs | 7184dd",
+        "TROJAN | @PulseConfigs | 198786",
+        "REALITY | @PulseConfigs | 2655fe"
       ]
     }
   ]
