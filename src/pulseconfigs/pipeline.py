@@ -12,10 +12,12 @@ from pulseconfigs.export import export_all
 from pulseconfigs.fetch import fetch_all_sync
 from pulseconfigs.filter import filter_l0_l1
 from pulseconfigs.index import build_health, build_index, load_state, update_state, write_json
+from pulseconfigs.iran_rank import apply_iran_probes, load_iran_probes
 from pulseconfigs.normalize import apply_brand
 from pulseconfigs.prove import prove_l3_sync, xray_knife_path
 from pulseconfigs.reachability import probe_l2_sync
 from pulseconfigs.sources import active_sources
+from pulseconfigs.stability import apply_stability
 from pulseconfigs.validate import validate_tier_artifacts
 
 
@@ -42,6 +44,7 @@ def run_pipeline(
     l2_timeout: float = 3.0,
     max_l3: int = 2500,
     brand: str = "PulseConfigs",
+    worker_base: str | None = None,
 ) -> int:
     state_path = out_dir / "state.json"
     state = load_state(state_path)
@@ -60,7 +63,7 @@ def run_pipeline(
     accepted, rejected = filter_l0_l1(pooled)
     print(f"[pulse] after L0/L1={len(accepted)} rejected={len(rejected)}")
 
-    print("[pulse] L2 TCP probe…")
+    print("[pulse] L2 reachability probe (TCP + UDP-native)…")
     accepted = probe_l2_sync(accepted, timeout=l2_timeout)
     l2_ok = [c for c in accepted if c.l2_ok]
     print(f"[pulse] L2 open={len(l2_ok)}")
@@ -74,11 +77,22 @@ def run_pipeline(
         print(f"[pulse] L3 prove (knife={knife})…")
         accepted = prove_l3_sync(accepted, max_candidates=max_l3)
 
+    # Stability window + Iran L4 overlay before bucketing
+    state = apply_stability(accepted, state)
+    probes_path = out_dir / "probes" / "iran.json"
+    iran_doc = load_iran_probes(probes_path)
+    iran_meta = apply_iran_probes(accepted, iran_doc)
+    print(
+        f"[pulse] iran probe online={iran_meta.get('probe_online')} "
+        f"probed={iran_meta.get('iran_probed')} pass_rate={iran_meta.get('iran_pass_rate')}"
+    )
+
     apply_brand(accepted, brand=brand)
-    buckets = build_buckets(accepted, rejected)
+    buckets = build_buckets(accepted, rejected, iran_meta=iran_meta)
     print(
         f"[pulse] buckets all={len(buckets.all)} verified={len(buckets.verified)} "
-        f"fast={len(buckets.fast)} top5={len(buckets.top5)}"
+        f"fast={len(buckets.fast)} top5={len(buckets.top5)} "
+        f"top5_speed={len(buckets.top5_speed)} top5_iran={len(buckets.top5_iran)}"
     )
 
     files = export_all(out_dir, buckets)
@@ -107,9 +121,22 @@ def run_pipeline(
         "fast": len(buckets.fast),
         "secure": len(buckets.secure),
         "top5": len(buckets.top5),
+        "top5_speed": len(buckets.top5_speed),
+        "top5_iran": len(buckets.top5_iran),
     }
-    index = build_index(owner_repo=owner_repo, buckets=buckets, files=files)
-    health = build_health(buckets=buckets, source_results=results, funnel=funnel)
+    worker = worker_base or os.environ.get("PULSE_WORKER_BASE") or None
+    index = build_index(
+        owner_repo=owner_repo,
+        buckets=buckets,
+        files=files,
+        worker_base=worker,
+    )
+    health = build_health(
+        buckets=buckets,
+        source_results=results,
+        funnel=funnel,
+        iran_meta=iran_meta,
+    )
     state = update_state(state, results)
     write_json(out_dir / "index.json", index)
     write_json(out_dir / "health.json", health)
@@ -131,6 +158,11 @@ def main(argv: list[str] | None = None) -> int:
     p_run.add_argument("--skip-l3", action="store_true")
     p_run.add_argument("--max-l3", type=int, default=2500)
     p_run.add_argument("--l2-timeout", type=float, default=3.0)
+    p_run.add_argument(
+        "--worker-base",
+        default=os.environ.get("PULSE_WORKER_BASE"),
+        help="Cloudflare Worker origin for Iran-reachable mirrors",
+    )
 
     p_fresh = sub.add_parser("freshness", help="Exit 0 if index.json is fresh enough to skip")
     p_fresh.add_argument("--index", type=Path, default=Path("index.json"))
@@ -165,6 +197,7 @@ def main(argv: list[str] | None = None) -> int:
             skip_l3=args.skip_l3,
             l2_timeout=args.l2_timeout,
             max_l3=args.max_l3,
+            worker_base=args.worker_base,
         )
 
     return 1

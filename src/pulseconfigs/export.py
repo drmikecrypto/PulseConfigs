@@ -8,6 +8,7 @@ import yaml
 
 from pulseconfigs.buckets import Buckets
 from pulseconfigs.models import PROTOCOLS, ProxyConfig
+from pulseconfigs.strategy import strategy_class
 
 
 def write_text(path: Path, lines: list[str]) -> None:
@@ -52,6 +53,25 @@ def _clash_proxy(cfg: ProxyConfig) -> dict | None:
             p["servername"] = cfg.sni
         if cfg.allow_insecure:
             p["skip-cert-verify"] = True
+        net = (cfg.network or "tcp").lower()
+        if net in {"ws", "websocket"}:
+            p["network"] = "ws"
+            p["ws-opts"] = {
+                "path": cfg.params.get("path") or "/",
+                "headers": {"Host": cfg.params.get("host") or cfg.sni or ""},
+            }
+        elif net in {"grpc", "gun"}:
+            p["network"] = "grpc"
+            p["grpc-opts"] = {
+                "grpc-service-name": cfg.params.get("serviceName") or cfg.params.get("servicename") or "",
+            }
+        elif net == "httpupgrade":
+            p["network"] = "ws"  # Clash Meta often maps httpupgrade via ws-opts
+            p["ws-opts"] = {
+                "path": cfg.params.get("path") or "/",
+                "headers": {"Host": cfg.params.get("host") or cfg.sni or ""},
+                "v2ray-http-upgrade": True,
+            }
         return p
     if cfg.protocol == "vmess":
         return {
@@ -279,19 +299,72 @@ def _singbox_outbound(cfg: ProxyConfig) -> dict | None:
                 "enabled": True,
                 "server_name": cfg.sni or cfg.host,
                 "insecure": cfg.allow_insecure,
+                "utls": {"enabled": True, "fingerprint": cfg.fingerprint or "chrome"},
             }
+        transport = _singbox_transport(cfg)
+        if transport:
+            outbound["transport"] = transport
         return outbound
+    if cfg.protocol == "socks":
+        user = cfg.params.get("username") or cfg.params.get("user") or ""
+        password = cfg.params.get("password") or ""
+        outbound = {
+            "type": "socks",
+            "tag": tag,
+            "server": cfg.host,
+            "server_port": cfg.port,
+            "version": "5",
+        }
+        if user:
+            outbound["username"] = user
+            outbound["password"] = password
+        return outbound
+    if cfg.protocol == "wireguard":
+        private = cfg.params.get("id") or cfg.params.get("privatekey") or cfg.params.get("private_key") or ""
+        # userinfo in URI is the private key
+        local_addr = cfg.params.get("address") or "10.0.0.2/32"
+        addresses = [a.strip() for a in str(local_addr).split(",") if a.strip()]
+        return {
+            "type": "wireguard",
+            "tag": tag,
+            "server": cfg.host,
+            "server_port": cfg.port,
+            "local_address": addresses or ["10.0.0.2/32"],
+            "private_key": private,
+            "peer_public_key": cfg.params.get("publickey") or cfg.params.get("public_key") or "",
+            "mtu": int(cfg.params.get("mtu") or 1400),
+        }
     return None
 
 
 def _singbox_transport(cfg: ProxyConfig) -> dict | None:
-    net = (cfg.network or "tcp").lower()
-    if net in {"ws", "websocket"}:
-        return {"type": "ws", "path": cfg.params.get("path") or "/", "headers": {"Host": cfg.params.get("host") or cfg.sni or ""}}
-    if net in {"grpc", "gun"}:
-        return {"type": "grpc", "service_name": cfg.params.get("serviceName") or cfg.params.get("servicename") or ""}
+    from pulseconfigs.strategy import normalize_network
+
+    net = normalize_network(cfg.network)
+    if net in {"ws"}:
+        return {
+            "type": "ws",
+            "path": cfg.params.get("path") or "/",
+            "headers": {"Host": cfg.params.get("host") or cfg.sni or ""},
+        }
+    if net in {"grpc"}:
+        return {
+            "type": "grpc",
+            "service_name": cfg.params.get("serviceName") or cfg.params.get("servicename") or "",
+        }
     if net in {"httpupgrade"}:
-        return {"type": "httpupgrade", "path": cfg.params.get("path") or "/", "host": cfg.params.get("host") or ""}
+        return {
+            "type": "httpupgrade",
+            "path": cfg.params.get("path") or "/",
+            "host": cfg.params.get("host") or cfg.sni or "",
+        }
+    if net in {"xhttp"}:
+        return {
+            "type": "http",
+            "path": cfg.params.get("path") or "/",
+            "host": cfg.params.get("host") or cfg.sni or "",
+            "headers": {"Host": cfg.params.get("host") or cfg.sni or ""},
+        }
     return None
 
 
@@ -363,6 +436,20 @@ def export_all(root: Path, buckets: Buckets) -> dict[str, object]:
     if buckets.top5:
         write_text(root / "top5.txt", configs_to_lines(buckets.top5))
         files["top5"] = "top5.txt"
+    if buckets.top5_speed:
+        write_text(root / "top5_speed.txt", configs_to_lines(buckets.top5_speed))
+        files["top5_speed"] = "top5_speed.txt"
+    if buckets.top5_iran:
+        write_text(root / "top5_iran.txt", configs_to_lines(buckets.top5_iran))
+        files["top5_iran"] = "top5_iran.txt"
+
+    # Shortlist for Iran L4 phone probes (US-verified, strategy-diverse, capped)
+    shortlist = _build_shortlist(buckets.verified, limit=60)
+    if shortlist:
+        write_text(root / "candidates.txt", configs_to_lines(shortlist))
+        write_json_candidates(root / "candidates.json", shortlist)
+        files["candidates"] = "candidates.txt"
+        files["candidates_json"] = "candidates.json"
 
     proto_files: dict[str, str] = {}
     for proto in PROTOCOLS:
@@ -392,3 +479,44 @@ def export_all(root: Path, buckets: Buckets) -> dict[str, object]:
         files["broken"] = "archive/broken.txt"
 
     return files
+
+
+def _build_shortlist(verified: list[ProxyConfig], limit: int = 60) -> list[ProxyConfig]:
+    """Diverse US-verified shortlist for Iran phone L4 probing."""
+    from pulseconfigs.buckets import censorship_score
+    from pulseconfigs.strategy import host_slash24
+
+    ranked = sorted(verified, key=censorship_score, reverse=True)
+    out: list[ProxyConfig] = []
+    used_s24: set[str] = set()
+    used_strat: dict[str, int] = {}
+    for cfg in ranked:
+        if len(out) >= limit:
+            break
+        s24 = host_slash24(cfg.host)
+        if s24 in used_s24:
+            continue
+        strat = strategy_class(cfg)
+        if used_strat.get(strat, 0) >= max(3, limit // 8):
+            continue
+        out.append(cfg)
+        used_s24.add(s24)
+        used_strat[strat] = used_strat.get(strat, 0) + 1
+    return out
+
+
+def write_json_candidates(path: Path, configs: list[ProxyConfig]) -> None:
+    rows = [
+        {
+            "fingerprint": c.fingerprint_key(),
+            "raw": c.raw,
+            "protocol": c.protocol,
+            "strategy": strategy_class(c),
+            "host": c.host,
+            "port": c.port,
+            "median_delay_ms": c.median_delay_ms,
+        }
+        for c in configs
+    ]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({"candidates": rows}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

@@ -6,6 +6,7 @@ import re
 from urllib.parse import parse_qs, unquote, urlparse
 
 from pulseconfigs.models import SCHEME_TO_PROTOCOL, ProxyConfig
+from pulseconfigs.strategy import normalize_network
 
 _URI_RE = re.compile(
     r"(?P<uri>(?:vless|vmess|trojan|ss|socks5?|hysteria2|hy2|tuic|anytls|wg|wireguard)://[^\s<>\"']+)",
@@ -68,6 +69,7 @@ def _parse_vmess(uri: str) -> ProxyConfig | None:
     if security in {"1", "true"}:
         security = "tls"
     network = str(data.get("net") or data.get("type") or "tcp").lower()
+    network = normalize_network(network)
     remark = str(data.get("ps") or data.get("remark") or "")
     params = {str(k): str(v) for k, v in data.items() if v is not None}
     params["id"] = uuid
@@ -180,6 +182,7 @@ def _parse_standard_uri(uri: str, force_scheme: str | None = None) -> ProxyConfi
     if protocol == "trojan" and not security:
         security = "tls"
     network = _first_q(qs, "type", "network", "net", default="tcp").lower()
+    network = normalize_network(network)
     flow = _first_q(qs, "flow")
     pbk = _first_q(qs, "pbk", "publicKey", "public-key")
     sid = _first_q(qs, "sid", "shortId", "short-id")
@@ -192,6 +195,8 @@ def _parse_standard_uri(uri: str, force_scheme: str | None = None) -> ProxyConfi
     }
     if protocol == "wireguard":
         params.setdefault("publickey", _first_q(qs, "publickey", "publicKey", "peer"))
+    if pbk and not security:
+        security = "reality"
     return ProxyConfig(
         raw=raw,
         protocol=protocol,

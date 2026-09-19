@@ -6,6 +6,9 @@ from collections.abc import Iterable
 
 from pulseconfigs.models import ProxyConfig
 
+# UDP-native protocols: TCP connect is not a valid L2 gate.
+UDP_PROTOCOLS = frozenset({"hysteria2", "tuic", "wireguard"})
+
 
 async def _tcp_ok(host: str, port: int, timeout: float) -> bool:
     try:
@@ -22,30 +25,66 @@ async def _tcp_ok(host: str, port: int, timeout: float) -> bool:
         return False
 
 
+async def _udp_reachable(host: str, port: int, timeout: float) -> bool:
+    """Best-effort UDP reachability: resolve + send empty datagram (no response required).
+
+    Many UDP proxies do not reply to empty probes; success means the OS accepted
+    the send after DNS resolution. Failures (NXDOMAIN, unreachable) mark l2 fail.
+    """
+    loop = asyncio.get_running_loop()
+
+    def _send() -> bool:
+        try:
+            infos = socket.getaddrinfo(host, port, type=socket.SOCK_DGRAM)
+        except OSError:
+            return False
+        if not infos:
+            return False
+        family, socktype, proto, _, sockaddr = infos[0]
+        sock = socket.socket(family, socktype, proto)
+        try:
+            sock.settimeout(timeout)
+            sock.sendto(b"\x00", sockaddr)
+            return True
+        except OSError:
+            return False
+        finally:
+            sock.close()
+
+    try:
+        return await asyncio.wait_for(loop.run_in_executor(None, _send), timeout=timeout + 0.5)
+    except Exception:
+        return False
+
+
 async def probe_l2(
     configs: Iterable[ProxyConfig],
     *,
     timeout: float = 3.0,
     concurrency: int = 200,
 ) -> list[ProxyConfig]:
-    """Mark l2_ok on configs that accept a TCP connection. Dedupes dials by host:port."""
+    """Mark l2_ok. TCP protocols use TCP connect; UDP-native bypass TCP and use UDP dial."""
     sem = asyncio.Semaphore(concurrency)
-    endpoint_cache: dict[tuple[str, int], bool] = {}
+    endpoint_cache: dict[tuple[str, int, str], bool] = {}
     configs_list = list(configs)
 
     async def check(cfg: ProxyConfig) -> None:
-        key = (cfg.host.lower(), cfg.port)
+        mode = "udp" if cfg.protocol in UDP_PROTOCOLS else "tcp"
+        key = (cfg.host.lower(), cfg.port, mode)
         if key in endpoint_cache:
             cfg.l2_ok = endpoint_cache[key]
             if not cfg.l2_ok:
-                cfg.reject_reason = cfg.reject_reason or "l2_tcp_fail"
+                cfg.reject_reason = cfg.reject_reason or f"l2_{mode}_fail"
             return
         async with sem:
-            ok = await _tcp_ok(cfg.host, cfg.port, timeout)
+            if mode == "udp":
+                ok = await _udp_reachable(cfg.host, cfg.port, timeout)
+            else:
+                ok = await _tcp_ok(cfg.host, cfg.port, timeout)
         endpoint_cache[key] = ok
         cfg.l2_ok = ok
         if not ok:
-            cfg.reject_reason = "l2_tcp_fail"
+            cfg.reject_reason = f"l2_{mode}_fail"
 
     await asyncio.gather(*(check(c) for c in configs_list))
     return configs_list

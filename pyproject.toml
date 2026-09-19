@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pulseconfigs"
-version = "0.1.0"
+version = "0.2.0"
 description = "Aggregate, health-test, and publish free proxy configs for v2rayF and compatible clients"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -20,6 +20,7 @@ dev = ["pytest>=8.0"]
 
 [project.scripts]
 pulseconfigs = "pulseconfigs.cli:main"
+pulseconfigs-collector = "pulseconfigs.collector:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

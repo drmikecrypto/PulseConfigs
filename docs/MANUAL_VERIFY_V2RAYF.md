@@ -6,23 +6,23 @@ Use this after GitHub Actions has published at least one successful `[auto]` com
 
 - PulseConfigs repo pushed to GitHub with Actions enabled (contents: write)
 - Latest `index.json` shows `counts.top5 >= 1` and `counts.verified >= 1`
-- v2rayF desktop or Android build that can import subscriptions
+- v2rayF desktop or Android build with **Free (Pulse)** button (or manual subscription import)
 
 ## Steps
 
 1. Open `https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/index.json`
-2. Copy `v2rayF.top5_button`
-3. In v2rayF, paste into the subscription URL field and import
-4. Expect **1–5** servers; remarks should contain `@PulseConfigs`
-5. Run **Test** on each; at least one should succeed from your network (US-runner verified ≠ Iran/local verified)
-6. Import `v2rayF.recommended_subscription` (`verified/configs_base64.txt`) and confirm a larger list loads
-7. Optionally import `features/reality.txt` and confirm REALITY entries include `pbk`
+2. Copy `v2rayF.top5_button` (Worker URL when configured, else raw)
+3. In v2rayF: use **Free (Pulse)** **or** paste into the subscription URL field → Import
+4. Expect **1–5** Free-tagged servers; each should show a **Free** chip and latency ≤150ms after on-device probe (or fewer if the network cannot)
+5. Re-tap Free: good ≤150ms Free slots stay; only slow/failed Free slots rotate
+6. Confirm user-imported servers are untouched
+7. Import `v2rayF.recommended_subscription` (`verified/configs_base64.txt`) and confirm a larger list loads
+8. Optionally import `features/reality.txt` and confirm REALITY entries include `pbk` and are not WS+REALITY
 
 ## Pass criteria
 
-- [ ] `top5.txt` imports without wiping existing profiles unexpectedly (append behavior as designed in app)
+- [ ] Free button imports without wiping existing non-Free profiles
+- [ ] At most 5 Free-tagged servers
+- [ ] Re-tap replaces only Free slots with null/failed/>150ms latency
 - [ ] No config with `security=reality` lacks `pbk`
-- [ ] No Shadowsocks line contains `plugin=`
-- [ ] Clash / sing-box files from `verified/` open in their respective clients (optional)
-
-Only after this checklist passes should the v2rayF **Free servers (Pulse)** button be implemented.
+- [ ] Tips doc matches slot + 150ms rules (`docs/tips/pulse-free-servers.md` in v2rayF)

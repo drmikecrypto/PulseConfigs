@@ -129,15 +129,24 @@ def _collect_results(
             if parsed:
                 return parsed
 
-    # valid.txt — ordered by speed; assign synthetic increasing delays
+    # valid.txt — ordered by speed when knife sorts fastest-first, but WITHOUT
+    # inventing numeric delays. Pass/fail only (sentinel 9999) unless stdout/JSON
+    # provides real ms values. Ranking must not invent 50+i*5 synthetic scores.
     for name in ("valid.txt", "ok.txt", "alive.txt"):
         path = td / name if name != "valid.txt" else valid
         if not path.exists():
             path = td / name
         if path.exists() and path.stat().st_size > 0:
-            lines = [ln.strip() for ln in path.read_text(encoding="utf-8", errors="ignore").splitlines() if ln.strip() and "://" in ln]
-            for i, link in enumerate(lines):
-                results[_bare(link)] = float(50 + i * 5)
+            lines = [
+                ln.strip()
+                for ln in path.read_text(encoding="utf-8", errors="ignore").splitlines()
+                if ln.strip() and "://" in ln
+            ]
+            for link in lines:
+                bare = _bare(link)
+                # Prefer any delay already parsed from the same line in stdout later;
+                # here mark as pass-without-measured-delay.
+                results[bare] = 9999.0
             if results:
                 return results
 
@@ -199,6 +208,10 @@ def _row_to_map(row: dict, results: dict[str, float]) -> None:
         results[_bare(link)] = 9999.0
 
 
+# Sentinel for pass/fail without a measured latency (must not invent rankings).
+UNMEASURED_DELAY_MS = 9999.0
+
+
 async def prove_l3(
     configs: list[ProxyConfig],
     *,
@@ -215,6 +228,7 @@ async def prove_l3(
         cfg.l3_passes = 0
         cfg.delays_ms = []
         cfg.median_delay_ms = None
+        cfg.delay_measured = False
 
     if not knife:
         for cfg in candidates:
@@ -231,10 +245,18 @@ async def prove_l3(
             if delay is not None:
                 cfg.l3_passes += 1
                 cfg.delays_ms.append(float(delay))
+                if float(delay) < UNMEASURED_DELAY_MS - 1:
+                    cfg.delay_measured = True
 
     for cfg in candidates:
-        if cfg.delays_ms:
-            cfg.median_delay_ms = float(statistics.median(cfg.delays_ms))
+        measured = [d for d in cfg.delays_ms if d < UNMEASURED_DELAY_MS - 1]
+        if measured:
+            cfg.median_delay_ms = float(statistics.median(measured))
+            cfg.delay_measured = True
+        elif cfg.delays_ms:
+            # Passed rounds but no real latency — leave median None for ranking.
+            cfg.median_delay_ms = None
+            cfg.delay_measured = False
         if cfg.l3_passes < rounds:
             cfg.reject_reason = cfg.reject_reason or "l3_incomplete"
 

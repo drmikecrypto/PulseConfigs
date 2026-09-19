@@ -111,8 +111,13 @@ jobs:
         env:
           PULSE_OWNER_REPO: ${{ github.repository }}
           PULSE_REQUIRE_VALIDATORS: "0"
+          PULSE_WORKER_BASE: ${{ vars.PULSE_WORKER_BASE }}
         run: |
-          python -m pulseconfigs.cli run --out . --owner-repo "$PULSE_OWNER_REPO" --max-l3 1200
+          EXTRA=()
+          if [ -n "${PULSE_WORKER_BASE:-}" ]; then
+            EXTRA+=(--worker-base "$PULSE_WORKER_BASE")
+          fi
+          python -m pulseconfigs.cli run --out . --owner-repo "$PULSE_OWNER_REPO" --max-l3 1200 "${EXTRA[@]}"
 
       - name: Publish artifacts
         if: steps.fresh.outputs.skip != 'true'

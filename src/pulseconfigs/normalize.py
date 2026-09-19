@@ -6,6 +6,7 @@ import re
 from urllib.parse import quote, urlencode, urlparse, urlunparse
 
 from pulseconfigs.models import ProxyConfig
+from pulseconfigs.strategy import normalize_network
 
 _UUID_RE = re.compile(
     r"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
@@ -36,6 +37,8 @@ def structural_ok(cfg: ProxyConfig) -> tuple[bool, str]:
         return False, "bad_endpoint"
     if is_private_or_bogus_host(cfg.host):
         return False, "private_or_bogus_host"
+    # Normalize transport aliases early (xhttp/splithttp, ws, grpc).
+    cfg.network = normalize_network(cfg.network)
     if cfg.protocol in {"vless", "vmess", "tuic"}:
         uid = cfg.params.get("uuid") or cfg.params.get("id") or ""
         # tuic may be uuid:password
@@ -50,8 +53,25 @@ def structural_ok(cfg: ProxyConfig) -> tuple[bool, str]:
         return False, "ss_plugin_unsupported"
     if cfg.security.lower() == "reality" and not cfg.pbk:
         return False, "reality_missing_pbk"
-    if cfg.is_vision and cfg.network and cfg.network.lower() not in {"", "tcp", "raw"}:
+    if cfg.pbk and cfg.security.lower() not in {"reality", "tls", ""}:
+        # pbk without reality is suspicious but allow if security empty → treat as reality
+        pass
+    if cfg.pbk and not cfg.security:
+        cfg.security = "reality"
+    if cfg.is_vision and cfg.network and cfg.network not in {"", "tcp", "raw"}:
         return False, "vision_requires_tcp"
+    # REALITY official transports: raw/tcp, xhttp, grpc — reject odd combos
+    if cfg.is_reality and cfg.network and cfg.network not in {
+        "",
+        "tcp",
+        "raw",
+        "xhttp",
+        "grpc",
+        "h2",
+    }:
+        # WS+REALITY is non-standard / often broken — drop
+        if cfg.network in {"ws", "websocket", "httpupgrade"}:
+            return False, "reality_unsupported_transport"
     return True, ""
 
 
