@@ -1,24 +1,26 @@
 {
   "project": "PulseConfigs",
-  "version": 1,
-  "generated_at": "2026-09-19T03:35:51Z",
+  "version": 2,
+  "generated_at": "2026-09-19T04:27:11Z",
   "update_interval_minutes": 15,
   "owner_repo": "drmikecrypto/PulseConfigs",
   "counts": {
-    "all": 19628,
-    "verified": 130,
-    "fast": 130,
-    "secure": 49,
+    "all": 19626,
+    "verified": 118,
+    "fast": 0,
+    "secure": 35,
     "top100": 100,
     "top5": 5,
-    "reality": 2358,
+    "top5_speed": 5,
+    "top5_iran": 5,
+    "reality": 2357,
     "vision": 1814,
     "by_protocol": {
       "shadowsocks": 2376,
       "vmess": 1556,
-      "trojan": 1536,
-      "hysteria2": 89,
-      "vless": 14067,
+      "trojan": 1532,
+      "hysteria2": 90,
+      "vless": 14068,
       "socks": 4
     }
   },
@@ -26,124 +28,173 @@
     "top5": {
       "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/top5.txt",
       "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/top5.txt",
-      "path": "top5.txt"
+      "path": "top5.txt",
+      "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/top5.txt"
+    },
+    "top5_speed": {
+      "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/top5_speed.txt",
+      "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/top5_speed.txt",
+      "path": "top5_speed.txt",
+      "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/top5_speed.txt"
+    },
+    "top5_iran": {
+      "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/top5_iran.txt",
+      "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/top5_iran.txt",
+      "path": "top5_iran.txt",
+      "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/top5_iran.txt"
+    },
+    "candidates": {
+      "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/candidates.json",
+      "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/candidates.json",
+      "path": "candidates.json",
+      "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/candidates.json"
     },
     "top100": {
       "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/top100.txt",
       "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/top100.txt",
-      "path": "top100.txt"
+      "path": "top100.txt",
+      "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/top100.txt"
     },
     "verified_base64": {
       "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/verified/configs_base64.txt",
       "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/verified/configs_base64.txt",
-      "path": "verified/configs_base64.txt"
+      "path": "verified/configs_base64.txt",
+      "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/verified/configs_base64.txt"
     },
     "verified": {
       "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/verified/configs.txt",
       "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/verified/configs.txt",
-      "path": "verified/configs.txt"
+      "path": "verified/configs.txt",
+      "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/verified/configs.txt"
     },
-    "fast_base64": {
-      "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/fast/configs_base64.txt",
-      "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/fast/configs_base64.txt",
-      "path": "fast/configs_base64.txt"
-    },
+    "fast_base64": null,
     "secure_base64": {
       "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/secure/configs_base64.txt",
       "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/secure/configs_base64.txt",
-      "path": "secure/configs_base64.txt"
+      "path": "secure/configs_base64.txt",
+      "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/secure/configs_base64.txt"
     },
     "all_base64": {
       "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/all/configs_base64.txt",
       "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/all/configs_base64.txt",
-      "path": "all/configs_base64.txt"
+      "path": "all/configs_base64.txt",
+      "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/all/configs_base64.txt"
     },
     "reality": {
       "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/features/reality.txt",
       "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/features/reality.txt",
-      "path": "features/reality.txt"
+      "path": "features/reality.txt",
+      "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/features/reality.txt"
     },
     "vision": {
       "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/features/vision.txt",
       "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/features/vision.txt",
-      "path": "features/vision.txt"
+      "path": "features/vision.txt",
+      "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/features/vision.txt"
     },
     "protocols": {
       "vless": {
         "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/vless.txt",
         "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/vless.txt",
-        "path": "protocols/vless.txt"
+        "path": "protocols/vless.txt",
+        "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/protocols/vless.txt"
       },
       "vless_base64": {
         "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/vless_base64.txt",
         "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/vless_base64.txt",
-        "path": "protocols/vless_base64.txt"
+        "path": "protocols/vless_base64.txt",
+        "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/protocols/vless_base64.txt"
       },
       "vmess": {
         "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/vmess.txt",
         "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/vmess.txt",
-        "path": "protocols/vmess.txt"
+        "path": "protocols/vmess.txt",
+        "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/protocols/vmess.txt"
       },
       "vmess_base64": {
         "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/vmess_base64.txt",
         "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/vmess_base64.txt",
-        "path": "protocols/vmess_base64.txt"
+        "path": "protocols/vmess_base64.txt",
+        "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/protocols/vmess_base64.txt"
       },
       "trojan": {
         "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/trojan.txt",
         "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/trojan.txt",
-        "path": "protocols/trojan.txt"
+        "path": "protocols/trojan.txt",
+        "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/protocols/trojan.txt"
       },
       "trojan_base64": {
         "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/trojan_base64.txt",
         "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/trojan_base64.txt",
-        "path": "protocols/trojan_base64.txt"
+        "path": "protocols/trojan_base64.txt",
+        "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/protocols/trojan_base64.txt"
       },
       "shadowsocks": {
         "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/shadowsocks.txt",
         "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/shadowsocks.txt",
-        "path": "protocols/shadowsocks.txt"
+        "path": "protocols/shadowsocks.txt",
+        "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/protocols/shadowsocks.txt"
       },
       "shadowsocks_base64": {
         "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/shadowsocks_base64.txt",
         "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/shadowsocks_base64.txt",
-        "path": "protocols/shadowsocks_base64.txt"
+        "path": "protocols/shadowsocks_base64.txt",
+        "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/protocols/shadowsocks_base64.txt"
       },
       "socks": {
         "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/socks.txt",
         "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/socks.txt",
-        "path": "protocols/socks.txt"
+        "path": "protocols/socks.txt",
+        "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/protocols/socks.txt"
       },
       "socks_base64": {
         "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/socks_base64.txt",
         "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/socks_base64.txt",
-        "path": "protocols/socks_base64.txt"
+        "path": "protocols/socks_base64.txt",
+        "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/protocols/socks_base64.txt"
       },
       "hysteria2": {
         "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/hysteria2.txt",
         "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/hysteria2.txt",
-        "path": "protocols/hysteria2.txt"
+        "path": "protocols/hysteria2.txt",
+        "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/protocols/hysteria2.txt"
       },
       "hysteria2_base64": {
         "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/hysteria2_base64.txt",
         "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/hysteria2_base64.txt",
-        "path": "protocols/hysteria2_base64.txt"
+        "path": "protocols/hysteria2_base64.txt",
+        "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/protocols/hysteria2_base64.txt"
       }
     }
   },
   "link_policy": {
-    "prefer": "raw",
+    "prefer": "worker",
     "raw_max_age_seconds": 300,
     "cdn_worst_case_staleness_seconds": 43200,
+    "worker_max_age_seconds": 300,
     "mirrors": {
       "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main",
-      "jsdelivr": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main"
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main",
+      "cloudflare_worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev"
     }
+  },
+  "iran_probe": {
+    "probe_online": false,
+    "stale_probe": true,
+    "probe_age_seconds": null,
+    "iran_probed": 0,
+    "iran_pass_rate": null,
+    "updated_at": ""
   },
   "v2rayF": {
     "recommended_subscription": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/verified/configs_base64.txt",
-    "top5_button": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/top5.txt",
-    "top5_button_cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/top5.txt"
+    "top5_button": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/top5.txt",
+    "top5_button_raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/top5.txt",
+    "top5_button_cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/top5.txt",
+    "top5_button_worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/top5.txt",
+    "top5_speed": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/top5_speed.txt",
+    "top5_iran": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/top5_iran.txt",
+    "index_worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/index.json"
   },
   "files": {
     "all": {
@@ -158,12 +209,7 @@
       "clash.yaml": "verified/clash.yaml",
       "singbox.json": "verified/singbox.json"
     },
-    "fast": {
-      "configs.txt": "fast/configs.txt",
-      "configs_base64.txt": "fast/configs_base64.txt",
-      "clash.yaml": "fast/clash.yaml",
-      "singbox.json": "fast/singbox.json"
-    },
+    "fast": {},
     "secure": {
       "configs.txt": "secure/configs.txt",
       "configs_base64.txt": "secure/configs_base64.txt",
@@ -172,6 +218,10 @@
     },
     "top100": "top100.txt",
     "top5": "top5.txt",
+    "top5_speed": "top5_speed.txt",
+    "top5_iran": "top5_iran.txt",
+    "candidates": "candidates.txt",
+    "candidates_json": "candidates.json",
     "protocols": {
       "vless": "protocols/vless.txt",
       "vless_base64": "protocols/vless_base64.txt",
