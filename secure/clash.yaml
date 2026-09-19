@@ -159,6 +159,15 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 1ec194
+  type: trojan
+  server: 172.67.231.254
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | bc7d0a
   type: trojan
   server: 104.16.174.34
@@ -209,6 +218,13 @@ proxies:
   password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   sni: hopp-germany-new.ddnsguru.com
   skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | e95b6f
+  type: hysteria2
+  server: msk.frkn.org
+  port: 443
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: ''
+  skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | c19db3
   type: hysteria2
   server: musicclips.videolinks.ru
@@ -222,6 +238,13 @@ proxies:
   port: 443
   password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
   sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | 1ef14b
+  type: hysteria2
+  server: 144.31.49.138
+  port: 443
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: ru1.sferavpn.pro
   skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | a01647
   type: hysteria2
@@ -272,14 +295,17 @@ proxy-groups:
   - TROJAN | @PulseConfigs | ff2b1a
   - TROJAN | @PulseConfigs | b79ce7
   - TROJAN | @PulseConfigs | a36294
+  - TROJAN | @PulseConfigs | 1ec194
   - TROJAN | @PulseConfigs | bc7d0a
   - TROJAN | @PulseConfigs | b31afc
   - TROJAN | @PulseConfigs | 7e0470
   - TROJAN | @PulseConfigs | 59d664
   - HYSTERIA2 | @PulseConfigs | 21f045
   - HYSTERIA2 | @PulseConfigs | 27bc9b
+  - HYSTERIA2 | @PulseConfigs | e95b6f
   - HYSTERIA2 | @PulseConfigs | c19db3
   - HYSTERIA2 | @PulseConfigs | b6e116
+  - HYSTERIA2 | @PulseConfigs | 1ef14b
   - HYSTERIA2 | @PulseConfigs | a01647
   - HYSTERIA2 | @PulseConfigs | 5a59df
   - HYSTERIA2 | @PulseConfigs | c0547e

@@ -143,6 +143,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
+- name: SHADOWSOCKS | @PulseConfigs | dce06d
+  type: ss
+  server: 82.38.31.192
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
 - name: SHADOWSOCKS | @PulseConfigs | fc7405
   type: ss
   server: 193.29.139.235
@@ -213,9 +220,9 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: SHADOWSOCKS | @PulseConfigs | 03566c
+- name: SHADOWSOCKS | @PulseConfigs | 995311
   type: ss
-  server: 82.38.31.214
+  server: 193.29.139.223
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -332,13 +339,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: SHADOWSOCKS | @PulseConfigs | 4e857c
-  type: ss
-  server: 82.38.31.187
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
 - name: SHADOWSOCKS | @PulseConfigs | 73b96a
   type: ss
   server: 82.38.31.186
@@ -364,6 +364,18 @@ proxies:
   tls: true
   udp: true
   servername: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 0b32d4
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: 152.67.8.205
   skip-cert-verify: false
 - name: SHADOWSOCKS | @PulseConfigs | e253c1
   type: ss
@@ -426,6 +438,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: CJmTCCx7Ltud
   udp: true
+- name: SHADOWSOCKS | @PulseConfigs | b3ab5f
+  type: ss
+  server: 94.156.250.148
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
 - name: SHADOWSOCKS | @PulseConfigs | 1c81b4
   type: ss
   server: 108.181.58.239
@@ -439,6 +458,13 @@ proxies:
   port: 11001
   cipher: chacha20-ietf-poly1305
   password: c58d16e593d44f42
+  udp: true
+- name: SHADOWSOCKS | @PulseConfigs | b4dd58
+  type: ss
+  server: 156.146.38.169
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
 - name: SHADOWSOCKS | @PulseConfigs | 21c777
   type: ss
@@ -461,12 +487,43 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
+- name: VMESS | @PulseConfigs | 32e064
+  type: vmess
+  server: 47.244.120.197
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: ''
+  skip-cert-verify: false
 - name: SHADOWSOCKS | @PulseConfigs | fea59f
   type: ss
   server: switcher-nick-croquet.freesocks.work
   port: 443
   cipher: chacha20-ietf-poly1305
   password: 9tqhMdIrTkgQ46PvhyAtMH
+  udp: true
+- name: VMESS | @PulseConfigs | b45faf
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: ''
+  skip-cert-verify: false
+- name: SHADOWSOCKS | @PulseConfigs | 3e248d
+  type: ss
+  server: 82.38.31.199
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
 - name: SHADOWSOCKS | @PulseConfigs | bf83b3
   type: ss
@@ -475,12 +532,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: SHADOWSOCKS | @PulseConfigs | 667a43
+- name: SHADOWSOCKS | @PulseConfigs | ffc65d
   type: ss
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
+  server: 216.105.168.18
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  password: hCCWOcIsK5wrFz4OX70rWf
   udp: true
 - name: SHADOWSOCKS | @PulseConfigs | 76de03
   type: ss
@@ -645,6 +702,15 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 1ec194
+  type: trojan
+  server: 172.67.231.254
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | bc7d0a
   type: trojan
   server: 104.16.174.34
@@ -726,13 +792,13 @@ proxies:
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
   skip-cert-verify: true
-- name: HYSTERIA2 | @PulseConfigs | 348060
+- name: HYSTERIA2 | @PulseConfigs | e95b6f
   type: hysteria2
-  server: gta.internet-card.sbs
+  server: msk.frkn.org
   port: 443
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: gta.internet-card.sbs
-  skip-cert-verify: true
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: ''
+  skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | c19db3
   type: hysteria2
   server: musicclips.videolinks.ru
@@ -740,13 +806,6 @@ proxies:
   password: sxc15led4b0vp5fy
   sni: musicclips.videolinks.ru
   skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 5a2680
-  type: hysteria2
-  server: 151.247.197.253
-  port: 36723
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: 151.247.197.253
-  skip-cert-verify: true
 - name: HYSTERIA2 | @PulseConfigs | b6e116
   type: hysteria2
   server: 162.249.125.133
@@ -761,6 +820,13 @@ proxies:
   password: Telegram-vpnjey
   sni: se.vpnjey2.dpdns.org
   skip-cert-verify: true
+- name: HYSTERIA2 | @PulseConfigs | 1ef14b
+  type: hysteria2
+  server: 144.31.49.138
+  port: 443
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: ru1.sferavpn.pro
+  skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | a01647
   type: hysteria2
   server: 2.27.249.79
@@ -789,10 +855,10 @@ proxies:
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
   skip-cert-verify: false
-- name: VLESS | @PulseConfigs | 2267a2
+- name: VLESS | @PulseConfigs | 809961
   type: vless
-  server: 64.176.60.226
-  port: 443
+  server: 92.113.124.204
+  port: 18443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   network: ws
   tls: true
@@ -802,12 +868,12 @@ proxies:
   servername: cdn8848.776676.xyz
   skip-cert-verify: true
   ws-opts:
-    path: /documents?ed=2560fp=chrome
+    path: /directory/ads/news?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
-- name: VLESS | @PulseConfigs | 6fe599
+- name: VLESS | @PulseConfigs | 231d49
   type: vless
-  server: 168.110.112.196
+  server: 132.243.203.218
   port: 8443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   network: ws
@@ -818,80 +884,16 @@ proxies:
   servername: cdn8848.776676.xyz
   skip-cert-verify: true
   ws-opts:
-    path: /pay/music?ed=2560fp=chrome
+    path: /v?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
-- name: SHADOWSOCKS | @PulseConfigs | cfc53e
+- name: SHADOWSOCKS | @PulseConfigs | b167b0
   type: ss
-  server: 129.150.59.192
-  port: 56927
+  server: 129.151.66.224
+  port: 61312
   cipher: 2022-blake3-chacha20-poly1305
-  password: 2t7ioVN2zeH8TORMF3lxl8mKAb+1Db7YlFKCQBS424k=
+  password: em25pV7s2EUkWhgDNcKJDRPTc8KBbjReVwoUdeqeQoU=
   udp: true
-- name: VLESS | @PulseConfigs | c92279
-  type: vless
-  server: 144.31.200.207
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  network: ws
-  tls: true
-  udp: true
-  flow: ''
-  client-fingerprint: chrome
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  ws-opts:
-    path: /code/directory/ads?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: VLESS | @PulseConfigs | 9463fa
-  type: vless
-  server: 132.243.203.207
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  network: ws
-  tls: true
-  udp: true
-  flow: ''
-  client-fingerprint: chrome
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  ws-opts:
-    path: /lives?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: VLESS | @PulseConfigs | 36f67a
-  type: vless
-  server: 152.70.76.104
-  port: 46000
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  network: ws
-  tls: true
-  udp: true
-  flow: ''
-  client-fingerprint: chrome
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  ws-opts:
-    path: /acg/series/help?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: VLESS | @PulseConfigs | 4cad00
-  type: vless
-  server: 109.66.88.158
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  network: ws
-  tls: true
-  udp: true
-  flow: ''
-  client-fingerprint: chrome
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  ws-opts:
-    path: /details?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXY
   type: select
@@ -916,6 +918,7 @@ proxy-groups:
   - SHADOWSOCKS | @PulseConfigs | 8918b8
   - SHADOWSOCKS | @PulseConfigs | 0dd1f0
   - SHADOWSOCKS | @PulseConfigs | 9f0e88
+  - SHADOWSOCKS | @PulseConfigs | dce06d
   - SHADOWSOCKS | @PulseConfigs | fc7405
   - SHADOWSOCKS | @PulseConfigs | c28f60
   - SHADOWSOCKS | @PulseConfigs | c4b7b0
@@ -926,7 +929,7 @@ proxy-groups:
   - SHADOWSOCKS | @PulseConfigs | 197eee
   - SHADOWSOCKS | @PulseConfigs | f56687
   - SHADOWSOCKS | @PulseConfigs | 660cb1
-  - SHADOWSOCKS | @PulseConfigs | 03566c
+  - SHADOWSOCKS | @PulseConfigs | 995311
   - SHADOWSOCKS | @PulseConfigs | f87f57
   - SHADOWSOCKS | @PulseConfigs | 2d35f5
   - SHADOWSOCKS | @PulseConfigs | 4cf1d6
@@ -943,10 +946,10 @@ proxy-groups:
   - SHADOWSOCKS | @PulseConfigs | 1e1334
   - SHADOWSOCKS | @PulseConfigs | e6e7be
   - SHADOWSOCKS | @PulseConfigs | 4ddf7c
-  - SHADOWSOCKS | @PulseConfigs | 4e857c
   - SHADOWSOCKS | @PulseConfigs | 73b96a
   - SHADOWSOCKS | @PulseConfigs | c6a5e2
   - VMESS | @PulseConfigs | 129bac
+  - VMESS | @PulseConfigs | 0b32d4
   - SHADOWSOCKS | @PulseConfigs | e253c1
   - SHADOWSOCKS | @PulseConfigs | 1d1e17
   - SHADOWSOCKS | @PulseConfigs | cb1ffe
@@ -955,14 +958,19 @@ proxy-groups:
   - SHADOWSOCKS | @PulseConfigs | fc8b06
   - VMESS | @PulseConfigs | 1a2293
   - SHADOWSOCKS | @PulseConfigs | 03d9b6
+  - SHADOWSOCKS | @PulseConfigs | b3ab5f
   - SHADOWSOCKS | @PulseConfigs | 1c81b4
   - SHADOWSOCKS | @PulseConfigs | c3c37f
+  - SHADOWSOCKS | @PulseConfigs | b4dd58
   - SHADOWSOCKS | @PulseConfigs | 21c777
   - SHADOWSOCKS | @PulseConfigs | e8c360
   - SHADOWSOCKS | @PulseConfigs | 419421
+  - VMESS | @PulseConfigs | 32e064
   - SHADOWSOCKS | @PulseConfigs | fea59f
+  - VMESS | @PulseConfigs | b45faf
+  - SHADOWSOCKS | @PulseConfigs | 3e248d
   - SHADOWSOCKS | @PulseConfigs | bf83b3
-  - SHADOWSOCKS | @PulseConfigs | 667a43
+  - SHADOWSOCKS | @PulseConfigs | ffc65d
   - SHADOWSOCKS | @PulseConfigs | 76de03
   - VMESS | @PulseConfigs | a858c0
   - TROJAN | @PulseConfigs | eeb074
@@ -981,6 +989,7 @@ proxy-groups:
   - TROJAN | @PulseConfigs | ff2b1a
   - TROJAN | @PulseConfigs | b79ce7
   - TROJAN | @PulseConfigs | a36294
+  - TROJAN | @PulseConfigs | 1ec194
   - TROJAN | @PulseConfigs | bc7d0a
   - TROJAN | @PulseConfigs | b31afc
   - TROJAN | @PulseConfigs | 7e0470
@@ -990,21 +999,17 @@ proxy-groups:
   - HYSTERIA2 | @PulseConfigs | 21f045
   - HYSTERIA2 | @PulseConfigs | 27bc9b
   - HYSTERIA2 | @PulseConfigs | 1d9006
-  - HYSTERIA2 | @PulseConfigs | 348060
+  - HYSTERIA2 | @PulseConfigs | e95b6f
   - HYSTERIA2 | @PulseConfigs | c19db3
-  - HYSTERIA2 | @PulseConfigs | 5a2680
   - HYSTERIA2 | @PulseConfigs | b6e116
   - HYSTERIA2 | @PulseConfigs | 59d4c2
+  - HYSTERIA2 | @PulseConfigs | 1ef14b
   - HYSTERIA2 | @PulseConfigs | a01647
   - HYSTERIA2 | @PulseConfigs | 5a59df
   - HYSTERIA2 | @PulseConfigs | c0547e
   - HYSTERIA2 | @PulseConfigs | 649364
-  - VLESS | @PulseConfigs | 2267a2
-  - VLESS | @PulseConfigs | 6fe599
-  - SHADOWSOCKS | @PulseConfigs | cfc53e
-  - VLESS | @PulseConfigs | c92279
-  - VLESS | @PulseConfigs | 9463fa
-  - VLESS | @PulseConfigs | 36f67a
-  - VLESS | @PulseConfigs | 4cad00
+  - VLESS | @PulseConfigs | 809961
+  - VLESS | @PulseConfigs | 231d49
+  - SHADOWSOCKS | @PulseConfigs | b167b0
 rules:
 - MATCH,PROXY
