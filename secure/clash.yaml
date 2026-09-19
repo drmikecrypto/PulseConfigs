@@ -195,18 +195,6 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 882e74
-  type: vmess
-  server: 104.17.77.77
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | 21f045
   type: hysteria2
   server: 152-69-231-175.liao.kdns.fr
@@ -214,12 +202,12 @@ proxies:
   password: 1beb216e3f60aea9555dae60d219a5ca
   sni: 152-69-231-175.liao.kdns.fr
   skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | e95b6f
+- name: HYSTERIA2 | @PulseConfigs | 27bc9b
   type: hysteria2
-  server: msk.frkn.org
-  port: 443
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: ''
+  server: 162.249.126.7
+  port: 8443
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hopp-germany-new.ddnsguru.com
   skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | c19db3
   type: hysteria2
@@ -227,13 +215,6 @@ proxies:
   port: 8443
   password: sxc15led4b0vp5fy
   sni: musicclips.videolinks.ru
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 0e3ec2
-  type: hysteria2
-  server: 85.204.107.183
-  port: 8443
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
   skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | b6e116
   type: hysteria2
@@ -270,74 +251,6 @@ proxies:
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 840169
-  type: trojan
-  server: 88.198.82.150
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 1a06c2
-  type: trojan
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | df4379
-  type: trojan
-  server: 104.18.22.63
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 07cf0c
-  type: trojan
-  server: 130.250.137.171
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | f8510e
-  type: trojan
-  server: 104.18.23.63
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: REALITY | @PulseConfigs | 321621
-  type: vless
-  server: pl.bubahero.com
-  port: 443
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00
-    short-id: 9c2378562188c3cb
-  servername: pl.bubahero.com
-- name: TROJAN | @PulseConfigs | a158a2
-  type: trojan
-  server: 162.159.136.234
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
@@ -363,22 +276,13 @@ proxy-groups:
   - TROJAN | @PulseConfigs | b31afc
   - TROJAN | @PulseConfigs | 7e0470
   - TROJAN | @PulseConfigs | 59d664
-  - VMESS | @PulseConfigs | 882e74
   - HYSTERIA2 | @PulseConfigs | 21f045
-  - HYSTERIA2 | @PulseConfigs | e95b6f
+  - HYSTERIA2 | @PulseConfigs | 27bc9b
   - HYSTERIA2 | @PulseConfigs | c19db3
-  - HYSTERIA2 | @PulseConfigs | 0e3ec2
   - HYSTERIA2 | @PulseConfigs | b6e116
   - HYSTERIA2 | @PulseConfigs | a01647
   - HYSTERIA2 | @PulseConfigs | 5a59df
   - HYSTERIA2 | @PulseConfigs | c0547e
   - HYSTERIA2 | @PulseConfigs | 649364
-  - TROJAN | @PulseConfigs | 840169
-  - TROJAN | @PulseConfigs | 1a06c2
-  - TROJAN | @PulseConfigs | df4379
-  - TROJAN | @PulseConfigs | 07cf0c
-  - TROJAN | @PulseConfigs | f8510e
-  - REALITY | @PulseConfigs | 321621
-  - TROJAN | @PulseConfigs | a158a2
 rules:
 - MATCH,PROXY
