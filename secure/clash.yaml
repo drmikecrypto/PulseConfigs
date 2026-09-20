@@ -286,6 +286,60 @@ proxies:
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 07cf0c
+  type: trojan
+  server: 130.250.137.171
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | dae7fb
+  type: trojan
+  server: 165.215.250.14
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 2e3792
+  type: trojan
+  server: 104.16.174.37
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 8a17a0
+  type: trojan
+  server: 104.17.148.22
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 1a06c2
+  type: trojan
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 6474cf
+  type: trojan
+  server: 198.41.223.96
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
@@ -323,5 +377,11 @@ proxy-groups:
   - HYSTERIA2 | @PulseConfigs | 5a59df
   - HYSTERIA2 | @PulseConfigs | c0547e
   - HYSTERIA2 | @PulseConfigs | 649364
+  - TROJAN | @PulseConfigs | 07cf0c
+  - TROJAN | @PulseConfigs | dae7fb
+  - TROJAN | @PulseConfigs | 2e3792
+  - TROJAN | @PulseConfigs | 8a17a0
+  - TROJAN | @PulseConfigs | 1a06c2
+  - TROJAN | @PulseConfigs | 6474cf
 rules:
 - MATCH,PROXY
