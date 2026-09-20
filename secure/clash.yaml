@@ -132,6 +132,15 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 63214d
+  type: trojan
+  server: 188.114.96.3
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | c8ea8c
   type: trojan
   server: 104.16.174.22
@@ -177,6 +186,24 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 1ec194
+  type: trojan
+  server: 172.67.231.254
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 15cda4
+  type: trojan
+  server: 46.229.243.154
+  port: 4443
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  network: tcp
+  sni: grape-turbo-fr.roxa.org
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 45879b
   type: trojan
   server: 104.16.73.213
@@ -189,15 +216,6 @@ proxies:
 - name: TROJAN | @PulseConfigs | 39f1b8
   type: trojan
   server: 104.16.174.121
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | b9dd7f
-  type: trojan
-  server: 104.18.152.152
   port: 443
   password: humanity
   network: ws
@@ -258,30 +276,6 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 2617d0
-  type: vmess
-  server: 104.21.57.84
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-- name: VMESS | @PulseConfigs | dfb3d1
-  type: vmess
-  server: 104.21.91.53
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | 21f045
   type: hysteria2
   server: 152-69-231-175.liao.kdns.fr
@@ -295,6 +289,13 @@ proxies:
   port: 8443
   password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   sni: hopp-germany-new.ddnsguru.com
+  skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | e95b6f
+  type: hysteria2
+  server: msk.frkn.org
+  port: 443
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: ''
   skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | c19db3
   type: hysteria2
@@ -328,24 +329,25 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 20856c
   - TROJAN | @PulseConfigs | 1132e1
   - TROJAN | @PulseConfigs | 7845b6
+  - TROJAN | @PulseConfigs | 63214d
   - TROJAN | @PulseConfigs | c8ea8c
   - TROJAN | @PulseConfigs | c3da14
   - TROJAN | @PulseConfigs | 281973
   - TROJAN | @PulseConfigs | 00639a
   - TROJAN | @PulseConfigs | ceca89
+  - TROJAN | @PulseConfigs | 1ec194
+  - TROJAN | @PulseConfigs | 15cda4
   - TROJAN | @PulseConfigs | 45879b
   - TROJAN | @PulseConfigs | 39f1b8
-  - TROJAN | @PulseConfigs | b9dd7f
   - TROJAN | @PulseConfigs | 07cf0c
   - TROJAN | @PulseConfigs | 43df1f
   - TROJAN | @PulseConfigs | bb3a7c
   - TROJAN | @PulseConfigs | bc7d0a
   - TROJAN | @PulseConfigs | 8bc951
   - TROJAN | @PulseConfigs | a36294
-  - VMESS | @PulseConfigs | 2617d0
-  - VMESS | @PulseConfigs | dfb3d1
   - HYSTERIA2 | @PulseConfigs | 21f045
   - HYSTERIA2 | @PulseConfigs | 27bc9b
+  - HYSTERIA2 | @PulseConfigs | e95b6f
   - HYSTERIA2 | @PulseConfigs | c19db3
   - HYSTERIA2 | @PulseConfigs | b6e116
 rules:

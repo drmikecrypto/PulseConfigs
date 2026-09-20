@@ -28,15 +28,6 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "trojan|162.159.254.191|443|humanity|tls|ws||",
-      "raw": "trojan://humanity@162.159.254.191:443?security=tls&sni=www.ignitelimit.com&type=ws&path=/assignment&Host=www.ignitelimit.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%207e0470",
-      "protocol": "trojan",
-      "strategy": "cdn_tls",
-      "host": "162.159.254.191",
-      "port": 443,
-      "median_delay_ms": null
-    },
-    {
       "fingerprint": "trojan|104.17.177.143|443|humanity|tls|ws||",
       "raw": "trojan://humanity@104.17.177.143:443?security=tls&sni=www.ignitelimit.com&type=ws&path=/assignment&Host=www.ignitelimit.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%207845b6",
       "protocol": "trojan",
@@ -46,20 +37,29 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "trojan|104.16.73.213|443|humanity|tls|ws||",
-      "raw": "trojan://humanity@104.16.73.213:443?security=tls&sni=www.ignitelimit.com&type=ws&path=/assignment&Host=www.ignitelimit.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%2045879b",
-      "protocol": "trojan",
-      "strategy": "cdn_tls",
-      "host": "104.16.73.213",
-      "port": 443,
-      "median_delay_ms": null
-    },
-    {
       "fingerprint": "trojan|104.16.174.34|443|humanity|tls|ws||",
       "raw": "trojan://humanity@104.16.174.34:443?security=tls&sni=www.ignitelimit.com&type=ws&path=/assignment&Host=www.ignitelimit.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20bc7d0a",
       "protocol": "trojan",
       "strategy": "cdn_tls",
       "host": "104.16.174.34",
+      "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "trojan|162.159.254.191|443|humanity|tls|ws||",
+      "raw": "trojan://humanity@162.159.254.191:443?security=tls&sni=www.ignitelimit.com&type=ws&path=/assignment&Host=www.ignitelimit.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%207e0470",
+      "protocol": "trojan",
+      "strategy": "cdn_tls",
+      "host": "162.159.254.191",
+      "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "trojan|104.16.73.213|443|humanity|tls|ws||",
+      "raw": "trojan://humanity@104.16.73.213:443?security=tls&sni=www.ignitelimit.com&type=ws&path=/assignment&Host=www.ignitelimit.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%2045879b",
+      "protocol": "trojan",
+      "strategy": "cdn_tls",
+      "host": "104.16.73.213",
       "port": 443,
       "median_delay_ms": null
     },
@@ -127,11 +127,11 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "shadowsocks|193.29.139.147|8080|k1dBOmOB4oqi7Ump37a1bQ||tcp||",
-      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@193.29.139.147:8080#SHADOWSOCKS%20%7C%20%40PulseConfigs%20%7C%200dd1f0",
+      "fingerprint": "shadowsocks|193.29.139.235|8080|oZIoA69Q8yhcQV8ka3Pa3A||tcp||",
+      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.235:8080#SHADOWSOCKS%20%7C%20%40PulseConfigs%20%7C%20fc7405",
       "protocol": "shadowsocks",
       "strategy": "legacy",
-      "host": "193.29.139.147",
+      "host": "193.29.139.235",
       "port": 8080,
       "median_delay_ms": null
     },
@@ -172,21 +172,21 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "hysteria2|es1.xiaoliyu.cyou|4433|19f72087-4591-4d72-930b-2697078ec2be||tcp||",
-      "raw": "hysteria2://19f72087-4591-4d72-930b-2697078ec2be@es1.xiaoliyu.cyou:4433?insecure=1&sni=es1.xiaoliyu.cyou#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%2067d692",
+      "fingerprint": "hysteria2|msk.frkn.org|443|f317b5d6-d399-4d3d-a051-89d674ae953c||tcp||",
+      "raw": "hysteria2://f317b5d6-d399-4d3d-a051-89d674ae953c@msk.frkn.org:443?#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%20e95b6f",
       "protocol": "hysteria2",
       "strategy": "quic_speed",
-      "host": "es1.xiaoliyu.cyou",
-      "port": 4433,
+      "host": "msk.frkn.org",
+      "port": 443,
       "median_delay_ms": null
     },
     {
-      "fingerprint": "hysteria2|se.xiaoliyu.cyou|4433|19f72087-4591-4d72-930b-2697078ec2be||tcp||",
-      "raw": "hysteria2://19f72087-4591-4d72-930b-2697078ec2be@se.xiaoliyu.cyou:4433?insecure=1&sni=se.xiaoliyu.cyou#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%206efd4f",
+      "fingerprint": "hysteria2|77.110.96.201|36264|Telegram-vpnjey||tcp||",
+      "raw": "hysteria2://Telegram-vpnjey@77.110.96.201:36264?insecure=1&alpn=h3&sni=se.vpnjey2.dpdns.org&obfs=salamander&obfs-password=Telegram@vpnjey#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%2059d4c2",
       "protocol": "hysteria2",
       "strategy": "quic_speed",
-      "host": "se.xiaoliyu.cyou",
-      "port": 4433,
+      "host": "77.110.96.201",
+      "port": 36264,
       "median_delay_ms": null
     }
   ]
