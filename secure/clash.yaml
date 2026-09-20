@@ -132,15 +132,6 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 63214d
-  type: trojan
-  server: 188.114.96.3
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | c8ea8c
   type: trojan
   server: 104.16.174.22
@@ -267,6 +258,30 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 2617d0
+  type: vmess
+  server: 104.21.57.84
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | dfb3d1
+  type: vmess
+  server: 104.21.91.53
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | 21f045
   type: hysteria2
   server: 152-69-231-175.liao.kdns.fr
@@ -288,6 +303,13 @@ proxies:
   password: sxc15led4b0vp5fy
   sni: musicclips.videolinks.ru
   skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | b6e116
+  type: hysteria2
+  server: 162.249.125.133
+  port: 443
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
@@ -306,7 +328,6 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 20856c
   - TROJAN | @PulseConfigs | 1132e1
   - TROJAN | @PulseConfigs | 7845b6
-  - TROJAN | @PulseConfigs | 63214d
   - TROJAN | @PulseConfigs | c8ea8c
   - TROJAN | @PulseConfigs | c3da14
   - TROJAN | @PulseConfigs | 281973
@@ -321,8 +342,11 @@ proxy-groups:
   - TROJAN | @PulseConfigs | bc7d0a
   - TROJAN | @PulseConfigs | 8bc951
   - TROJAN | @PulseConfigs | a36294
+  - VMESS | @PulseConfigs | 2617d0
+  - VMESS | @PulseConfigs | dfb3d1
   - HYSTERIA2 | @PulseConfigs | 21f045
   - HYSTERIA2 | @PulseConfigs | 27bc9b
   - HYSTERIA2 | @PulseConfigs | c19db3
+  - HYSTERIA2 | @PulseConfigs | b6e116
 rules:
 - MATCH,PROXY
