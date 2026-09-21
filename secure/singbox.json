@@ -12,43 +12,6 @@
       "tag": "block"
     },
     {
-      "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | 7bb982",
-      "server": "dee2309db4944c248b6d4372c6641e25.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "dee2309db4944c248b6d4372c6641e25.oylfmxz.cn",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "dee2309db4944c248b6d4372c6641e25.oylfmxz.cn"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 59f388",
-      "server": "jp3.998998.best",
-      "server_port": 443,
-      "password": "3c6d1933-b22a-484b-ac8a-63e24f5fba75",
-      "tls": {
-        "enabled": true,
-        "server_name": "nat11.outsidemyheart.space",
-        "insecure": false
-      }
-    },
-    {
       "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | a577bc",
       "server": "104.18.152.50",
@@ -74,32 +37,8 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 6b8ce2",
-      "server": "104.18.152.144",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | d0553b",
       "server": "104.21.8.107",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 198786",
-      "server": "104.20.6.134",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -229,54 +168,6 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | e2e8fa",
-      "server": "141.101.90.101",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 75f0ca",
-      "server": "104.16.174.44",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | d6186e",
-      "server": "104.18.152.161",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | bb3a7c",
-      "server": "104.18.152.219",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vmess",
       "tag": "VMESS | @PulseConfigs | a858c0",
       "server": "www.shopify.com",
@@ -302,40 +193,12 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "HYSTERIA2 | @PulseConfigs | 21f045",
-      "server": "152-69-231-175.liao.kdns.fr",
-      "server_port": 50160,
-      "password": "1beb216e3f60aea9555dae60d219a5ca",
-      "tls": {
-        "enabled": true,
-        "server_name": "152-69-231-175.liao.kdns.fr",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "HYSTERIA2 | @PulseConfigs | 27bc9b",
-      "server": "162.249.126.7",
-      "server_port": 8443,
-      "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
-      "tls": {
-        "enabled": true,
-        "server_name": "hopp-germany-new.ddnsguru.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
-        "VMESS | @PulseConfigs | 7bb982",
-        "TROJAN | @PulseConfigs | 59f388",
         "TROJAN | @PulseConfigs | a577bc",
         "TROJAN | @PulseConfigs | 60cd41",
-        "TROJAN | @PulseConfigs | 6b8ce2",
         "TROJAN | @PulseConfigs | d0553b",
-        "TROJAN | @PulseConfigs | 198786",
         "TROJAN | @PulseConfigs | 54c468",
         "TROJAN | @PulseConfigs | 959590",
         "TROJAN | @PulseConfigs | ceca89",
@@ -346,13 +209,7 @@
         "TROJAN | @PulseConfigs | b79ce7",
         "TROJAN | @PulseConfigs | 061f9c",
         "TROJAN | @PulseConfigs | 7e0470",
-        "TROJAN | @PulseConfigs | e2e8fa",
-        "TROJAN | @PulseConfigs | 75f0ca",
-        "TROJAN | @PulseConfigs | d6186e",
-        "TROJAN | @PulseConfigs | bb3a7c",
-        "VMESS | @PulseConfigs | a858c0",
-        "HYSTERIA2 | @PulseConfigs | 21f045",
-        "HYSTERIA2 | @PulseConfigs | 27bc9b"
+        "VMESS | @PulseConfigs | a858c0"
       ]
     }
   ]
