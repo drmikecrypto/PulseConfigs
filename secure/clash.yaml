@@ -30,6 +30,15 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | b31afc
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 7845b6
   type: trojan
   server: 104.17.177.143
@@ -114,12 +123,17 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 21f045
-  type: hysteria2
-  server: 152-69-231-175.liao.kdns.fr
-  port: 50160
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
+- name: VMESS | @PulseConfigs | 882e74
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
 proxy-groups:
 - name: PROXY
@@ -128,6 +142,7 @@ proxy-groups:
   - TROJAN | @PulseConfigs | b9dd7f
   - TROJAN | @PulseConfigs | bc0943
   - TROJAN | @PulseConfigs | 5e6847
+  - TROJAN | @PulseConfigs | b31afc
   - TROJAN | @PulseConfigs | 7845b6
   - TROJAN | @PulseConfigs | a36294
   - TROJAN | @PulseConfigs | 59443e
@@ -137,6 +152,6 @@ proxy-groups:
   - TROJAN | @PulseConfigs | ff2b1a
   - TROJAN | @PulseConfigs | bfe4d0
   - VMESS | @PulseConfigs | a858c0
-  - HYSTERIA2 | @PulseConfigs | 21f045
+  - VMESS | @PulseConfigs | 882e74
 rules:
 - MATCH,PROXY
