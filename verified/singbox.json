@@ -21,14 +21,6 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "SHADOWSOCKS | @PulseConfigs | dce06d",
-      "server": "82.38.31.192",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "SHADOWSOCKS | @PulseConfigs | 660cb1",
       "server": "82.38.31.202",
       "server_port": 8080,
@@ -125,14 +117,6 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "SHADOWSOCKS | @PulseConfigs | 9f0e88",
-      "server": "82.38.31.179",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "SHADOWSOCKS | @PulseConfigs | c4b7b0",
       "server": "82.38.31.180",
       "server_port": 8080,
@@ -162,14 +146,6 @@
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "oZIoA69Q8yhcQV8ka3Pa3A"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "SHADOWSOCKS | @PulseConfigs | 995311",
-      "server": "193.29.139.223",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
     },
     {
       "type": "shadowsocks",
@@ -298,6 +274,14 @@
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
       "password": "QCXDxuDlTTMD7jtgHUjIoj"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "SHADOWSOCKS | @PulseConfigs | bf4337",
+      "server": "193.29.139.151",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
     },
     {
       "type": "shadowsocks",
@@ -445,6 +429,14 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "SHADOWSOCKS | @PulseConfigs | ba9e50",
+      "server": "185.213.23.63",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "shadowsocks",
       "tag": "SHADOWSOCKS | @PulseConfigs | 1d1e17",
       "server": "82.38.31.176",
       "server_port": 8080,
@@ -490,6 +482,14 @@
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "SHADOWSOCKS | @PulseConfigs | b3ab5f",
+      "server": "94.156.250.148",
+      "server_port": 7001,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "shadowsocks",
@@ -558,6 +558,14 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "SHADOWSOCKS | @PulseConfigs | bf83b3",
+      "server": "r3mrcg001286ek2.cybervena.com",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "SHADOWSOCKS | @PulseConfigs | c6a5e2",
       "server": "84.247.155.196",
       "server_port": 80,
@@ -590,12 +598,45 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 0b32d4",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "152.67.8.205",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "152.67.8.205"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "SHADOWSOCKS | @PulseConfigs | fc8b06",
       "server": "84.247.155.196",
       "server_port": 443,
       "method": "aes-256-gcm",
       "password": "3eOFeNssde7PYYMv"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "SHADOWSOCKS | @PulseConfigs | ffc65d",
+      "server": "216.105.168.18",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "hCCWOcIsK5wrFz4OX70rWf"
     },
     {
       "type": "shadowsocks",
@@ -834,31 +875,6 @@
     },
     {
       "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | 313b25",
-      "server": "172.111.146.64",
-      "server_port": 80,
-      "uuid": "05b8c783-7f59-47f9-9923-06a465679f6a",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "172.111.146.64",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": ""
-        }
-      }
-    },
-    {
-      "type": "vmess",
       "tag": "VMESS | @PulseConfigs | 882e74",
       "server": "104.17.77.77",
       "server_port": 8443,
@@ -895,11 +911,22 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "HYSTERIA2 | @PulseConfigs | 6efd4f",
+      "server": "se.xiaoliyu.cyou",
+      "server_port": 4433,
+      "password": "19f72087-4591-4d72-930b-2697078ec2be",
+      "tls": {
+        "enabled": true,
+        "server_name": "se.xiaoliyu.cyou",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
         "SHADOWSOCKS | @PulseConfigs | f5e791",
-        "SHADOWSOCKS | @PulseConfigs | dce06d",
         "SHADOWSOCKS | @PulseConfigs | 660cb1",
         "SHADOWSOCKS | @PulseConfigs | bb49bb",
         "SHADOWSOCKS | @PulseConfigs | 197eee",
@@ -912,12 +939,10 @@
         "SHADOWSOCKS | @PulseConfigs | c28f60",
         "SHADOWSOCKS | @PulseConfigs | 03566c",
         "SHADOWSOCKS | @PulseConfigs | f166ff",
-        "SHADOWSOCKS | @PulseConfigs | 9f0e88",
         "SHADOWSOCKS | @PulseConfigs | c4b7b0",
         "SHADOWSOCKS | @PulseConfigs | 8121ed",
         "SHADOWSOCKS | @PulseConfigs | aa5228",
         "SHADOWSOCKS | @PulseConfigs | 3bcec6",
-        "SHADOWSOCKS | @PulseConfigs | 995311",
         "SHADOWSOCKS | @PulseConfigs | 41d9bb",
         "SHADOWSOCKS | @PulseConfigs | f8e141",
         "SHADOWSOCKS | @PulseConfigs | 4cf1d6",
@@ -934,6 +959,7 @@
         "SHADOWSOCKS | @PulseConfigs | fc7405",
         "SHADOWSOCKS | @PulseConfigs | ea41a4",
         "SHADOWSOCKS | @PulseConfigs | 05d9b1",
+        "SHADOWSOCKS | @PulseConfigs | bf4337",
         "SHADOWSOCKS | @PulseConfigs | 6e4410",
         "SHADOWSOCKS | @PulseConfigs | c273a9",
         "SHADOWSOCKS | @PulseConfigs | 27d545",
@@ -952,21 +978,26 @@
         "SHADOWSOCKS | @PulseConfigs | 03d9b6",
         "SHADOWSOCKS | @PulseConfigs | 781bfb",
         "SHADOWSOCKS | @PulseConfigs | 0e089f",
+        "SHADOWSOCKS | @PulseConfigs | ba9e50",
         "SHADOWSOCKS | @PulseConfigs | 1d1e17",
         "SHADOWSOCKS | @PulseConfigs | 4ce528",
         "SHADOWSOCKS | @PulseConfigs | b4dd58",
         "SHADOWSOCKS | @PulseConfigs | 419421",
         "SHADOWSOCKS | @PulseConfigs | e8c360",
         "SHADOWSOCKS | @PulseConfigs | 21c777",
+        "SHADOWSOCKS | @PulseConfigs | b3ab5f",
         "SHADOWSOCKS | @PulseConfigs | 3e248d",
         "SHADOWSOCKS | @PulseConfigs | c3c37f",
         "SHADOWSOCKS | @PulseConfigs | f1ae7b",
         "SHADOWSOCKS | @PulseConfigs | 733488",
         "SHADOWSOCKS | @PulseConfigs | 24d6e3",
         "VMESS | @PulseConfigs | 1a2293",
+        "SHADOWSOCKS | @PulseConfigs | bf83b3",
         "SHADOWSOCKS | @PulseConfigs | c6a5e2",
         "VMESS | @PulseConfigs | 129bac",
+        "VMESS | @PulseConfigs | 0b32d4",
         "SHADOWSOCKS | @PulseConfigs | fc8b06",
+        "SHADOWSOCKS | @PulseConfigs | ffc65d",
         "SHADOWSOCKS | @PulseConfigs | 4ddf7c",
         "VMESS | @PulseConfigs | b45faf",
         "TROJAN | @PulseConfigs | b9dd7f",
@@ -984,9 +1015,9 @@
         "VMESS | @PulseConfigs | a858c0",
         "VMESS | @PulseConfigs | dbcc7a",
         "SHADOWSOCKS | @PulseConfigs | 4e857c",
-        "VMESS | @PulseConfigs | 313b25",
         "VMESS | @PulseConfigs | 882e74",
-        "HYSTERIA2 | @PulseConfigs | 67d692"
+        "HYSTERIA2 | @PulseConfigs | 67d692",
+        "HYSTERIA2 | @PulseConfigs | 6efd4f"
       ]
     }
   ]
