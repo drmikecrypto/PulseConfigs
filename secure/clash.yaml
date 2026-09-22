@@ -3,15 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: TROJAN | @PulseConfigs | b9dd7f
-  type: trojan
-  server: 104.18.152.152
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | bc0943
   type: trojan
   server: 104.18.152.187
@@ -39,36 +30,9 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 7845b6
-  type: trojan
-  server: 104.17.177.143
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | a36294
-  type: trojan
-  server: www.ignitelimit.com
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 59443e
   type: trojan
   server: render.com
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 281973
-  type: trojan
-  server: 104.18.152.233
   port: 443
   password: humanity
   network: ws
@@ -134,14 +98,10 @@ proxy-groups:
 - name: PROXY
   type: select
   proxies:
-  - TROJAN | @PulseConfigs | b9dd7f
   - TROJAN | @PulseConfigs | bc0943
   - TROJAN | @PulseConfigs | 5e6847
   - TROJAN | @PulseConfigs | b31afc
-  - TROJAN | @PulseConfigs | 7845b6
-  - TROJAN | @PulseConfigs | a36294
   - TROJAN | @PulseConfigs | 59443e
-  - TROJAN | @PulseConfigs | 281973
   - TROJAN | @PulseConfigs | 198786
   - TROJAN | @PulseConfigs | 061f9c
   - TROJAN | @PulseConfigs | ff2b1a
