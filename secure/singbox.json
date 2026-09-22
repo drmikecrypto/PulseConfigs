@@ -13,8 +13,8 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | bc0943",
-      "server": "104.18.152.187",
+      "tag": "TROJAN | @PulseConfigs | b9dd7f",
+      "server": "104.18.152.152",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -25,8 +25,8 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 5e6847",
-      "server": "104.17.111.3",
+      "tag": "TROJAN | @PulseConfigs | bc0943",
+      "server": "104.18.152.187",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -49,6 +49,18 @@
     },
     {
       "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 7845b6",
+      "server": "104.17.177.143",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 59443e",
       "server": "render.com",
       "server_port": 443,
@@ -61,8 +73,8 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 198786",
-      "server": "104.20.6.134",
+      "tag": "TROJAN | @PulseConfigs | 281973",
+      "server": "104.18.152.233",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -73,8 +85,8 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 061f9c",
-      "server": "104.18.152.155",
+      "tag": "TROJAN | @PulseConfigs | 198786",
+      "server": "104.20.6.134",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -148,12 +160,13 @@
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
+        "TROJAN | @PulseConfigs | b9dd7f",
         "TROJAN | @PulseConfigs | bc0943",
-        "TROJAN | @PulseConfigs | 5e6847",
         "TROJAN | @PulseConfigs | b31afc",
+        "TROJAN | @PulseConfigs | 7845b6",
         "TROJAN | @PulseConfigs | 59443e",
+        "TROJAN | @PulseConfigs | 281973",
         "TROJAN | @PulseConfigs | 198786",
-        "TROJAN | @PulseConfigs | 061f9c",
         "TROJAN | @PulseConfigs | ff2b1a",
         "TROJAN | @PulseConfigs | bfe4d0",
         "VMESS | @PulseConfigs | a858c0",
