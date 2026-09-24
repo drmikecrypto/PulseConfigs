@@ -270,6 +270,18 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 882e74
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | 21f045
   type: hysteria2
   server: 152-69-231-175.liao.kdns.fr
@@ -283,20 +295,6 @@ proxies:
   port: 22443
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: hy.quattro-tech.ru
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | bcbba8
-  type: hysteria2
-  server: 85.204.107.172
-  port: 8443
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 9ec31d
-  type: hysteria2
-  server: 85.204.107.177
-  port: 8080
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
   skip-cert-verify: false
 proxy-groups:
 - name: PROXY
@@ -331,9 +329,8 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 00639a
   - TROJAN | @PulseConfigs | ceca89
   - TROJAN | @PulseConfigs | 387e84
+  - VMESS | @PulseConfigs | 882e74
   - HYSTERIA2 | @PulseConfigs | 21f045
   - HYSTERIA2 | @PulseConfigs | 6c0c85
-  - HYSTERIA2 | @PulseConfigs | bcbba8
-  - HYSTERIA2 | @PulseConfigs | 9ec31d
 rules:
 - MATCH,PROXY
