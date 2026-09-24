@@ -63,6 +63,15 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | bc0943
+  type: trojan
+  server: 104.18.152.187
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | d0553b
   type: trojan
   server: 104.21.8.107
@@ -84,6 +93,24 @@ proxies:
 - name: TROJAN | @PulseConfigs | a577bc
   type: trojan
   server: 104.18.152.50
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 00639a
+  type: trojan
+  server: 104.18.152.244
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | ff5353
+  type: trojan
+  server: 104.18.152.246
   port: 443
   password: humanity
   network: ws
@@ -151,6 +178,20 @@ proxies:
   password: 1beb216e3f60aea9555dae60d219a5ca
   sni: 152-69-231-175.liao.kdns.fr
   skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | bcbba8
+  type: hysteria2
+  server: 85.204.107.172
+  port: 8443
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | 9ec31d
+  type: hysteria2
+  server: 85.204.107.177
+  port: 8080
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
@@ -161,9 +202,12 @@ proxy-groups:
   - TROJAN | @PulseConfigs | a36294
   - TROJAN | @PulseConfigs | d6f836
   - TROJAN | @PulseConfigs | 198786
+  - TROJAN | @PulseConfigs | bc0943
   - TROJAN | @PulseConfigs | d0553b
   - TROJAN | @PulseConfigs | aad5b3
   - TROJAN | @PulseConfigs | a577bc
+  - TROJAN | @PulseConfigs | 00639a
+  - TROJAN | @PulseConfigs | ff5353
   - TROJAN | @PulseConfigs | f483bc
   - TROJAN | @PulseConfigs | bfe4d0
   - TROJAN | @PulseConfigs | f8ad18
@@ -171,5 +215,7 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 8900a3
   - TROJAN | @PulseConfigs | 7184dd
   - HYSTERIA2 | @PulseConfigs | 21f045
+  - HYSTERIA2 | @PulseConfigs | bcbba8
+  - HYSTERIA2 | @PulseConfigs | 9ec31d
 rules:
 - MATCH,PROXY

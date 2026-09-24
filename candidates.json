@@ -46,15 +46,6 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "trojan|www.ignitelimit.com|443|humanity|tls|ws||",
-      "raw": "trojan://humanity@www.ignitelimit.com:443?security=tls&sni=www.ignitelimit.com&type=ws&path=/assignment&Host=www.ignitelimit.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20a36294",
-      "protocol": "trojan",
-      "strategy": "cdn_tls",
-      "host": "www.ignitelimit.com",
-      "port": 443,
-      "median_delay_ms": null
-    },
-    {
       "fingerprint": "hysteria2|152-69-231-175.liao.kdns.fr|50160|1beb216e3f60aea9555dae60d219a5ca||tcp||",
       "raw": "hysteria2://1beb216e3f60aea9555dae60d219a5ca@152-69-231-175.liao.kdns.fr:50160?sni=152-69-231-175.liao.kdns.fr#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%2021f045",
       "protocol": "hysteria2",
@@ -64,11 +55,20 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "trojan|104.26.15.137|443|humanity|tls|ws||",
-      "raw": "trojan://humanity@104.26.15.137:443?security=tls&sni=www.ignitelimit.com&type=ws&path=/assignment&Host=www.ignitelimit.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%207184dd",
+      "fingerprint": "trojan|www.ignitelimit.com|443|humanity|tls|ws||",
+      "raw": "trojan://humanity@www.ignitelimit.com:443?security=tls&sni=www.ignitelimit.com&type=ws&path=/assignment&Host=www.ignitelimit.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20a36294",
       "protocol": "trojan",
       "strategy": "cdn_tls",
-      "host": "104.26.15.137",
+      "host": "www.ignitelimit.com",
+      "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "trojan|www.speedtest.net|443|humanity|tls|ws||",
+      "raw": "trojan://humanity@www.speedtest.net:443?security=tls&sni=www.ignitelimit.com&type=ws&path=/assignment&Host=www.ignitelimit.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%208900a3",
+      "protocol": "trojan",
+      "strategy": "cdn_tls",
+      "host": "www.speedtest.net",
       "port": 443,
       "median_delay_ms": null
     },
@@ -79,6 +79,15 @@
       "strategy": "quic_speed",
       "host": "se.xiaoliyu.cyou",
       "port": 4433,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "hysteria2|85.204.107.172|8443|Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0||tcp||",
+      "raw": "hysteria2://Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0@85.204.107.172:8443?insecure=0&sni=hopp-romania-new.roxa.org#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%20bcbba8",
+      "protocol": "hysteria2",
+      "strategy": "quic_speed",
+      "host": "85.204.107.172",
+      "port": 8443,
       "median_delay_ms": null
     },
     {
@@ -142,6 +151,15 @@
       "strategy": "legacy",
       "host": "193.29.139.235",
       "port": 8080,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "hysteria2|hys13.wba-pn.ru|443|CnVfXXvMzh||tcp||",
+      "raw": "hysteria2://CnVfXXvMzh@hys13.wba-pn.ru:443?insecure=1#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%200593aa",
+      "protocol": "hysteria2",
+      "strategy": "quic_speed",
+      "host": "hys13.wba-pn.ru",
+      "port": 443,
       "median_delay_ms": null
     }
   ]
