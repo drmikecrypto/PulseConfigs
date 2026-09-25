@@ -3,18 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: VMESS | @PulseConfigs | 076354
-  type: vmess
-  server: 24864168545164.oylfmxz.cn
-  port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: 24864168545164.oylfmxz.cn
-  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | a858c0
   type: vmess
   server: www.shopify.com
@@ -78,6 +66,15 @@ proxies:
 - name: TROJAN | @PulseConfigs | 8b3865
   type: trojan
   server: 86.38.214.205
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | d6f836
+  type: trojan
+  server: 172.67.221.242
   port: 443
   password: humanity
   network: ws
@@ -165,6 +162,15 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | e09f63
+  type: trojan
+  server: 104.16.174.101
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 24c200
   type: trojan
   server: 104.16.174.72
@@ -237,18 +243,10 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 21f045
-  type: hysteria2
-  server: 152-69-231-175.liao.kdns.fr
-  port: 50160
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
-  - VMESS | @PulseConfigs | 076354
   - VMESS | @PulseConfigs | a858c0
   - VMESS | @PulseConfigs | 11d785
   - TROJAN | @PulseConfigs | d0553b
@@ -256,6 +254,7 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 2e3792
   - TROJAN | @PulseConfigs | b9dd7f
   - TROJAN | @PulseConfigs | 8b3865
+  - TROJAN | @PulseConfigs | d6f836
   - TROJAN | @PulseConfigs | 387e84
   - TROJAN | @PulseConfigs | 08fe10
   - TROJAN | @PulseConfigs | 6474cf
@@ -265,6 +264,7 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 281973
   - TROJAN | @PulseConfigs | a36294
   - TROJAN | @PulseConfigs | f8ad18
+  - TROJAN | @PulseConfigs | e09f63
   - TROJAN | @PulseConfigs | 24c200
   - TROJAN | @PulseConfigs | bc0943
   - TROJAN | @PulseConfigs | 8bc951
@@ -273,6 +273,5 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 6b8ce2
   - TROJAN | @PulseConfigs | e22acc
   - TROJAN | @PulseConfigs | 5e6847
-  - HYSTERIA2 | @PulseConfigs | 21f045
 rules:
 - MATCH,PROXY
