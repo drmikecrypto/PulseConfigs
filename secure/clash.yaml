@@ -3,9 +3,30 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- name: VMESS | @PulseConfigs | 11d785
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: guanwang.awsno.com
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 5933eb
   type: trojan
   server: 104.16.174.185
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 7184dd
+  type: trojan
+  server: 104.26.15.137
   port: 443
   password: humanity
   network: ws
@@ -39,9 +60,36 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | a33b67
+  type: trojan
+  server: 104.18.152.133
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 07cf0c
+  type: trojan
+  server: 130.250.137.171
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | b79ce7
   type: trojan
   server: 104.16.174.12
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 5ab1cb
+  type: trojan
+  server: 104.18.152.140
   port: 443
   password: humanity
   network: ws
@@ -66,6 +114,15 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 63214d
+  type: trojan
+  server: 188.114.96.3
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 8900a3
   type: trojan
   server: www.speedtest.net
@@ -75,9 +132,9 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | ff878c
+- name: TROJAN | @PulseConfigs | ceca89
   type: trojan
-  server: 104.17.111.1
+  server: 104.17.111.8
   port: 443
   password: humanity
   network: ws
@@ -147,26 +204,37 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 21f045
-  type: hysteria2
-  server: 152-69-231-175.liao.kdns.fr
-  port: 50160
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
+- name: VMESS | @PulseConfigs | a858c0
+  type: vmess
+  server: www.shopify.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: guanwang.awsno.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
+  - VMESS | @PulseConfigs | 11d785
   - TROJAN | @PulseConfigs | 5933eb
+  - TROJAN | @PulseConfigs | 7184dd
   - TROJAN | @PulseConfigs | 1132e1
   - TROJAN | @PulseConfigs | fac701
   - TROJAN | @PulseConfigs | d94ced
+  - TROJAN | @PulseConfigs | a33b67
+  - TROJAN | @PulseConfigs | 07cf0c
   - TROJAN | @PulseConfigs | b79ce7
+  - TROJAN | @PulseConfigs | 5ab1cb
   - TROJAN | @PulseConfigs | 689b8f
   - TROJAN | @PulseConfigs | c3da14
+  - TROJAN | @PulseConfigs | 63214d
   - TROJAN | @PulseConfigs | 8900a3
-  - TROJAN | @PulseConfigs | ff878c
+  - TROJAN | @PulseConfigs | ceca89
   - TROJAN | @PulseConfigs | 7e0470
   - TROJAN | @PulseConfigs | d6186e
   - TROJAN | @PulseConfigs | 24c200
@@ -174,6 +242,6 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 1a06c2
   - TROJAN | @PulseConfigs | bfe4d0
   - TROJAN | @PulseConfigs | d96cd9
-  - HYSTERIA2 | @PulseConfigs | 21f045
+  - VMESS | @PulseConfigs | a858c0
 rules:
 - MATCH,PROXY
