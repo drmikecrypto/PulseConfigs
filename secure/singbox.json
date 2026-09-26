@@ -37,31 +37,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | a858c0",
-      "server": "www.shopify.com",
-      "server_port": 443,
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "guanwang.awsno.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/hls/cctv5phd.m3u8",
-        "headers": {
-          "Host": "guanwang.awsno.com"
-        }
-      }
-    },
-    {
       "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | a53589",
       "server": "45.80.111.7",
@@ -123,18 +98,6 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | bb3a7c",
-      "server": "104.18.152.219",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | eeb074",
       "server": "104.26.14.137",
       "server_port": 443,
@@ -170,20 +133,31 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "HYSTERIA2 | @PulseConfigs | d916ea",
+      "server": "se1.chromevpn.cc",
+      "server_port": 443,
+      "password": "02bd8b5a-170b-4a79-8e68-9cec710272c7",
+      "tls": {
+        "enabled": true,
+        "server_name": "se1.chromevpn.cc",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
         "VMESS | @PulseConfigs | 11d785",
-        "VMESS | @PulseConfigs | a858c0",
         "TROJAN | @PulseConfigs | a53589",
         "TROJAN | @PulseConfigs | ff2b1a",
         "TROJAN | @PulseConfigs | a577bc",
         "TROJAN | @PulseConfigs | f241d1",
         "TROJAN | @PulseConfigs | 39f1b8",
-        "TROJAN | @PulseConfigs | bb3a7c",
         "TROJAN | @PulseConfigs | eeb074",
         "TROJAN | @PulseConfigs | 7845b6",
-        "HYSTERIA2 | @PulseConfigs | 21f045"
+        "HYSTERIA2 | @PulseConfigs | 21f045",
+        "HYSTERIA2 | @PulseConfigs | d916ea"
       ]
     }
   ]
