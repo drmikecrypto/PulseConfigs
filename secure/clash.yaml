@@ -243,6 +243,18 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 882e74
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
@@ -273,5 +285,6 @@ proxy-groups:
   - TROJAN | @PulseConfigs | bfe4d0
   - TROJAN | @PulseConfigs | d96cd9
   - VMESS | @PulseConfigs | a858c0
+  - VMESS | @PulseConfigs | 882e74
 rules:
 - MATCH,PROXY

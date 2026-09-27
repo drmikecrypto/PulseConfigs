@@ -350,6 +350,31 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 882e74",
+      "server": "104.17.77.77",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
@@ -378,7 +403,8 @@
         "TROJAN | @PulseConfigs | 1a06c2",
         "TROJAN | @PulseConfigs | bfe4d0",
         "TROJAN | @PulseConfigs | d96cd9",
-        "VMESS | @PulseConfigs | a858c0"
+        "VMESS | @PulseConfigs | a858c0",
+        "VMESS | @PulseConfigs | 882e74"
       ]
     }
   ]
