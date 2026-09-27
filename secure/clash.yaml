@@ -51,15 +51,6 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | eeb074
-  type: trojan
-  server: 104.26.14.137
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 60cd41
   type: trojan
   server: 104.18.152.225
@@ -87,27 +78,9 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 8055ec
-  type: trojan
-  server: 185.18.250.252
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 6b8ce2
   type: trojan
   server: 104.18.152.144
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | e22acc
-  type: trojan
-  server: 104.18.152.159
   port: 443
   password: humanity
   network: ws
@@ -146,13 +119,10 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 08fe10
   - TROJAN | @PulseConfigs | 9cfd29
   - TROJAN | @PulseConfigs | d08f46
-  - TROJAN | @PulseConfigs | eeb074
   - TROJAN | @PulseConfigs | 60cd41
   - TROJAN | @PulseConfigs | d61458
   - TROJAN | @PulseConfigs | fed89c
-  - TROJAN | @PulseConfigs | 8055ec
   - TROJAN | @PulseConfigs | 6b8ce2
-  - TROJAN | @PulseConfigs | e22acc
   - TROJAN | @PulseConfigs | c3da14
   - HYSTERIA2 | @PulseConfigs | b6e116
   - HYSTERIA2 | @PulseConfigs | 649364
