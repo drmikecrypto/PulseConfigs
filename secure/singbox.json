@@ -386,6 +386,56 @@
     },
     {
       "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 11d785",
+      "server": "guanwang.awsno.com",
+      "server_port": 443,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "guanwang.awsno.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hls/cctv5phd.m3u8",
+        "headers": {
+          "Host": "guanwang.awsno.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 54a134",
+      "server": "172.67.161.144",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "VMESS | @PulseConfigs | be842f",
       "server": "139.64.166.25",
       "server_port": 443,
@@ -406,31 +456,6 @@
         "path": "/linkvws",
         "headers": {
           "Host": "pahobac.org"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | 9bf032",
-      "server": "172.64.229.138",
-      "server_port": 2083,
-      "uuid": "ac251237-576f-40c8-a543-554960c958b1",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "or.521166.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/or3",
-        "headers": {
-          "Host": "or.521166.xyz"
         }
       }
     },
@@ -493,8 +518,9 @@
         "TROJAN | @PulseConfigs | 3c523b",
         "TROJAN | @PulseConfigs | bc7d0a",
         "TROJAN | @PulseConfigs | ceca89",
+        "VMESS | @PulseConfigs | 11d785",
+        "VMESS | @PulseConfigs | 54a134",
         "VMESS | @PulseConfigs | be842f",
-        "VMESS | @PulseConfigs | 9bf032",
         "VMESS | @PulseConfigs | 882e74"
       ]
     }

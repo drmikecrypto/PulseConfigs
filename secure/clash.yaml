@@ -276,6 +276,30 @@ proxies:
   sni: www.ignitelimit.com
   udp: true
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 11d785
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: guanwang.awsno.com
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 54a134
+  type: vmess
+  server: 172.67.161.144
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | be842f
   type: vmess
   server: 139.64.166.25
@@ -287,18 +311,6 @@ proxies:
   tls: true
   udp: true
   servername: pahobac.org
-  skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 9bf032
-  type: vmess
-  server: 172.64.229.138
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: or.521166.xyz
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 882e74
   type: vmess
@@ -346,8 +358,9 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 3c523b
   - TROJAN | @PulseConfigs | bc7d0a
   - TROJAN | @PulseConfigs | ceca89
+  - VMESS | @PulseConfigs | 11d785
+  - VMESS | @PulseConfigs | 54a134
   - VMESS | @PulseConfigs | be842f
-  - VMESS | @PulseConfigs | 9bf032
   - VMESS | @PulseConfigs | 882e74
 rules:
 - MATCH,PROXY
