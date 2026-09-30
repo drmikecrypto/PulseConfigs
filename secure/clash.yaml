@@ -3,37 +3,12 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: TROJAN | @PulseConfigs | 63214d
-  type: trojan
-  server: 188.114.96.3
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 15f53e
-  type: trojan
-  server: 172.64.152.23
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | b6e116
   type: hysteria2
   server: 162.249.125.133
   port: 443
   password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
   sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | d180d6
-  type: hysteria2
-  server: hy2.123266.xyz
-  port: 33333
-  password: bce6c821-200d-421f-bf3d-7159e5246ea0
-  sni: hy2.123266.xyz
   skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | 649364
   type: hysteria2
@@ -63,70 +38,106 @@ proxies:
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: hy.quattro-tech.ru
   skip-cert-verify: false
-- name: REALITY | @PulseConfigs | e4bc07
-  type: vless
-  server: 31.59.125.75
+- name: HYSTERIA2 | @PulseConfigs | ce43d8
+  type: hysteria2
+  server: admin.wwwinternetvideo.click
   port: 443
-  uuid: e9844617-e393-4876-afa7-11859695f4ee
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | 442696
+  type: hysteria2
+  server: 77.74.123.101
+  port: 8443
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  sni: grape-test-italy.dynuddns.net
+  skip-cert-verify: false
+- name: REALITY | @PulseConfigs | b5ba51
+  type: vless
+  server: 151.241.166.83
+  port: 443
+  uuid: 80f72027-2201-4541-9abb-7070c9b0869e
   network: tcp
   tls: true
   udp: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: SoMfQzFhE5QfKWMZA7ZNkYP63P5hiyWEbE9fsPIP4Go
-    short-id: ''
-  servername: pl.gazladder.work
+    public-key: FdnIXseNFtVqgGO7-GyAFgQ4GUqzuWz5jywOmuZM6To
+    short-id: dd6a0fb60cd7b2fc
+  servername: pol2.serverslocal.ru
+- name: REALITY | @PulseConfigs | 6e196f
+  type: vless
+  server: 212.113.120.174
+  port: 443
+  uuid: 2412bd96-925b-43f2-81d1-0ed4f0793699
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: gjdfyCCn9DXEzaAmN-geTg1sCvVj1WEwuhmgXIReR1E
+    short-id: f932c14eee8ef133
+  servername: lk.x5.ru
 - name: HYSTERIA2 | @PulseConfigs | cec38b
   type: hysteria2
   server: 91.240.86.70
   port: 22443
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: itsallproxy.quattro-tech.ru
+  sni: hy.quattro-tech.ru
   skip-cert-verify: false
-- name: VLESS | @PulseConfigs | b61ad4
+- name: REALITY | @PulseConfigs | 69270d
   type: vless
-  server: 5.223.51.84
+  server: 94.183.253.211
   port: 443
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  network: ws
-  tls: true
-  udp: true
-  flow: ''
-  client-fingerprint: edge
-  servername: hk.152568.xyz
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
-- name: REALITY | @PulseConfigs | c33083
-  type: vless
-  server: 113.30.154.65
-  port: 443
-  uuid: 550a69ec-fec1-4eca-b939-4ee076875fa8
+  uuid: 80f72027-2201-4541-9abb-7070c9b0869e
   network: tcp
   tls: true
   udp: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: ''
-  servername: sellflow.org
-- name: VLESS | @PulseConfigs | 58840d
+    public-key: uLuPk7Ee7W9BcvjgM2FJHYG2NJxEeEkP7QVL8jYudhI
+    short-id: aa9bfaebd76d8b95
+  servername: germ2.serverslocal.ru
+- name: REALITY | @PulseConfigs | 77c93f
   type: vless
-  server: site.check-looks.space
-  port: 2083
-  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
-  network: ws
+  server: pol2.serverslocal.ru
+  port: 443
+  uuid: 80f72027-2201-4541-9abb-7070c9b0869e
+  network: tcp
   tls: true
   udp: true
-  flow: ''
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
+  reality-opts:
+    public-key: FdnIXseNFtVqgGO7-GyAFgQ4GUqzuWz5jywOmuZM6To
+    short-id: dd6a0fb60cd7b2fc
+  servername: pol2.serverslocal.ru
+- name: REALITY | @PulseConfigs | 62e813
+  type: vless
+  server: polkakurvich.hohoterz.beer
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: X6gBZNZSv_k1pyvLmQaDD4LsYk7jIA1SObRR5r-4Ynk
+    short-id: fcfd621a2f36e3b6
+  servername: polkakurvich.hohoterz.beer
+- name: TROJAN | @PulseConfigs | a0db4f
+  type: trojan
+  server: 199.232.78.101
+  port: 443
+  password: mitivpn
+  network: ws
+  sni: ssl.fastly.com
+  udp: true
+  skip-cert-verify: false
 - name: VISION | @PulseConfigs | 145265
   type: vless
   server: 87.192.47.10
@@ -138,6 +149,20 @@ proxies:
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   servername: grok.setlisting.ru
+- name: REALITY | @PulseConfigs | 8af61a
+  type: vless
+  server: pl-waw.dontblockmepls.com
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+    short-id: ''
+  servername: rusbid.de
 - name: REALITY | @PulseConfigs | 6f67c2
   type: vless
   server: 169.40.42.35
@@ -147,7 +172,63 @@ proxies:
   tls: true
   udp: true
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  client-fingerprint: ios
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+- name: REALITY | @PulseConfigs | 464a8c
+  type: vless
+  server: 169.40.42.163
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+- name: REALITY | @PulseConfigs | 33d642
+  type: vless
+  server: 169.40.42.89
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+- name: REALITY | @PulseConfigs | 3a00bd
+  type: vless
+  server: 169.40.42.168
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+- name: REALITY | @PulseConfigs | 07e5ae
+  type: vless
+  server: 169.40.42.15
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
@@ -166,20 +247,6 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   servername: yahoo.com
-- name: REALITY | @PulseConfigs | 5e66d6
-  type: vless
-  server: 169.40.42.235
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
 - name: REALITY | @PulseConfigs | a82de6
   type: vless
   server: 15.204.97.197
@@ -194,9 +261,25 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: ''
   servername: fuck.rkn
-- name: REALITY | @PulseConfigs | 07e5ae
+- name: REALITY | @PulseConfigs | e59be6
   type: vless
-  server: 169.40.42.15
+  server: md5.univesalsrv.com
+  port: 443
+  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+  network: grpc
+  tls: true
+  udp: true
+  flow: ''
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 99MRki6b93wC-hhDHe9yq3IXE3KtPGw4RkFAnpI-8gg
+    short-id: aa9884f2982b7d3c
+  servername: md5.univesalsrv.com
+  grpc-opts:
+    grpc-service-name: app.v1.PushService
+- name: REALITY | @PulseConfigs | fa6ce6
+  type: vless
+  server: 169.40.42.212
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   network: tcp
@@ -222,90 +305,35 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   servername: yahoo.com
-- name: REALITY | @PulseConfigs | 672b10
-  type: vless
-  server: 169.40.42.173
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-- name: REALITY | @PulseConfigs | 80b211
-  type: vless
-  server: 169.40.42.179
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-- name: REALITY | @PulseConfigs | 69dd7b
-  type: vless
-  server: 15.204.97.216
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-- name: HYSTERIA2 | @PulseConfigs | a70245
-  type: hysteria2
-  server: 162.249.125.133
-  port: 443
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 2bd708
-  type: hysteria2
-  server: 130.49.161.70
-  port: 443
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
-  - TROJAN | @PulseConfigs | 63214d
-  - TROJAN | @PulseConfigs | 15f53e
   - HYSTERIA2 | @PulseConfigs | b6e116
-  - HYSTERIA2 | @PulseConfigs | d180d6
   - HYSTERIA2 | @PulseConfigs | 649364
   - HYSTERIA2 | @PulseConfigs | f3ac02
   - HYSTERIA2 | @PulseConfigs | 33a77d
   - HYSTERIA2 | @PulseConfigs | 6c0c85
-  - REALITY | @PulseConfigs | e4bc07
+  - HYSTERIA2 | @PulseConfigs | ce43d8
+  - HYSTERIA2 | @PulseConfigs | 442696
+  - REALITY | @PulseConfigs | b5ba51
+  - REALITY | @PulseConfigs | 6e196f
   - HYSTERIA2 | @PulseConfigs | cec38b
-  - VLESS | @PulseConfigs | b61ad4
-  - REALITY | @PulseConfigs | c33083
-  - VLESS | @PulseConfigs | 58840d
+  - REALITY | @PulseConfigs | 69270d
+  - REALITY | @PulseConfigs | 77c93f
+  - REALITY | @PulseConfigs | 62e813
+  - TROJAN | @PulseConfigs | a0db4f
   - VISION | @PulseConfigs | 145265
+  - REALITY | @PulseConfigs | 8af61a
   - REALITY | @PulseConfigs | 6f67c2
-  - REALITY | @PulseConfigs | d0410e
-  - REALITY | @PulseConfigs | 5e66d6
-  - REALITY | @PulseConfigs | a82de6
+  - REALITY | @PulseConfigs | 464a8c
+  - REALITY | @PulseConfigs | 33d642
+  - REALITY | @PulseConfigs | 3a00bd
   - REALITY | @PulseConfigs | 07e5ae
+  - REALITY | @PulseConfigs | d0410e
+  - REALITY | @PulseConfigs | a82de6
+  - REALITY | @PulseConfigs | e59be6
+  - REALITY | @PulseConfigs | fa6ce6
   - REALITY | @PulseConfigs | 00627e
-  - REALITY | @PulseConfigs | 672b10
-  - REALITY | @PulseConfigs | 80b211
-  - REALITY | @PulseConfigs | 69dd7b
-  - HYSTERIA2 | @PulseConfigs | a70245
-  - HYSTERIA2 | @PulseConfigs | 2bd708
 rules:
 - MATCH,PROXY
