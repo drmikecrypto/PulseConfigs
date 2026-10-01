@@ -12,6 +12,42 @@
       "tag": "block"
     },
     {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 63214d",
+      "server": "188.114.96.3",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 15f53e",
+      "server": "172.64.152.23",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "HYSTERIA2 | @PulseConfigs | 5611d5",
+      "server": "162.249.127.136",
+      "server_port": 8443,
+      "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
+      "tls": {
+        "enabled": true,
+        "server_name": "hop-germany-september.dynuddns.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "hysteria2",
       "tag": "HYSTERIA2 | @PulseConfigs | b6e116",
       "server": "162.249.125.133",
@@ -20,6 +56,30 @@
       "tls": {
         "enabled": true,
         "server_name": "hy2-new.aspidnet.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "HYSTERIA2 | @PulseConfigs | 649364",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "HYSTERIA2 | @PulseConfigs | 442696",
+      "server": "77.74.123.101",
+      "server_port": 8443,
+      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
+      "tls": {
+        "enabled": true,
+        "server_name": "grape-test-italy.dynuddns.net",
         "insecure": false
       }
     },
@@ -49,26 +109,23 @@
     },
     {
       "type": "vless",
-      "tag": "VLESS | @PulseConfigs | 211702",
-      "server": "173.242.63.235",
-      "server_port": 8443,
-      "uuid": "fdc48be3-a615-41ac-8bd1-ed844c931048",
+      "tag": "VLESS | @PulseConfigs | 8471e2",
+      "server": "assets-de2.pleiades.codes",
+      "server_port": 443,
+      "uuid": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "edgetunnel-4uw.pages.dev",
+        "server_name": "assets-de2.pleiades.codes",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/fp=chrome",
-        "headers": {
-          "Host": "edgetunnel-4uw.pages.dev"
-        }
+        "type": "grpc",
+        "service_name": "cdn.v1.AssetService"
       }
     },
     {
@@ -85,30 +142,6 @@
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "VLESS | @PulseConfigs | 0e88c3",
-      "server": "141.253.194.63",
-      "server_port": 443,
-      "uuid": "9e3132b8-b595-444a-833a-2de44789f9d7",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "shephe.dpdns.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fp=chrome",
-        "headers": {
-          "Host": "shephe.dpdns.org"
         }
       }
     },
@@ -154,17 +187,46 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "VLESS | @PulseConfigs | a351f4",
+      "server": "116.204.164.17",
+      "server_port": 7443,
+      "uuid": "ef8907eb-8bb5-4735-80f2-1d0068500d95",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristifp=chrome",
+        "headers": {
+          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
+        "TROJAN | @PulseConfigs | 63214d",
+        "TROJAN | @PulseConfigs | 15f53e",
+        "HYSTERIA2 | @PulseConfigs | 5611d5",
         "HYSTERIA2 | @PulseConfigs | b6e116",
+        "HYSTERIA2 | @PulseConfigs | 649364",
+        "HYSTERIA2 | @PulseConfigs | 442696",
         "HYSTERIA2 | @PulseConfigs | f3ac02",
         "HYSTERIA2 | @PulseConfigs | 33a77d",
-        "VLESS | @PulseConfigs | 211702",
+        "VLESS | @PulseConfigs | 8471e2",
         "VLESS | @PulseConfigs | b3e47c",
-        "VLESS | @PulseConfigs | 0e88c3",
         "VLESS | @PulseConfigs | a134af",
-        "VLESS | @PulseConfigs | c2a0fd"
+        "VLESS | @PulseConfigs | c2a0fd",
+        "VLESS | @PulseConfigs | a351f4"
       ]
     }
   ]

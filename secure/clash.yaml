@@ -3,12 +3,51 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- name: TROJAN | @PulseConfigs | 63214d
+  type: trojan
+  server: 188.114.96.3
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 15f53e
+  type: trojan
+  server: 172.64.152.23
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | 5611d5
+  type: hysteria2
+  server: 162.249.127.136
+  port: 8443
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
+  skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | b6e116
   type: hysteria2
   server: 162.249.125.133
   port: 443
   password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
   sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | 649364
+  type: hysteria2
+  server: 130.49.161.70
+  port: 443
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | 442696
+  type: hysteria2
+  server: 77.74.123.101
+  port: 8443
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  sni: grape-test-italy.dynuddns.net
   skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | f3ac02
   type: hysteria2
@@ -24,21 +63,19 @@ proxies:
   password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
   sni: hopp-swizland-new.mysynology.net
   skip-cert-verify: false
-- name: VLESS | @PulseConfigs | 211702
+- name: VLESS | @PulseConfigs | 8471e2
   type: vless
-  server: 173.242.63.235
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  network: ws
+  server: assets-de2.pleiades.codes
+  port: 443
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  network: grpc
   tls: true
   udp: true
   flow: ''
-  client-fingerprint: chrome
-  servername: edgetunnel-4uw.pages.dev
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: edgetunnel-4uw.pages.dev
+  client-fingerprint: qq
+  servername: assets-de2.pleiades.codes
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
 - name: VLESS | @PulseConfigs | b3e47c
   type: vless
   server: 94.183.170.135
@@ -50,21 +87,6 @@ proxies:
   flow: ''
   client-fingerprint: chrome
   servername: estproxy4.lockdwn.com
-- name: VLESS | @PulseConfigs | 0e88c3
-  type: vless
-  server: 141.253.194.63
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  network: ws
-  tls: true
-  udp: true
-  flow: ''
-  client-fingerprint: chrome
-  servername: shephe.dpdns.org
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shephe.dpdns.org
 - name: VLESS | @PulseConfigs | a134af
   type: vless
   server: 195.58.144.56
@@ -90,17 +112,37 @@ proxies:
     path: /fp=chrome
     headers:
       Host: edgetunnel-4uw.pages.dev
+- name: VLESS | @PulseConfigs | a351f4
+  type: vless
+  server: 116.204.164.17
+  port: 7443
+  uuid: ef8907eb-8bb5-4735-80f2-1d0068500d95
+  network: ws
+  tls: true
+  udp: true
+  flow: ''
+  client-fingerprint: chrome
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
+  - TROJAN | @PulseConfigs | 63214d
+  - TROJAN | @PulseConfigs | 15f53e
+  - HYSTERIA2 | @PulseConfigs | 5611d5
   - HYSTERIA2 | @PulseConfigs | b6e116
+  - HYSTERIA2 | @PulseConfigs | 649364
+  - HYSTERIA2 | @PulseConfigs | 442696
   - HYSTERIA2 | @PulseConfigs | f3ac02
   - HYSTERIA2 | @PulseConfigs | 33a77d
-  - VLESS | @PulseConfigs | 211702
+  - VLESS | @PulseConfigs | 8471e2
   - VLESS | @PulseConfigs | b3e47c
-  - VLESS | @PulseConfigs | 0e88c3
   - VLESS | @PulseConfigs | a134af
   - VLESS | @PulseConfigs | c2a0fd
+  - VLESS | @PulseConfigs | a351f4
 rules:
 - MATCH,PROXY
