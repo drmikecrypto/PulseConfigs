@@ -19,12 +19,12 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "vless|45.141.234.138|443|fdc48be3-a615-41ac-8bd1-ed844c931048|tls|ws||",
-      "raw": "vless://fdc48be3-a615-41ac-8bd1-ed844c931048@45.141.234.138:443?sni=edgetunnel-4uw.pages.dev&type=ws&host=edgetunnel-4uw.pages.dev&path=/fp=chrome&security=tls#VLESS%20%7C%20%40PulseConfigs%20%7C%20c2a0fd",
-      "protocol": "vless",
-      "strategy": "cdn_tls",
-      "host": "45.141.234.138",
-      "port": 443,
+      "fingerprint": "hysteria2|77.74.123.101|8443|s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z||tcp||",
+      "raw": "hysteria2://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@77.74.123.101:8443?sni=grape-test-italy.dynuddns.net#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%20442696",
+      "protocol": "hysteria2",
+      "strategy": "quic_speed",
+      "host": "77.74.123.101",
+      "port": 8443,
       "median_delay_ms": null
     },
     {
@@ -34,6 +34,15 @@
       "strategy": "quic_speed",
       "host": "162.249.125.133",
       "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "hysteria2|82.38.64.237|8443|we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH||tcp||",
+      "raw": "hysteria2://we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH@82.38.64.237:8443?insecure=0&sni=hopp-swizland-new.mysynology.net#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%20f3ac02",
+      "protocol": "hysteria2",
+      "strategy": "quic_speed",
+      "host": "82.38.64.237",
+      "port": 8443,
       "median_delay_ms": null
     },
     {
@@ -91,39 +100,21 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "shadowsocks|209.46.102.22|8388|1hhrqrokj3ag||tcp||",
-      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#SHADOWSOCKS%20%7C%20%40PulseConfigs%20%7C%200e089f",
+      "fingerprint": "shadowsocks|138.199.42.68|8080|14fFPrbezE3HDZzsMOr6||tcp||",
+      "raw": "ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==@138.199.42.68:8080#SHADOWSOCKS%20%7C%20%40PulseConfigs%20%7C%20f8438d",
       "protocol": "shadowsocks",
       "strategy": "legacy",
-      "host": "209.46.102.22",
-      "port": 8388,
+      "host": "138.199.42.68",
+      "port": 8080,
       "median_delay_ms": null
     },
     {
-      "fingerprint": "hysteria2|130.49.161.70|443|p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR||tcp||",
-      "raw": "hysteria2://p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR@130.49.161.70:443?insecure=0&sni=hy2.aspidnet.xyz&obfs=salamander&obfs-password=rG07s3COMIEvdnQipRyWzx_H_2xygNC3#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%20649364",
-      "protocol": "hysteria2",
-      "strategy": "quic_speed",
-      "host": "130.49.161.70",
+      "fingerprint": "vless|141.253.194.63|443|9e3132b8-b595-444a-833a-2de44789f9d7|tls|ws||",
+      "raw": "vless://9e3132b8-b595-444a-833a-2de44789f9d7@141.253.194.63:443?sni=shephe.dpdns.org&type=ws&host=shephe.dpdns.org&path=/fp=chrome&security=tls#VLESS%20%7C%20%40PulseConfigs%20%7C%200e88c3",
+      "protocol": "vless",
+      "strategy": "cdn_tls",
+      "host": "141.253.194.63",
       "port": 443,
-      "median_delay_ms": null
-    },
-    {
-      "fingerprint": "hysteria2|77.74.123.101|8443|s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z||tcp||",
-      "raw": "hysteria2://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@77.74.123.101:8443?sni=grape-test-italy.dynuddns.net#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%20442696",
-      "protocol": "hysteria2",
-      "strategy": "quic_speed",
-      "host": "77.74.123.101",
-      "port": 8443,
-      "median_delay_ms": null
-    },
-    {
-      "fingerprint": "hysteria2|82.38.64.237|8443|we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH||tcp||",
-      "raw": "hysteria2://we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH@82.38.64.237:8443?insecure=0&sni=hopp-swizland-new.mysynology.net#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%20f3ac02",
-      "protocol": "hysteria2",
-      "strategy": "quic_speed",
-      "host": "82.38.64.237",
-      "port": 8443,
       "median_delay_ms": null
     },
     {
@@ -136,21 +127,30 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "vless|assets-de2.pleiades.codes|443|0dca2cfe-98eb-4f9d-9a47-cf87510c558b|tls|grpc||",
-      "raw": "vless://0dca2cfe-98eb-4f9d-9a47-cf87510c558b@assets-de2.pleiades.codes:443?sni=assets-de2.pleiades.codes&type=grpc&serviceName=cdn.v1.AssetService&fp=qq&security=tls#VLESS%20%7C%20%40PulseConfigs%20%7C%208471e2",
+      "fingerprint": "vless|173.242.63.235|8443|fdc48be3-a615-41ac-8bd1-ed844c931048|tls|ws||",
+      "raw": "vless://fdc48be3-a615-41ac-8bd1-ed844c931048@173.242.63.235:8443?sni=edgetunnel-4uw.pages.dev&type=ws&host=edgetunnel-4uw.pages.dev&path=/fp=chrome&security=tls#VLESS%20%7C%20%40PulseConfigs%20%7C%20211702",
       "protocol": "vless",
       "strategy": "cdn_tls",
-      "host": "assets-de2.pleiades.codes",
-      "port": 443,
+      "host": "173.242.63.235",
+      "port": 8443,
       "median_delay_ms": null
     },
     {
-      "fingerprint": "vless|116.204.164.17|7443|ef8907eb-8bb5-4735-80f2-1d0068500d95|tls|ws||",
-      "raw": "vless://ef8907eb-8bb5-4735-80f2-1d0068500d95@116.204.164.17:7443?sni=ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev&type=ws&host=ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev&path=/@Marisa_kristifp=chrome&security=tls#VLESS%20%7C%20%40PulseConfigs%20%7C%20a351f4",
+      "fingerprint": "vless|139.84.150.190|8443|9e3132b8-b595-444a-833a-2de44789f9d7|tls|ws||",
+      "raw": "vless://9e3132b8-b595-444a-833a-2de44789f9d7@139.84.150.190:8443?sni=shephe.dpdns.org&type=ws&host=shephe.dpdns.org&path=/fp=chrome&security=tls#VLESS%20%7C%20%40PulseConfigs%20%7C%20486539",
       "protocol": "vless",
       "strategy": "cdn_tls",
-      "host": "116.204.164.17",
-      "port": 7443,
+      "host": "139.84.150.190",
+      "port": 8443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "vless|72.4.65.116|443|0dca2cfe-98eb-4f9d-9a47-cf87510c558b|tls|grpc||",
+      "raw": "vless://0dca2cfe-98eb-4f9d-9a47-cf87510c558b@72.4.65.116:443?sni=assets-de2.pleiades.codes&type=grpc&serviceName=cdn.v1.AssetService&fp=chrome&security=tls#VLESS%20%7C%20%40PulseConfigs%20%7C%20d6e449",
+      "protocol": "vless",
+      "strategy": "cdn_tls",
+      "host": "72.4.65.116",
+      "port": 443,
       "median_delay_ms": null
     },
     {
