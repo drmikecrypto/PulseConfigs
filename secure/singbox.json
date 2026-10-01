@@ -125,31 +125,6 @@
     },
     {
       "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | b92700",
-      "server": "158.51.121.123",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "mygptagent.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws",
-        "headers": {
-          "Host": "mygptagent.org"
-        }
-      }
-    },
-    {
-      "type": "vmess",
       "tag": "VMESS | @PulseConfigs | 5a8f20",
       "server": "194.99.79.26",
       "server_port": 443,
@@ -170,6 +145,31 @@
         "path": "/linkvws",
         "headers": {
           "Host": "aksai.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | be842f",
+      "server": "139.64.166.25",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "pahobac.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "pahobac.org"
         }
       }
     },
@@ -214,78 +214,6 @@
       "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 1637dc",
       "server": "45.87.41.18",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | aeb215",
-      "server": "www.calmlunch.com",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | af976a",
-      "server": "185.114.72.31",
-      "server_port": 2053,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 469bf1",
-      "server": "45.130.125.160",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 563bb1",
-      "server": "185.220.100.168",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | f1b115",
-      "server": "104.19.229.21",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | fe4054",
-      "server": "212.183.88.136",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -368,30 +296,6 @@
     },
     {
       "type": "vless",
-      "tag": "VLESS | @PulseConfigs | 211702",
-      "server": "173.242.63.235",
-      "server_port": 8443,
-      "uuid": "fdc48be3-a615-41ac-8bd1-ed844c931048",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "edgetunnel-4uw.pages.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fp=chrome",
-        "headers": {
-          "Host": "edgetunnel-4uw.pages.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "VLESS | @PulseConfigs | 8471e2",
       "server": "assets-de2.pleiades.codes",
       "server_port": 443,
@@ -412,6 +316,23 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "VLESS | @PulseConfigs | b3e47c",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
@@ -420,25 +341,19 @@
         "TROJAN | @PulseConfigs | 1db4a4",
         "VMESS | @PulseConfigs | bc265c",
         "VMESS | @PulseConfigs | b76bc0",
-        "VMESS | @PulseConfigs | b92700",
         "VMESS | @PulseConfigs | 5a8f20",
+        "VMESS | @PulseConfigs | be842f",
         "VMESS | @PulseConfigs | 11d785",
         "TROJAN | @PulseConfigs | ae888d",
         "TROJAN | @PulseConfigs | 1637dc",
-        "TROJAN | @PulseConfigs | aeb215",
-        "TROJAN | @PulseConfigs | af976a",
-        "TROJAN | @PulseConfigs | 469bf1",
-        "TROJAN | @PulseConfigs | 563bb1",
-        "TROJAN | @PulseConfigs | f1b115",
-        "TROJAN | @PulseConfigs | fe4054",
         "HYSTERIA2 | @PulseConfigs | 5611d5",
         "HYSTERIA2 | @PulseConfigs | b08656",
         "HYSTERIA2 | @PulseConfigs | b6e116",
         "HYSTERIA2 | @PulseConfigs | 649364",
         "HYSTERIA2 | @PulseConfigs | f3ac02",
         "HYSTERIA2 | @PulseConfigs | 33a77d",
-        "VLESS | @PulseConfigs | 211702",
-        "VLESS | @PulseConfigs | 8471e2"
+        "VLESS | @PulseConfigs | 8471e2",
+        "VLESS | @PulseConfigs | b3e47c"
       ]
     }
   ]

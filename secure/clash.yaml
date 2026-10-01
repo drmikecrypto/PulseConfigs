@@ -60,18 +60,6 @@ proxies:
   udp: true
   servername: aidrivercat.org
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | b92700
-  type: vmess
-  server: 158.51.121.123
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: mygptagent.org
-  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 5a8f20
   type: vmess
   server: 194.99.79.26
@@ -83,6 +71,18 @@ proxies:
   tls: true
   udp: true
   servername: aksai.org
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | be842f
+  type: vmess
+  server: 139.64.166.25
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: pahobac.org
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 11d785
   type: vmess
@@ -108,60 +108,6 @@ proxies:
 - name: TROJAN | @PulseConfigs | 1637dc
   type: trojan
   server: 45.87.41.18
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | aeb215
-  type: trojan
-  server: www.calmlunch.com
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | af976a
-  type: trojan
-  server: 185.114.72.31
-  port: 2053
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 469bf1
-  type: trojan
-  server: 45.130.125.160
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 563bb1
-  type: trojan
-  server: 185.220.100.168
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | f1b115
-  type: trojan
-  server: 104.19.229.21
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | fe4054
-  type: trojan
-  server: 212.183.88.136
   port: 443
   password: humanity
   network: ws
@@ -210,21 +156,6 @@ proxies:
   password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
   sni: hopp-swizland-new.mysynology.net
   skip-cert-verify: false
-- name: VLESS | @PulseConfigs | 211702
-  type: vless
-  server: 173.242.63.235
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  network: ws
-  tls: true
-  udp: true
-  flow: ''
-  client-fingerprint: chrome
-  servername: edgetunnel-4uw.pages.dev
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: edgetunnel-4uw.pages.dev
 - name: VLESS | @PulseConfigs | 8471e2
   type: vless
   server: assets-de2.pleiades.codes
@@ -238,6 +169,17 @@ proxies:
   servername: assets-de2.pleiades.codes
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
+- name: VLESS | @PulseConfigs | b3e47c
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: tcp
+  tls: true
+  udp: true
+  flow: ''
+  client-fingerprint: chrome
+  servername: estproxy4.lockdwn.com
 proxy-groups:
 - name: PROXY
   type: select
@@ -247,24 +189,18 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 1db4a4
   - VMESS | @PulseConfigs | bc265c
   - VMESS | @PulseConfigs | b76bc0
-  - VMESS | @PulseConfigs | b92700
   - VMESS | @PulseConfigs | 5a8f20
+  - VMESS | @PulseConfigs | be842f
   - VMESS | @PulseConfigs | 11d785
   - TROJAN | @PulseConfigs | ae888d
   - TROJAN | @PulseConfigs | 1637dc
-  - TROJAN | @PulseConfigs | aeb215
-  - TROJAN | @PulseConfigs | af976a
-  - TROJAN | @PulseConfigs | 469bf1
-  - TROJAN | @PulseConfigs | 563bb1
-  - TROJAN | @PulseConfigs | f1b115
-  - TROJAN | @PulseConfigs | fe4054
   - HYSTERIA2 | @PulseConfigs | 5611d5
   - HYSTERIA2 | @PulseConfigs | b08656
   - HYSTERIA2 | @PulseConfigs | b6e116
   - HYSTERIA2 | @PulseConfigs | 649364
   - HYSTERIA2 | @PulseConfigs | f3ac02
   - HYSTERIA2 | @PulseConfigs | 33a77d
-  - VLESS | @PulseConfigs | 211702
   - VLESS | @PulseConfigs | 8471e2
+  - VLESS | @PulseConfigs | b3e47c
 rules:
 - MATCH,PROXY
