@@ -74,18 +74,6 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | cd84a8",
-      "server": "alive-flea.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "alive-flea.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
       "type": "vmess",
       "tag": "VMESS | @PulseConfigs | bc265c",
       "server": "66.163.118.73",
@@ -186,43 +174,6 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | d1fedb",
-      "server": "th1.zestapp778.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "th1.zestapp778.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | be842f",
-      "server": "139.64.166.25",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "pahobac.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws",
-        "headers": {
-          "Host": "pahobac.org"
-        }
-      }
-    },
-    {
       "type": "vmess",
       "tag": "VMESS | @PulseConfigs | 11d785",
       "server": "guanwang.awsno.com",
@@ -261,8 +212,8 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 8a6e68",
-      "server": "185.225.68.232",
+      "tag": "TROJAN | @PulseConfigs | 1637dc",
+      "server": "45.87.41.18",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -285,8 +236,32 @@
     },
     {
       "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | af976a",
+      "server": "185.114.72.31",
+      "server_port": 2053,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 469bf1",
       "server": "45.130.125.160",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 563bb1",
+      "server": "185.220.100.168",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -333,6 +308,18 @@
     },
     {
       "type": "hysteria2",
+      "tag": "HYSTERIA2 | @PulseConfigs | b08656",
+      "server": "162.249.127.137",
+      "server_port": 8443,
+      "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
+      "tls": {
+        "enabled": true,
+        "server_name": "hop-germany-september.dynuddns.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "HYSTERIA2 | @PulseConfigs | b6e116",
       "server": "162.249.125.133",
       "server_port": 443,
@@ -345,25 +332,13 @@
     },
     {
       "type": "hysteria2",
-      "tag": "HYSTERIA2 | @PulseConfigs | 7df9ec",
-      "server": "dehys.superbuba.top",
+      "tag": "HYSTERIA2 | @PulseConfigs | 649364",
+      "server": "130.49.161.70",
       "server_port": 443,
-      "password": "d4cae7df-50a1-428c-bd62-881c8f3bbd90",
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
       "tls": {
         "enabled": true,
-        "server_name": "dehys.superbuba.top",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "HYSTERIA2 | @PulseConfigs | 442696",
-      "server": "77.74.123.101",
-      "server_port": 8443,
-      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
-      "tls": {
-        "enabled": true,
-        "server_name": "grape-test-italy.dynuddns.net",
+        "server_name": "hy2.aspidnet.xyz",
         "insecure": false
       }
     },
@@ -416,33 +391,54 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "VLESS | @PulseConfigs | 8471e2",
+      "server": "assets-de2.pleiades.codes",
+      "server_port": 443,
+      "uuid": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-de2.pleiades.codes",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "cdn.v1.AssetService"
+      }
+    },
+    {
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
         "VMESS | @PulseConfigs | 7665ad",
         "VMESS | @PulseConfigs | c3ecfb",
         "TROJAN | @PulseConfigs | 1db4a4",
-        "TROJAN | @PulseConfigs | cd84a8",
         "VMESS | @PulseConfigs | bc265c",
         "VMESS | @PulseConfigs | b76bc0",
         "VMESS | @PulseConfigs | b92700",
         "VMESS | @PulseConfigs | 5a8f20",
-        "TROJAN | @PulseConfigs | d1fedb",
-        "VMESS | @PulseConfigs | be842f",
         "VMESS | @PulseConfigs | 11d785",
         "TROJAN | @PulseConfigs | ae888d",
-        "TROJAN | @PulseConfigs | 8a6e68",
+        "TROJAN | @PulseConfigs | 1637dc",
         "TROJAN | @PulseConfigs | aeb215",
+        "TROJAN | @PulseConfigs | af976a",
         "TROJAN | @PulseConfigs | 469bf1",
+        "TROJAN | @PulseConfigs | 563bb1",
         "TROJAN | @PulseConfigs | f1b115",
         "TROJAN | @PulseConfigs | fe4054",
         "HYSTERIA2 | @PulseConfigs | 5611d5",
+        "HYSTERIA2 | @PulseConfigs | b08656",
         "HYSTERIA2 | @PulseConfigs | b6e116",
-        "HYSTERIA2 | @PulseConfigs | 7df9ec",
-        "HYSTERIA2 | @PulseConfigs | 442696",
+        "HYSTERIA2 | @PulseConfigs | 649364",
         "HYSTERIA2 | @PulseConfigs | f3ac02",
         "HYSTERIA2 | @PulseConfigs | 33a77d",
-        "VLESS | @PulseConfigs | 211702"
+        "VLESS | @PulseConfigs | 211702",
+        "VLESS | @PulseConfigs | 8471e2"
       ]
     }
   ]
