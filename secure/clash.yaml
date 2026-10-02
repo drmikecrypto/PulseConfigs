@@ -3,18 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: VMESS | @PulseConfigs | 96ea72
-  type: vmess
-  server: yg1.ygkkk.dpdns.org
-  port: 443
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: jmp1.907737.xyz
-  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 11d785
   type: vmess
   server: guanwang.awsno.com
@@ -27,21 +15,31 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 1637dc
-  type: trojan
-  server: 45.87.41.18
-  port: 443
-  password: humanity
+- name: VMESS | @PulseConfigs | 882e74
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
   network: ws
-  sni: www.calmlunch.com
+  tls: true
   udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | 607921
+  type: hysteria2
+  server: sg4.dexlos.com
+  port: 20654
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: sg4.dexlos.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
-  - VMESS | @PulseConfigs | 96ea72
   - VMESS | @PulseConfigs | 11d785
-  - TROJAN | @PulseConfigs | 1637dc
+  - VMESS | @PulseConfigs | 882e74
+  - HYSTERIA2 | @PulseConfigs | 607921
 rules:
 - MATCH,PROXY
