@@ -15,9 +15,27 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 882e74
+- name: TROJAN | @PulseConfigs | af976a
+  type: trojan
+  server: 185.114.72.31
+  port: 2053
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 25f4d2
+  type: trojan
+  server: nimm.mpd.cc.cd
+  port: 2053
+  password: e309e031-991e-4656-9934-44d10deb8fd8
+  network: ws
+  sni: nimm.mpd.cc.cd
+  udp: true
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 5662ed
   type: vmess
-  server: 104.17.77.77
+  server: 172.67.167.78
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
@@ -27,19 +45,13 @@ proxies:
   udp: true
   servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 607921
-  type: hysteria2
-  server: sg4.dexlos.com
-  port: 20654
-  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
-  sni: sg4.dexlos.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
   - VMESS | @PulseConfigs | 11d785
-  - VMESS | @PulseConfigs | 882e74
-  - HYSTERIA2 | @PulseConfigs | 607921
+  - TROJAN | @PulseConfigs | af976a
+  - TROJAN | @PulseConfigs | 25f4d2
+  - VMESS | @PulseConfigs | 5662ed
 rules:
 - MATCH,PROXY
