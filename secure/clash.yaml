@@ -15,43 +15,50 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | af976a
+- name: TROJAN | @PulseConfigs | 563bb1
   type: trojan
-  server: 185.114.72.31
-  port: 2053
+  server: 185.220.100.168
+  port: 443
   password: humanity
   network: ws
   sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 25f4d2
+- name: TROJAN | @PulseConfigs | 6bf34a
   type: trojan
-  server: nimm.mpd.cc.cd
-  port: 2053
-  password: e309e031-991e-4656-9934-44d10deb8fd8
+  server: 104.21.70.21
+  port: 443
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   network: ws
-  sni: nimm.mpd.cc.cd
+  sni: id1.nathaya.web.id
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 5662ed
-  type: vmess
-  server: 172.67.167.78
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
+- name: TROJAN | @PulseConfigs | 3761c5
+  type: trojan
+  server: uwu.blueknightnet.qzz.io
+  port: 2087
+  password: 0y7hid61k3k2vuy1
   network: ws
-  tls: true
+  sni: uwu.dianaw.cc.cd
   udp: true
-  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | c55146
+  type: trojan
+  server: 104.18.32.87
+  port: 443
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
+  network: ws
+  sni: id1.nathaya.web.id
+  udp: true
   skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
   - VMESS | @PulseConfigs | 11d785
-  - TROJAN | @PulseConfigs | af976a
-  - TROJAN | @PulseConfigs | 25f4d2
-  - VMESS | @PulseConfigs | 5662ed
+  - TROJAN | @PulseConfigs | 563bb1
+  - TROJAN | @PulseConfigs | 6bf34a
+  - TROJAN | @PulseConfigs | 3761c5
+  - TROJAN | @PulseConfigs | c55146
 rules:
 - MATCH,PROXY
