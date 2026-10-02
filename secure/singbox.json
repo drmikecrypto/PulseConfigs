@@ -147,13 +147,13 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 25f4d2",
-      "server": "nimm.mpd.cc.cd",
-      "server_port": 2053,
-      "password": "e309e031-991e-4656-9934-44d10deb8fd8",
+      "tag": "TROJAN | @PulseConfigs | c55146",
+      "server": "104.18.32.87",
+      "server_port": 443,
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
       "tls": {
         "enabled": true,
-        "server_name": "nimm.mpd.cc.cd",
+        "server_name": "id1.nathaya.web.id",
         "insecure": false
       }
     },
@@ -195,6 +195,31 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 882e74",
+      "server": "104.17.77.77",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
@@ -207,9 +232,10 @@
         "TROJAN | @PulseConfigs | af976a",
         "TROJAN | @PulseConfigs | 469bf1",
         "TROJAN | @PulseConfigs | f1b115",
-        "TROJAN | @PulseConfigs | 25f4d2",
+        "TROJAN | @PulseConfigs | c55146",
         "TROJAN | @PulseConfigs | 8a6e68",
-        "VMESS | @PulseConfigs | 5662ed"
+        "VMESS | @PulseConfigs | 5662ed",
+        "VMESS | @PulseConfigs | 882e74"
       ]
     }
   ]

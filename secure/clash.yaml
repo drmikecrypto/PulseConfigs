@@ -90,13 +90,13 @@ proxies:
   sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 25f4d2
+- name: TROJAN | @PulseConfigs | c55146
   type: trojan
-  server: nimm.mpd.cc.cd
-  port: 2053
-  password: e309e031-991e-4656-9934-44d10deb8fd8
+  server: 104.18.32.87
+  port: 443
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   network: ws
-  sni: nimm.mpd.cc.cd
+  sni: id1.nathaya.web.id
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 8a6e68
@@ -120,6 +120,18 @@ proxies:
   udp: true
   servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 882e74
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
@@ -133,8 +145,9 @@ proxy-groups:
   - TROJAN | @PulseConfigs | af976a
   - TROJAN | @PulseConfigs | 469bf1
   - TROJAN | @PulseConfigs | f1b115
-  - TROJAN | @PulseConfigs | 25f4d2
+  - TROJAN | @PulseConfigs | c55146
   - TROJAN | @PulseConfigs | 8a6e68
   - VMESS | @PulseConfigs | 5662ed
+  - VMESS | @PulseConfigs | 882e74
 rules:
 - MATCH,PROXY
