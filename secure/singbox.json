@@ -38,9 +38,9 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 8a6e68",
-      "server": "185.225.68.232",
-      "server_port": 443,
+      "tag": "TROJAN | @PulseConfigs | 7e57b6",
+      "server": "212.227.144.37",
+      "server_port": 8443,
       "password": "humanity",
       "tls": {
         "enabled": true,
@@ -50,8 +50,8 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | aeb215",
-      "server": "www.calmlunch.com",
+      "tag": "TROJAN | @PulseConfigs | 1637dc",
+      "server": "45.87.41.18",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -65,18 +65,6 @@
       "tag": "TROJAN | @PulseConfigs | af976a",
       "server": "185.114.72.31",
       "server_port": 2053,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 469bf1",
-      "server": "45.130.125.160",
-      "server_port": 443,
       "password": "humanity",
       "tls": {
         "enabled": true,
@@ -109,42 +97,15 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | db64da",
-      "server": "45.130.125.190",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 806f7a",
-      "server": "82.117.245.125",
-      "server_port": 2053,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
         "VMESS | @PulseConfigs | 11d785",
-        "TROJAN | @PulseConfigs | 8a6e68",
-        "TROJAN | @PulseConfigs | aeb215",
+        "TROJAN | @PulseConfigs | 7e57b6",
+        "TROJAN | @PulseConfigs | 1637dc",
         "TROJAN | @PulseConfigs | af976a",
-        "TROJAN | @PulseConfigs | 469bf1",
         "TROJAN | @PulseConfigs | 563bb1",
-        "TROJAN | @PulseConfigs | c55146",
-        "TROJAN | @PulseConfigs | db64da",
-        "TROJAN | @PulseConfigs | 806f7a"
+        "TROJAN | @PulseConfigs | c55146"
       ]
     }
   ]

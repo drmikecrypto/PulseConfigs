@@ -15,18 +15,18 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 8a6e68
+- name: TROJAN | @PulseConfigs | 7e57b6
   type: trojan
-  server: 185.225.68.232
-  port: 443
+  server: 212.227.144.37
+  port: 8443
   password: humanity
   network: ws
   sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | aeb215
+- name: TROJAN | @PulseConfigs | 1637dc
   type: trojan
-  server: www.calmlunch.com
+  server: 45.87.41.18
   port: 443
   password: humanity
   network: ws
@@ -37,15 +37,6 @@ proxies:
   type: trojan
   server: 185.114.72.31
   port: 2053
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 469bf1
-  type: trojan
-  server: 45.130.125.160
-  port: 443
   password: humanity
   network: ws
   sni: www.calmlunch.com
@@ -69,36 +60,15 @@ proxies:
   sni: id1.nathaya.web.id
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | db64da
-  type: trojan
-  server: 45.130.125.190
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 806f7a
-  type: trojan
-  server: 82.117.245.125
-  port: 2053
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
   - VMESS | @PulseConfigs | 11d785
-  - TROJAN | @PulseConfigs | 8a6e68
-  - TROJAN | @PulseConfigs | aeb215
+  - TROJAN | @PulseConfigs | 7e57b6
+  - TROJAN | @PulseConfigs | 1637dc
   - TROJAN | @PulseConfigs | af976a
-  - TROJAN | @PulseConfigs | 469bf1
   - TROJAN | @PulseConfigs | 563bb1
   - TROJAN | @PulseConfigs | c55146
-  - TROJAN | @PulseConfigs | db64da
-  - TROJAN | @PulseConfigs | 806f7a
 rules:
 - MATCH,PROXY
