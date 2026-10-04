@@ -50,30 +50,6 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 8a6e68",
-      "server": "185.225.68.232",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 7e57b6",
-      "server": "212.227.144.37",
-      "server_port": 8443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 1637dc",
       "server": "45.87.41.18",
       "server_port": 443,
@@ -170,18 +146,6 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 41b903",
-      "server": "www.wto.org",
-      "server_port": 8443,
-      "password": "ec1fa47d-4eac-4b3f-8cae-4a2982d43e2f",
-      "tls": {
-        "enabled": true,
-        "server_name": "jiangjc.pages.dev",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | be26bb",
       "server": "188.42.145.180",
       "server_port": 443,
@@ -193,38 +157,11 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | 882e74",
-      "server": "104.17.77.77",
-      "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lMnsZUN4/",
-        "headers": {
-          "Host": "v2ray1.dozapp.xyz"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
         "VMESS | @PulseConfigs | 11d785",
         "TROJAN | @PulseConfigs | f9a088",
-        "TROJAN | @PulseConfigs | 8a6e68",
-        "TROJAN | @PulseConfigs | 7e57b6",
         "TROJAN | @PulseConfigs | 1637dc",
         "TROJAN | @PulseConfigs | aeb215",
         "TROJAN | @PulseConfigs | af976a",
@@ -233,9 +170,7 @@
         "TROJAN | @PulseConfigs | f1b115",
         "TROJAN | @PulseConfigs | fe4054",
         "TROJAN | @PulseConfigs | 8d19e2",
-        "TROJAN | @PulseConfigs | 41b903",
-        "TROJAN | @PulseConfigs | be26bb",
-        "VMESS | @PulseConfigs | 882e74"
+        "TROJAN | @PulseConfigs | be26bb"
       ]
     }
   ]
