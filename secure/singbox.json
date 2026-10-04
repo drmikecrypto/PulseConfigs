@@ -411,6 +411,31 @@
     },
     {
       "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 8a384c",
+      "server": "186.190.211.67",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "pahobac.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "pahobac.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "VMESS | @PulseConfigs | 11d785",
       "server": "guanwang.awsno.com",
       "server_port": 443,
@@ -432,6 +457,90 @@
         "headers": {
           "Host": "guanwang.awsno.com"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | f9a088",
+      "server": "185.255.179.166",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 563bb1",
+      "server": "185.220.100.168",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 7e57b6",
+      "server": "212.227.144.37",
+      "server_port": 8443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | af976a",
+      "server": "185.114.72.31",
+      "server_port": 2053,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 469bf1",
+      "server": "45.130.125.160",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | f1b115",
+      "server": "104.19.229.21",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | fe4054",
+      "server": "212.183.88.136",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
       }
     },
     {
@@ -481,7 +590,15 @@
         "TROJAN | @PulseConfigs | 94af99",
         "VMESS | @PulseConfigs | 4e15c3",
         "TROJAN | @PulseConfigs | 2512e5",
+        "VMESS | @PulseConfigs | 8a384c",
         "VMESS | @PulseConfigs | 11d785",
+        "TROJAN | @PulseConfigs | f9a088",
+        "TROJAN | @PulseConfigs | 563bb1",
+        "TROJAN | @PulseConfigs | 7e57b6",
+        "TROJAN | @PulseConfigs | af976a",
+        "TROJAN | @PulseConfigs | 469bf1",
+        "TROJAN | @PulseConfigs | f1b115",
+        "TROJAN | @PulseConfigs | fe4054",
         "TROJAN | @PulseConfigs | be26bb"
       ]
     }
