@@ -28,20 +28,38 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "trojan|45.87.41.18|443|humanity|tls|ws||",
-      "raw": "trojan://humanity@45.87.41.18:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%201637dc",
+      "fingerprint": "trojan|185.114.72.31|2053|humanity|tls|ws||",
+      "raw": "trojan://humanity@185.114.72.31:2053?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20af976a",
       "protocol": "trojan",
       "strategy": "cdn_tls",
-      "host": "45.87.41.18",
+      "host": "185.114.72.31",
+      "port": 2053,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "trojan|185.220.100.168|443|humanity|tls|ws||",
+      "raw": "trojan://humanity@185.220.100.168:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20563bb1",
+      "protocol": "trojan",
+      "strategy": "cdn_tls",
+      "host": "185.220.100.168",
       "port": 443,
       "median_delay_ms": null
     },
     {
-      "fingerprint": "trojan|www.calmlunch.com|443|humanity|tls|ws||",
-      "raw": "trojan://humanity@www.calmlunch.com:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20aeb215",
+      "fingerprint": "trojan|45.130.125.160|443|humanity|tls|ws||",
+      "raw": "trojan://humanity@45.130.125.160:443?security=tls&sni=www.calmlunch.com&type=ws&path=%2Fassignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20469bf1",
       "protocol": "trojan",
       "strategy": "cdn_tls",
-      "host": "www.calmlunch.com",
+      "host": "45.130.125.160",
+      "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "trojan|185.255.179.166|443|humanity|tls|ws||",
+      "raw": "trojan://humanity@185.255.179.166:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20f9a088",
+      "protocol": "trojan",
+      "strategy": "cdn_tls",
+      "host": "185.255.179.166",
       "port": 443,
       "median_delay_ms": null
     },
@@ -82,12 +100,12 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "vmess|104.17.77.77|8443|60441548-b68e-43b2-8191-e3b884be4b3c|tls|ws||",
-      "raw": "vmess://ewogICAgImFkZCI6ICIxMDQuMTcuNzcuNzciLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICIiLAogICAgImlkIjogIjYwNDQxNTQ4LWI2OGUtNDNiMi04MTkxLWUzYjg4NGJlNGIzYyIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi9sTW5zWlVONC8iLAogICAgInBvcnQiOiA4NDQzLAogICAgInBzIjogIvCfj4FSRUxBWS0xMDQuMTcuNzcuNzctNTUyOCIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogZmFsc2UsCiAgICAic25pIjogInYycmF5MS5kb3phcHAueHl6Igp9#VMESS%20%7C%20%40PulseConfigs%20%7C%20882e74",
-      "protocol": "vmess",
-      "strategy": "cdn_tls",
-      "host": "104.17.77.77",
-      "port": 8443,
+      "fingerprint": "trojan|meet-goshawk.rooster465.autos|443|UX82473651|tls|tcp||",
+      "raw": "trojan://UX82473651@meet-goshawk.rooster465.autos:443?security=tls&sni=meet-goshawk.rooster465.autos#TROJAN%20%7C%20%40PulseConfigs%20%7C%2025afe7",
+      "protocol": "trojan",
+      "strategy": "legacy",
+      "host": "meet-goshawk.rooster465.autos",
+      "port": 443,
       "median_delay_ms": null
     },
     {
@@ -106,24 +124,6 @@
       "strategy": "legacy",
       "host": "108.181.0.177",
       "port": 8388,
-      "median_delay_ms": null
-    },
-    {
-      "fingerprint": "shadowsocks|156.146.38.167|443|shadowsocks||tcp||",
-      "raw": "ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#SHADOWSOCKS%20%7C%20%40PulseConfigs%20%7C%20419421",
-      "protocol": "shadowsocks",
-      "strategy": "legacy",
-      "host": "156.146.38.167",
-      "port": 443,
-      "median_delay_ms": null
-    },
-    {
-      "fingerprint": "trojan|31.77.168.33|443|MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo|tls|grpc||",
-      "raw": "trojan://MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo@31.77.168.33:443?security=tls&sni=d3-de2.cloud-cdn.xyz&type=grpc&serviceName=ajv#TROJAN%20%7C%20%40PulseConfigs%20%7C%209685c3",
-      "protocol": "trojan",
-      "strategy": "cdn_tls",
-      "host": "31.77.168.33",
-      "port": 443,
       "median_delay_ms": null
     }
   ]
