@@ -241,18 +241,6 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 9289ec",
-      "server": "evolving-ewe.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "evolving-ewe.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 0cd873",
       "server": "noted-cougar.rooster465.autos",
       "server_port": 443,
@@ -493,15 +481,53 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 049123",
-      "server": "47.240.80.220",
-      "server_port": 2052,
-      "password": "tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz",
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 72e44e",
+      "server": "93ucrn4i0pffuabk.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
+      "alter_id": 0,
       "tls": {
         "enabled": true,
-        "server_name": "vpn.12169.top",
-        "insecure": false
+        "server_name": "93ucrn4i0pffuabk.v.3dns.vip",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "93ucrn4i0pffuabk.v.3dns.vip"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 8b98d0",
+      "server": "i2psm3knof5qjjix.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "i2psm3knof5qjjix.v.3dns.vip",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "i2psm3knof5qjjix.v.3dns.vip"
+        }
       }
     },
     {
@@ -543,90 +569,6 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 8a6e68",
-      "server": "185.225.68.232",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 1637dc",
-      "server": "45.87.41.18",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | aeb215",
-      "server": "www.calmlunch.com",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | af976a",
-      "server": "185.114.72.31",
-      "server_port": 2053,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 563bb1",
-      "server": "185.220.100.168",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | f1b115",
-      "server": "104.19.229.21",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 1f7a40",
-      "server": "78.47.146.151",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | c524c6",
       "server": "31.77.168.21",
       "server_port": 443,
@@ -660,7 +602,6 @@
         "TROJAN | @PulseConfigs | da0fd4",
         "TROJAN | @PulseConfigs | 368a00",
         "TROJAN | @PulseConfigs | d785a4",
-        "TROJAN | @PulseConfigs | 9289ec",
         "TROJAN | @PulseConfigs | 0cd873",
         "TROJAN | @PulseConfigs | 6a969a",
         "TROJAN | @PulseConfigs | 71f90a",
@@ -680,16 +621,10 @@
         "TROJAN | @PulseConfigs | 2512e5",
         "TROJAN | @PulseConfigs | 7d5fe7",
         "VMESS | @PulseConfigs | 96ea72",
-        "TROJAN | @PulseConfigs | 049123",
+        "VMESS | @PulseConfigs | 72e44e",
+        "VMESS | @PulseConfigs | 8b98d0",
         "VMESS | @PulseConfigs | 11d785",
         "TROJAN | @PulseConfigs | 9685c3",
-        "TROJAN | @PulseConfigs | 8a6e68",
-        "TROJAN | @PulseConfigs | 1637dc",
-        "TROJAN | @PulseConfigs | aeb215",
-        "TROJAN | @PulseConfigs | af976a",
-        "TROJAN | @PulseConfigs | 563bb1",
-        "TROJAN | @PulseConfigs | f1b115",
-        "TROJAN | @PulseConfigs | 1f7a40",
         "TROJAN | @PulseConfigs | c524c6"
       ]
     }
