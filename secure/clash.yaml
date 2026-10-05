@@ -276,6 +276,18 @@ proxies:
   sni: meet-goshawk.rooster465.autos
   udp: true
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 72e44e
+  type: vmess
+  server: 93ucrn4i0pffuabk.v.3dns.vip
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | fbeae5
   type: trojan
   server: holy-lamb.rooster465.autos
@@ -456,6 +468,15 @@ proxies:
   sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 8d19e2
+  type: trojan
+  server: 104.21.70.21
+  port: 443
+  password: Telegram_healer_config
+  network: ws
+  sni: bjsa2ygfitzjtho8ucze29xf2m2q9c.g3fiajpf0erm9k3x6ww-yegzl2.workers.dev
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | be26bb
   type: trojan
   server: 188.42.145.180
@@ -473,6 +494,30 @@ proxies:
   network: tcp
   sni: inviting-ferret.rooster465.autos
   udp: true
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 5662ed
+  type: vmess
+  server: 172.67.167.78
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 882e74
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
 proxy-groups:
 - name: PROXY
@@ -508,6 +553,7 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 3eabbd
   - VMESS | @PulseConfigs | 94efe1
   - TROJAN | @PulseConfigs | 25afe7
+  - VMESS | @PulseConfigs | 72e44e
   - TROJAN | @PulseConfigs | fbeae5
   - VMESS | @PulseConfigs | 4e15c3
   - TROJAN | @PulseConfigs | 8687b6
@@ -527,7 +573,10 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 469bf1
   - TROJAN | @PulseConfigs | f1b115
   - TROJAN | @PulseConfigs | fe4054
+  - TROJAN | @PulseConfigs | 8d19e2
   - TROJAN | @PulseConfigs | be26bb
   - TROJAN | @PulseConfigs | d07bac
+  - VMESS | @PulseConfigs | 5662ed
+  - VMESS | @PulseConfigs | 882e74
 rules:
 - MATCH,PROXY
