@@ -177,15 +177,6 @@ proxies:
   sni: balanced-stag.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 6a969a
-  type: trojan
-  server: liked-eft.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: liked-eft.rooster465.autos
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | da9544
   type: trojan
   server: main-fawn.rooster465.autos
@@ -333,6 +324,15 @@ proxies:
   sni: pleased-albacore.rooster465.autos
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 3eabbd
+  type: trojan
+  server: engaging-toucan.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: engaging-toucan.rooster465.autos
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 0240ff
   type: trojan
   server: loved-shark.rooster465.autos
@@ -399,6 +399,18 @@ proxies:
   udp: true
   servername: qtkdr8jxe3wefxjm.v.3dns.vip
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 1aa41a
+  type: vmess
+  server: 47.76.44.32
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
+  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 11d785
   type: vmess
   server: guanwang.awsno.com
@@ -450,6 +462,30 @@ proxies:
   udp: true
   servername: EX1oGt73NzPQKAc2.v.3dns.vip
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | bc265c
+  type: vmess
+  server: 66.163.118.73
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: mygptagent.org
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 225fbd
+  type: vmess
+  server: cu.877774.xyz
+  port: 443
+  uuid: f3244e28-157b-49e9-9730-89832f89ebcc
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: balanced-minds-carrier-demanding.trycloudflare.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
@@ -473,7 +509,6 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 495207
   - TROJAN | @PulseConfigs | 71f90a
   - TROJAN | @PulseConfigs | d785a4
-  - TROJAN | @PulseConfigs | 6a969a
   - TROJAN | @PulseConfigs | da9544
   - TROJAN | @PulseConfigs | 283356
   - TROJAN | @PulseConfigs | 0cd873
@@ -490,6 +525,7 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 344e33
   - TROJAN | @PulseConfigs | d07bac
   - TROJAN | @PulseConfigs | 7d5fe7
+  - TROJAN | @PulseConfigs | 3eabbd
   - TROJAN | @PulseConfigs | 0240ff
   - TROJAN | @PulseConfigs | 57faa2
   - TROJAN | @PulseConfigs | 94af99
@@ -497,10 +533,13 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 5eb46d
   - TROJAN | @PulseConfigs | 915aff
   - VMESS | @PulseConfigs | b7092c
+  - VMESS | @PulseConfigs | 1aa41a
   - VMESS | @PulseConfigs | 11d785
   - TROJAN | @PulseConfigs | c524c6
   - TROJAN | @PulseConfigs | 9685c3
   - TROJAN | @PulseConfigs | be26bb
   - VMESS | @PulseConfigs | a895c7
+  - VMESS | @PulseConfigs | bc265c
+  - VMESS | @PulseConfigs | 225fbd
 rules:
 - MATCH,PROXY

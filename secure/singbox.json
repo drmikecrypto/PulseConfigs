@@ -254,18 +254,6 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 6a969a",
-      "server": "liked-eft.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "liked-eft.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | da9544",
       "server": "main-fawn.rooster465.autos",
       "server_port": 443,
@@ -471,6 +459,18 @@
     },
     {
       "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 3eabbd",
+      "server": "engaging-toucan.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "engaging-toucan.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 0240ff",
       "server": "loved-shark.rooster465.autos",
       "server_port": 443,
@@ -568,6 +568,31 @@
     },
     {
       "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 1aa41a",
+      "server": "47.76.44.32",
+      "server_port": 443,
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "93ucrn4i0pffuabk.v.3dns.vip",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "93ucrn4i0pffuabk.v.3dns.vip"
+        }
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "VMESS | @PulseConfigs | 11d785",
       "server": "guanwang.awsno.com",
       "server_port": 443,
@@ -653,6 +678,56 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | bc265c",
+      "server": "66.163.118.73",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "mygptagent.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "mygptagent.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 225fbd",
+      "server": "cu.877774.xyz",
+      "server_port": 443,
+      "uuid": "f3244e28-157b-49e9-9730-89832f89ebcc",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "balanced-minds-carrier-demanding.trycloudflare.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vmess-argo",
+        "headers": {
+          "Host": "balanced-minds-carrier-demanding.trycloudflare.com"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
@@ -675,7 +750,6 @@
         "TROJAN | @PulseConfigs | 495207",
         "TROJAN | @PulseConfigs | 71f90a",
         "TROJAN | @PulseConfigs | d785a4",
-        "TROJAN | @PulseConfigs | 6a969a",
         "TROJAN | @PulseConfigs | da9544",
         "TROJAN | @PulseConfigs | 283356",
         "TROJAN | @PulseConfigs | 0cd873",
@@ -692,6 +766,7 @@
         "TROJAN | @PulseConfigs | 344e33",
         "TROJAN | @PulseConfigs | d07bac",
         "TROJAN | @PulseConfigs | 7d5fe7",
+        "TROJAN | @PulseConfigs | 3eabbd",
         "TROJAN | @PulseConfigs | 0240ff",
         "TROJAN | @PulseConfigs | 57faa2",
         "TROJAN | @PulseConfigs | 94af99",
@@ -699,11 +774,14 @@
         "TROJAN | @PulseConfigs | 5eb46d",
         "TROJAN | @PulseConfigs | 915aff",
         "VMESS | @PulseConfigs | b7092c",
+        "VMESS | @PulseConfigs | 1aa41a",
         "VMESS | @PulseConfigs | 11d785",
         "TROJAN | @PulseConfigs | c524c6",
         "TROJAN | @PulseConfigs | 9685c3",
         "TROJAN | @PulseConfigs | be26bb",
-        "VMESS | @PulseConfigs | a895c7"
+        "VMESS | @PulseConfigs | a895c7",
+        "VMESS | @PulseConfigs | bc265c",
+        "VMESS | @PulseConfigs | 225fbd"
       ]
     }
   ]
