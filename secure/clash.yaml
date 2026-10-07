@@ -363,9 +363,9 @@ proxies:
   sni: ultimate-jaguar.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 1aa41a
+- name: VMESS | @PulseConfigs | 0f3ab3
   type: vmess
-  server: 47.76.44.32
+  server: 47.83.207.148
   port: 443
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
@@ -373,7 +373,7 @@ proxies:
   network: ws
   tls: true
   udp: true
-  servername: 93ucrn4i0pffuabk.v.3dns.vip
+  servername: VAH4URdZL3jDX5r2.v.3dns.vip
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 11d785
   type: vmess
@@ -405,10 +405,64 @@ proxies:
   sni: d3-de2.cloud-cdn.xyz
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | f9a088
+  type: trojan
+  server: 185.255.179.166
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 563bb1
+  type: trojan
+  server: 185.220.100.168
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 1637dc
+  type: trojan
+  server: 45.87.41.18
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | aeb215
+  type: trojan
+  server: www.calmlunch.com
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | af976a
   type: trojan
   server: 185.114.72.31
   port: 2053
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 469bf1
+  type: trojan
+  server: 45.130.125.160
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | f1b115
+  type: trojan
+  server: 104.19.229.21
+  port: 443
   password: humanity
   network: ws
   sni: www.calmlunch.com
@@ -421,6 +475,51 @@ proxies:
   password: humanity
   network: ws
   sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 8d19e2
+  type: trojan
+  server: 104.21.70.21
+  port: 443
+  password: Telegram_healer_config
+  network: ws
+  sni: bjsa2ygfitzjtho8ucze29xf2m2q9c.g3fiajpf0erm9k3x6ww-yegzl2.workers.dev
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | e8ed10
+  type: trojan
+  server: 77.74.123.106
+  port: 4443
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  network: tcp
+  sni: grape-test-italy.dynuddns.net
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | be26bb
+  type: trojan
+  server: 188.42.145.180
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.volumeroot.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 8a6e68
+  type: trojan
+  server: 185.225.68.232
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 1f7a40
+  type: trojan
+  server: 78.47.146.151
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.pleadcourt.org
   udp: true
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 7665ad
@@ -491,12 +590,23 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 8687b6
   - TROJAN | @PulseConfigs | 94af99
   - TROJAN | @PulseConfigs | 41482f
-  - VMESS | @PulseConfigs | 1aa41a
+  - VMESS | @PulseConfigs | 0f3ab3
   - VMESS | @PulseConfigs | 11d785
   - TROJAN | @PulseConfigs | c524c6
   - TROJAN | @PulseConfigs | 9685c3
+  - TROJAN | @PulseConfigs | f9a088
+  - TROJAN | @PulseConfigs | 563bb1
+  - TROJAN | @PulseConfigs | 1637dc
+  - TROJAN | @PulseConfigs | aeb215
   - TROJAN | @PulseConfigs | af976a
+  - TROJAN | @PulseConfigs | 469bf1
+  - TROJAN | @PulseConfigs | f1b115
   - TROJAN | @PulseConfigs | fe4054
+  - TROJAN | @PulseConfigs | 8d19e2
+  - TROJAN | @PulseConfigs | e8ed10
+  - TROJAN | @PulseConfigs | be26bb
+  - TROJAN | @PulseConfigs | 8a6e68
+  - TROJAN | @PulseConfigs | 1f7a40
   - VMESS | @PulseConfigs | 7665ad
   - VMESS | @PulseConfigs | b76bc0
 rules:
