@@ -111,18 +111,6 @@ proxies:
   sni: kind-stork.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | fc1cf2
-  type: vmess
-  server: 47.243.65.243
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: lcv8v9l7oyamxxfz.v.3dns.vip
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 4a9717
   type: trojan
   server: accurate-frog.rooster465.autos
@@ -131,18 +119,6 @@ proxies:
   network: tcp
   sni: accurate-frog.rooster465.autos
   udp: true
-  skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 0dc27f
-  type: vmess
-  server: 6jdvarazgu3qqr6q.v.3dns.vip
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | bb6800
   type: vmess
@@ -375,21 +351,9 @@ proxies:
   sni: strong-haddock.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 8a384c
+- name: VMESS | @PulseConfigs | 72e44e
   type: vmess
-  server: 186.190.211.67
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: pahobac.org
-  skip-cert-verify: false
-- name: VMESS | @PulseConfigs | b7092c
-  type: vmess
-  server: 8.217.13.103
+  server: 93ucrn4i0pffuabk.v.3dns.vip
   port: 443
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
@@ -397,7 +361,7 @@ proxies:
   network: ws
   tls: true
   udp: true
-  servername: qtkdr8jxe3wefxjm.v.3dns.vip
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | d07bac
   type: trojan
@@ -510,6 +474,18 @@ proxies:
   sni: www.volumeroot.com
   udp: true
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 1aa41a
+  type: vmess
+  server: 47.76.44.32
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
+  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 878a6c
   type: vmess
   server: 47.243.153.153
@@ -538,9 +514,7 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 283356
   - TROJAN | @PulseConfigs | 0cd873
   - TROJAN | @PulseConfigs | 368a00
-  - VMESS | @PulseConfigs | fc1cf2
   - TROJAN | @PulseConfigs | 4a9717
-  - VMESS | @PulseConfigs | 0dc27f
   - VMESS | @PulseConfigs | bb6800
   - TROJAN | @PulseConfigs | 321004
   - TROJAN | @PulseConfigs | 845307
@@ -566,8 +540,7 @@ proxy-groups:
   - TROJAN | @PulseConfigs | fbeae5
   - TROJAN | @PulseConfigs | 4a24e1
   - TROJAN | @PulseConfigs | 2512e5
-  - VMESS | @PulseConfigs | 8a384c
-  - VMESS | @PulseConfigs | b7092c
+  - VMESS | @PulseConfigs | 72e44e
   - TROJAN | @PulseConfigs | d07bac
   - VMESS | @PulseConfigs | 11d785
   - TROJAN | @PulseConfigs | f9a088
@@ -580,6 +553,7 @@ proxy-groups:
   - TROJAN | @PulseConfigs | f1b115
   - TROJAN | @PulseConfigs | fe4054
   - TROJAN | @PulseConfigs | be26bb
+  - VMESS | @PulseConfigs | 1aa41a
   - VMESS | @PulseConfigs | 878a6c
 rules:
 - MATCH,PROXY
