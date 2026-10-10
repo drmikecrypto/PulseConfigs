@@ -3,6 +3,15 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- name: TROJAN | @PulseConfigs | 8f71e1
+  type: trojan
+  server: adapting-basilisk.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: adapting-basilisk.rooster465.autos
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 76659f
   type: trojan
   server: alert-titmouse.rooster465.autos
@@ -10,15 +19,6 @@ proxies:
   password: UX82473651
   network: tcp
   sni: alert-titmouse.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | dab9a1
-  type: trojan
-  server: stable-python.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: stable-python.rooster465.autos
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 1926c5
@@ -30,49 +30,13 @@ proxies:
   sni: amazed-mako.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | d2d259
+- name: TROJAN | @PulseConfigs | dab9a1
   type: trojan
-  server: equipped-stingray.rooster465.autos
+  server: stable-python.rooster465.autos
   port: 443
   password: UX82473651
   network: tcp
-  sni: equipped-stingray.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | dccad4
-  type: trojan
-  server: optimal-penguin.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: optimal-penguin.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | a31117
-  type: trojan
-  server: live-stallion.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: live-stallion.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 625f87
-  type: trojan
-  server: warm-krill.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: warm-krill.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | bfdf74
-  type: trojan
-  server: normal-macaque.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: normal-macaque.rooster465.autos
+  sni: stable-python.rooster465.autos
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | b0c2a7
@@ -84,13 +48,49 @@ proxies:
   sni: legible-ram.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 7cac22
+- name: TROJAN | @PulseConfigs | a31117
   type: trojan
-  server: central-jawfish.rooster465.autos
+  server: live-stallion.rooster465.autos
   port: 443
   password: UX82473651
   network: tcp
-  sni: central-jawfish.rooster465.autos
+  sni: live-stallion.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | bfdf74
+  type: trojan
+  server: normal-macaque.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: normal-macaque.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 625f87
+  type: trojan
+  server: warm-krill.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: warm-krill.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | dccad4
+  type: trojan
+  server: optimal-penguin.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: optimal-penguin.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | d2d259
+  type: trojan
+  server: equipped-stingray.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: equipped-stingray.rooster465.autos
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 07d671
@@ -102,22 +102,13 @@ proxies:
   sni: cunning-grub.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 4dac9a
+- name: TROJAN | @PulseConfigs | 7cac22
   type: trojan
-  server: pure-kodiak.rooster465.autos
+  server: central-jawfish.rooster465.autos
   port: 443
   password: UX82473651
   network: tcp
-  sni: pure-kodiak.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 8f71e1
-  type: trojan
-  server: adapting-basilisk.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: adapting-basilisk.rooster465.autos
+  sni: central-jawfish.rooster465.autos
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 806788
@@ -127,15 +118,6 @@ proxies:
   password: UX82473651
   network: tcp
   sni: glorious-lark.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | d1a08c
-  type: trojan
-  server: inviting-rabbit.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: inviting-rabbit.rooster465.autos
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 73c01f
@@ -156,13 +138,79 @@ proxies:
   sni: fancy-skink.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 56633b
+- name: TROJAN | @PulseConfigs | 4dac9a
   type: trojan
-  server: cuddly-sheepdog.rooster465.autos
+  server: pure-kodiak.rooster465.autos
   port: 443
   password: UX82473651
   network: tcp
-  sni: cuddly-sheepdog.rooster465.autos
+  sni: pure-kodiak.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | d1a08c
+  type: trojan
+  server: inviting-rabbit.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: inviting-rabbit.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 429ea8
+  type: trojan
+  server: promoted-rattler.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: promoted-rattler.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 0f3ab3
+  type: vmess
+  server: 47.83.207.148
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: VAH4URdZL3jDX5r2.v.3dns.vip
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 62f792
+  type: trojan
+  server: moral-basilisk.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: moral-basilisk.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 3e3438
+  type: trojan
+  server: simple-molly.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: simple-molly.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 23a5d9
+  type: trojan
+  server: inspired-hound.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: inspired-hound.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | dcb2b2
+  type: trojan
+  server: ace-liger.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: ace-liger.rooster465.autos
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | b0dc1b
@@ -183,13 +231,13 @@ proxies:
   sni: fond-mammoth.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | fd982e
+- name: TROJAN | @PulseConfigs | c32a3e
   type: trojan
-  server: fancy-javelin.rooster465.autos
+  server: brave-tomcat.rooster465.autos
   port: 443
   password: UX82473651
   network: tcp
-  sni: fancy-javelin.rooster465.autos
+  sni: brave-tomcat.rooster465.autos
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 188d84
@@ -201,33 +249,6 @@ proxies:
   sni: joint-ewe.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 495207
-  type: trojan
-  server: obliging-louse.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: obliging-louse.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | da9544
-  type: trojan
-  server: main-fawn.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: main-fawn.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | b42c91
-  type: trojan
-  server: guided-ferret.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: guided-ferret.rooster465.autos
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | f1cc3f
   type: trojan
   server: intense-wildcat.rooster465.autos
@@ -235,186 +256,6 @@ proxies:
   password: UX82473651
   network: tcp
   sni: intense-wildcat.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 40139d
-  type: trojan
-  server: sacred-anemone.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: sacred-anemone.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 23a5d9
-  type: trojan
-  server: inspired-hound.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: inspired-hound.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 2c3384
-  type: trojan
-  server: evolving-platypus.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: evolving-platypus.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | c32a3e
-  type: trojan
-  server: brave-tomcat.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: brave-tomcat.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 321004
-  type: trojan
-  server: assuring-skink.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: assuring-skink.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 0240ff
-  type: trojan
-  server: loved-shark.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: loved-shark.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 7fed38
-  type: trojan
-  server: organic-caribou.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: organic-caribou.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 62f792
-  type: trojan
-  server: moral-basilisk.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: moral-basilisk.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 3e3438
-  type: trojan
-  server: simple-molly.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: simple-molly.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 368a00
-  type: trojan
-  server: kind-stork.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: kind-stork.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | dcb2b2
-  type: trojan
-  server: ace-liger.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: ace-liger.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | d2622c
-  type: trojan
-  server: prime-corgi.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: prime-corgi.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | a9b173
-  type: trojan
-  server: musical-terrier.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: musical-terrier.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | f7409c
-  type: trojan
-  server: brief-glider.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: brief-glider.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 7d5fe7
-  type: trojan
-  server: pleased-albacore.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: pleased-albacore.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 71f90a
-  type: trojan
-  server: optimum-snapper.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: optimum-snapper.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 344e33
-  type: trojan
-  server: integral-rodent.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: integral-rodent.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 57faa2
-  type: trojan
-  server: pet-antelope.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: pet-antelope.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 429ea8
-  type: trojan
-  server: promoted-rattler.rooster465.autos
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: promoted-rattler.rooster465.autos
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 79a358
-  type: trojan
-  server: 3.34.131.153
-  port: 443
-  password: UX82473651
-  network: tcp
-  sni: pretty-rat.rooster465.autos
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 4a9717
@@ -426,13 +267,13 @@ proxies:
   sni: accurate-frog.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 0cd873
+- name: TROJAN | @PulseConfigs | 1cab31
   type: trojan
-  server: noted-cougar.rooster465.autos
+  server: concrete-aardvark.rooster465.autos
   port: 443
   password: UX82473651
   network: tcp
-  sni: noted-cougar.rooster465.autos
+  sni: concrete-aardvark.rooster465.autos
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 845307
@@ -444,13 +285,49 @@ proxies:
   sni: comic-poodle.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | aa7a5d
+- name: TROJAN | @PulseConfigs | fd982e
   type: trojan
-  server: musical-mouse.rooster465.autos
+  server: fancy-javelin.rooster465.autos
   port: 443
   password: UX82473651
   network: tcp
-  sni: musical-mouse.rooster465.autos
+  sni: fancy-javelin.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 7fed38
+  type: trojan
+  server: organic-caribou.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: organic-caribou.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | a9b173
+  type: trojan
+  server: musical-terrier.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: musical-terrier.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 495207
+  type: trojan
+  server: obliging-louse.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: obliging-louse.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 2c3384
+  type: trojan
+  server: evolving-platypus.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: evolving-platypus.rooster465.autos
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 68203d
@@ -462,58 +339,58 @@ proxies:
   sni: winning-marten.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 3eabbd
+- name: TROJAN | @PulseConfigs | d2622c
   type: trojan
-  server: engaging-toucan.rooster465.autos
+  server: prime-corgi.rooster465.autos
   port: 443
   password: UX82473651
   network: tcp
-  sni: engaging-toucan.rooster465.autos
+  sni: prime-corgi.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 25afe7
+- name: TROJAN | @PulseConfigs | 40139d
   type: trojan
-  server: meet-goshawk.rooster465.autos
+  server: sacred-anemone.rooster465.autos
   port: 443
   password: UX82473651
   network: tcp
-  sni: meet-goshawk.rooster465.autos
+  sni: sacred-anemone.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 1cab31
+- name: TROJAN | @PulseConfigs | f7409c
   type: trojan
-  server: concrete-aardvark.rooster465.autos
+  server: brief-glider.rooster465.autos
   port: 443
   password: UX82473651
   network: tcp
-  sni: concrete-aardvark.rooster465.autos
+  sni: brief-glider.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 1dac04
+- name: TROJAN | @PulseConfigs | 344e33
   type: trojan
-  server: delicate-buck.rooster465.autos
+  server: integral-rodent.rooster465.autos
   port: 443
   password: UX82473651
   network: tcp
-  sni: delicate-buck.rooster465.autos
+  sni: integral-rodent.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | d07bac
+- name: TROJAN | @PulseConfigs | 321004
   type: trojan
-  server: inviting-ferret.rooster465.autos
+  server: assuring-skink.rooster465.autos
   port: 443
   password: UX82473651
   network: tcp
-  sni: inviting-ferret.rooster465.autos
+  sni: assuring-skink.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | da0fd4
+- name: TROJAN | @PulseConfigs | 57faa2
   type: trojan
-  server: pretty-rat.rooster465.autos
+  server: pet-antelope.rooster465.autos
   port: 443
   password: UX82473651
   network: tcp
-  sni: pretty-rat.rooster465.autos
+  sni: pet-antelope.rooster465.autos
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 94af99
@@ -525,29 +402,131 @@ proxies:
   sni: real-cardinal.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 1aa41a
-  type: vmess
-  server: 47.76.44.32
+- name: TROJAN | @PulseConfigs | 0240ff
+  type: trojan
+  server: loved-shark.rooster465.autos
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
+  password: UX82473651
+  network: tcp
+  sni: loved-shark.rooster465.autos
   udp: true
-  servername: 93ucrn4i0pffuabk.v.3dns.vip
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 72e44e
-  type: vmess
-  server: 93ucrn4i0pffuabk.v.3dns.vip
+- name: TROJAN | @PulseConfigs | aa7a5d
+  type: trojan
+  server: musical-mouse.rooster465.autos
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
+  password: UX82473651
+  network: tcp
+  sni: musical-mouse.rooster465.autos
   udp: true
-  servername: 93ucrn4i0pffuabk.v.3dns.vip
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 25afe7
+  type: trojan
+  server: meet-goshawk.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: meet-goshawk.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | d07bac
+  type: trojan
+  server: inviting-ferret.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: inviting-ferret.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 3eabbd
+  type: trojan
+  server: engaging-toucan.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: engaging-toucan.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 56633b
+  type: trojan
+  server: cuddly-sheepdog.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: cuddly-sheepdog.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | da0fd4
+  type: trojan
+  server: pretty-rat.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: pretty-rat.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 1dac04
+  type: trojan
+  server: delicate-buck.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: delicate-buck.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | da9544
+  type: trojan
+  server: main-fawn.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: main-fawn.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 79a358
+  type: trojan
+  server: 3.34.131.153
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: pretty-rat.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 368a00
+  type: trojan
+  server: kind-stork.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: kind-stork.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 71f90a
+  type: trojan
+  server: optimum-snapper.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: optimum-snapper.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 0cd873
+  type: trojan
+  server: noted-cougar.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: noted-cougar.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 7d5fe7
+  type: trojan
+  server: pleased-albacore.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: pleased-albacore.rooster465.autos
+  udp: true
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 11d785
   type: vmess
@@ -561,60 +540,6 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 563bb1
-  type: trojan
-  server: 185.220.100.168
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 1637dc
-  type: trojan
-  server: 45.87.41.18
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | aeb215
-  type: trojan
-  server: www.calmlunch.com
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 469bf1
-  type: trojan
-  server: 45.130.125.160
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | f1b115
-  type: trojan
-  server: 104.19.229.21
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | fe4054
-  type: trojan
-  server: 212.183.88.136
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 096eb0
   type: trojan
   server: 104.18.35.86
@@ -624,97 +549,79 @@ proxies:
   sni: www.volumerOot.coM.
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | abf801
+- name: TROJAN | @PulseConfigs | b42c91
   type: trojan
-  server: 162.159.91.211
+  server: guided-ferret.rooster465.autos
   port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 7a6dc7
-  type: trojan
-  server: 213.1.145.50
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
+  password: UX82473651
+  network: tcp
+  sni: guided-ferret.rooster465.autos
   udp: true
   skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
-  - TROJAN | @PulseConfigs | 76659f
-  - TROJAN | @PulseConfigs | dab9a1
-  - TROJAN | @PulseConfigs | 1926c5
-  - TROJAN | @PulseConfigs | d2d259
-  - TROJAN | @PulseConfigs | dccad4
-  - TROJAN | @PulseConfigs | a31117
-  - TROJAN | @PulseConfigs | 625f87
-  - TROJAN | @PulseConfigs | bfdf74
-  - TROJAN | @PulseConfigs | b0c2a7
-  - TROJAN | @PulseConfigs | 7cac22
-  - TROJAN | @PulseConfigs | 07d671
-  - TROJAN | @PulseConfigs | 4dac9a
   - TROJAN | @PulseConfigs | 8f71e1
+  - TROJAN | @PulseConfigs | 76659f
+  - TROJAN | @PulseConfigs | 1926c5
+  - TROJAN | @PulseConfigs | dab9a1
+  - TROJAN | @PulseConfigs | b0c2a7
+  - TROJAN | @PulseConfigs | a31117
+  - TROJAN | @PulseConfigs | bfdf74
+  - TROJAN | @PulseConfigs | 625f87
+  - TROJAN | @PulseConfigs | dccad4
+  - TROJAN | @PulseConfigs | d2d259
+  - TROJAN | @PulseConfigs | 07d671
+  - TROJAN | @PulseConfigs | 7cac22
   - TROJAN | @PulseConfigs | 806788
-  - TROJAN | @PulseConfigs | d1a08c
   - TROJAN | @PulseConfigs | 73c01f
   - TROJAN | @PulseConfigs | 04d570
-  - TROJAN | @PulseConfigs | 56633b
-  - TROJAN | @PulseConfigs | b0dc1b
-  - TROJAN | @PulseConfigs | ed9c07
-  - TROJAN | @PulseConfigs | fd982e
-  - TROJAN | @PulseConfigs | 188d84
-  - TROJAN | @PulseConfigs | 495207
-  - TROJAN | @PulseConfigs | da9544
-  - TROJAN | @PulseConfigs | b42c91
-  - TROJAN | @PulseConfigs | f1cc3f
-  - TROJAN | @PulseConfigs | 40139d
-  - TROJAN | @PulseConfigs | 23a5d9
-  - TROJAN | @PulseConfigs | 2c3384
-  - TROJAN | @PulseConfigs | c32a3e
-  - TROJAN | @PulseConfigs | 321004
-  - TROJAN | @PulseConfigs | 0240ff
-  - TROJAN | @PulseConfigs | 7fed38
+  - TROJAN | @PulseConfigs | 4dac9a
+  - TROJAN | @PulseConfigs | d1a08c
+  - TROJAN | @PulseConfigs | 429ea8
+  - VMESS | @PulseConfigs | 0f3ab3
   - TROJAN | @PulseConfigs | 62f792
   - TROJAN | @PulseConfigs | 3e3438
-  - TROJAN | @PulseConfigs | 368a00
+  - TROJAN | @PulseConfigs | 23a5d9
   - TROJAN | @PulseConfigs | dcb2b2
-  - TROJAN | @PulseConfigs | d2622c
-  - TROJAN | @PulseConfigs | a9b173
-  - TROJAN | @PulseConfigs | f7409c
-  - TROJAN | @PulseConfigs | 7d5fe7
-  - TROJAN | @PulseConfigs | 71f90a
-  - TROJAN | @PulseConfigs | 344e33
-  - TROJAN | @PulseConfigs | 57faa2
-  - TROJAN | @PulseConfigs | 429ea8
-  - TROJAN | @PulseConfigs | 79a358
+  - TROJAN | @PulseConfigs | b0dc1b
+  - TROJAN | @PulseConfigs | ed9c07
+  - TROJAN | @PulseConfigs | c32a3e
+  - TROJAN | @PulseConfigs | 188d84
+  - TROJAN | @PulseConfigs | f1cc3f
   - TROJAN | @PulseConfigs | 4a9717
-  - TROJAN | @PulseConfigs | 0cd873
-  - TROJAN | @PulseConfigs | 845307
-  - TROJAN | @PulseConfigs | aa7a5d
-  - TROJAN | @PulseConfigs | 68203d
-  - TROJAN | @PulseConfigs | 3eabbd
-  - TROJAN | @PulseConfigs | 25afe7
   - TROJAN | @PulseConfigs | 1cab31
-  - TROJAN | @PulseConfigs | 1dac04
-  - TROJAN | @PulseConfigs | d07bac
-  - TROJAN | @PulseConfigs | da0fd4
+  - TROJAN | @PulseConfigs | 845307
+  - TROJAN | @PulseConfigs | fd982e
+  - TROJAN | @PulseConfigs | 7fed38
+  - TROJAN | @PulseConfigs | a9b173
+  - TROJAN | @PulseConfigs | 495207
+  - TROJAN | @PulseConfigs | 2c3384
+  - TROJAN | @PulseConfigs | 68203d
+  - TROJAN | @PulseConfigs | d2622c
+  - TROJAN | @PulseConfigs | 40139d
+  - TROJAN | @PulseConfigs | f7409c
+  - TROJAN | @PulseConfigs | 344e33
+  - TROJAN | @PulseConfigs | 321004
+  - TROJAN | @PulseConfigs | 57faa2
   - TROJAN | @PulseConfigs | 94af99
-  - VMESS | @PulseConfigs | 1aa41a
-  - VMESS | @PulseConfigs | 72e44e
+  - TROJAN | @PulseConfigs | 0240ff
+  - TROJAN | @PulseConfigs | aa7a5d
+  - TROJAN | @PulseConfigs | 25afe7
+  - TROJAN | @PulseConfigs | d07bac
+  - TROJAN | @PulseConfigs | 3eabbd
+  - TROJAN | @PulseConfigs | 56633b
+  - TROJAN | @PulseConfigs | da0fd4
+  - TROJAN | @PulseConfigs | 1dac04
+  - TROJAN | @PulseConfigs | da9544
+  - TROJAN | @PulseConfigs | 79a358
+  - TROJAN | @PulseConfigs | 368a00
+  - TROJAN | @PulseConfigs | 71f90a
+  - TROJAN | @PulseConfigs | 0cd873
+  - TROJAN | @PulseConfigs | 7d5fe7
   - VMESS | @PulseConfigs | 11d785
-  - TROJAN | @PulseConfigs | 563bb1
-  - TROJAN | @PulseConfigs | 1637dc
-  - TROJAN | @PulseConfigs | aeb215
-  - TROJAN | @PulseConfigs | 469bf1
-  - TROJAN | @PulseConfigs | f1b115
-  - TROJAN | @PulseConfigs | fe4054
   - TROJAN | @PulseConfigs | 096eb0
-  - TROJAN | @PulseConfigs | abf801
-  - TROJAN | @PulseConfigs | 7a6dc7
+  - TROJAN | @PulseConfigs | b42c91
 rules:
 - MATCH,PROXY
