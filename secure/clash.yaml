@@ -165,18 +165,6 @@ proxies:
   sni: promoted-rattler.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 0f3ab3
-  type: vmess
-  server: 47.83.207.148
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: VAH4URdZL3jDX5r2.v.3dns.vip
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 62f792
   type: trojan
   server: moral-basilisk.rooster465.autos
@@ -212,6 +200,18 @@ proxies:
   network: tcp
   sni: ace-liger.rooster465.autos
   udp: true
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | b7092c
+  type: vmess
+  server: 8.217.13.103
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: qtkdr8jxe3wefxjm.v.3dns.vip
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | b0dc1b
   type: trojan
@@ -474,6 +474,15 @@ proxies:
   sni: delicate-buck.rooster465.autos
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | e5d9d7
+  type: trojan
+  server: gb.tronsg.com
+  port: 443
+  password: Trojan@82164024
+  network: tcp
+  sni: gb.tronsg.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | da9544
   type: trojan
   server: main-fawn.rooster465.autos
@@ -540,6 +549,78 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | f9a088
+  type: trojan
+  server: 185.255.179.166
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 563bb1
+  type: trojan
+  server: 185.220.100.168
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 1637dc
+  type: trojan
+  server: 45.87.41.18
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | aeb215
+  type: trojan
+  server: www.calmlunch.com
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | af976a
+  type: trojan
+  server: 185.114.72.31
+  port: 2053
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 469bf1
+  type: trojan
+  server: 45.130.125.160
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | f1b115
+  type: trojan
+  server: 104.19.229.21
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | fe4054
+  type: trojan
+  server: 212.183.88.136
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 096eb0
   type: trojan
   server: 104.18.35.86
@@ -547,6 +628,36 @@ proxies:
   password: humanity
   network: ws
   sni: www.volumerOot.coM.
+  udp: true
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | a895c7
+  type: vmess
+  server: 8.218.195.61
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: EX1oGt73NzPQKAc2.v.3dns.vip
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | abf801
+  type: trojan
+  server: 162.159.91.211
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 7a6dc7
+  type: trojan
+  server: 213.1.145.50
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | b42c91
@@ -580,11 +691,11 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 4dac9a
   - TROJAN | @PulseConfigs | d1a08c
   - TROJAN | @PulseConfigs | 429ea8
-  - VMESS | @PulseConfigs | 0f3ab3
   - TROJAN | @PulseConfigs | 62f792
   - TROJAN | @PulseConfigs | 3e3438
   - TROJAN | @PulseConfigs | 23a5d9
   - TROJAN | @PulseConfigs | dcb2b2
+  - VMESS | @PulseConfigs | b7092c
   - TROJAN | @PulseConfigs | b0dc1b
   - TROJAN | @PulseConfigs | ed9c07
   - TROJAN | @PulseConfigs | c32a3e
@@ -614,6 +725,7 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 56633b
   - TROJAN | @PulseConfigs | da0fd4
   - TROJAN | @PulseConfigs | 1dac04
+  - TROJAN | @PulseConfigs | e5d9d7
   - TROJAN | @PulseConfigs | da9544
   - TROJAN | @PulseConfigs | 79a358
   - TROJAN | @PulseConfigs | 368a00
@@ -621,7 +733,18 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 0cd873
   - TROJAN | @PulseConfigs | 7d5fe7
   - VMESS | @PulseConfigs | 11d785
+  - TROJAN | @PulseConfigs | f9a088
+  - TROJAN | @PulseConfigs | 563bb1
+  - TROJAN | @PulseConfigs | 1637dc
+  - TROJAN | @PulseConfigs | aeb215
+  - TROJAN | @PulseConfigs | af976a
+  - TROJAN | @PulseConfigs | 469bf1
+  - TROJAN | @PulseConfigs | f1b115
+  - TROJAN | @PulseConfigs | fe4054
   - TROJAN | @PulseConfigs | 096eb0
+  - VMESS | @PulseConfigs | a895c7
+  - TROJAN | @PulseConfigs | abf801
+  - TROJAN | @PulseConfigs | 7a6dc7
   - TROJAN | @PulseConfigs | b42c91
 rules:
 - MATCH,PROXY
