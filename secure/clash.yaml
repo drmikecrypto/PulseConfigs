@@ -123,33 +123,6 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | f9a088
-  type: trojan
-  server: 185.255.179.166
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 1637dc
-  type: trojan
-  server: 45.87.41.18
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | aeb215
-  type: trojan
-  server: www.calmlunch.com
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 469bf1
   type: trojan
   server: 45.130.125.160
@@ -185,9 +158,6 @@ proxy-groups:
   - TROJAN | @PulseConfigs | c32a3e
   - TROJAN | @PulseConfigs | 3e3438
   - VMESS | @PulseConfigs | 11d785
-  - TROJAN | @PulseConfigs | f9a088
-  - TROJAN | @PulseConfigs | 1637dc
-  - TROJAN | @PulseConfigs | aeb215
   - TROJAN | @PulseConfigs | 469bf1
   - TROJAN | @PulseConfigs | abf801
 rules:
