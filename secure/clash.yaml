@@ -177,6 +177,15 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 563bb1
+  type: trojan
+  server: 185.220.100.168
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 7e57b6
   type: trojan
   server: 212.227.144.37
@@ -213,13 +222,40 @@ proxies:
   sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 25f4d2
+- name: TROJAN | @PulseConfigs | 469bf1
   type: trojan
-  server: nimm.mpd.cc.cd
-  port: 2053
-  password: e309e031-991e-4656-9934-44d10deb8fd8
+  server: 45.130.125.160
+  port: 443
+  password: humanity
   network: ws
-  sni: nimm.mpd.cc.cd
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | f1b115
+  type: trojan
+  server: 104.19.229.21
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | fe4054
+  type: trojan
+  server: 212.183.88.136
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 98a2e1
+  type: trojan
+  server: 31.57.190.34
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.pleadcourt.org
   udp: true
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | d3422b
@@ -234,17 +270,17 @@ proxies:
   udp: true
   servername: server3.9966338.xyz
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 907c16
+- name: VMESS | @PulseConfigs | 640f16
   type: vmess
-  server: 8.217.254.88
+  server: uk3-2.998998.best
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
   alterId: 0
   cipher: auto
   network: ws
   tls: true
   udp: true
-  servername: 2b9hwy8ocx7q74nm.v.3dns.vip
+  servername: server22.9966338.xyz
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | e17275
   type: trojan
@@ -289,13 +325,17 @@ proxy-groups:
   - TROJAN | @PulseConfigs | d6aff4
   - VMESS | @PulseConfigs | b5bcf3
   - VMESS | @PulseConfigs | 11d785
+  - TROJAN | @PulseConfigs | 563bb1
   - TROJAN | @PulseConfigs | 7e57b6
   - TROJAN | @PulseConfigs | 1637dc
   - TROJAN | @PulseConfigs | aeb215
   - TROJAN | @PulseConfigs | af976a
-  - TROJAN | @PulseConfigs | 25f4d2
+  - TROJAN | @PulseConfigs | 469bf1
+  - TROJAN | @PulseConfigs | f1b115
+  - TROJAN | @PulseConfigs | fe4054
+  - TROJAN | @PulseConfigs | 98a2e1
   - VMESS | @PulseConfigs | d3422b
-  - VMESS | @PulseConfigs | 907c16
+  - VMESS | @PulseConfigs | 640f16
   - TROJAN | @PulseConfigs | e17275
   - VMESS | @PulseConfigs | 882e74
 rules:
