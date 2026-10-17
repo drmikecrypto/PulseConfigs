@@ -3,6 +3,15 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- name: TROJAN | @PulseConfigs | e17275
+  type: trojan
+  server: ca.tronsg.com
+  port: 443
+  password: Trojan@82164024
+  network: tcp
+  sni: ca.tronsg.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 2fbbc6
   type: trojan
   server: jp.tronsg.com
@@ -19,6 +28,15 @@ proxies:
   password: UX82473651
   network: tcp
   sni: optimum-snapper.rooster465.autos
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | c32a3e
+  type: trojan
+  server: brave-tomcat.rooster465.autos
+  port: 443
+  password: UX82473651
+  network: tcp
+  sni: brave-tomcat.rooster465.autos
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 0cd873
@@ -87,17 +105,14 @@ proxies:
   sni: pretty-rat.rooster465.autos
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | eeb296
-  type: vmess
-  server: 172.67.137.209
+- name: TROJAN | @PulseConfigs | 62f792
+  type: trojan
+  server: moral-basilisk.rooster465.autos
   port: 443
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
+  password: UX82473651
+  network: tcp
+  sni: moral-basilisk.rooster465.autos
   udp: true
-  servername: ukl.lovehk.xyz
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 4dac9a
   type: trojan
@@ -153,15 +168,6 @@ proxies:
 - name: TROJAN | @PulseConfigs | f9a088
   type: trojan
   server: 185.255.179.166
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 563bb1
-  type: trojan
-  server: 185.220.100.168
   port: 443
   password: humanity
   network: ws
@@ -240,54 +246,14 @@ proxies:
   sni: www.pleadcourt.org
   udp: true
   skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | b92168
-  type: hysteria2
-  server: 189.74.106.162
-  port: 54183
-  password: 082f5694-9019-4110-b67b-8125dbb9bab8
-  sni: outh.yandex-cloud.org
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 93823d
-  type: hysteria2
-  server: 37.9.4.112
-  port: 17701
-  password: 56ff50da-a238-4646-95ab-dd159634bd87
-  sni: ru03.arpanet-cdn.com
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | b6e116
-  type: hysteria2
-  server: 162.249.125.133
-  port: 443
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 0d0112
-  type: hysteria2
-  server: 142.249.37.90
-  port: 44356
-  password: dongtaiwang.com
-  sni: hy2.561891.xyz
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 4822e5
-  type: hysteria2
-  server: hy2.561891.xyz
-  port: 44356
-  password: dongtaiwang.com
-  sni: hy2.561891.xyz
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 649364
-  type: hysteria2
-  server: 130.49.161.70
-  port: 443
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
+  - TROJAN | @PulseConfigs | e17275
   - TROJAN | @PulseConfigs | 2fbbc6
   - TROJAN | @PulseConfigs | 71f90a
+  - TROJAN | @PulseConfigs | c32a3e
   - TROJAN | @PulseConfigs | 0cd873
   - TROJAN | @PulseConfigs | 3e3438
   - VMESS | @PulseConfigs | 6d0717
@@ -295,14 +261,13 @@ proxy-groups:
   - TROJAN | @PulseConfigs | aa7a5d
   - TROJAN | @PulseConfigs | da9544
   - TROJAN | @PulseConfigs | da0fd4
-  - VMESS | @PulseConfigs | eeb296
+  - TROJAN | @PulseConfigs | 62f792
   - TROJAN | @PulseConfigs | 4dac9a
   - TROJAN | @PulseConfigs | d6aff4
   - VMESS | @PulseConfigs | b5bcf3
   - TROJAN | @PulseConfigs | 79a358
   - VMESS | @PulseConfigs | 11d785
   - TROJAN | @PulseConfigs | f9a088
-  - TROJAN | @PulseConfigs | 563bb1
   - TROJAN | @PulseConfigs | 7e57b6
   - TROJAN | @PulseConfigs | 1637dc
   - TROJAN | @PulseConfigs | aeb215
@@ -311,11 +276,5 @@ proxy-groups:
   - TROJAN | @PulseConfigs | f1b115
   - TROJAN | @PulseConfigs | fe4054
   - TROJAN | @PulseConfigs | 98a2e1
-  - HYSTERIA2 | @PulseConfigs | b92168
-  - HYSTERIA2 | @PulseConfigs | 93823d
-  - HYSTERIA2 | @PulseConfigs | b6e116
-  - HYSTERIA2 | @PulseConfigs | 0d0112
-  - HYSTERIA2 | @PulseConfigs | 4822e5
-  - HYSTERIA2 | @PulseConfigs | 649364
 rules:
 - MATCH,PROXY
