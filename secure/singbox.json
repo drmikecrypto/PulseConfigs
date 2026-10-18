@@ -181,6 +181,31 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | eeb296",
+      "server": "172.67.137.209",
+      "server_port": 443,
+      "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "ukl.lovehk.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/London31",
+        "headers": {
+          "Host": "ukl.lovehk.xyz"
+        }
+      }
+    },
+    {
       "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 71f90a",
       "server": "optimum-snapper.rooster465.autos",
@@ -214,6 +239,31 @@
         "path": "/vvvvvvvvv",
         "headers": {
           "Host": "nat12.9966338.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | ad3cfa",
+      "server": "nycqg19zkwacpm1b.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "NYcQg19zkwaCPM1B.v.3dns.vip",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "NYcQg19zkwaCPM1B.v.3dns.vip"
         }
       }
     },
@@ -525,8 +575,10 @@
         "TROJAN | @PulseConfigs | da0fd4",
         "TROJAN | @PulseConfigs | 79a358",
         "TROJAN | @PulseConfigs | d6aff4",
+        "VMESS | @PulseConfigs | eeb296",
         "TROJAN | @PulseConfigs | 71f90a",
         "VMESS | @PulseConfigs | b5bcf3",
+        "VMESS | @PulseConfigs | ad3cfa",
         "TROJAN | @PulseConfigs | da9544",
         "VMESS | @PulseConfigs | 11d785",
         "TROJAN | @PulseConfigs | f9a088",
