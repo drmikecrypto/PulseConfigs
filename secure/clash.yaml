@@ -171,6 +171,27 @@ proxies:
   sni: www.pleadcourt.org
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 25f4d2
+  type: trojan
+  server: nimm.mpd.cc.cd
+  port: 2053
+  password: e309e031-991e-4656-9934-44d10deb8fd8
+  network: ws
+  sni: nimm.mpd.cc.cd
+  udp: true
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | a7142c
+  type: vmess
+  server: 47.76.57.83
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | abf801
   type: trojan
   server: 162.159.91.211
@@ -206,13 +227,6 @@ proxies:
   password: 56ff50da-a238-4646-95ab-dd159634bd87
   sni: ru03.arpanet-cdn.com
   skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | ff88d7
-  type: hysteria2
-  server: 206.1.96.108
-  port: 7443
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | b6e116
   type: hysteria2
   server: 162.249.125.133
@@ -223,13 +237,6 @@ proxies:
 - name: HYSTERIA2 | @PulseConfigs | 0d0112
   type: hysteria2
   server: 142.249.37.90
-  port: 44356
-  password: dongtaiwang.com
-  sni: hy2.561891.xyz
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 4822e5
-  type: hysteria2
-  server: hy2.561891.xyz
   port: 44356
   password: dongtaiwang.com
   sni: hy2.561891.xyz
@@ -270,14 +277,14 @@ proxy-groups:
   - TROJAN | @PulseConfigs | d50e4b
   - TROJAN | @PulseConfigs | e6eebf
   - TROJAN | @PulseConfigs | 98a2e1
+  - TROJAN | @PulseConfigs | 25f4d2
+  - VMESS | @PulseConfigs | a7142c
   - TROJAN | @PulseConfigs | abf801
   - VMESS | @PulseConfigs | 882e74
   - HYSTERIA2 | @PulseConfigs | 60ba6b
   - HYSTERIA2 | @PulseConfigs | 93823d
-  - HYSTERIA2 | @PulseConfigs | ff88d7
   - HYSTERIA2 | @PulseConfigs | b6e116
   - HYSTERIA2 | @PulseConfigs | 0d0112
-  - HYSTERIA2 | @PulseConfigs | 4822e5
   - HYSTERIA2 | @PulseConfigs | 649364
   - HYSTERIA2 | @PulseConfigs | 36bd8c
 rules:
