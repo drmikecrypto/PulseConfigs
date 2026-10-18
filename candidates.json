@@ -10,15 +10,6 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "hysteria2|46.8.112.169|443|l6rbd8u8yr003yl0||tcp||",
-      "raw": "hysteria2://l6rbd8u8yr003yl0@46.8.112.169:443?insecure=0&sni=node-1.wt419.site&obfs=salamander&obfs-password=amyr5i21tg78b3oa#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%206aa1a2",
-      "protocol": "hysteria2",
-      "strategy": "quic_speed",
-      "host": "46.8.112.169",
-      "port": 443,
-      "median_delay_ms": null
-    },
-    {
       "fingerprint": "hysteria2|hy2.aspidnet.xyz|443|p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR||tcp||",
       "raw": "hysteria2://p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR@hy2.aspidnet.xyz:443?sni=hy2.aspidnet.xyz&obfs=salamander&obfs-password=rG07s3COMIEvdnQipRyWzx_H_2xygNC3#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%2036bd8c",
       "protocol": "hysteria2",
@@ -51,6 +42,24 @@
       "protocol": "vmess",
       "strategy": "cdn_tls",
       "host": "172.67.137.209",
+      "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "trojan|31.57.190.34|443|humanity|tls|ws||",
+      "raw": "trojan://humanity@31.57.190.34:443?security=tls&sni=www.pleadcourt.org&type=ws&path=/assignment&Host=www.pleadcourt.org#TROJAN%20%7C%20%40PulseConfigs%20%7C%2098a2e1",
+      "protocol": "trojan",
+      "strategy": "cdn_tls",
+      "host": "31.57.190.34",
+      "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "vmess|nycqg19zkwacpm1b.v.3dns.vip|443|f23bb427-c1f9-4373-876c-2f43e9f790f3|tls|ws||",
+      "raw": "vmess://ewogICAgImFkZCI6ICJueWNxZzE5emt3YWNwbTFiLnYuM2Rucy52aXAiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICJOWWNRZzE5emt3YUNQTTFCLnYuM2Rucy52aXAiLAogICAgImlkIjogImYyM2JiNDI3LWMxZjktNDM3My04NzZjLTJmNDNlOWY3OTBmMyIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi93cy12bWVzcyIsCiAgICAicG9ydCI6IDQ0MywKICAgICJwcyI6ICLwn4eo8J+Hs0NOLTQ3LjI0My4xOTQuMTI1LTA2MTciLAogICAgInRscyI6ICJ0bHMiLAogICAgInR5cGUiOiAiYXV0byIsCiAgICAic2VjdXJpdHkiOiAiYXV0byIsCiAgICAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsCiAgICAic25pIjogIiIKfQ==#VMESS%20%7C%20%40PulseConfigs%20%7C%20ad3cfa",
+      "protocol": "vmess",
+      "strategy": "cdn_tls",
+      "host": "nycqg19zkwacpm1b.v.3dns.vip",
       "port": 443,
       "median_delay_ms": null
     },
@@ -118,30 +127,30 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "shadowsocks|82.38.31.203|8080|k1dBOmOB4oqi7Ump37a1bQ||tcp||",
-      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.203:8080#SHADOWSOCKS%20%7C%20%40PulseConfigs%20%7C%2037a55b",
+      "fingerprint": "shadowsocks|82.38.31.202|8080|k1dBOmOB4oqi7Ump37a1bQ||tcp||",
+      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.202:8080#SHADOWSOCKS%20%7C%20%40PulseConfigs%20%7C%20660cb1",
       "protocol": "shadowsocks",
       "strategy": "legacy",
-      "host": "82.38.31.203",
+      "host": "82.38.31.202",
       "port": 8080,
       "median_delay_ms": null
     },
     {
-      "fingerprint": "shadowsocks|193.29.139.168|8080|QCXDxuDlTTMD7jtgHUjIoj||tcp||",
-      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9q@193.29.139.168:8080#SHADOWSOCKS%20%7C%20%40PulseConfigs%20%7C%2005d9b1",
+      "fingerprint": "shadowsocks|82.110.60.9|19999|ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=||tcp||",
+      "raw": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@82.110.60.9:19999#SHADOWSOCKS%20%7C%20%40PulseConfigs%20%7C%20be9a40",
       "protocol": "shadowsocks",
       "strategy": "legacy",
-      "host": "193.29.139.168",
-      "port": 8080,
+      "host": "82.110.60.9",
+      "port": 19999,
       "median_delay_ms": null
     },
     {
-      "fingerprint": "hysteria2|137.23.2.56|20000|b42d90fa667942aebc734d60||tcp||",
-      "raw": "hysteria2://b42d90fa667942aebc734d60@137.23.2.56:20000?insecure=0&sni=rmgyvpn.rest&obfs=salamander&obfs-password=b42d90fa667942aebc734d60#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%207a8e4e",
-      "protocol": "hysteria2",
-      "strategy": "quic_speed",
-      "host": "137.23.2.56",
-      "port": 20000,
+      "fingerprint": "vmess|47.76.57.83|443|f23bb427-c1f9-4373-876c-2f43e9f790f3|tls|ws||",
+      "raw": "vmess://ewogICAgImFkZCI6ICI0Ny43Ni41Ny44MyIsCiAgICAiYWlkIjogMCwKICAgICJob3N0IjogInZhaDR1cmR6bDNqZHg1cjIudi4zZG5zLnZpcCIsCiAgICAiaWQiOiAiZjIzYmI0MjctYzFmOS00MzczLTg3NmMtMmY0M2U5Zjc5MGYzIiwKICAgICJuZXQiOiAid3MiLAogICAgInBhdGgiOiAiL3dzLXZtZXNzIiwKICAgICJwb3J0IjogNDQzLAogICAgInBzIjogIvCfh6jwn4ezQ04tNDcuNzYuNTcuODMtMDYxNiIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogZmFsc2UsCiAgICAic25pIjogInZhaDR1cmR6bDNqZHg1cjIudi4zZG5zLnZpcCIKfQ==#VMESS%20%7C%20%40PulseConfigs%20%7C%20a7142c",
+      "protocol": "vmess",
+      "strategy": "cdn_tls",
+      "host": "47.76.57.83",
+      "port": 443,
       "median_delay_ms": null
     },
     {
@@ -151,6 +160,24 @@
       "strategy": "quic_speed",
       "host": "130.49.161.70",
       "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "hysteria2|nl-hy-test.tcp-reset-club.net|443|529f1911-04d5-4427-94b9-c851fd459a27||tcp||",
+      "raw": "hysteria2://529f1911-04d5-4427-94b9-c851fd459a27@nl-hy-test.tcp-reset-club.net:443?sni=tcp-reset-club.net#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%2060ba6b",
+      "protocol": "hysteria2",
+      "strategy": "quic_speed",
+      "host": "nl-hy-test.tcp-reset-club.net",
+      "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "hysteria2|37.9.4.112|17701|56ff50da-a238-4646-95ab-dd159634bd87||tcp||",
+      "raw": "hysteria2://56ff50da-a238-4646-95ab-dd159634bd87@37.9.4.112:17701?insecure=0&sni=ru03.arpanet-cdn.com&obfs=salamander&obfs-password=588c76723192f87cfe6d6786816177cd2bd9773acdc545928d7d1d5e8338d4ce#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%2093823d",
+      "protocol": "hysteria2",
+      "strategy": "quic_speed",
+      "host": "37.9.4.112",
+      "port": 17701,
       "median_delay_ms": null
     }
   ]
