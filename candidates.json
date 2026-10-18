@@ -10,20 +10,20 @@
       "median_delay_ms": null
     },
     {
+      "fingerprint": "trojan|162.159.91.211|443|humanity|tls|ws||",
+      "raw": "trojan://humanity@162.159.91.211:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20abf801",
+      "protocol": "trojan",
+      "strategy": "cdn_tls",
+      "host": "162.159.91.211",
+      "port": 443,
+      "median_delay_ms": null
+    },
+    {
       "fingerprint": "hysteria2|104.165.205.42|8443|990c8eb6-4c4e-4277-8602-79af8402cdd0||tcp||",
       "raw": "hysteria2://990c8eb6-4c4e-4277-8602-79af8402cdd0@104.165.205.42:8443?sni=speedtestmark.com#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%20a427cf",
       "protocol": "hysteria2",
       "strategy": "quic_speed",
       "host": "104.165.205.42",
-      "port": 8443,
-      "median_delay_ms": null
-    },
-    {
-      "fingerprint": "trojan|212.227.144.37|8443|humanity|tls|ws||",
-      "raw": "trojan://humanity@212.227.144.37:8443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%207e57b6",
-      "protocol": "trojan",
-      "strategy": "cdn_tls",
-      "host": "212.227.144.37",
       "port": 8443,
       "median_delay_ms": null
     },
@@ -34,24 +34,6 @@
       "strategy": "cdn_tls",
       "host": "185.114.72.31",
       "port": 2053,
-      "median_delay_ms": null
-    },
-    {
-      "fingerprint": "trojan|162.159.91.211|443|humanity|tls|ws||",
-      "raw": "trojan://humanity@162.159.91.211:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20abf801",
-      "protocol": "trojan",
-      "strategy": "cdn_tls",
-      "host": "162.159.91.211",
-      "port": 443,
-      "median_delay_ms": null
-    },
-    {
-      "fingerprint": "trojan|185.255.179.166|443|humanity|tls|ws||",
-      "raw": "trojan://humanity@185.255.179.166:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20f9a088",
-      "protocol": "trojan",
-      "strategy": "cdn_tls",
-      "host": "185.255.179.166",
-      "port": 443,
       "median_delay_ms": null
     },
     {
@@ -100,20 +82,20 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "trojan|78.17.171.62|443|u93yPGuY2zgIsisJZKS2QzJzg|tls|tcp||",
-      "raw": "trojan://u93yPGuY2zgIsisJZKS2QzJzg@78.17.171.62:443?security=tls&sni=FREETOPLAY-2.TETRIS-GAME.WORLD#TROJAN%20%7C%20%40PulseConfigs%20%7C%20a2971b",
-      "protocol": "trojan",
-      "strategy": "legacy",
-      "host": "78.17.171.62",
-      "port": 443,
-      "median_delay_ms": null
-    },
-    {
       "fingerprint": "trojan|central-jawfish.rooster465.autos|443|UX82473651|tls|tcp||",
       "raw": "trojan://UX82473651@central-jawfish.rooster465.autos:443?security=tls&sni=central-jawfish.rooster465.autos#TROJAN%20%7C%20%40PulseConfigs%20%7C%207cac22",
       "protocol": "trojan",
       "strategy": "legacy",
       "host": "central-jawfish.rooster465.autos",
+      "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "trojan|3.34.131.153|443|UX82473651|tls|tcp||",
+      "raw": "trojan://UX82473651@3.34.131.153:443?security=tls&sni=pretty-rat.rooster465.autos#TROJAN%20%7C%20%40PulseConfigs%20%7C%2079a358",
+      "protocol": "trojan",
+      "strategy": "legacy",
+      "host": "3.34.131.153",
       "port": 443,
       "median_delay_ms": null
     },
@@ -133,6 +115,24 @@
       "strategy": "cdn_tls",
       "host": "104.19.229.21",
       "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "trojan|212.183.88.136|443|humanity|tls|ws||",
+      "raw": "trojan://humanity@212.183.88.136:443?security=tls&sni=www.calmlunch.com&type=ws&path=%2Fassignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20fe4054",
+      "protocol": "trojan",
+      "strategy": "cdn_tls",
+      "host": "212.183.88.136",
+      "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "vmess|104.17.77.77|8443|60441548-b68e-43b2-8191-e3b884be4b3c|tls|ws||",
+      "raw": "vmess://ewogICAgImFkZCI6ICIxMDQuMTcuNzcuNzciLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICIiLAogICAgImlkIjogIjYwNDQxNTQ4LWI2OGUtNDNiMi04MTkxLWUzYjg4NGJlNGIzYyIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi9sTW5zWlVONC8iLAogICAgInBvcnQiOiA4NDQzLAogICAgInBzIjogIvCfj4FSRUxBWS0xMDQuMTcuNzcuNzctNTA3MiIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogZmFsc2UsCiAgICAic25pIjogInYycmF5MS5kb3phcHAueHl6Igp9#VMESS%20%7C%20%40PulseConfigs%20%7C%20882e74",
+      "protocol": "vmess",
+      "strategy": "cdn_tls",
+      "host": "104.17.77.77",
+      "port": 8443,
       "median_delay_ms": null
     },
     {
@@ -181,12 +181,12 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "hysteria2|189.74.114.2|54183|082f5694-9019-4110-b67b-8125dbb9bab8||tcp||",
-      "raw": "hysteria2://082f5694-9019-4110-b67b-8125dbb9bab8@189.74.114.2:54183?sni=outh.yandex-cloud.org#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%2064f86d",
+      "fingerprint": "hysteria2|137.23.2.56|20000|b42d90fa667942aebc734d60||tcp||",
+      "raw": "hysteria2://b42d90fa667942aebc734d60@137.23.2.56:20000?insecure=0&sni=rmgyvpn.rest&obfs=salamander&obfs-password=b42d90fa667942aebc734d60#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%207a8e4e",
       "protocol": "hysteria2",
       "strategy": "quic_speed",
-      "host": "189.74.114.2",
-      "port": 54183,
+      "host": "137.23.2.56",
+      "port": 20000,
       "median_delay_ms": null
     }
   ]
