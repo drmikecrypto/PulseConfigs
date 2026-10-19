@@ -72,15 +72,6 @@ proxies:
   sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 7e57b6
-  type: trojan
-  server: 212.227.144.37
-  port: 8443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 1637dc
   type: trojan
   server: 45.87.41.18
@@ -171,15 +162,6 @@ proxies:
   sni: www.pleadcourt.org
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 25f4d2
-  type: trojan
-  server: nimm.mpd.cc.cd
-  port: 2053
-  password: e309e031-991e-4656-9934-44d10deb8fd8
-  network: ws
-  sni: nimm.mpd.cc.cd
-  udp: true
-  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | a7142c
   type: vmess
   server: 47.76.57.83
@@ -220,13 +202,6 @@ proxies:
   password: 529f1911-04d5-4427-94b9-c851fd459a27
   sni: tcp-reset-club.net
   skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 93823d
-  type: hysteria2
-  server: 37.9.4.112
-  port: 17701
-  password: 56ff50da-a238-4646-95ab-dd159634bd87
-  sni: ru03.arpanet-cdn.com
-  skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | b6e116
   type: hysteria2
   server: 162.249.125.133
@@ -240,6 +215,13 @@ proxies:
   port: 44356
   password: dongtaiwang.com
   sni: hy2.561891.xyz
+  skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | f0ac97
+  type: hysteria2
+  server: nas.aizhzo.com
+  port: 5010
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
   skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | 649364
   type: hysteria2
@@ -266,7 +248,6 @@ proxy-groups:
   - VMESS | @PulseConfigs | 11d785
   - TROJAN | @PulseConfigs | f9a088
   - TROJAN | @PulseConfigs | 563bb1
-  - TROJAN | @PulseConfigs | 7e57b6
   - TROJAN | @PulseConfigs | 1637dc
   - TROJAN | @PulseConfigs | aeb215
   - TROJAN | @PulseConfigs | af976a
@@ -277,14 +258,13 @@ proxy-groups:
   - TROJAN | @PulseConfigs | d50e4b
   - TROJAN | @PulseConfigs | e6eebf
   - TROJAN | @PulseConfigs | 98a2e1
-  - TROJAN | @PulseConfigs | 25f4d2
   - VMESS | @PulseConfigs | a7142c
   - TROJAN | @PulseConfigs | abf801
   - VMESS | @PulseConfigs | 882e74
   - HYSTERIA2 | @PulseConfigs | 60ba6b
-  - HYSTERIA2 | @PulseConfigs | 93823d
   - HYSTERIA2 | @PulseConfigs | b6e116
   - HYSTERIA2 | @PulseConfigs | 0d0112
+  - HYSTERIA2 | @PulseConfigs | f0ac97
   - HYSTERIA2 | @PulseConfigs | 649364
   - HYSTERIA2 | @PulseConfigs | 36bd8c
 rules:
