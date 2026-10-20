@@ -78,28 +78,10 @@ proxies:
   sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | aeb215
-  type: trojan
-  server: www.calmlunch.com
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | af976a
   type: trojan
   server: 185.114.72.31
   port: 2053
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 469bf1
-  type: trojan
-  server: 45.130.125.160
-  port: 443
   password: humanity
   network: ws
   sni: www.calmlunch.com
@@ -114,24 +96,6 @@ proxies:
   sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | fe4054
-  type: trojan
-  server: 212.183.88.136
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | fe4b37
-  type: trojan
-  server: 31.57.190.71
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.pleadcourt.org
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | d50e4b
   type: trojan
   server: 57.128.179.254
@@ -141,15 +105,6 @@ proxies:
   sni: www.volumeroot.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | e6eebf
-  type: trojan
-  server: 164.92.200.68
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.pleadcourt.org
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 3806ff
   type: trojan
   server: 92.42.99.143
@@ -157,15 +112,6 @@ proxies:
   password: humanity
   network: ws
   sni: www.volumeroot.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 98a2e1
-  type: trojan
-  server: 31.57.190.34
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.pleadcourt.org
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | e17275
@@ -189,16 +135,10 @@ proxy-groups:
   - TROJAN | @PulseConfigs | f9a088
   - TROJAN | @PulseConfigs | 563bb1
   - TROJAN | @PulseConfigs | 1637dc
-  - TROJAN | @PulseConfigs | aeb215
   - TROJAN | @PulseConfigs | af976a
-  - TROJAN | @PulseConfigs | 469bf1
   - TROJAN | @PulseConfigs | f1b115
-  - TROJAN | @PulseConfigs | fe4054
-  - TROJAN | @PulseConfigs | fe4b37
   - TROJAN | @PulseConfigs | d50e4b
-  - TROJAN | @PulseConfigs | e6eebf
   - TROJAN | @PulseConfigs | 3806ff
-  - TROJAN | @PulseConfigs | 98a2e1
   - TROJAN | @PulseConfigs | e17275
 rules:
 - MATCH,PROXY
