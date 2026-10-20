@@ -168,42 +168,6 @@ proxies:
   sni: www.pleadcourt.org
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 907c16
-  type: vmess
-  server: 8.217.254.88
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: 2b9hwy8ocx7q74nm.v.3dns.vip
-  skip-cert-verify: false
-- name: VMESS | @PulseConfigs | be37e5
-  type: vmess
-  server: 172.64.80.1
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 26a001
-  type: vmess
-  server: chatgpt.com
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | e17275
   type: trojan
   server: ca.tronsg.com
@@ -235,9 +199,6 @@ proxy-groups:
   - TROJAN | @PulseConfigs | e6eebf
   - TROJAN | @PulseConfigs | 3806ff
   - TROJAN | @PulseConfigs | 98a2e1
-  - VMESS | @PulseConfigs | 907c16
-  - VMESS | @PulseConfigs | be37e5
-  - VMESS | @PulseConfigs | 26a001
   - TROJAN | @PulseConfigs | e17275
 rules:
 - MATCH,PROXY
