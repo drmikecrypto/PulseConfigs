@@ -141,46 +141,10 @@ proxies:
   sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | aeb215
-  type: trojan
-  server: www.calmlunch.com
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | af976a
   type: trojan
   server: 185.114.72.31
   port: 2053
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 469bf1
-  type: trojan
-  server: 45.130.125.160
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | f1b115
-  type: trojan
-  server: 104.19.229.21
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | fe4054
-  type: trojan
-  server: 212.183.88.136
-  port: 443
   password: humanity
   network: ws
   sni: www.calmlunch.com
@@ -241,11 +205,7 @@ proxy-groups:
   - TROJAN | @PulseConfigs | f9a088
   - TROJAN | @PulseConfigs | 563bb1
   - TROJAN | @PulseConfigs | 1637dc
-  - TROJAN | @PulseConfigs | aeb215
   - TROJAN | @PulseConfigs | af976a
-  - TROJAN | @PulseConfigs | 469bf1
-  - TROJAN | @PulseConfigs | f1b115
-  - TROJAN | @PulseConfigs | fe4054
   - TROJAN | @PulseConfigs | d50e4b
   - TROJAN | @PulseConfigs | 3806ff
   - TROJAN | @PulseConfigs | 98a2e1
