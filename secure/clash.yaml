@@ -3,13 +3,31 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: TROJAN | @PulseConfigs | 90f22e
+- name: TROJAN | @PulseConfigs | 99dd8c
   type: trojan
-  server: de7.dedushka.top
+  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: dba20dcb635e430fa4d3bfc303a149d2
+  network: tcp
+  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | f38b19
+  type: trojan
+  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  network: tcp
+  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | ca3efb
+  type: trojan
+  server: it1.dedushka.top
   port: 443
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   network: tcp
-  sni: de7.dedushka.top
+  sni: it1.dedushka.top
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | d9f8ab
@@ -21,6 +39,33 @@ proxies:
   sni: pl2.dedushka.top
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | ca090d
+  type: trojan
+  server: lv1.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  network: tcp
+  sni: lv1.dedushka.top
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 90f22e
+  type: trojan
+  server: de7.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  network: tcp
+  sni: de7.dedushka.top
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 0495dc
+  type: trojan
+  server: pl1.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  network: tcp
+  sni: pl1.dedushka.top
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 38a1b3
   type: trojan
   server: 188.241.241.236
@@ -30,22 +75,25 @@ proxies:
   sni: de10.dedushka.top
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | a84085
-  type: trojan
-  server: de6.dedushka.top
+- name: VMESS | @PulseConfigs | d707e8
+  type: vmess
+  server: 9641684.sdf65h4.top
   port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  network: tcp
-  sni: de6.dedushka.top
+  uuid: 250c015d-bab0-4ed3-b638-b4eda48f5840
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
   udp: true
+  servername: 9641684.sdf65h4.top
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | e4fb9d
+- name: TROJAN | @PulseConfigs | a3146b
   type: trojan
-  server: de4.dedushka.top
+  server: de10.dedushka.top
   port: 443
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   network: tcp
-  sni: de4.dedushka.top
+  sni: de10.dedushka.top
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 777af2
@@ -55,6 +103,24 @@ proxies:
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   network: tcp
   sni: de2.dedushka.top
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 6f7fa6
+  type: trojan
+  server: 2.27.109.179
+  port: 45464
+  password: XuMweB2PWs
+  network: tcp
+  sni: 2.27.109.179.sslip.io
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | a84085
+  type: trojan
+  server: de6.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  network: tcp
+  sni: de6.dedushka.top
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 15017d
@@ -78,6 +144,15 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | f9a088
+  type: trojan
+  server: 185.255.179.166
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | af976a
   type: trojan
   server: 185.114.72.31
@@ -87,66 +162,59 @@ proxies:
   sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | f1b115
+- name: TROJAN | @PulseConfigs | 2d57c9
   type: trojan
-  server: 104.19.229.21
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | d50e4b
-  type: trojan
-  server: 57.128.179.254
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.volumeroot.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 98a2e1
-  type: trojan
-  server: 31.57.190.34
+  server: 161.35.192.122
   port: 443
   password: humanity
   network: ws
   sni: www.pleadcourt.org
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 8231dd
+- name: TROJAN | @PulseConfigs | 4566a0
   type: trojan
-  server: us3-2.998998.best
+  server: b2n.ir
   port: 443
-  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  password: mitivpn
   network: ws
-  sni: nat3.xxai.dpdns.org
+  sni: de.mitivpn.in.net
   udp: true
   skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | b6e116
-  type: hysteria2
-  server: 162.249.125.133
+- name: VMESS | @PulseConfigs | 7f3d97
+  type: vmess
+  server: us16-4.998998.best
   port: 443
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: server1.9966338.xyz
   skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
-  - TROJAN | @PulseConfigs | 90f22e
+  - TROJAN | @PulseConfigs | 99dd8c
+  - TROJAN | @PulseConfigs | f38b19
+  - TROJAN | @PulseConfigs | ca3efb
   - TROJAN | @PulseConfigs | d9f8ab
+  - TROJAN | @PulseConfigs | ca090d
+  - TROJAN | @PulseConfigs | 90f22e
+  - TROJAN | @PulseConfigs | 0495dc
   - TROJAN | @PulseConfigs | 38a1b3
-  - TROJAN | @PulseConfigs | a84085
-  - TROJAN | @PulseConfigs | e4fb9d
+  - VMESS | @PulseConfigs | d707e8
+  - TROJAN | @PulseConfigs | a3146b
   - TROJAN | @PulseConfigs | 777af2
+  - TROJAN | @PulseConfigs | 6f7fa6
+  - TROJAN | @PulseConfigs | a84085
   - TROJAN | @PulseConfigs | 15017d
   - VMESS | @PulseConfigs | 11d785
+  - TROJAN | @PulseConfigs | f9a088
   - TROJAN | @PulseConfigs | af976a
-  - TROJAN | @PulseConfigs | f1b115
-  - TROJAN | @PulseConfigs | d50e4b
-  - TROJAN | @PulseConfigs | 98a2e1
-  - TROJAN | @PulseConfigs | 8231dd
-  - HYSTERIA2 | @PulseConfigs | b6e116
+  - TROJAN | @PulseConfigs | 2d57c9
+  - TROJAN | @PulseConfigs | 4566a0
+  - VMESS | @PulseConfigs | 7f3d97
 rules:
 - MATCH,PROXY
