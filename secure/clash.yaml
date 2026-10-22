@@ -108,13 +108,13 @@ proxies:
   sni: de2.dedushka.top
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | a3146b
+- name: TROJAN | @PulseConfigs | a84085
   type: trojan
-  server: de10.dedushka.top
+  server: de6.dedushka.top
   port: 443
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   network: tcp
-  sni: de10.dedushka.top
+  sni: de6.dedushka.top
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 6f7fa6
@@ -134,30 +134,6 @@ proxies:
   network: tcp
   sni: de4.dedushka.top
   udp: true
-  skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 97b34c
-  type: vmess
-  server: wjofHsQtEuEywxEq.v.3dns.vip
-  port: 443
-  uuid: a9f4de8b-68f1-44b6-b6a2-1db60940503a
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: wjofHsQtEuEywxEq.v.3dns.vip
-  skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 878a6c
-  type: vmess
-  server: 47.243.153.153
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: i2psm3knof5qjjix.v.3dns.vip
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 11d785
   type: vmess
@@ -184,15 +160,6 @@ proxies:
   type: trojan
   server: 185.220.100.168
   port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 7e57b6
-  type: trojan
-  server: 212.227.144.37
-  port: 8443
   password: humanity
   network: ws
   sni: www.calmlunch.com
@@ -252,6 +219,15 @@ proxies:
   sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 2d57c9
+  type: trojan
+  server: 161.35.192.122
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.pleadcourt.org
+  udp: true
+  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | a895c7
   type: vmess
   server: 8.218.195.61
@@ -279,21 +255,19 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 38a1b3
   - VMESS | @PulseConfigs | 7f3d97
   - TROJAN | @PulseConfigs | 777af2
-  - TROJAN | @PulseConfigs | a3146b
+  - TROJAN | @PulseConfigs | a84085
   - TROJAN | @PulseConfigs | 6f7fa6
   - TROJAN | @PulseConfigs | e4fb9d
-  - VMESS | @PulseConfigs | 97b34c
-  - VMESS | @PulseConfigs | 878a6c
   - VMESS | @PulseConfigs | 11d785
   - TROJAN | @PulseConfigs | f9a088
   - TROJAN | @PulseConfigs | 563bb1
-  - TROJAN | @PulseConfigs | 7e57b6
   - TROJAN | @PulseConfigs | 1637dc
   - TROJAN | @PulseConfigs | aeb215
   - TROJAN | @PulseConfigs | af976a
   - TROJAN | @PulseConfigs | 469bf1
   - TROJAN | @PulseConfigs | f1b115
   - TROJAN | @PulseConfigs | fe4054
+  - TROJAN | @PulseConfigs | 2d57c9
   - VMESS | @PulseConfigs | a895c7
 rules:
 - MATCH,PROXY
