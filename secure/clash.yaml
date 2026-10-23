@@ -3,6 +3,15 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- name: TROJAN | @PulseConfigs | f38b19
+  type: trojan
+  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  network: tcp
+  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 90f22e
   type: trojan
   server: de7.dedushka.top
@@ -57,15 +66,6 @@ proxies:
   sni: de2.dedushka.top
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | e17275
-  type: trojan
-  server: ca.tronsg.com
-  port: 443
-  password: Trojan@82164024
-  network: tcp
-  sni: ''
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 372786
   type: trojan
   server: de3.dedushka.top
@@ -75,6 +75,15 @@ proxies:
   sni: ''
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 38a1b3
+  type: trojan
+  server: 188.241.241.236
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  network: tcp
+  sni: de10.dedushka.top
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 37499a
   type: trojan
   server: de12.dedushka.top
@@ -82,6 +91,15 @@ proxies:
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   network: tcp
   sni: de12.dedushka.top
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | a3146b
+  type: trojan
+  server: de10.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  network: tcp
+  sni: de10.dedushka.top
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 15017d
@@ -204,19 +222,33 @@ proxies:
   sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | a895c7
+  type: vmess
+  server: 8.218.195.61
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: EX1oGt73NzPQKAc2.v.3dns.vip
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
+  - TROJAN | @PulseConfigs | f38b19
   - TROJAN | @PulseConfigs | 90f22e
   - TROJAN | @PulseConfigs | ca3efb
   - TROJAN | @PulseConfigs | ca090d
   - TROJAN | @PulseConfigs | d9f8ab
   - TROJAN | @PulseConfigs | 0495dc
   - TROJAN | @PulseConfigs | 777af2
-  - TROJAN | @PulseConfigs | e17275
   - TROJAN | @PulseConfigs | 372786
+  - TROJAN | @PulseConfigs | 38a1b3
   - TROJAN | @PulseConfigs | 37499a
+  - TROJAN | @PulseConfigs | a3146b
   - TROJAN | @PulseConfigs | 15017d
   - TROJAN | @PulseConfigs | 6f7fa6
   - TROJAN | @PulseConfigs | 4e6113
@@ -230,5 +262,6 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 469bf1
   - TROJAN | @PulseConfigs | f1b115
   - TROJAN | @PulseConfigs | fe4054
+  - VMESS | @PulseConfigs | a895c7
 rules:
 - MATCH,PROXY

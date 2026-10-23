@@ -13,6 +13,18 @@
     },
     {
       "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | f38b19",
+      "server": "resources.findlocaljobnetworkandbuildcommunityconnections.com",
+      "server_port": 443,
+      "password": "f0eb8c92ce8946aaba856569cff1a16b",
+      "tls": {
+        "enabled": true,
+        "server_name": "resources.findlocaljobnetworkandbuildcommunityconnections.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 90f22e",
       "server": "de7.dedushka.top",
       "server_port": 443,
@@ -85,18 +97,6 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | e17275",
-      "server": "ca.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "ca.tronsg.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 372786",
       "server": "de3.dedushka.top",
       "server_port": 443,
@@ -109,6 +109,18 @@
     },
     {
       "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 38a1b3",
+      "server": "188.241.241.236",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "de10.dedushka.top",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 37499a",
       "server": "de12.dedushka.top",
       "server_port": 443,
@@ -116,6 +128,18 @@
       "tls": {
         "enabled": true,
         "server_name": "de12.dedushka.top",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | a3146b",
+      "server": "de10.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "de10.dedushka.top",
         "insecure": false
       }
     },
@@ -289,18 +313,45 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | a895c7",
+      "server": "8.218.195.61",
+      "server_port": 443,
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "EX1oGt73NzPQKAc2.v.3dns.vip",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "EX1oGt73NzPQKAc2.v.3dns.vip"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
+        "TROJAN | @PulseConfigs | f38b19",
         "TROJAN | @PulseConfigs | 90f22e",
         "TROJAN | @PulseConfigs | ca3efb",
         "TROJAN | @PulseConfigs | ca090d",
         "TROJAN | @PulseConfigs | d9f8ab",
         "TROJAN | @PulseConfigs | 0495dc",
         "TROJAN | @PulseConfigs | 777af2",
-        "TROJAN | @PulseConfigs | e17275",
         "TROJAN | @PulseConfigs | 372786",
+        "TROJAN | @PulseConfigs | 38a1b3",
         "TROJAN | @PulseConfigs | 37499a",
+        "TROJAN | @PulseConfigs | a3146b",
         "TROJAN | @PulseConfigs | 15017d",
         "TROJAN | @PulseConfigs | 6f7fa6",
         "TROJAN | @PulseConfigs | 4e6113",
@@ -313,7 +364,8 @@
         "TROJAN | @PulseConfigs | af976a",
         "TROJAN | @PulseConfigs | 469bf1",
         "TROJAN | @PulseConfigs | f1b115",
-        "TROJAN | @PulseConfigs | fe4054"
+        "TROJAN | @PulseConfigs | fe4054",
+        "VMESS | @PulseConfigs | a895c7"
       ]
     }
   ]
