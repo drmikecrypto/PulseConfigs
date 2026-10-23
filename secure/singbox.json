@@ -36,6 +36,18 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | e17275",
+      "server": "ca.tronsg.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "ca.tronsg.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "vmess",
       "tag": "VMESS | @PulseConfigs | 97b34c",
       "server": "wjofHsQtEuEywxEq.v.3dns.vip",
@@ -183,6 +195,42 @@
     },
     {
       "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 2d57c9",
+      "server": "161.35.192.122",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | fe4b37",
+      "server": "31.57.190.71",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 489dd7",
+      "server": "46.62.204.134",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 98a2e1",
       "server": "31.57.190.34",
       "server_port": 443,
@@ -191,6 +239,31 @@
         "enabled": true,
         "server_name": "www.pleadcourt.org",
         "insecure": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 882e74",
+      "server": "104.17.77.77",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
       }
     },
     {
@@ -211,6 +284,7 @@
       "outbounds": [
         "TROJAN | @PulseConfigs | 99dd8c",
         "TROJAN | @PulseConfigs | f38b19",
+        "TROJAN | @PulseConfigs | e17275",
         "VMESS | @PulseConfigs | 97b34c",
         "VMESS | @PulseConfigs | 11d785",
         "TROJAN | @PulseConfigs | f9a088",
@@ -221,7 +295,11 @@
         "TROJAN | @PulseConfigs | 469bf1",
         "TROJAN | @PulseConfigs | f1b115",
         "TROJAN | @PulseConfigs | fe4054",
+        "TROJAN | @PulseConfigs | 2d57c9",
+        "TROJAN | @PulseConfigs | fe4b37",
+        "TROJAN | @PulseConfigs | 489dd7",
         "TROJAN | @PulseConfigs | 98a2e1",
+        "VMESS | @PulseConfigs | 882e74",
         "HYSTERIA2 | @PulseConfigs | b6e116"
       ]
     }
