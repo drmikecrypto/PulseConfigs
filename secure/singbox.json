@@ -109,6 +109,18 @@
     },
     {
       "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 38a1b3",
+      "server": "188.241.241.236",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "de10.dedushka.top",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 777af2",
       "server": "de2.dedushka.top",
       "server_port": 443,
@@ -165,31 +177,6 @@
         "enabled": true,
         "server_name": "de4.dedushka.top",
         "insecure": false
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | a895c7",
-      "server": "8.218.195.61",
-      "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "EX1oGt73NzPQKAc2.v.3dns.vip",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "EX1oGt73NzPQKAc2.v.3dns.vip"
-        }
       }
     },
     {
@@ -259,6 +246,18 @@
       "tag": "TROJAN | @PulseConfigs | 563bb1",
       "server": "185.220.100.168",
       "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 7e57b6",
+      "server": "212.227.144.37",
+      "server_port": 8443,
       "password": "humanity",
       "tls": {
         "enabled": true,
@@ -375,6 +374,31 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 878a6c",
+      "server": "47.243.153.153",
+      "server_port": 443,
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "i2psm3knof5qjjix.v.3dns.vip",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "i2psm3knof5qjjix.v.3dns.vip"
+        }
+      }
+    },
+    {
       "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 4566a0",
       "server": "b2n.ir",
@@ -435,16 +459,17 @@
         "TROJAN | @PulseConfigs | 90f22e",
         "TROJAN | @PulseConfigs | d9f8ab",
         "TROJAN | @PulseConfigs | a3146b",
+        "TROJAN | @PulseConfigs | 38a1b3",
         "TROJAN | @PulseConfigs | 777af2",
         "TROJAN | @PulseConfigs | a84085",
         "TROJAN | @PulseConfigs | 15017d",
         "TROJAN | @PulseConfigs | 6f7fa6",
         "TROJAN | @PulseConfigs | e4fb9d",
-        "VMESS | @PulseConfigs | a895c7",
         "VMESS | @PulseConfigs | 1e9443",
         "VMESS | @PulseConfigs | 11d785",
         "TROJAN | @PulseConfigs | f9a088",
         "TROJAN | @PulseConfigs | 563bb1",
+        "TROJAN | @PulseConfigs | 7e57b6",
         "TROJAN | @PulseConfigs | 1637dc",
         "TROJAN | @PulseConfigs | aeb215",
         "TROJAN | @PulseConfigs | af976a",
@@ -454,6 +479,7 @@
         "TROJAN | @PulseConfigs | 2d57c9",
         "TROJAN | @PulseConfigs | fe4b37",
         "TROJAN | @PulseConfigs | 98a2e1",
+        "VMESS | @PulseConfigs | 878a6c",
         "TROJAN | @PulseConfigs | 4566a0",
         "VMESS | @PulseConfigs | 7f3d97",
         "HYSTERIA2 | @PulseConfigs | 08ed14"
