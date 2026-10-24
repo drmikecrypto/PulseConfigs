@@ -3,6 +3,33 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- name: TROJAN | @PulseConfigs | e17275
+  type: trojan
+  server: ca.tronsg.com
+  port: 443
+  password: Trojan@82164024
+  network: tcp
+  sni: ''
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | f38b19
+  type: trojan
+  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  network: tcp
+  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 99dd8c
+  type: trojan
+  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: dba20dcb635e430fa4d3bfc303a149d2
+  network: tcp
+  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 6f7fa6
   type: trojan
   server: 2.27.109.179
@@ -36,6 +63,15 @@ proxies:
 - name: TROJAN | @PulseConfigs | 8a6e68
   type: trojan
   server: 185.225.68.232
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 1637dc
+  type: trojan
+  server: 45.87.41.18
   port: 443
   password: humanity
   network: ws
@@ -105,6 +141,27 @@ proxies:
   sni: www.trusteeforward.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 2d57c9
+  type: trojan
+  server: 161.35.192.122
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.pleadcourt.org
+  udp: true
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 882e74
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | b6e116
   type: hysteria2
   server: 162.249.125.133
@@ -119,21 +176,32 @@ proxies:
   password: d4ca9415f0eac7897472e1e5b86d2e96
   sni: promo.betust.net
   skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 649364
+- name: HYSTERIA2 | @PulseConfigs | 3dfe6d
   type: hysteria2
-  server: 130.49.161.70
+  server: promo.betust.net
   port: 443
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  sni: ''
+  skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | f0ac97
+  type: hysteria2
+  server: nas.aizhzo.com
+  port: 5010
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
+  - TROJAN | @PulseConfigs | e17275
+  - TROJAN | @PulseConfigs | f38b19
+  - TROJAN | @PulseConfigs | 99dd8c
   - TROJAN | @PulseConfigs | 6f7fa6
   - VMESS | @PulseConfigs | 11d785
   - TROJAN | @PulseConfigs | f9a088
   - TROJAN | @PulseConfigs | 8a6e68
+  - TROJAN | @PulseConfigs | 1637dc
   - TROJAN | @PulseConfigs | aeb215
   - TROJAN | @PulseConfigs | af976a
   - TROJAN | @PulseConfigs | 469bf1
@@ -141,8 +209,11 @@ proxy-groups:
   - TROJAN | @PulseConfigs | f1b115
   - TROJAN | @PulseConfigs | fe4054
   - TROJAN | @PulseConfigs | 11b9dc
+  - TROJAN | @PulseConfigs | 2d57c9
+  - VMESS | @PulseConfigs | 882e74
   - HYSTERIA2 | @PulseConfigs | b6e116
   - HYSTERIA2 | @PulseConfigs | d9fc42
-  - HYSTERIA2 | @PulseConfigs | 649364
+  - HYSTERIA2 | @PulseConfigs | 3dfe6d
+  - HYSTERIA2 | @PulseConfigs | f0ac97
 rules:
 - MATCH,PROXY
