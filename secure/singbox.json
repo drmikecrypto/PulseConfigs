@@ -110,6 +110,18 @@
     },
     {
       "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 7e57b6",
+      "server": "212.227.144.37",
+      "server_port": 8443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 1637dc",
       "server": "45.87.41.18",
       "server_port": 443,
@@ -217,28 +229,39 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | 882e74",
-      "server": "104.17.77.77",
-      "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
-      "security": "auto",
-      "alter_id": 0,
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | fe4b37",
+      "server": "31.57.190.71",
+      "server_port": 443,
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lMnsZUN4/",
-        "headers": {
-          "Host": "v2ray1.dozapp.xyz"
-        }
+        "server_name": "www.pleadcourt.org",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "HYSTERIA2 | @PulseConfigs | 741885",
+      "server": "103.88.243.142",
+      "server_port": 11592,
+      "password": "41edb44c8e",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-17e124.21freedom.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "HYSTERIA2 | @PulseConfigs | d9c43d",
+      "server": "srv-17e124.21freedom.net",
+      "server_port": 11592,
+      "password": "41edb44c8e",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-17e124.21freedom.net",
+        "insecure": false
       }
     },
     {
@@ -290,6 +313,18 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "HYSTERIA2 | @PulseConfigs | 649364",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
@@ -300,6 +335,7 @@
         "VMESS | @PulseConfigs | 11d785",
         "TROJAN | @PulseConfigs | f9a088",
         "TROJAN | @PulseConfigs | 8a6e68",
+        "TROJAN | @PulseConfigs | 7e57b6",
         "TROJAN | @PulseConfigs | 1637dc",
         "TROJAN | @PulseConfigs | aeb215",
         "TROJAN | @PulseConfigs | af976a",
@@ -309,11 +345,14 @@
         "TROJAN | @PulseConfigs | fe4054",
         "TROJAN | @PulseConfigs | 11b9dc",
         "TROJAN | @PulseConfigs | 2d57c9",
-        "VMESS | @PulseConfigs | 882e74",
+        "TROJAN | @PulseConfigs | fe4b37",
+        "HYSTERIA2 | @PulseConfigs | 741885",
+        "HYSTERIA2 | @PulseConfigs | d9c43d",
         "HYSTERIA2 | @PulseConfigs | b6e116",
         "HYSTERIA2 | @PulseConfigs | d9fc42",
         "HYSTERIA2 | @PulseConfigs | 3dfe6d",
-        "HYSTERIA2 | @PulseConfigs | f0ac97"
+        "HYSTERIA2 | @PulseConfigs | f0ac97",
+        "HYSTERIA2 | @PulseConfigs | 649364"
       ]
     }
   ]
