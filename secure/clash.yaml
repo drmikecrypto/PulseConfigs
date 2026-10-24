@@ -30,18 +30,6 @@ proxies:
   sni: ca.tronsg.com
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 97b34c
-  type: vmess
-  server: wjofHsQtEuEywxEq.v.3dns.vip
-  port: 443
-  uuid: a9f4de8b-68f1-44b6-b6a2-1db60940503a
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: wjofHsQtEuEywxEq.v.3dns.vip
-  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 11d785
   type: vmess
   server: guanwang.awsno.com
@@ -162,6 +150,15 @@ proxies:
   sni: www.pleadcourt.org
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 3e23d3
+  type: trojan
+  server: 172.67.71.122
+  port: 443
+  password: bpb-trojan
+  network: ws
+  sni: 6982410.xyz
+  udp: true
+  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 882e74
   type: vmess
   server: 104.17.77.77
@@ -188,7 +185,6 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 99dd8c
   - TROJAN | @PulseConfigs | f38b19
   - TROJAN | @PulseConfigs | e17275
-  - VMESS | @PulseConfigs | 97b34c
   - VMESS | @PulseConfigs | 11d785
   - TROJAN | @PulseConfigs | f9a088
   - TROJAN | @PulseConfigs | 563bb1
@@ -202,6 +198,7 @@ proxy-groups:
   - TROJAN | @PulseConfigs | fe4b37
   - TROJAN | @PulseConfigs | 489dd7
   - TROJAN | @PulseConfigs | 98a2e1
+  - TROJAN | @PulseConfigs | 3e23d3
   - VMESS | @PulseConfigs | 882e74
   - HYSTERIA2 | @PulseConfigs | b6e116
 rules:

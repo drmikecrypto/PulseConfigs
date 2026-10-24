@@ -49,31 +49,6 @@
     },
     {
       "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | 97b34c",
-      "server": "wjofHsQtEuEywxEq.v.3dns.vip",
-      "server_port": 443,
-      "uuid": "a9f4de8b-68f1-44b6-b6a2-1db60940503a",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "wjofHsQtEuEywxEq.v.3dns.vip",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "wjofHsQtEuEywxEq.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "type": "vmess",
       "tag": "VMESS | @PulseConfigs | 11d785",
       "server": "guanwang.awsno.com",
       "server_port": 443,
@@ -242,6 +217,18 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 3e23d3",
+      "server": "172.67.71.122",
+      "server_port": 443,
+      "password": "bpb-trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "6982410.xyz",
+        "insecure": false
+      }
+    },
+    {
       "type": "vmess",
       "tag": "VMESS | @PulseConfigs | 882e74",
       "server": "104.17.77.77",
@@ -285,7 +272,6 @@
         "TROJAN | @PulseConfigs | 99dd8c",
         "TROJAN | @PulseConfigs | f38b19",
         "TROJAN | @PulseConfigs | e17275",
-        "VMESS | @PulseConfigs | 97b34c",
         "VMESS | @PulseConfigs | 11d785",
         "TROJAN | @PulseConfigs | f9a088",
         "TROJAN | @PulseConfigs | 563bb1",
@@ -299,6 +285,7 @@
         "TROJAN | @PulseConfigs | fe4b37",
         "TROJAN | @PulseConfigs | 489dd7",
         "TROJAN | @PulseConfigs | 98a2e1",
+        "TROJAN | @PulseConfigs | 3e23d3",
         "VMESS | @PulseConfigs | 882e74",
         "HYSTERIA2 | @PulseConfigs | b6e116"
       ]
