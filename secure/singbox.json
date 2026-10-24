@@ -12,30 +12,6 @@
       "tag": "block"
     },
     {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 99dd8c",
-      "server": "blog.findlocaljobnetworkandbuildcommunityconnections.com",
-      "server_port": 443,
-      "password": "dba20dcb635e430fa4d3bfc303a149d2",
-      "tls": {
-        "enabled": true,
-        "server_name": "blog.findlocaljobnetworkandbuildcommunityconnections.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | f38b19",
-      "server": "resources.findlocaljobnetworkandbuildcommunityconnections.com",
-      "server_port": 443,
-      "password": "f0eb8c92ce8946aaba856569cff1a16b",
-      "tls": {
-        "enabled": true,
-        "server_name": "resources.findlocaljobnetworkandbuildcommunityconnections.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vmess",
       "tag": "VMESS | @PulseConfigs | 97b34c",
       "server": "wjofHsQtEuEywxEq.v.3dns.vip",
@@ -123,68 +99,8 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | aeb215",
-      "server": "www.calmlunch.com",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | af976a",
-      "server": "185.114.72.31",
-      "server_port": 2053,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 469bf1",
-      "server": "45.130.125.160",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 563bb1",
-      "server": "185.220.100.168",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | f1b115",
       "server": "104.19.229.21",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | fe4054",
-      "server": "212.183.88.136",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -206,28 +122,15 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | 882e74",
-      "server": "104.17.77.77",
-      "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
-      "security": "auto",
-      "alter_id": 0,
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | e17275",
+      "server": "ca.tronsg.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
       "tls": {
         "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lMnsZUN4/",
-        "headers": {
-          "Host": "v2ray1.dozapp.xyz"
-        }
+        "server_name": "ca.tronsg.com",
+        "insecure": false
       }
     },
     {
@@ -244,13 +147,25 @@
     },
     {
       "type": "hysteria2",
-      "tag": "HYSTERIA2 | @PulseConfigs | d180d6",
-      "server": "hy2.123266.xyz",
-      "server_port": 33333,
-      "password": "bce6c821-200d-421f-bf3d-7159e5246ea0",
+      "tag": "HYSTERIA2 | @PulseConfigs | d9fc42",
+      "server": "50.7.38.243",
+      "server_port": 443,
+      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
       "tls": {
         "enabled": true,
-        "server_name": "hy2.123266.xyz",
+        "server_name": "promo.betust.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "HYSTERIA2 | @PulseConfigs | 649364",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
         "insecure": false
       }
     },
@@ -258,23 +173,17 @@
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
-        "TROJAN | @PulseConfigs | 99dd8c",
-        "TROJAN | @PulseConfigs | f38b19",
         "VMESS | @PulseConfigs | 97b34c",
         "TROJAN | @PulseConfigs | 6f7fa6",
         "VMESS | @PulseConfigs | 11d785",
         "TROJAN | @PulseConfigs | f9a088",
         "TROJAN | @PulseConfigs | 8a6e68",
-        "TROJAN | @PulseConfigs | aeb215",
-        "TROJAN | @PulseConfigs | af976a",
-        "TROJAN | @PulseConfigs | 469bf1",
-        "TROJAN | @PulseConfigs | 563bb1",
         "TROJAN | @PulseConfigs | f1b115",
-        "TROJAN | @PulseConfigs | fe4054",
         "TROJAN | @PulseConfigs | 11b9dc",
-        "VMESS | @PulseConfigs | 882e74",
+        "TROJAN | @PulseConfigs | e17275",
         "HYSTERIA2 | @PulseConfigs | b6e116",
-        "HYSTERIA2 | @PulseConfigs | d180d6"
+        "HYSTERIA2 | @PulseConfigs | d9fc42",
+        "HYSTERIA2 | @PulseConfigs | 649364"
       ]
     }
   ]

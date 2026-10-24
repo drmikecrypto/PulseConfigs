@@ -3,24 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: TROJAN | @PulseConfigs | 99dd8c
-  type: trojan
-  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  password: dba20dcb635e430fa4d3bfc303a149d2
-  network: tcp
-  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | f38b19
-  type: trojan
-  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  password: f0eb8c92ce8946aaba856569cff1a16b
-  network: tcp
-  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  udp: true
-  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 97b34c
   type: vmess
   server: wjofHsQtEuEywxEq.v.3dns.vip
@@ -72,54 +54,9 @@ proxies:
   sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | aeb215
-  type: trojan
-  server: www.calmlunch.com
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | af976a
-  type: trojan
-  server: 185.114.72.31
-  port: 2053
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 469bf1
-  type: trojan
-  server: 45.130.125.160
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 563bb1
-  type: trojan
-  server: 185.220.100.168
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | f1b115
   type: trojan
   server: 104.19.229.21
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | fe4054
-  type: trojan
-  server: 212.183.88.136
   port: 443
   password: humanity
   network: ws
@@ -135,17 +72,14 @@ proxies:
   sni: www.trusteeforward.com
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 882e74
-  type: vmess
-  server: 104.17.77.77
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
+- name: TROJAN | @PulseConfigs | e17275
+  type: trojan
+  server: ca.tronsg.com
+  port: 443
+  password: Trojan@82164024
+  network: tcp
+  sni: ''
   udp: true
-  servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | b6e116
   type: hysteria2
@@ -154,33 +88,34 @@ proxies:
   password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
   sni: hy2-new.aspidnet.xyz
   skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | d180d6
+- name: HYSTERIA2 | @PulseConfigs | d9fc42
   type: hysteria2
-  server: hy2.123266.xyz
-  port: 33333
-  password: bce6c821-200d-421f-bf3d-7159e5246ea0
-  sni: hy2.123266.xyz
+  server: 50.7.38.243
+  port: 443
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  sni: promo.betust.net
+  skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | 649364
+  type: hysteria2
+  server: 130.49.161.70
+  port: 443
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
   skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
-  - TROJAN | @PulseConfigs | 99dd8c
-  - TROJAN | @PulseConfigs | f38b19
   - VMESS | @PulseConfigs | 97b34c
   - TROJAN | @PulseConfigs | 6f7fa6
   - VMESS | @PulseConfigs | 11d785
   - TROJAN | @PulseConfigs | f9a088
   - TROJAN | @PulseConfigs | 8a6e68
-  - TROJAN | @PulseConfigs | aeb215
-  - TROJAN | @PulseConfigs | af976a
-  - TROJAN | @PulseConfigs | 469bf1
-  - TROJAN | @PulseConfigs | 563bb1
   - TROJAN | @PulseConfigs | f1b115
-  - TROJAN | @PulseConfigs | fe4054
   - TROJAN | @PulseConfigs | 11b9dc
-  - VMESS | @PulseConfigs | 882e74
+  - TROJAN | @PulseConfigs | e17275
   - HYSTERIA2 | @PulseConfigs | b6e116
-  - HYSTERIA2 | @PulseConfigs | d180d6
+  - HYSTERIA2 | @PulseConfigs | d9fc42
+  - HYSTERIA2 | @PulseConfigs | 649364
 rules:
 - MATCH,PROXY
