@@ -3,6 +3,24 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- name: TROJAN | @PulseConfigs | 99dd8c
+  type: trojan
+  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: dba20dcb635e430fa4d3bfc303a149d2
+  network: tcp
+  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | f38b19
+  type: trojan
+  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  network: tcp
+  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  udp: true
+  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 97b34c
   type: vmess
   server: wjofHsQtEuEywxEq.v.3dns.vip
@@ -14,6 +32,15 @@ proxies:
   tls: true
   udp: true
   servername: wjofHsQtEuEywxEq.v.3dns.vip
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 6f7fa6
+  type: trojan
+  server: 2.27.109.179
+  port: 45464
+  password: XuMweB2PWs
+  network: tcp
+  sni: 2.27.109.179.sslip.io
+  udp: true
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 11d785
   type: vmess
@@ -39,15 +66,6 @@ proxies:
 - name: TROJAN | @PulseConfigs | 8a6e68
   type: trojan
   server: 185.225.68.232
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 1637dc
-  type: trojan
-  server: 45.87.41.18
   port: 443
   password: humanity
   network: ws
@@ -117,14 +135,17 @@ proxies:
   sni: www.trusteeforward.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 2d57c9
-  type: trojan
-  server: 161.35.192.122
-  port: 443
-  password: humanity
+- name: VMESS | @PulseConfigs | 882e74
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
   network: ws
-  sni: www.pleadcourt.org
+  tls: true
   udp: true
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | b6e116
   type: hysteria2
@@ -144,11 +165,13 @@ proxy-groups:
 - name: PROXY
   type: select
   proxies:
+  - TROJAN | @PulseConfigs | 99dd8c
+  - TROJAN | @PulseConfigs | f38b19
   - VMESS | @PulseConfigs | 97b34c
+  - TROJAN | @PulseConfigs | 6f7fa6
   - VMESS | @PulseConfigs | 11d785
   - TROJAN | @PulseConfigs | f9a088
   - TROJAN | @PulseConfigs | 8a6e68
-  - TROJAN | @PulseConfigs | 1637dc
   - TROJAN | @PulseConfigs | aeb215
   - TROJAN | @PulseConfigs | af976a
   - TROJAN | @PulseConfigs | 469bf1
@@ -156,7 +179,7 @@ proxy-groups:
   - TROJAN | @PulseConfigs | f1b115
   - TROJAN | @PulseConfigs | fe4054
   - TROJAN | @PulseConfigs | 11b9dc
-  - TROJAN | @PulseConfigs | 2d57c9
+  - VMESS | @PulseConfigs | 882e74
   - HYSTERIA2 | @PulseConfigs | b6e116
   - HYSTERIA2 | @PulseConfigs | d180d6
 rules:
