@@ -69,15 +69,6 @@ proxies:
   sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 7e57b6
-  type: trojan
-  server: 212.227.144.37
-  port: 8443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 1637dc
   type: trojan
   server: 45.87.41.18
@@ -168,6 +159,18 @@ proxies:
   sni: www.pleadcourt.org
   udp: true
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 882e74
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | 741885
   type: hysteria2
   server: 103.88.243.142
@@ -228,7 +231,6 @@ proxy-groups:
   - VMESS | @PulseConfigs | 11d785
   - TROJAN | @PulseConfigs | f9a088
   - TROJAN | @PulseConfigs | 8a6e68
-  - TROJAN | @PulseConfigs | 7e57b6
   - TROJAN | @PulseConfigs | 1637dc
   - TROJAN | @PulseConfigs | aeb215
   - TROJAN | @PulseConfigs | af976a
@@ -239,6 +241,7 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 11b9dc
   - TROJAN | @PulseConfigs | 2d57c9
   - TROJAN | @PulseConfigs | fe4b37
+  - VMESS | @PulseConfigs | 882e74
   - HYSTERIA2 | @PulseConfigs | 741885
   - HYSTERIA2 | @PulseConfigs | d9c43d
   - HYSTERIA2 | @PulseConfigs | b6e116

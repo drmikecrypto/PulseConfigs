@@ -91,6 +91,15 @@
       "median_delay_ms": null
     },
     {
+      "fingerprint": "trojan|resources.findlocaljobnetworkandbuildcommunityconnections.com|443|f0eb8c92ce8946aaba856569cff1a16b|tls|tcp||",
+      "raw": "trojan://f0eb8c92ce8946aaba856569cff1a16b@resources.findlocaljobnetworkandbuildcommunityconnections.com:443?security=tls&sni=resources.findlocaljobnetworkandbuildcommunityconnections.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20f38b19",
+      "protocol": "trojan",
+      "strategy": "legacy",
+      "host": "resources.findlocaljobnetworkandbuildcommunityconnections.com",
+      "port": 443,
+      "median_delay_ms": null
+    },
+    {
       "fingerprint": "shadowsocks|45.86.51.18|19999|ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=||tcp||",
       "raw": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@45.86.51.18:19999#SHADOWSOCKS%20%7C%20%40PulseConfigs%20%7C%2085860a",
       "protocol": "shadowsocks",
@@ -145,12 +154,12 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "shadowsocks|185.164.175.81|19999|ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=||tcp||",
-      "raw": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@185.164.175.81:19999#SHADOWSOCKS%20%7C%20%40PulseConfigs%20%7C%20d2a266",
-      "protocol": "shadowsocks",
-      "strategy": "legacy",
-      "host": "185.164.175.81",
-      "port": 19999,
+      "fingerprint": "hysteria2|130.49.161.70|443|p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR||tcp||",
+      "raw": "hysteria2://p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR@130.49.161.70:443?insecure=0&sni=hy2.aspidnet.xyz&obfs=salamander&obfs-password=rG07s3COMIEvdnQipRyWzx_H_2xygNC3#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%20649364",
+      "protocol": "hysteria2",
+      "strategy": "quic_speed",
+      "host": "130.49.161.70",
+      "port": 443,
       "median_delay_ms": null
     },
     {
@@ -172,21 +181,12 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "hysteria2|130.49.161.70|443|p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR||tcp||",
-      "raw": "hysteria2://p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR@130.49.161.70:443?insecure=0&sni=hy2.aspidnet.xyz&obfs=salamander&obfs-password=rG07s3COMIEvdnQipRyWzx_H_2xygNC3#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%20649364",
+      "fingerprint": "hysteria2|vpn-tw-002.fastervpn.world|443|H7mP2xY9kJ4nQ8wR5tF6vB3z||tcp||",
+      "raw": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@vpn-tw-002.fastervpn.world:443?insecure=1&sni=127.0.0.1#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%20d61fee",
       "protocol": "hysteria2",
       "strategy": "quic_speed",
-      "host": "130.49.161.70",
+      "host": "vpn-tw-002.fastervpn.world",
       "port": 443,
-      "median_delay_ms": null
-    },
-    {
-      "fingerprint": "hysteria2|103.88.243.142|11592|41edb44c8e||tcp||",
-      "raw": "hysteria2://41edb44c8e@103.88.243.142:11592?sni=srv-17e124.21freedom.net#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%20741885",
-      "protocol": "hysteria2",
-      "strategy": "quic_speed",
-      "host": "103.88.243.142",
-      "port": 11592,
       "median_delay_ms": null
     }
   ]
