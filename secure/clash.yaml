@@ -3,13 +3,13 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: TROJAN | @PulseConfigs | e17275
+- name: TROJAN | @PulseConfigs | 99dd8c
   type: trojan
-  server: ca.tronsg.com
+  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
   port: 443
-  password: Trojan@82164024
+  password: dba20dcb635e430fa4d3bfc303a149d2
   network: tcp
-  sni: ''
+  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | f38b19
@@ -21,14 +21,53 @@ proxies:
   sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 99dd8c
-  type: trojan
-  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
+- name: VMESS | @PulseConfigs | 40c51e
+  type: vmess
+  server: us5-1.998998.best
   port: 443
-  password: dba20dcb635e430fa4d3bfc303a149d2
-  network: tcp
-  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
   udp: true
+  servername: server4.9966338.xyz
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | f15673
+  type: vmess
+  server: eu3.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: server40.9966338.xyz
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 8ed8fa
+  type: vmess
+  server: 666.cf.cname.vvhan.com
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: server7.9966338.xyz
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 2617d0
+  type: vmess
+  server: 104.21.57.84
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 6f7fa6
   type: trojan
@@ -54,15 +93,6 @@ proxies:
 - name: TROJAN | @PulseConfigs | f9a088
   type: trojan
   server: 185.255.179.166
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 8a6e68
-  type: trojan
-  server: 185.225.68.232
   port: 443
   password: humanity
   network: ws
@@ -105,15 +135,6 @@ proxies:
   sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 563bb1
-  type: trojan
-  server: 185.220.100.168
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.calmlunch.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | f1b115
   type: trojan
   server: 104.19.229.21
@@ -141,23 +162,53 @@ proxies:
   sni: www.trusteeforward.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 2d57c9
+- name: TROJAN | @PulseConfigs | 310277
   type: trojan
-  server: 161.35.192.122
-  port: 443
-  password: humanity
+  server: 216.24.57.225
+  port: 2083
+  password: 8yup05o4lz0csoxb
   network: ws
-  sni: www.pleadcourt.org
+  sni: fin.netvia.ir
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | fe4b37
+- name: TROJAN | @PulseConfigs | 0d5554
   type: trojan
-  server: 31.57.190.71
+  server: 104.17.121.9
   port: 443
   password: humanity
   network: ws
-  sni: www.pleadcourt.org
+  sni: www.calmlunch.com
   udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 01c3bb
+  type: trojan
+  server: 162.159.36.20
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 8a6e68
+  type: trojan
+  server: 185.225.68.232
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 7f3d97
+  type: vmess
+  server: us16-4.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: server1.9966338.xyz
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 882e74
   type: vmess
@@ -171,83 +222,31 @@ proxies:
   udp: true
   servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 741885
-  type: hysteria2
-  server: 103.88.243.142
-  port: 11592
-  password: 41edb44c8e
-  sni: srv-17e124.21freedom.net
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | d9c43d
-  type: hysteria2
-  server: srv-17e124.21freedom.net
-  port: 11592
-  password: 41edb44c8e
-  sni: ''
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | b6e116
-  type: hysteria2
-  server: 162.249.125.133
-  port: 443
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | d9fc42
-  type: hysteria2
-  server: 50.7.38.243
-  port: 443
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  sni: promo.betust.net
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 3dfe6d
-  type: hysteria2
-  server: promo.betust.net
-  port: 443
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  sni: ''
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | f0ac97
-  type: hysteria2
-  server: nas.aizhzo.com
-  port: 5010
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-- name: HYSTERIA2 | @PulseConfigs | 649364
-  type: hysteria2
-  server: 130.49.161.70
-  port: 443
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
-  - TROJAN | @PulseConfigs | e17275
-  - TROJAN | @PulseConfigs | f38b19
   - TROJAN | @PulseConfigs | 99dd8c
+  - TROJAN | @PulseConfigs | f38b19
+  - VMESS | @PulseConfigs | 40c51e
+  - VMESS | @PulseConfigs | f15673
+  - VMESS | @PulseConfigs | 8ed8fa
+  - VMESS | @PulseConfigs | 2617d0
   - TROJAN | @PulseConfigs | 6f7fa6
   - VMESS | @PulseConfigs | 11d785
   - TROJAN | @PulseConfigs | f9a088
-  - TROJAN | @PulseConfigs | 8a6e68
   - TROJAN | @PulseConfigs | 1637dc
   - TROJAN | @PulseConfigs | aeb215
   - TROJAN | @PulseConfigs | af976a
   - TROJAN | @PulseConfigs | 469bf1
-  - TROJAN | @PulseConfigs | 563bb1
   - TROJAN | @PulseConfigs | f1b115
   - TROJAN | @PulseConfigs | fe4054
   - TROJAN | @PulseConfigs | 11b9dc
-  - TROJAN | @PulseConfigs | 2d57c9
-  - TROJAN | @PulseConfigs | fe4b37
+  - TROJAN | @PulseConfigs | 310277
+  - TROJAN | @PulseConfigs | 0d5554
+  - TROJAN | @PulseConfigs | 01c3bb
+  - TROJAN | @PulseConfigs | 8a6e68
+  - VMESS | @PulseConfigs | 7f3d97
   - VMESS | @PulseConfigs | 882e74
-  - HYSTERIA2 | @PulseConfigs | 741885
-  - HYSTERIA2 | @PulseConfigs | d9c43d
-  - HYSTERIA2 | @PulseConfigs | b6e116
-  - HYSTERIA2 | @PulseConfigs | d9fc42
-  - HYSTERIA2 | @PulseConfigs | 3dfe6d
-  - HYSTERIA2 | @PulseConfigs | f0ac97
-  - HYSTERIA2 | @PulseConfigs | 649364
 rules:
 - MATCH,PROXY
