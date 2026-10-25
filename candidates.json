@@ -10,20 +10,20 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "trojan|45.130.125.160|443|humanity|tls|ws||",
-      "raw": "trojan://humanity@45.130.125.160:443?security=tls&sni=www.calmlunch.com&type=ws&path=%2Fassignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20469bf1",
-      "protocol": "trojan",
-      "strategy": "cdn_tls",
-      "host": "45.130.125.160",
-      "port": 443,
-      "median_delay_ms": null
-    },
-    {
       "fingerprint": "trojan|172.66.40.99|443|humanity|tls|ws||",
       "raw": "trojan://humanity@172.66.40.99:443?security=tls&sni=www.trusteeforward.com&type=ws&path=%2Fassignment&Host=www.trusteeforward.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%2011b9dc",
       "protocol": "trojan",
       "strategy": "cdn_tls",
       "host": "172.66.40.99",
+      "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "trojan|45.130.125.160|443|humanity|tls|ws||",
+      "raw": "trojan://humanity@45.130.125.160:443?security=tls&sni=www.calmlunch.com&type=ws&path=%2Fassignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20469bf1",
+      "protocol": "trojan",
+      "strategy": "cdn_tls",
+      "host": "45.130.125.160",
       "port": 443,
       "median_delay_ms": null
     },
@@ -34,6 +34,15 @@
       "strategy": "cdn_tls",
       "host": "185.114.72.31",
       "port": 2053,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "trojan|185.255.179.166|443|humanity|tls|ws||",
+      "raw": "trojan://humanity@185.255.179.166:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20f9a088",
+      "protocol": "trojan",
+      "strategy": "cdn_tls",
+      "host": "185.255.179.166",
+      "port": 443,
       "median_delay_ms": null
     },
     {
@@ -70,6 +79,15 @@
       "strategy": "quic_speed",
       "host": "162.249.125.133",
       "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "trojan|2.27.109.179|45464|XuMweB2PWs|tls|tcp||",
+      "raw": "trojan://XuMweB2PWs@2.27.109.179:45464?security=tls&sni=2.27.109.179.sslip.io#TROJAN%20%7C%20%40PulseConfigs%20%7C%206f7fa6",
+      "protocol": "trojan",
+      "strategy": "legacy",
+      "host": "2.27.109.179",
+      "port": 45464,
       "median_delay_ms": null
     },
     {
@@ -127,24 +145,6 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "shadowsocks|138.199.42.68|8080|14fFPrbezE3HDZzsMOr6||tcp||",
-      "raw": "ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==@138.199.42.68:8080#SHADOWSOCKS%20%7C%20%40PulseConfigs%20%7C%20f8438d",
-      "protocol": "shadowsocks",
-      "strategy": "legacy",
-      "host": "138.199.42.68",
-      "port": 8080,
-      "median_delay_ms": null
-    },
-    {
-      "fingerprint": "vmess|cf.0sm.com|443|0cf6d970-3f1d-4aae-a989-92a8f76ae3db|tls|ws||",
-      "raw": "vmess://ewogICAgImFkZCI6ICJjZi4wc20uY29tIiwKICAgICJhaWQiOiAwLAogICAgImhvc3QiOiAidm1lc3MubGJ3NjY2LmRwZG5zLm9yZyIsCiAgICAiaWQiOiAiMGNmNmQ5NzAtM2YxZC00YWFlLWE5ODktOTJhOGY3NmFlM2RiIiwKICAgICJuZXQiOiAid3MiLAogICAgInBhdGgiOiAiL3dzIiwKICAgICJwb3J0IjogNDQzLAogICAgInBzIjogIvCfj4FSRUxBWS0xMDQuMjEuNy4xMzMtMTMxOSIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwKICAgICJzbmkiOiAiIgp9#VMESS%20%7C%20%40PulseConfigs%20%7C%20b29cda",
-      "protocol": "vmess",
-      "strategy": "cdn_tls",
-      "host": "cf.0sm.com",
-      "port": 443,
-      "median_delay_ms": null
-    },
-    {
       "fingerprint": "hysteria2|13.36.234.11|443|H7mP2xY9kJ4nQ8wR5tF6vB3z||tcp||",
       "raw": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@13.36.234.11:443?insecure=1&sni=vpn-fr-001.fastervpn.world#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%2086dc90",
       "protocol": "hysteria2",
@@ -154,12 +154,39 @@
       "median_delay_ms": null
     },
     {
+      "fingerprint": "hysteria2|103.88.243.142|11592|41edb44c8e||tcp||",
+      "raw": "hysteria2://41edb44c8e@103.88.243.142:11592?sni=srv-17e124.21freedom.net#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%20741885",
+      "protocol": "hysteria2",
+      "strategy": "quic_speed",
+      "host": "103.88.243.142",
+      "port": 11592,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "hysteria2|srv-17e124.21freedom.net|11592|41edb44c8e||tcp||",
+      "raw": "hysteria2://41edb44c8e@srv-17e124.21freedom.net:11592?#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%20d9c43d",
+      "protocol": "hysteria2",
+      "strategy": "quic_speed",
+      "host": "srv-17e124.21freedom.net",
+      "port": 11592,
+      "median_delay_ms": null
+    },
+    {
       "fingerprint": "hysteria2|51.44.167.227|443|H7mP2xY9kJ4nQ8wR5tF6vB3z||tcp||",
       "raw": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@51.44.167.227:443?insecure=1&sni=vpn-fr-001.fastervpn.world#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%20df39cd",
       "protocol": "hysteria2",
       "strategy": "quic_speed",
       "host": "51.44.167.227",
       "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "hysteria2|140.238.213.114|50160|84a506ca5aca505696a454d828420b3f||tcp||",
+      "raw": "hysteria2://84a506ca5aca505696a454d828420b3f@140.238.213.114:50160?insecure=1&sni=140.238.213.114#HYSTERIA2%20%7C%20%40PulseConfigs%20%7C%20c0c633",
+      "protocol": "hysteria2",
+      "strategy": "quic_speed",
+      "host": "140.238.213.114",
+      "port": 50160,
       "median_delay_ms": null
     }
   ]

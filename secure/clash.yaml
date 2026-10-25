@@ -3,6 +3,15 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- name: TROJAN | @PulseConfigs | 99dd8c
+  type: trojan
+  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: dba20dcb635e430fa4d3bfc303a149d2
+  network: tcp
+  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | f38b19
   type: trojan
   server: resources.findlocaljobnetworkandbuildcommunityconnections.com
@@ -45,6 +54,15 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | f9a088
+  type: trojan
+  server: 185.255.179.166
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 563bb1
   type: trojan
   server: 185.220.100.168
@@ -63,9 +81,36 @@ proxies:
   sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | aeb215
+  type: trojan
+  server: www.calmlunch.com
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 469bf1
   type: trojan
   server: 45.130.125.160
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | f1b115
+  type: trojan
+  server: 104.19.229.21
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | fe4054
+  type: trojan
+  server: 212.183.88.136
   port: 443
   password: humanity
   network: ws
@@ -81,6 +126,24 @@ proxies:
   sni: www.trusteeforward.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 2d57c9
+  type: trojan
+  server: 161.35.192.122
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.pleadcourt.org
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | fe4b37
+  type: trojan
+  server: 31.57.190.71
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.pleadcourt.org
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | af976a
   type: trojan
   server: 185.114.72.31
@@ -89,6 +152,29 @@ proxies:
   network: ws
   sni: www.calmlunch.com
   udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | e17275
+  type: trojan
+  server: ca.tronsg.com
+  port: 443
+  password: Trojan@82164024
+  network: tcp
+  sni: ''
+  udp: true
+  skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | 741885
+  type: hysteria2
+  server: 103.88.243.142
+  port: 11592
+  password: 41edb44c8e
+  sni: srv-17e124.21freedom.net
+  skip-cert-verify: false
+- name: HYSTERIA2 | @PulseConfigs | d9c43d
+  type: hysteria2
+  server: srv-17e124.21freedom.net
+  port: 11592
+  password: 41edb44c8e
+  sni: ''
   skip-cert-verify: false
 - name: HYSTERIA2 | @PulseConfigs | e793db
   type: hysteria2
@@ -108,15 +194,25 @@ proxy-groups:
 - name: PROXY
   type: select
   proxies:
+  - TROJAN | @PulseConfigs | 99dd8c
   - TROJAN | @PulseConfigs | f38b19
   - VMESS | @PulseConfigs | b29cda
   - TROJAN | @PulseConfigs | 6f7fa6
   - VMESS | @PulseConfigs | 11d785
+  - TROJAN | @PulseConfigs | f9a088
   - TROJAN | @PulseConfigs | 563bb1
   - TROJAN | @PulseConfigs | 1637dc
+  - TROJAN | @PulseConfigs | aeb215
   - TROJAN | @PulseConfigs | 469bf1
+  - TROJAN | @PulseConfigs | f1b115
+  - TROJAN | @PulseConfigs | fe4054
   - TROJAN | @PulseConfigs | 11b9dc
+  - TROJAN | @PulseConfigs | 2d57c9
+  - TROJAN | @PulseConfigs | fe4b37
   - TROJAN | @PulseConfigs | af976a
+  - TROJAN | @PulseConfigs | e17275
+  - HYSTERIA2 | @PulseConfigs | 741885
+  - HYSTERIA2 | @PulseConfigs | d9c43d
   - HYSTERIA2 | @PulseConfigs | e793db
   - HYSTERIA2 | @PulseConfigs | b6e116
 rules:
