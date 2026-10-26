@@ -21,17 +21,17 @@ proxies:
   sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | b29cda
+- name: VMESS | @PulseConfigs | 878a6c
   type: vmess
-  server: cf.0sm.com
+  server: 47.243.153.153
   port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   network: ws
   tls: true
   udp: true
-  servername: vmess.lbw666.dpdns.org
+  servername: i2psm3knof5qjjix.v.3dns.vip
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 6f7fa6
   type: trojan
@@ -41,6 +41,18 @@ proxies:
   network: tcp
   sni: 2.27.109.179.sslip.io
   udp: true
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 97b34c
+  type: vmess
+  server: wjofHsQtEuEywxEq.v.3dns.vip
+  port: 443
+  uuid: a9f4de8b-68f1-44b6-b6a2-1db60940503a
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: wjofHsQtEuEywxEq.v.3dns.vip
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 11d785
   type: vmess
@@ -153,6 +165,18 @@ proxies:
   sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 882e74
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | e17275
   type: trojan
   server: ca.tronsg.com
@@ -196,8 +220,9 @@ proxy-groups:
   proxies:
   - TROJAN | @PulseConfigs | 99dd8c
   - TROJAN | @PulseConfigs | f38b19
-  - VMESS | @PulseConfigs | b29cda
+  - VMESS | @PulseConfigs | 878a6c
   - TROJAN | @PulseConfigs | 6f7fa6
+  - VMESS | @PulseConfigs | 97b34c
   - VMESS | @PulseConfigs | 11d785
   - TROJAN | @PulseConfigs | f9a088
   - TROJAN | @PulseConfigs | 563bb1
@@ -210,6 +235,7 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 2d57c9
   - TROJAN | @PulseConfigs | fe4b37
   - TROJAN | @PulseConfigs | af976a
+  - VMESS | @PulseConfigs | 882e74
   - TROJAN | @PulseConfigs | e17275
   - HYSTERIA2 | @PulseConfigs | 741885
   - HYSTERIA2 | @PulseConfigs | d9c43d

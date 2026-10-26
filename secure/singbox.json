@@ -37,15 +37,15 @@
     },
     {
       "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | b29cda",
-      "server": "cf.0sm.com",
+      "tag": "VMESS | @PulseConfigs | 878a6c",
+      "server": "47.243.153.153",
       "server_port": 443,
-      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
       "security": "auto",
       "alter_id": 0,
       "tls": {
         "enabled": true,
-        "server_name": "vmess.lbw666.dpdns.org",
+        "server_name": "i2psm3knof5qjjix.v.3dns.vip",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -54,9 +54,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/ws",
+        "path": "/ws-vmess",
         "headers": {
-          "Host": "vmess.lbw666.dpdns.org"
+          "Host": "i2psm3knof5qjjix.v.3dns.vip"
         }
       }
     },
@@ -70,6 +70,31 @@
         "enabled": true,
         "server_name": "2.27.109.179.sslip.io",
         "insecure": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 97b34c",
+      "server": "wjofHsQtEuEywxEq.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "a9f4de8b-68f1-44b6-b6a2-1db60940503a",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "wjofHsQtEuEywxEq.v.3dns.vip",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "wjofHsQtEuEywxEq.v.3dns.vip"
+        }
       }
     },
     {
@@ -230,6 +255,31 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 882e74",
+      "server": "104.17.77.77",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
+      }
+    },
+    {
       "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | e17275",
       "server": "ca.tronsg.com",
@@ -295,8 +345,9 @@
       "outbounds": [
         "TROJAN | @PulseConfigs | 99dd8c",
         "TROJAN | @PulseConfigs | f38b19",
-        "VMESS | @PulseConfigs | b29cda",
+        "VMESS | @PulseConfigs | 878a6c",
         "TROJAN | @PulseConfigs | 6f7fa6",
+        "VMESS | @PulseConfigs | 97b34c",
         "VMESS | @PulseConfigs | 11d785",
         "TROJAN | @PulseConfigs | f9a088",
         "TROJAN | @PulseConfigs | 563bb1",
@@ -309,6 +360,7 @@
         "TROJAN | @PulseConfigs | 2d57c9",
         "TROJAN | @PulseConfigs | fe4b37",
         "TROJAN | @PulseConfigs | af976a",
+        "VMESS | @PulseConfigs | 882e74",
         "TROJAN | @PulseConfigs | e17275",
         "HYSTERIA2 | @PulseConfigs | 741885",
         "HYSTERIA2 | @PulseConfigs | d9c43d",
