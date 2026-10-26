@@ -21,17 +21,17 @@ proxies:
   sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 878a6c
+- name: VMESS | @PulseConfigs | b29cda
   type: vmess
-  server: 47.243.153.153
+  server: cf.0sm.com
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
   network: ws
   tls: true
   udp: true
-  servername: i2psm3knof5qjjix.v.3dns.vip
+  servername: vmess.lbw666.dpdns.org
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 6f7fa6
   type: trojan
@@ -156,6 +156,15 @@ proxies:
   sni: www.pleadcourt.org
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | e3666e
+  type: trojan
+  server: in.tronsg.com
+  port: 443
+  password: Trojan@82164024
+  network: tcp
+  sni: in.tronsg.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | af976a
   type: trojan
   server: 185.114.72.31
@@ -220,7 +229,7 @@ proxy-groups:
   proxies:
   - TROJAN | @PulseConfigs | 99dd8c
   - TROJAN | @PulseConfigs | f38b19
-  - VMESS | @PulseConfigs | 878a6c
+  - VMESS | @PulseConfigs | b29cda
   - TROJAN | @PulseConfigs | 6f7fa6
   - VMESS | @PulseConfigs | 97b34c
   - VMESS | @PulseConfigs | 11d785
@@ -234,6 +243,7 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 11b9dc
   - TROJAN | @PulseConfigs | 2d57c9
   - TROJAN | @PulseConfigs | fe4b37
+  - TROJAN | @PulseConfigs | e3666e
   - TROJAN | @PulseConfigs | af976a
   - VMESS | @PulseConfigs | 882e74
   - TROJAN | @PulseConfigs | e17275
