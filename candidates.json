@@ -19,29 +19,11 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "trojan|185.114.72.31|2053|humanity|tls|ws||",
-      "raw": "trojan://humanity@185.114.72.31:2053?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20af976a",
-      "protocol": "trojan",
-      "strategy": "cdn_tls",
-      "host": "185.114.72.31",
-      "port": 2053,
-      "median_delay_ms": null
-    },
-    {
       "fingerprint": "trojan|45.130.125.160|443|humanity|tls|ws||",
       "raw": "trojan://humanity@45.130.125.160:443?security=tls&sni=www.calmlunch.com&type=ws&path=%2Fassignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20469bf1",
       "protocol": "trojan",
       "strategy": "cdn_tls",
       "host": "45.130.125.160",
-      "port": 443,
-      "median_delay_ms": null
-    },
-    {
-      "fingerprint": "trojan|185.255.179.166|443|humanity|tls|ws||",
-      "raw": "trojan://humanity@185.255.179.166:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20f9a088",
-      "protocol": "trojan",
-      "strategy": "cdn_tls",
-      "host": "185.255.179.166",
       "port": 443,
       "median_delay_ms": null
     },
@@ -55,11 +37,47 @@
       "median_delay_ms": null
     },
     {
-      "fingerprint": "trojan|45.87.41.18|443|humanity|tls|ws||",
-      "raw": "trojan://humanity@45.87.41.18:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%201637dc",
+      "fingerprint": "trojan|104.19.229.21|443|humanity|tls|ws||",
+      "raw": "trojan://humanity@104.19.229.21:443?security=tls&sni=www.calmlunch.com&type=ws&path=%2Fassignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20f1b115",
       "protocol": "trojan",
       "strategy": "cdn_tls",
-      "host": "45.87.41.18",
+      "host": "104.19.229.21",
+      "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "trojan|212.183.88.136|443|humanity|tls|ws||",
+      "raw": "trojan://humanity@212.183.88.136:443?security=tls&sni=www.calmlunch.com&type=ws&path=%2Fassignment&Host=www.calmlunch.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20fe4054",
+      "protocol": "trojan",
+      "strategy": "cdn_tls",
+      "host": "212.183.88.136",
+      "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "vmess|www.ubuntuupdates.com|443|83b09a64-1eaf-4c4d-89ed-866d4b6b8115|tls|ws||",
+      "raw": "vmess://ewogICAgImFkZCI6ICJ3d3cudWJ1bnR1dXBkYXRlcy5jb20iLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICJ3d3cudWJ1bnR1dXBkYXRlcy5jb20iLAogICAgImlkIjogIjgzYjA5YTY0LTFlYWYtNGM0ZC04OWVkLTg2NmQ0YjZiODExNSIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi90cnV0aCIsCiAgICAicG9ydCI6IDQ0MywKICAgICJwcyI6ICLwn4+BUkVMQVktMTA0LjIxLjg2LjE1Mi0wNDM0IiwKICAgICJ0bHMiOiAidGxzIiwKICAgICJ0eXBlIjogImF1dG8iLAogICAgInNlY3VyaXR5IjogImF1dG8iLAogICAgInNraXAtY2VydC12ZXJpZnkiOiBmYWxzZSwKICAgICJzbmkiOiAid3d3LnVidW50dXVwZGF0ZXMuY29tIgp9#VMESS%20%7C%20%40PulseConfigs%20%7C%20c5405b",
+      "protocol": "vmess",
+      "strategy": "cdn_tls",
+      "host": "www.ubuntuupdates.com",
+      "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "trojan|resources.findlocaljobnetworkandbuildcommunityconnections.com|443|f0eb8c92ce8946aaba856569cff1a16b|tls|tcp||",
+      "raw": "trojan://f0eb8c92ce8946aaba856569cff1a16b@resources.findlocaljobnetworkandbuildcommunityconnections.com:443?security=tls&sni=resources.findlocaljobnetworkandbuildcommunityconnections.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%20f38b19",
+      "protocol": "trojan",
+      "strategy": "legacy",
+      "host": "resources.findlocaljobnetworkandbuildcommunityconnections.com",
+      "port": 443,
+      "median_delay_ms": null
+    },
+    {
+      "fingerprint": "trojan|blog.findlocaljobnetworkandbuildcommunityconnections.com|443|dba20dcb635e430fa4d3bfc303a149d2|tls|tcp||",
+      "raw": "trojan://dba20dcb635e430fa4d3bfc303a149d2@blog.findlocaljobnetworkandbuildcommunityconnections.com:443?security=tls&sni=blog.findlocaljobnetworkandbuildcommunityconnections.com#TROJAN%20%7C%20%40PulseConfigs%20%7C%2099dd8c",
+      "protocol": "trojan",
+      "strategy": "legacy",
+      "host": "blog.findlocaljobnetworkandbuildcommunityconnections.com",
       "port": 443,
       "median_delay_ms": null
     },
@@ -106,24 +124,6 @@
       "strategy": "legacy",
       "host": "37.19.198.236",
       "port": 443,
-      "median_delay_ms": null
-    },
-    {
-      "fingerprint": "shadowsocks|185.230.230.18|19999|ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=||tcp||",
-      "raw": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@185.230.230.18:19999#SHADOWSOCKS%20%7C%20%40PulseConfigs%20%7C%209b2396",
-      "protocol": "shadowsocks",
-      "strategy": "legacy",
-      "host": "185.230.230.18",
-      "port": 19999,
-      "median_delay_ms": null
-    },
-    {
-      "fingerprint": "shadowsocks|185.176.206.9|19999|ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=||tcp||",
-      "raw": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@185.176.206.9:19999#SHADOWSOCKS%20%7C%20%40PulseConfigs%20%7C%207a63bb",
-      "protocol": "shadowsocks",
-      "strategy": "legacy",
-      "host": "185.176.206.9",
-      "port": 19999,
       "median_delay_ms": null
     }
   ]
