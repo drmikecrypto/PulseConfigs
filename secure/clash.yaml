@@ -48,15 +48,6 @@ proxies:
   sni: connectwithemployerstohireyouridealteam.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | e17275
-  type: trojan
-  server: ca.tronsg.com
-  port: 443
-  password: Trojan@82164024
-  network: tcp
-  sni: ca.tronsg.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 8f2e96
   type: trojan
   server: 216.152.156.212
@@ -132,17 +123,17 @@ proxies:
   udp: true
   servername: www.windowsmsidownloads.com
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | ad3cfa
+- name: VMESS | @PulseConfigs | 247b27
   type: vmess
-  server: nycqg19zkwacpm1b.v.3dns.vip
+  server: rhHiErkwRf6fHs2H.v.3dns.vip
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
   alterId: 0
   cipher: auto
   network: ws
   tls: true
   udp: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  servername: rhHiErkwRf6fHs2H.v.3dns.vip
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 6d0717
   type: vmess
@@ -174,14 +165,17 @@ proxies:
   sni: www.searchnationwidecareerchangehelperandguidancetoday.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 6f7fa6
-  type: trojan
-  server: 2.27.109.179
-  port: 45464
-  password: XuMweB2PWs
-  network: tcp
-  sni: 2.27.109.179.sslip.io
+- name: VMESS | @PulseConfigs | dfb3d1
+  type: vmess
+  server: 104.21.91.53
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
   udp: true
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | f38b19
   type: trojan
@@ -255,6 +249,18 @@ proxies:
   sni: www.calmlunch.com
   udp: true
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | a895c7
+  type: vmess
+  server: 8.218.195.61
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: EX1oGt73NzPQKAc2.v.3dns.vip
+  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | a858c0
   type: vmess
   server: www.shopify.com
@@ -266,6 +272,18 @@ proxies:
   tls: true
   udp: true
   servername: guanwang.awsno.com
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 2617d0
+  type: vmess
+  server: 104.21.57.84
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 8967b0
   type: vmess
@@ -312,7 +330,6 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 46ff26
   - TROJAN | @PulseConfigs | 99dd8c
   - TROJAN | @PulseConfigs | f1feb0
-  - TROJAN | @PulseConfigs | e17275
   - TROJAN | @PulseConfigs | 8f2e96
   - TROJAN | @PulseConfigs | becd29
   - TROJAN | @PulseConfigs | 3c9bf7
@@ -321,11 +338,11 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 391118
   - TROJAN | @PulseConfigs | 96341e
   - VMESS | @PulseConfigs | 56583f
-  - VMESS | @PulseConfigs | ad3cfa
+  - VMESS | @PulseConfigs | 247b27
   - VMESS | @PulseConfigs | 6d0717
   - TROJAN | @PulseConfigs | 17f748
   - TROJAN | @PulseConfigs | bb6c8e
-  - TROJAN | @PulseConfigs | 6f7fa6
+  - VMESS | @PulseConfigs | dfb3d1
   - TROJAN | @PulseConfigs | f38b19
   - TROJAN | @PulseConfigs | f9a088
   - TROJAN | @PulseConfigs | 563bb1
@@ -334,7 +351,9 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 469bf1
   - TROJAN | @PulseConfigs | f1b115
   - TROJAN | @PulseConfigs | fe4054
+  - VMESS | @PulseConfigs | a895c7
   - VMESS | @PulseConfigs | a858c0
+  - VMESS | @PulseConfigs | 2617d0
   - VMESS | @PulseConfigs | 8967b0
   - VMESS | @PulseConfigs | c5405b
   - VMESS | @PulseConfigs | 882e74

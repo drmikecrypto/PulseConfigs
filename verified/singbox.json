@@ -125,8 +125,32 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "SHADOWSOCKS | @PulseConfigs | dce06d",
+      "server": "82.38.31.192",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "SHADOWSOCKS | @PulseConfigs | f56687",
       "server": "82.38.31.217",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "SHADOWSOCKS | @PulseConfigs | 995311",
+      "server": "193.29.139.223",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "SHADOWSOCKS | @PulseConfigs | 9f729f",
+      "server": "82.38.31.193",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
       "password": "k1dBOmOB4oqi7Ump37a1bQ"
@@ -146,6 +170,14 @@
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
       "password": "QCXDxuDlTTMD7jtgHUjIoj"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "SHADOWSOCKS | @PulseConfigs | 638c9e",
+      "server": "82.38.31.191",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
     },
     {
       "type": "shadowsocks",
@@ -170,14 +202,6 @@
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "SHADOWSOCKS | @PulseConfigs | 4ddf7c",
-      "server": "82.38.31.219",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
     },
     {
       "type": "shadowsocks",
@@ -394,18 +418,6 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | e17275",
-      "server": "ca.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "ca.tronsg.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 8f2e96",
       "server": "216.152.156.212",
       "server_port": 443,
@@ -499,14 +511,6 @@
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "SHADOWSOCKS | @PulseConfigs | b3a508",
-      "server": "158.173.24.73",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
     },
     {
       "type": "trojan",
@@ -675,14 +679,6 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "SHADOWSOCKS | @PulseConfigs | b6de67",
-      "server": "82.38.31.49",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "SHADOWSOCKS | @PulseConfigs | 9d2624",
       "server": "82.38.31.62",
       "server_port": 8080,
@@ -696,6 +692,31 @@
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
       "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 247b27",
+      "server": "rhHiErkwRf6fHs2H.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "78b3f149-f037-465d-b2fb-11adb6f73ff8",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "rhHiErkwRf6fHs2H.v.3dns.vip",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "rhHiErkwRf6fHs2H.v.3dns.vip"
+        }
+      }
     },
     {
       "type": "shadowsocks",
@@ -712,31 +733,6 @@
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "x2A6AsyZ-rAllz0wbKHzWA"
-    },
-    {
-      "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | ad3cfa",
-      "server": "nycqg19zkwacpm1b.v.3dns.vip",
-      "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "NYcQg19zkwaCPM1B.v.3dns.vip",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "NYcQg19zkwaCPM1B.v.3dns.vip"
-        }
-      }
     },
     {
       "type": "shadowsocks",
@@ -777,6 +773,31 @@
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
       "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 3a3bc1",
+      "server": "us-23.hihu.net",
+      "server_port": 80,
+      "uuid": "8a9aaa70-ced9-11f1-b934-205c6d5f5d78",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "172.66.0.251",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "172.66.0.251"
+        }
+      }
     },
     {
       "type": "shadowsocks",
@@ -1065,11 +1086,77 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "SHADOWSOCKS | @PulseConfigs | 3bcec6",
+      "server": "82.38.31.174",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 9351cb",
+      "server": "172.67.187.145",
+      "server_port": 80,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "vmess.lbw666.dpdns.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "SHADOWSOCKS | @PulseConfigs | b3ab5f",
+      "server": "94.156.250.148",
+      "server_port": 7001,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "SHADOWSOCKS | @PulseConfigs | 1cf009",
       "server": "91.206.92.238",
       "server_port": 18443,
       "method": "aes-256-gcm",
       "password": "cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa"
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | dfb3d1",
+      "server": "104.21.91.53",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
+      }
     },
     {
       "type": "shadowsocks",
@@ -1089,6 +1176,14 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "SHADOWSOCKS | @PulseConfigs | 1d1e17",
+      "server": "82.38.31.176",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "SHADOWSOCKS | @PulseConfigs | 5363f0",
       "server": "staging.lastilhame.monster",
       "server_port": 49917,
@@ -1097,36 +1192,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "SHADOWSOCKS | @PulseConfigs | 781bfb",
-      "server": "82.38.31.218",
-      "server_port": 8080,
+      "tag": "SHADOWSOCKS | @PulseConfigs | ffc65d",
+      "server": "216.105.168.18",
+      "server_port": 443,
       "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | 0b32d4",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "152.67.8.205",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "152.67.8.205"
-        }
-      }
+      "password": "hCCWOcIsK5wrFz4OX70rWf"
     },
     {
       "type": "shadowsocks",
@@ -1137,24 +1207,45 @@
       "password": "AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa"
     },
     {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 6f7fa6",
-      "server": "2.27.109.179",
-      "server_port": 45464,
-      "password": "XuMweB2PWs",
-      "tls": {
-        "enabled": true,
-        "server_name": "2.27.109.179.sslip.io",
-        "insecure": false
-      }
-    },
-    {
       "type": "shadowsocks",
       "tag": "SHADOWSOCKS | @PulseConfigs | 630221",
       "server": "132.243.175.144",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | b45faf",
+      "server": "156.245.232.239",
+      "server_port": 35043,
+      "uuid": "b15e481d-17e4-41a8-84c2-23d4f0514d9a",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "156.245.232.239",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "SHADOWSOCKS | @PulseConfigs | 8121ed",
+      "server": "82.38.31.189",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
     },
     {
       "type": "shadowsocks",
@@ -1218,14 +1309,6 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "SHADOWSOCKS | @PulseConfigs | 627e7a",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "SHADOWSOCKS | @PulseConfigs | f8e141",
       "server": "82.38.31.48",
       "server_port": 8080,
@@ -1258,11 +1341,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "SHADOWSOCKS | @PulseConfigs | ba9e50",
-      "server": "185.213.23.63",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+      "tag": "SHADOWSOCKS | @PulseConfigs | 31f8ff",
+      "server": "51.222.155.113",
+      "server_port": 5601,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
     },
     {
       "type": "shadowsocks",
@@ -1271,22 +1354,6 @@
       "server_port": 445,
       "method": "aes-256-gcm",
       "password": "zDNVedRFPQexG9v"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "SHADOWSOCKS | @PulseConfigs | da7fd9",
-      "server": "51.222.200.165",
-      "server_port": 5000,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "SHADOWSOCKS | @PulseConfigs | af35cc",
-      "server": "51.79.64.198",
-      "server_port": 8119,
-      "method": "aes-256-gcm",
-      "password": "cdBIDV42DCwnfIN"
     },
     {
       "type": "shadowsocks",
@@ -1306,11 +1373,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "SHADOWSOCKS | @PulseConfigs | 4e857c",
-      "server": "82.38.31.187",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+      "tag": "SHADOWSOCKS | @PulseConfigs | 442991",
+      "server": "51.222.12.127",
+      "server_port": 445,
+      "method": "aes-256-gcm",
+      "password": "zDNVedRFPQexG9v"
     },
     {
       "type": "shadowsocks",
@@ -1406,6 +1473,67 @@
     },
     {
       "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | a895c7",
+      "server": "8.218.195.61",
+      "server_port": 443,
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "EX1oGt73NzPQKAc2.v.3dns.vip",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "EX1oGt73NzPQKAc2.v.3dns.vip"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 438fcc",
+      "server": "206.237.11.17",
+      "server_port": 44441,
+      "uuid": "de4e0335-2a3b-4006-d746-c939fa85fdc3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "206.237.11.17",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | dc48c3",
+      "server": "206.237.11.17",
+      "server_port": 8080,
+      "uuid": "edcf3108-da2b-45c8-a852-a7e58dd55a43",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "206.237.11.17",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "VMESS | @PulseConfigs | a858c0",
       "server": "www.shopify.com",
       "server_port": 443,
@@ -1476,6 +1604,31 @@
         "path": "/cctv13.m3u8",
         "headers": {
           "Host": "168.138.43.75"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 2617d0",
+      "server": "104.21.57.84",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
         }
       }
     },
@@ -1555,24 +1708,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | fb91d3",
-      "server": "43.155.199.22",
-      "server_port": 80,
-      "uuid": "3722ad16-f3e1-4406-b04a-929b529d8e0d",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "43.155.199.22",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
       "tag": "SHADOWSOCKS | @PulseConfigs | cb1ffe",
       "server": "37.19.198.236",
@@ -1622,13 +1757,16 @@
         "TROJAN | @PulseConfigs | 97613e",
         "SHADOWSOCKS | @PulseConfigs | 7a63bb",
         "TROJAN | @PulseConfigs | 27f7c0",
+        "SHADOWSOCKS | @PulseConfigs | dce06d",
         "SHADOWSOCKS | @PulseConfigs | f56687",
+        "SHADOWSOCKS | @PulseConfigs | 995311",
+        "SHADOWSOCKS | @PulseConfigs | 9f729f",
         "SHADOWSOCKS | @PulseConfigs | be9a40",
         "SHADOWSOCKS | @PulseConfigs | 05d9b1",
+        "SHADOWSOCKS | @PulseConfigs | 638c9e",
         "SHADOWSOCKS | @PulseConfigs | 660cb1",
         "SHADOWSOCKS | @PulseConfigs | 197eee",
         "SHADOWSOCKS | @PulseConfigs | d2a266",
-        "SHADOWSOCKS | @PulseConfigs | 4ddf7c",
         "SHADOWSOCKS | @PulseConfigs | f5e791",
         "SHADOWSOCKS | @PulseConfigs | e8c360",
         "SHADOWSOCKS | @PulseConfigs | 37a55b",
@@ -1652,7 +1790,6 @@
         "SHADOWSOCKS | @PulseConfigs | 03566c",
         "SHADOWSOCKS | @PulseConfigs | 9f56ae",
         "SHADOWSOCKS | @PulseConfigs | 403fe2",
-        "TROJAN | @PulseConfigs | e17275",
         "TROJAN | @PulseConfigs | 8f2e96",
         "TROJAN | @PulseConfigs | becd29",
         "TROJAN | @PulseConfigs | 3c9bf7",
@@ -1662,7 +1799,6 @@
         "SHADOWSOCKS | @PulseConfigs | e9cac5",
         "SHADOWSOCKS | @PulseConfigs | 3d9907",
         "SHADOWSOCKS | @PulseConfigs | 03ee9f",
-        "SHADOWSOCKS | @PulseConfigs | b3a508",
         "TROJAN | @PulseConfigs | 96341e",
         "SHADOWSOCKS | @PulseConfigs | 3a8ebb",
         "SHADOWSOCKS | @PulseConfigs | 733488",
@@ -1681,17 +1817,17 @@
         "SHADOWSOCKS | @PulseConfigs | 335431",
         "SHADOWSOCKS | @PulseConfigs | c28f60",
         "SHADOWSOCKS | @PulseConfigs | cc02bf",
-        "SHADOWSOCKS | @PulseConfigs | b6de67",
         "SHADOWSOCKS | @PulseConfigs | 9d2624",
         "SHADOWSOCKS | @PulseConfigs | f166ff",
+        "VMESS | @PulseConfigs | 247b27",
         "SHADOWSOCKS | @PulseConfigs | e802bf",
         "SHADOWSOCKS | @PulseConfigs | 6c7541",
-        "VMESS | @PulseConfigs | ad3cfa",
         "SHADOWSOCKS | @PulseConfigs | bb49bb",
         "SHADOWSOCKS | @PulseConfigs | fc7405",
         "SHADOWSOCKS | @PulseConfigs | 41d9bb",
         "SHADOWSOCKS | @PulseConfigs | d13abd",
         "SHADOWSOCKS | @PulseConfigs | bf4337",
+        "VMESS | @PulseConfigs | 3a3bc1",
         "SHADOWSOCKS | @PulseConfigs | 3e248d",
         "SHADOWSOCKS | @PulseConfigs | e6e7be",
         "SHADOWSOCKS | @PulseConfigs | 1e1334",
@@ -1716,15 +1852,20 @@
         "SHADOWSOCKS | @PulseConfigs | 0b2010",
         "VMESS | @PulseConfigs | 805fce",
         "SHADOWSOCKS | @PulseConfigs | c6a5e2",
+        "SHADOWSOCKS | @PulseConfigs | 3bcec6",
+        "VMESS | @PulseConfigs | 9351cb",
+        "SHADOWSOCKS | @PulseConfigs | b3ab5f",
         "SHADOWSOCKS | @PulseConfigs | 1cf009",
+        "VMESS | @PulseConfigs | dfb3d1",
         "SHADOWSOCKS | @PulseConfigs | 97fe1c",
         "SHADOWSOCKS | @PulseConfigs | a073ed",
+        "SHADOWSOCKS | @PulseConfigs | 1d1e17",
         "SHADOWSOCKS | @PulseConfigs | 5363f0",
-        "SHADOWSOCKS | @PulseConfigs | 781bfb",
-        "VMESS | @PulseConfigs | 0b32d4",
+        "SHADOWSOCKS | @PulseConfigs | ffc65d",
         "SHADOWSOCKS | @PulseConfigs | a83333",
-        "TROJAN | @PulseConfigs | 6f7fa6",
         "SHADOWSOCKS | @PulseConfigs | 630221",
+        "VMESS | @PulseConfigs | b45faf",
+        "SHADOWSOCKS | @PulseConfigs | 8121ed",
         "SHADOWSOCKS | @PulseConfigs | 0dd1f0",
         "SHADOWSOCKS | @PulseConfigs | da278d",
         "SHADOWSOCKS | @PulseConfigs | 247a61",
@@ -1732,18 +1873,15 @@
         "SHADOWSOCKS | @PulseConfigs | 9a6187",
         "SHADOWSOCKS | @PulseConfigs | d14134",
         "TROJAN | @PulseConfigs | f38b19",
-        "SHADOWSOCKS | @PulseConfigs | 627e7a",
         "SHADOWSOCKS | @PulseConfigs | f8e141",
         "SHADOWSOCKS | @PulseConfigs | 24699e",
         "SHADOWSOCKS | @PulseConfigs | 8918b8",
         "SHADOWSOCKS | @PulseConfigs | 7a5402",
-        "SHADOWSOCKS | @PulseConfigs | ba9e50",
+        "SHADOWSOCKS | @PulseConfigs | 31f8ff",
         "SHADOWSOCKS | @PulseConfigs | 3b05da",
-        "SHADOWSOCKS | @PulseConfigs | da7fd9",
-        "SHADOWSOCKS | @PulseConfigs | af35cc",
         "SHADOWSOCKS | @PulseConfigs | e28e9e",
         "SHADOWSOCKS | @PulseConfigs | ce6c47",
-        "SHADOWSOCKS | @PulseConfigs | 4e857c",
+        "SHADOWSOCKS | @PulseConfigs | 442991",
         "SHADOWSOCKS | @PulseConfigs | f21693",
         "TROJAN | @PulseConfigs | f9a088",
         "TROJAN | @PulseConfigs | 563bb1",
@@ -1752,13 +1890,16 @@
         "TROJAN | @PulseConfigs | 469bf1",
         "TROJAN | @PulseConfigs | f1b115",
         "TROJAN | @PulseConfigs | fe4054",
+        "VMESS | @PulseConfigs | a895c7",
+        "VMESS | @PulseConfigs | 438fcc",
+        "VMESS | @PulseConfigs | dc48c3",
         "VMESS | @PulseConfigs | a858c0",
         "VMESS | @PulseConfigs | e1b960",
         "VMESS | @PulseConfigs | a901b0",
+        "VMESS | @PulseConfigs | 2617d0",
         "VMESS | @PulseConfigs | 8967b0",
         "VMESS | @PulseConfigs | 20b7d5",
         "VMESS | @PulseConfigs | c5405b",
-        "VMESS | @PulseConfigs | fb91d3",
         "SHADOWSOCKS | @PulseConfigs | cb1ffe",
         "VMESS | @PulseConfigs | 882e74"
       ]

@@ -73,18 +73,6 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | e17275",
-      "server": "ca.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "ca.tronsg.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 8f2e96",
       "server": "216.152.156.212",
       "server_port": 443,
@@ -194,15 +182,15 @@
     },
     {
       "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | ad3cfa",
-      "server": "nycqg19zkwacpm1b.v.3dns.vip",
+      "tag": "VMESS | @PulseConfigs | 247b27",
+      "server": "rhHiErkwRf6fHs2H.v.3dns.vip",
       "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "uuid": "78b3f149-f037-465d-b2fb-11adb6f73ff8",
       "security": "auto",
       "alter_id": 0,
       "tls": {
         "enabled": true,
-        "server_name": "NYcQg19zkwaCPM1B.v.3dns.vip",
+        "server_name": "rhHiErkwRf6fHs2H.v.3dns.vip",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -213,7 +201,7 @@
         "type": "ws",
         "path": "/ws-vmess",
         "headers": {
-          "Host": "NYcQg19zkwaCPM1B.v.3dns.vip"
+          "Host": "rhHiErkwRf6fHs2H.v.3dns.vip"
         }
       }
     },
@@ -267,15 +255,28 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 6f7fa6",
-      "server": "2.27.109.179",
-      "server_port": 45464,
-      "password": "XuMweB2PWs",
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | dfb3d1",
+      "server": "104.21.91.53",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "alter_id": 0,
       "tls": {
         "enabled": true,
-        "server_name": "2.27.109.179.sslip.io",
-        "insecure": false
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
       }
     },
     {
@@ -376,6 +377,31 @@
     },
     {
       "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | a895c7",
+      "server": "8.218.195.61",
+      "server_port": 443,
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "EX1oGt73NzPQKAc2.v.3dns.vip",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "EX1oGt73NzPQKAc2.v.3dns.vip"
+        }
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "VMESS | @PulseConfigs | a858c0",
       "server": "www.shopify.com",
       "server_port": 443,
@@ -396,6 +422,31 @@
         "path": "/hls/cctv5phd.m3u8",
         "headers": {
           "Host": "guanwang.awsno.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 2617d0",
+      "server": "104.21.57.84",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
         }
       }
     },
@@ -483,7 +534,6 @@
         "TROJAN | @PulseConfigs | 46ff26",
         "TROJAN | @PulseConfigs | 99dd8c",
         "TROJAN | @PulseConfigs | f1feb0",
-        "TROJAN | @PulseConfigs | e17275",
         "TROJAN | @PulseConfigs | 8f2e96",
         "TROJAN | @PulseConfigs | becd29",
         "TROJAN | @PulseConfigs | 3c9bf7",
@@ -492,11 +542,11 @@
         "TROJAN | @PulseConfigs | 391118",
         "TROJAN | @PulseConfigs | 96341e",
         "VMESS | @PulseConfigs | 56583f",
-        "VMESS | @PulseConfigs | ad3cfa",
+        "VMESS | @PulseConfigs | 247b27",
         "VMESS | @PulseConfigs | 6d0717",
         "TROJAN | @PulseConfigs | 17f748",
         "TROJAN | @PulseConfigs | bb6c8e",
-        "TROJAN | @PulseConfigs | 6f7fa6",
+        "VMESS | @PulseConfigs | dfb3d1",
         "TROJAN | @PulseConfigs | f38b19",
         "TROJAN | @PulseConfigs | f9a088",
         "TROJAN | @PulseConfigs | 563bb1",
@@ -505,7 +555,9 @@
         "TROJAN | @PulseConfigs | 469bf1",
         "TROJAN | @PulseConfigs | f1b115",
         "TROJAN | @PulseConfigs | fe4054",
+        "VMESS | @PulseConfigs | a895c7",
         "VMESS | @PulseConfigs | a858c0",
+        "VMESS | @PulseConfigs | 2617d0",
         "VMESS | @PulseConfigs | 8967b0",
         "VMESS | @PulseConfigs | c5405b",
         "VMESS | @PulseConfigs | 882e74"
