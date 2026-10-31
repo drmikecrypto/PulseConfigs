@@ -129,6 +129,14 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "SHADOWSOCKS | @PulseConfigs | 73b96a",
+      "server": "82.38.31.186",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "SHADOWSOCKS | @PulseConfigs | be9a40",
       "server": "82.110.60.9",
       "server_port": 19999,
@@ -301,6 +309,14 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "SHADOWSOCKS | @PulseConfigs | 4e857c",
+      "server": "82.38.31.187",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "SHADOWSOCKS | @PulseConfigs | da278d",
       "server": "82.38.31.184",
       "server_port": 8080,
@@ -450,6 +466,18 @@
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks"
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 96341e",
+      "server": "66.163.114.132",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "courses.findconnectwithemployersandbuildprofessionalnetwork.com",
+        "insecure": false
+      }
     },
     {
       "type": "shadowsocks",
@@ -715,14 +743,6 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "SHADOWSOCKS | @PulseConfigs | 6392ad",
-      "server": "37.19.198.243",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "SHADOWSOCKS | @PulseConfigs | 1e1334",
       "server": "102.37.156.224",
       "server_port": 443,
@@ -768,6 +788,31 @@
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
       "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 313b25",
+      "server": "172.111.146.64",
+      "server_port": 80,
+      "uuid": "05b8c783-7f59-47f9-9923-06a465679f6a",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "172.111.146.64",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": ""
+        }
+      }
     },
     {
       "type": "shadowsocks",
@@ -897,14 +942,6 @@
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "SHADOWSOCKS | @PulseConfigs | 5a3312",
-      "server": "p141.panda001.net",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
     },
     {
       "type": "shadowsocks",
@@ -1053,14 +1090,6 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "SHADOWSOCKS | @PulseConfigs | be3652",
-      "server": "154.36.158.197",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "BeaUf9c0AEWH40Pu"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "SHADOWSOCKS | @PulseConfigs | ce6c47",
       "server": "198.98.53.130",
       "server_port": 443,
@@ -1094,6 +1123,56 @@
     },
     {
       "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | b45faf",
+      "server": "156.245.232.239",
+      "server_port": 35043,
+      "uuid": "b15e481d-17e4-41a8-84c2-23d4f0514d9a",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "156.245.232.239",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | c4a419",
+      "server": "vah4urdzl3jdx5r2.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "vah4urdzl3jdx5r2.v.3dns.vip",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "vah4urdzl3jdx5r2.v.3dns.vip"
+        }
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "VMESS | @PulseConfigs | 173a26",
       "server": "euu1yalfmcqvljex.v.3dns.vip",
       "server_port": 443,
@@ -1116,14 +1195,6 @@
           "Host": "euu1yalfmcqvljex.v.3dns.vip"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "SHADOWSOCKS | @PulseConfigs | b3a508",
-      "server": "158.173.24.73",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
     },
     {
       "type": "shadowsocks",
@@ -1268,11 +1339,27 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "SHADOWSOCKS | @PulseConfigs | f21693",
-      "server": "51.79.85.185",
-      "server_port": 8118,
+      "tag": "SHADOWSOCKS | @PulseConfigs | 3b05da",
+      "server": "51.222.141.125",
+      "server_port": 445,
       "method": "aes-256-gcm",
-      "password": "cdBIDV42DCwnfIN"
+      "password": "zDNVedRFPQexG9v"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "SHADOWSOCKS | @PulseConfigs | 370dc5",
+      "server": "51.79.49.116",
+      "server_port": 8882,
+      "method": "aes-256-gcm",
+      "password": "kDWvXYZoTBcGkC4"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "SHADOWSOCKS | @PulseConfigs | 442991",
+      "server": "51.222.12.127",
+      "server_port": 445,
+      "method": "aes-256-gcm",
+      "password": "zDNVedRFPQexG9v"
     },
     {
       "type": "shadowsocks",
@@ -1320,18 +1407,6 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | aeb215",
-      "server": "www.calmlunch.com",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | af976a",
       "server": "185.114.72.31",
       "server_port": 2053,
@@ -1344,32 +1419,8 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 469bf1",
-      "server": "45.130.125.160",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 563bb1",
       "server": "185.220.100.168",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | f1b115",
-      "server": "104.19.229.21",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -1464,18 +1515,6 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | cc11d3",
-      "server": "141.101.115.104",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 3a8f0b",
       "server": "172.67.203.46",
       "server_port": 443,
@@ -1484,43 +1523,6 @@
         "enabled": true,
         "server_name": "www.cordweave.com",
         "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | abf801",
-      "server": "162.159.91.211",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | bb6800",
-      "server": "lcv8v9l7oyamxxfz.v.3dns.vip",
-      "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "lcv8v9l7oyamxxfz.v.3dns.vip",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "lcv8v9l7oyamxxfz.v.3dns.vip"
-        }
       }
     },
     {
@@ -1575,31 +1577,6 @@
     },
     {
       "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | a895c7",
-      "server": "8.218.195.61",
-      "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "EX1oGt73NzPQKAc2.v.3dns.vip",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "EX1oGt73NzPQKAc2.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "type": "vmess",
       "tag": "VMESS | @PulseConfigs | c8ab40",
       "server": "172.64.229.21",
       "server_port": 443,
@@ -1633,39 +1610,6 @@
         "enabled": true,
         "server_name": "courses.searchnationwidecareerchangehelperandguidancetoday.com",
         "insecure": false
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "SHADOWSOCKS | @PulseConfigs | 8121ed",
-      "server": "82.38.31.189",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | d536ee",
-      "server": "47.244.120.197",
-      "server_port": 44867,
-      "uuid": "845e6b08-2919-4290-ade0-5dc7dcea59ca",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "47.244.120.197",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/arki?ed=2048",
-        "headers": {
-          "Host": ""
-        }
       }
     },
     {
@@ -1710,6 +1654,7 @@
         "TROJAN | @PulseConfigs | 391118",
         "SHADOWSOCKS | @PulseConfigs | 2d35f5",
         "TROJAN | @PulseConfigs | 9799d2",
+        "SHADOWSOCKS | @PulseConfigs | 73b96a",
         "SHADOWSOCKS | @PulseConfigs | be9a40",
         "SHADOWSOCKS | @PulseConfigs | 4ddf7c",
         "SHADOWSOCKS | @PulseConfigs | 7a57fa",
@@ -1729,6 +1674,7 @@
         "SHADOWSOCKS | @PulseConfigs | d2a266",
         "TROJAN | @PulseConfigs | 99dd8c",
         "SHADOWSOCKS | @PulseConfigs | 86f90d",
+        "SHADOWSOCKS | @PulseConfigs | 4e857c",
         "SHADOWSOCKS | @PulseConfigs | da278d",
         "SHADOWSOCKS | @PulseConfigs | e9cac5",
         "SHADOWSOCKS | @PulseConfigs | 42c748",
@@ -1745,6 +1691,7 @@
         "SHADOWSOCKS | @PulseConfigs | fcb198",
         "TROJAN | @PulseConfigs | b1afb2",
         "SHADOWSOCKS | @PulseConfigs | a073ed",
+        "TROJAN | @PulseConfigs | 96341e",
         "SHADOWSOCKS | @PulseConfigs | c28f60",
         "SHADOWSOCKS | @PulseConfigs | 4735f3",
         "SHADOWSOCKS | @PulseConfigs | cc02bf",
@@ -1773,13 +1720,13 @@
         "SHADOWSOCKS | @PulseConfigs | ea41a4",
         "VMESS | @PulseConfigs | dbcc7a",
         "SHADOWSOCKS | @PulseConfigs | f5ff30",
-        "SHADOWSOCKS | @PulseConfigs | 6392ad",
         "SHADOWSOCKS | @PulseConfigs | 1e1334",
         "SHADOWSOCKS | @PulseConfigs | e253c1",
         "SHADOWSOCKS | @PulseConfigs | 8918b8",
         "SHADOWSOCKS | @PulseConfigs | 7a5402",
         "SHADOWSOCKS | @PulseConfigs | 6c7541",
         "SHADOWSOCKS | @PulseConfigs | d13abd",
+        "VMESS | @PulseConfigs | 313b25",
         "SHADOWSOCKS | @PulseConfigs | ba9e50",
         "SHADOWSOCKS | @PulseConfigs | b1da0f",
         "SHADOWSOCKS | @PulseConfigs | 247a61",
@@ -1794,7 +1741,6 @@
         "SHADOWSOCKS | @PulseConfigs | 21c777",
         "SHADOWSOCKS | @PulseConfigs | fc7405",
         "SHADOWSOCKS | @PulseConfigs | e8c360",
-        "SHADOWSOCKS | @PulseConfigs | 5a3312",
         "SHADOWSOCKS | @PulseConfigs | 630221",
         "SHADOWSOCKS | @PulseConfigs | b3ab5f",
         "SHADOWSOCKS | @PulseConfigs | 781bfb",
@@ -1811,11 +1757,11 @@
         "SHADOWSOCKS | @PulseConfigs | f3dbd3",
         "SHADOWSOCKS | @PulseConfigs | 1ce667",
         "SHADOWSOCKS | @PulseConfigs | 5363f0",
-        "SHADOWSOCKS | @PulseConfigs | be3652",
         "SHADOWSOCKS | @PulseConfigs | ce6c47",
         "VMESS | @PulseConfigs | 7e7e74",
+        "VMESS | @PulseConfigs | b45faf",
+        "VMESS | @PulseConfigs | c4a419",
         "VMESS | @PulseConfigs | 173a26",
-        "SHADOWSOCKS | @PulseConfigs | b3a508",
         "SHADOWSOCKS | @PulseConfigs | 03ee9f",
         "SHADOWSOCKS | @PulseConfigs | 090aee",
         "SHADOWSOCKS | @PulseConfigs | 09de40",
@@ -1831,16 +1777,15 @@
         "SHADOWSOCKS | @PulseConfigs | f5e791",
         "VMESS | @PulseConfigs | 11d785",
         "SHADOWSOCKS | @PulseConfigs | 9a6187",
-        "SHADOWSOCKS | @PulseConfigs | f21693",
+        "SHADOWSOCKS | @PulseConfigs | 3b05da",
+        "SHADOWSOCKS | @PulseConfigs | 370dc5",
+        "SHADOWSOCKS | @PulseConfigs | 442991",
         "SHADOWSOCKS | @PulseConfigs | d14134",
         "TROJAN | @PulseConfigs | f9a088",
         "TROJAN | @PulseConfigs | 8a6e68",
         "TROJAN | @PulseConfigs | 1637dc",
-        "TROJAN | @PulseConfigs | aeb215",
         "TROJAN | @PulseConfigs | af976a",
-        "TROJAN | @PulseConfigs | 469bf1",
         "TROJAN | @PulseConfigs | 563bb1",
-        "TROJAN | @PulseConfigs | f1b115",
         "TROJAN | @PulseConfigs | 11b9dc",
         "TROJAN | @PulseConfigs | 2d57c9",
         "TROJAN | @PulseConfigs | 19403b",
@@ -1848,17 +1793,11 @@
         "TROJAN | @PulseConfigs | bb6c8e",
         "TROJAN | @PulseConfigs | 8c7e7f",
         "TROJAN | @PulseConfigs | 976b0c",
-        "TROJAN | @PulseConfigs | cc11d3",
         "TROJAN | @PulseConfigs | 3a8f0b",
-        "TROJAN | @PulseConfigs | abf801",
-        "VMESS | @PulseConfigs | bb6800",
         "VMESS | @PulseConfigs | a858c0",
         "VMESS | @PulseConfigs | e1b960",
-        "VMESS | @PulseConfigs | a895c7",
         "VMESS | @PulseConfigs | c8ab40",
         "TROJAN | @PulseConfigs | 17f748",
-        "SHADOWSOCKS | @PulseConfigs | 8121ed",
-        "VMESS | @PulseConfigs | d536ee",
         "VMESS | @PulseConfigs | 882e74"
       ]
     }
