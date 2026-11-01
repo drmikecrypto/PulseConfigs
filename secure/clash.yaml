@@ -3,49 +3,40 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: TROJAN | @PulseConfigs | 3c9bf7
+- name: TROJAN | @PulseConfigs | 99dd8c
   type: trojan
-  server: 216.152.156.81
+  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: dba20dcb635e430fa4d3bfc303a149d2
+  network: tcp
+  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 46ff26
+  type: trojan
+  server: 216.152.155.176
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   network: tcp
-  sni: www.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+  sni: blog.nextjobopportunityandclaimyouridealrole.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 391118
+- name: TROJAN | @PulseConfigs | 175578
   type: trojan
-  server: 216.152.156.42
+  server: 149.28.130.108
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   network: tcp
-  sni: blog.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+  sni: searchcreativejobsandshowcaseyourartistictalents.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | f70108
+- name: TROJAN | @PulseConfigs | 5dd23c
   type: trojan
-  server: 216.152.156.65
+  server: 70.34.252.255
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   network: tcp
-  sni: learn.healthcarejobshubenhancemedicalprofessionalskillstoday.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 8c7e7f
-  type: trojan
-  server: 66.163.122.113
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: api.searchnationwidecareerchangehelperandguidancetoday.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | f38b19
-  type: trojan
-  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  password: f0eb8c92ce8946aaba856569cff1a16b
-  network: tcp
-  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 22615f
@@ -57,69 +48,6 @@ proxies:
   sni: www.unlockyourfuturefindyourperfectcareer.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | cc54cf
-  type: trojan
-  server: 66.163.112.13
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: blog.unlockyourfuturefindyourperfectcareer.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 99dd8c
-  type: trojan
-  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  password: dba20dcb635e430fa4d3bfc303a149d2
-  network: tcp
-  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | bb6c8e
-  type: trojan
-  server: 66.163.122.7
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: www.searchnationwidecareerchangehelperandguidancetoday.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | f1feb0
-  type: trojan
-  server: 45.63.30.142
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: connectwithemployerstohireyouridealteam.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 97613e
-  type: trojan
-  server: 216.152.155.23
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: courses.nextjobopportunityandclaimyouridealrole.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | b1afb2
-  type: trojan
-  server: 66.163.114.166
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: blog.findconnectwithemployersandbuildprofessionalnetwork.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 0d1912
-  type: trojan
-  server: 66.163.118.244
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: api.discovergreatjobsandadvanceyourcareer.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | becd29
   type: trojan
   server: 66.163.114.114
@@ -129,76 +57,34 @@ proxies:
   sni: learn.findconnectwithemployersandbuildprofessionalnetwork.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 96341e
+- name: VMESS | @PulseConfigs | 247b27
+  type: vmess
+  server: rhhierkwrf6fhs2h.v.3dns.vip
+  port: 443
+  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: rhhierkwrf6fhs2h.v.3dns.vip
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | cc54cf
   type: trojan
-  server: 66.163.114.132
+  server: 66.163.112.13
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   network: tcp
-  sni: courses.findconnectwithemployersandbuildprofessionalnetwork.com
+  sni: blog.unlockyourfuturefindyourperfectcareer.com
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | e479d4
-  type: vmess
-  server: 47.88.79.34
-  port: 443
-  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: rib9jxayoqjgn2kw.v.3dns.vip
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 976b0c
+- name: TROJAN | @PulseConfigs | b1afb2
   type: trojan
-  server: in002.zestapp778.com
-  port: 42733
-  password: 5t6i121em5lkmsmk
-  network: tcp
-  sni: in002.zestapp778.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | f93eef
-  type: trojan
-  server: en001.zestapp778.com
-  port: 29813
-  password: 5t6i121em5lkmsmk
-  network: tcp
-  sni: en001.zestapp778.com
-  udp: true
-  skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 5662ed
-  type: vmess
-  server: 172.67.167.78
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 2617d0
-  type: vmess
-  server: 104.21.57.84
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 5bd968
-  type: trojan
-  server: 66.163.112.76
+  server: 66.163.114.166
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   network: tcp
-  sni: api.unlockyourfuturefindyourperfectcareer.com
+  sni: blog.findconnectwithemployersandbuildprofessionalnetwork.com
   udp: true
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 173a26
@@ -225,17 +111,113 @@ proxies:
   udp: true
   servername: euu1yalfmcqvljex.v.3dns.vip
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 247b27
+- name: VMESS | @PulseConfigs | 60a3dc
   type: vmess
-  server: rhhierkwrf6fhs2h.v.3dns.vip
+  server: 47.243.194.125
   port: 443
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   network: ws
   tls: true
   udp: true
-  servername: rhhierkwrf6fhs2h.v.3dns.vip
+  servername: nycqg19zkwacpm1b.v.3dns.vip
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | e479d4
+  type: vmess
+  server: 47.88.79.34
+  port: 443
+  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: rib9jxayoqjgn2kw.v.3dns.vip
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 96341e
+  type: trojan
+  server: 66.163.114.132
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: courses.findconnectwithemployersandbuildprofessionalnetwork.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | cb95f2
+  type: trojan
+  server: 216.152.147.48
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: courses.connectingpeoplewithgreatjobs.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | f1feb0
+  type: trojan
+  server: 45.63.30.142
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: connectwithemployerstohireyouridealteam.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 984dfb
+  type: trojan
+  server: ph001.zestapp778.com
+  port: 46298
+  password: 5t6i121em5lkmsmk
+  network: tcp
+  sni: ph001.zestapp778.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | d8910f
+  type: trojan
+  server: us001.zestapp778.com
+  port: 57277
+  password: 5t6i121em5lkmsmk
+  network: tcp
+  sni: us001.zestapp778.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 6919df
+  type: trojan
+  server: 130.94.52.157
+  port: 46298
+  password: 5t6i121em5lkmsmk
+  network: tcp
+  sni: ph001.zestapp778.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 976b0c
+  type: trojan
+  server: in002.zestapp778.com
+  port: 42733
+  password: 5t6i121em5lkmsmk
+  network: tcp
+  sni: in002.zestapp778.com
+  udp: true
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 239e00
+  type: vmess
+  server: 188.114.96.3
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | bb6c8e
+  type: trojan
+  server: 66.163.122.7
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: www.searchnationwidecareerchangehelperandguidancetoday.com
+  udp: true
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 11d785
   type: vmess
@@ -249,6 +231,18 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 5662ed
+  type: vmess
+  server: 172.67.167.78
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | a858c0
   type: vmess
   server: www.shopify.com
@@ -260,6 +254,24 @@ proxies:
   tls: true
   udp: true
   servername: guanwang.awsno.com
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 2be5be
+  type: trojan
+  server: 170.101.101.131
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: blog.explorecreativejobsandenhanceyourcareerportfolio.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | a5b0b4
+  type: trojan
+  server: 170.101.101.211
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: api.explorecreativejobsandenhanceyourcareerportfolio.com
+  udp: true
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 882e74
   type: vmess
@@ -277,32 +289,33 @@ proxy-groups:
 - name: PROXY
   type: select
   proxies:
-  - TROJAN | @PulseConfigs | 3c9bf7
-  - TROJAN | @PulseConfigs | 391118
-  - TROJAN | @PulseConfigs | f70108
-  - TROJAN | @PulseConfigs | 8c7e7f
-  - TROJAN | @PulseConfigs | f38b19
-  - TROJAN | @PulseConfigs | 22615f
-  - TROJAN | @PulseConfigs | cc54cf
   - TROJAN | @PulseConfigs | 99dd8c
-  - TROJAN | @PulseConfigs | bb6c8e
-  - TROJAN | @PulseConfigs | f1feb0
-  - TROJAN | @PulseConfigs | 97613e
-  - TROJAN | @PulseConfigs | b1afb2
-  - TROJAN | @PulseConfigs | 0d1912
+  - TROJAN | @PulseConfigs | 46ff26
+  - TROJAN | @PulseConfigs | 175578
+  - TROJAN | @PulseConfigs | 5dd23c
+  - TROJAN | @PulseConfigs | 22615f
   - TROJAN | @PulseConfigs | becd29
-  - TROJAN | @PulseConfigs | 96341e
-  - VMESS | @PulseConfigs | e479d4
-  - TROJAN | @PulseConfigs | 976b0c
-  - TROJAN | @PulseConfigs | f93eef
-  - VMESS | @PulseConfigs | 5662ed
-  - VMESS | @PulseConfigs | 2617d0
-  - TROJAN | @PulseConfigs | 5bd968
+  - VMESS | @PulseConfigs | 247b27
+  - TROJAN | @PulseConfigs | cc54cf
+  - TROJAN | @PulseConfigs | b1afb2
   - VMESS | @PulseConfigs | 173a26
   - VMESS | @PulseConfigs | 94d061
-  - VMESS | @PulseConfigs | 247b27
+  - VMESS | @PulseConfigs | 60a3dc
+  - VMESS | @PulseConfigs | e479d4
+  - TROJAN | @PulseConfigs | 96341e
+  - TROJAN | @PulseConfigs | cb95f2
+  - TROJAN | @PulseConfigs | f1feb0
+  - TROJAN | @PulseConfigs | 984dfb
+  - TROJAN | @PulseConfigs | d8910f
+  - TROJAN | @PulseConfigs | 6919df
+  - TROJAN | @PulseConfigs | 976b0c
+  - VMESS | @PulseConfigs | 239e00
+  - TROJAN | @PulseConfigs | bb6c8e
   - VMESS | @PulseConfigs | 11d785
+  - VMESS | @PulseConfigs | 5662ed
   - VMESS | @PulseConfigs | a858c0
+  - TROJAN | @PulseConfigs | 2be5be
+  - TROJAN | @PulseConfigs | a5b0b4
   - VMESS | @PulseConfigs | 882e74
 rules:
 - MATCH,PROXY
