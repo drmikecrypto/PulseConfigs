@@ -177,18 +177,6 @@ proxies:
   sni: learn.findconnectwithemployersandbuildprofessionalnetwork.com
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 97b34c
-  type: vmess
-  server: wjofHsQtEuEywxEq.v.3dns.vip
-  port: 443
-  uuid: a9f4de8b-68f1-44b6-b6a2-1db60940503a
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: wjofHsQtEuEywxEq.v.3dns.vip
-  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | c8ab40
   type: vmess
   server: 172.64.229.21
@@ -201,17 +189,65 @@ proxies:
   udp: true
   servername: vmess.lbw666.dpdns.org
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | a7142c
+- name: VMESS | @PulseConfigs | a22bb8
   type: vmess
-  server: 47.76.57.83
+  server: 172.66.0.1
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
   network: ws
   tls: true
   udp: true
-  servername: vah4urdzl3jdx5r2.v.3dns.vip
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 6d0717
+  type: vmess
+  server: 172.66.203.67
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 8cb3f1
+  type: vmess
+  server: cf.090227.xyz
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 239e00
+  type: vmess
+  server: 188.114.96.3
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 5662ed
+  type: vmess
+  server: 172.67.167.78
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 0d1912
   type: trojan
@@ -450,6 +486,18 @@ proxies:
   udp: true
   servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | cb1719
+  type: vmess
+  server: 104.27.0.1
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 54a134
   type: vmess
   server: 172.67.161.144
@@ -495,18 +543,6 @@ proxies:
   sni: api.browseseniorrolesandenhanceyourcareertoday.com
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | c5405b
-  type: vmess
-  server: www.ubuntuupdates.com
-  port: 443
-  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: www.ubuntuupdates.com
-  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 882e74
   type: vmess
   server: 104.17.77.77
@@ -542,9 +578,12 @@ proxy-groups:
   - VMESS | @PulseConfigs | 899cdb
   - TROJAN | @PulseConfigs | 5dd23c
   - TROJAN | @PulseConfigs | becd29
-  - VMESS | @PulseConfigs | 97b34c
   - VMESS | @PulseConfigs | c8ab40
-  - VMESS | @PulseConfigs | a7142c
+  - VMESS | @PulseConfigs | a22bb8
+  - VMESS | @PulseConfigs | 6d0717
+  - VMESS | @PulseConfigs | 8cb3f1
+  - VMESS | @PulseConfigs | 239e00
+  - VMESS | @PulseConfigs | 5662ed
   - TROJAN | @PulseConfigs | 0d1912
   - TROJAN | @PulseConfigs | 8362ba
   - TROJAN | @PulseConfigs | b1afb2
@@ -570,11 +609,11 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 924b6d
   - VMESS | @PulseConfigs | 5fcd2e
   - VMESS | @PulseConfigs | dfb3d1
+  - VMESS | @PulseConfigs | cb1719
   - VMESS | @PulseConfigs | 54a134
   - VMESS | @PulseConfigs | 9d050e
   - VMESS | @PulseConfigs | 2dd815
   - TROJAN | @PulseConfigs | 58c267
-  - VMESS | @PulseConfigs | c5405b
   - VMESS | @PulseConfigs | 882e74
 rules:
 - MATCH,PROXY
