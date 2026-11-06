@@ -111,15 +111,6 @@ proxies:
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | b4785a
-  type: trojan
-  server: 66.163.127.155
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: indyourperfectremotetechjobfromthecomfortofhome.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | f1feb0
   type: trojan
   server: 45.63.30.142
@@ -145,15 +136,6 @@ proxies:
   password: 5t6i121em5lkmsmk
   network: tcp
   sni: ca001.zestapp778.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 58c267
-  type: trojan
-  server: 167.88.61.20
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: api.browseseniorrolesandenhanceyourcareertoday.com
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 27f7c0
@@ -201,6 +183,15 @@ proxies:
   sni: resources.discovergreatjobsandadvanceyourcareer.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 003f8d
+  type: trojan
+  server: 216.152.147.152
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: learn.connectingpeoplewithgreatjobs.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | b1afb2
   type: trojan
   server: 66.163.114.166
@@ -228,18 +219,6 @@ proxies:
   sni: learn.findconnectwithemployersandbuildprofessionalnetwork.com
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 2dd815
-  type: vmess
-  server: wwww.speedtest.org
-  port: 443
-  uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: www.windowsmsidownloads.com
-  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 5fcd2e
   type: vmess
   server: 104.21.15.251
@@ -261,15 +240,6 @@ proxies:
   sni: courses.browseseniorrolesandenhanceyourcareertoday.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 3bd5b8
-  type: trojan
-  server: 208.69.78.33
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: courses.yourultimateprofessionalcareerhub.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 984dfb
   type: trojan
   server: ph001.zestapp778.com
@@ -277,15 +247,6 @@ proxies:
   password: 5t6i121em5lkmsmk
   network: tcp
   sni: ph001.zestapp778.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 2bf66b
-  type: trojan
-  server: kr002.zestapp778.com
-  port: 48851
-  password: 5t6i121em5lkmsmk
-  network: tcp
-  sni: kr002.zestapp778.com
   udp: true
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | d13d4f
@@ -299,15 +260,6 @@ proxies:
   tls: true
   udp: true
   servername: vipccc.cc
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | bf3453
-  type: trojan
-  server: 66.163.118.131
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: www.discovergreatjobsandadvanceyourcareer.com
-  udp: true
   skip-cert-verify: false
 proxy-groups:
 - name: PROXY
@@ -325,26 +277,21 @@ proxy-groups:
   - TROJAN | @PulseConfigs | ac89e5
   - TROJAN | @PulseConfigs | 391118
   - TROJAN | @PulseConfigs | 5dd23c
-  - TROJAN | @PulseConfigs | b4785a
   - TROJAN | @PulseConfigs | f1feb0
   - TROJAN | @PulseConfigs | 463714
   - TROJAN | @PulseConfigs | f93c65
-  - TROJAN | @PulseConfigs | 58c267
   - TROJAN | @PulseConfigs | 27f7c0
   - TROJAN | @PulseConfigs | 175578
   - TROJAN | @PulseConfigs | cc54cf
   - TROJAN | @PulseConfigs | 71c615
   - TROJAN | @PulseConfigs | fd0535
+  - TROJAN | @PulseConfigs | 003f8d
   - TROJAN | @PulseConfigs | b1afb2
   - TROJAN | @PulseConfigs | 96341e
   - TROJAN | @PulseConfigs | becd29
-  - VMESS | @PulseConfigs | 2dd815
   - VMESS | @PulseConfigs | 5fcd2e
   - TROJAN | @PulseConfigs | c699e4
-  - TROJAN | @PulseConfigs | 3bd5b8
   - TROJAN | @PulseConfigs | 984dfb
-  - TROJAN | @PulseConfigs | 2bf66b
   - VMESS | @PulseConfigs | d13d4f
-  - TROJAN | @PulseConfigs | bf3453
 rules:
 - MATCH,PROXY
