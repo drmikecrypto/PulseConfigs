@@ -240,15 +240,28 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 37dede",
-      "server": "sclass-c1.catcat321.com",
-      "server_port": 20086,
-      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 5662ed",
+      "server": "172.67.167.78",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "alter_id": 0,
       "tls": {
         "enabled": true,
-        "server_name": "hk.catxstar.com",
-        "insecure": false
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
       }
     },
     {
@@ -272,6 +285,54 @@
       "tls": {
         "enabled": true,
         "server_name": "api.connectingpeoplewithgreatjobs.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | b3f5ed",
+      "server": "216.152.147.201",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "resources.connectingpeoplewithgreatjobs.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 003f8d",
+      "server": "216.152.147.152",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "learn.connectingpeoplewithgreatjobs.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 1db625",
+      "server": "216.152.147.79",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "blog.connectingpeoplewithgreatjobs.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 5ab166",
+      "server": "216.152.147.93",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "connectingpeoplewithgreatjobs.com",
         "insecure": false
       }
     },
@@ -313,6 +374,18 @@
     },
     {
       "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 3bd5b8",
+      "server": "208.69.78.33",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "courses.yourultimateprofessionalcareerhub.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 7b3d97",
       "server": "sclass-00.catcat321.com",
       "server_port": 20123,
@@ -320,6 +393,42 @@
       "tls": {
         "enabled": true,
         "server_name": "hk.catxstar.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | cb95f2",
+      "server": "216.152.147.48",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "courses.connectingpeoplewithgreatjobs.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 175d97",
+      "server": "216.152.147.89",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.connectingpeoplewithgreatjobs.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 8f2f2e",
+      "server": "66.163.118.62",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "courses.discovergreatjobsandadvanceyourcareer.com",
         "insecure": false
       }
     },
@@ -396,13 +505,21 @@
         "TROJAN | @PulseConfigs | 96341e",
         "TROJAN | @PulseConfigs | c00589",
         "TROJAN | @PulseConfigs | 2bf66b",
-        "TROJAN | @PulseConfigs | 37dede",
+        "VMESS | @PulseConfigs | 5662ed",
         "TROJAN | @PulseConfigs | becd29",
         "TROJAN | @PulseConfigs | caff94",
+        "TROJAN | @PulseConfigs | b3f5ed",
+        "TROJAN | @PulseConfigs | 003f8d",
+        "TROJAN | @PulseConfigs | 1db625",
+        "TROJAN | @PulseConfigs | 5ab166",
         "TROJAN | @PulseConfigs | 5a3fe8",
         "TROJAN | @PulseConfigs | d8910f",
         "TROJAN | @PulseConfigs | 984dfb",
+        "TROJAN | @PulseConfigs | 3bd5b8",
         "TROJAN | @PulseConfigs | 7b3d97",
+        "TROJAN | @PulseConfigs | cb95f2",
+        "TROJAN | @PulseConfigs | 175d97",
+        "TROJAN | @PulseConfigs | 8f2f2e",
         "VMESS | @PulseConfigs | 11d785",
         "VMESS | @PulseConfigs | 846f84"
       ]
