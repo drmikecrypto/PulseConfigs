@@ -21,15 +21,6 @@ proxies:
   sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | f93c65
-  type: trojan
-  server: ca001.zestapp778.com
-  port: 46977
-  password: 5t6i121em5lkmsmk
-  network: tcp
-  sni: ca001.zestapp778.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 48b6e5
   type: trojan
   server: 169.197.140.218
@@ -129,6 +120,15 @@ proxies:
   sni: courses.explorecreativejobsandenhanceyourcareerportfolio.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 5ab166
+  type: trojan
+  server: 216.152.147.93
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: connectingpeoplewithgreatjobs.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | a94a71
   type: trojan
   server: 216.238.104.154
@@ -138,13 +138,31 @@ proxies:
   sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 2bf66b
+- name: TROJAN | @PulseConfigs | 1db625
   type: trojan
-  server: kr002.zestapp778.com
-  port: 48851
-  password: 5t6i121em5lkmsmk
+  server: 216.152.147.79
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   network: tcp
-  sni: kr002.zestapp778.com
+  sni: blog.connectingpeoplewithgreatjobs.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 003f8d
+  type: trojan
+  server: 216.152.147.152
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: learn.connectingpeoplewithgreatjobs.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | b3f5ed
+  type: trojan
+  server: 216.152.147.201
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: resources.connectingpeoplewithgreatjobs.com
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | cc54cf
@@ -163,6 +181,15 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   network: tcp
   sni: www.unlockyourfuturefindyourperfectcareer.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | caff94
+  type: trojan
+  server: 216.152.147.74
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: api.connectingpeoplewithgreatjobs.com
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 96341e
@@ -201,15 +228,6 @@ proxies:
   sni: th001.zestapp778.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 984dfb
-  type: trojan
-  server: ph001.zestapp778.com
-  port: 46298
-  password: 5t6i121em5lkmsmk
-  network: tcp
-  sni: ph001.zestapp778.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 3bd5b8
   type: trojan
   server: 208.69.78.33
@@ -217,6 +235,15 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   network: tcp
   sni: courses.yourultimateprofessionalcareerhub.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 37dede
+  type: trojan
+  server: sclass-c1.catcat321.com
+  port: 20086
+  password: d9064589-74af-432a-9390-5d8a9da281bf
+  network: tcp
+  sni: hk.catxstar.com
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 7b3d97
@@ -246,7 +273,6 @@ proxy-groups:
   proxies:
   - TROJAN | @PulseConfigs | 4db3ca
   - TROJAN | @PulseConfigs | f38b19
-  - TROJAN | @PulseConfigs | f93c65
   - TROJAN | @PulseConfigs | 48b6e5
   - TROJAN | @PulseConfigs | eedbad
   - TROJAN | @PulseConfigs | 42f9c7
@@ -258,16 +284,20 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 175578
   - TROJAN | @PulseConfigs | 5dd23c
   - TROJAN | @PulseConfigs | 5a3fe8
+  - TROJAN | @PulseConfigs | 5ab166
   - TROJAN | @PulseConfigs | a94a71
-  - TROJAN | @PulseConfigs | 2bf66b
+  - TROJAN | @PulseConfigs | 1db625
+  - TROJAN | @PulseConfigs | 003f8d
+  - TROJAN | @PulseConfigs | b3f5ed
   - TROJAN | @PulseConfigs | cc54cf
   - TROJAN | @PulseConfigs | 22615f
+  - TROJAN | @PulseConfigs | caff94
   - TROJAN | @PulseConfigs | 96341e
   - TROJAN | @PulseConfigs | becd29
   - TROJAN | @PulseConfigs | d8910f
   - TROJAN | @PulseConfigs | c00589
-  - TROJAN | @PulseConfigs | 984dfb
   - TROJAN | @PulseConfigs | 3bd5b8
+  - TROJAN | @PulseConfigs | 37dede
   - TROJAN | @PulseConfigs | 7b3d97
   - VMESS | @PulseConfigs | 846f84
 rules:
