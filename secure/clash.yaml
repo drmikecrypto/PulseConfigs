@@ -120,13 +120,13 @@ proxies:
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 5ab166
+- name: TROJAN | @PulseConfigs | b3f5ed
   type: trojan
-  server: 216.152.147.93
+  server: 216.152.147.201
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   network: tcp
-  sni: connectingpeoplewithgreatjobs.com
+  sni: resources.connectingpeoplewithgreatjobs.com
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | f38b19
@@ -156,15 +156,6 @@ proxies:
   sni: courses.yourultimateprofessionalcareerhub.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 8f2f2e
-  type: trojan
-  server: 66.163.118.62
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: courses.discovergreatjobsandadvanceyourcareer.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 175578
   type: trojan
   server: 149.28.130.108
@@ -172,15 +163,6 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   network: tcp
   sni: searchcreativejobsandshowcaseyourartistictalents.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 96341e
-  type: trojan
-  server: 66.163.114.132
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: courses.findconnectwithemployersandbuildprofessionalnetwork.com
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | f93c65
@@ -201,6 +183,27 @@ proxies:
   sni: th001.zestapp778.com
   udp: true
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | a22bb8
+  type: vmess
+  server: 172.66.0.1
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 2bf66b
+  type: trojan
+  server: kr002.zestapp778.com
+  port: 48851
+  password: 5t6i121em5lkmsmk
+  network: tcp
+  sni: kr002.zestapp778.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | fa0972
   type: trojan
   server: au.tronsg.com
@@ -217,6 +220,24 @@ proxies:
   password: d9064589-74af-432a-9390-5d8a9da281bf
   network: tcp
   sni: hk.catxstar.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 7b3d97
+  type: trojan
+  server: sclass-00.catcat321.com
+  port: 20123
+  password: d9064589-74af-432a-9390-5d8a9da281bf
+  network: tcp
+  sni: hk.catxstar.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 92af05
+  type: trojan
+  server: 191.44.112.170.sslip.io
+  port: 443
+  password: 46d221fa-e9b4-748c-4eae-019a88e42991
+  network: ws
+  sni: orbylume.my.to
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 3180bd
@@ -264,6 +285,18 @@ proxies:
   udp: true
   servername: vmess.lbw666.dpdns.org
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | c8ab40
+  type: vmess
+  server: 172.64.229.21
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | a778a0
   type: vmess
   server: 104.18.42.163
@@ -293,21 +326,24 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 4db3ca
   - TROJAN | @PulseConfigs | c699e4
   - TROJAN | @PulseConfigs | 5dd23c
-  - TROJAN | @PulseConfigs | 5ab166
+  - TROJAN | @PulseConfigs | b3f5ed
   - TROJAN | @PulseConfigs | f38b19
   - TROJAN | @PulseConfigs | f1feb0
   - TROJAN | @PulseConfigs | 3bd5b8
-  - TROJAN | @PulseConfigs | 8f2f2e
   - TROJAN | @PulseConfigs | 175578
-  - TROJAN | @PulseConfigs | 96341e
   - TROJAN | @PulseConfigs | f93c65
   - TROJAN | @PulseConfigs | c00589
+  - VMESS | @PulseConfigs | a22bb8
+  - TROJAN | @PulseConfigs | 2bf66b
   - TROJAN | @PulseConfigs | fa0972
   - TROJAN | @PulseConfigs | 37dede
+  - TROJAN | @PulseConfigs | 7b3d97
+  - TROJAN | @PulseConfigs | 92af05
   - TROJAN | @PulseConfigs | 3180bd
   - VMESS | @PulseConfigs | 11d785
   - VMESS | @PulseConfigs | 846f84
   - VMESS | @PulseConfigs | 65e7b1
+  - VMESS | @PulseConfigs | c8ab40
   - VMESS | @PulseConfigs | a778a0
 rules:
 - MATCH,PROXY
