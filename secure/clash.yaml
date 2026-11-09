@@ -219,14 +219,29 @@ proxies:
   sni: courses.yourultimateprofessionalcareerhub.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 7b3d97
-  type: trojan
-  server: sclass-00.catcat321.com
-  port: 20123
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  network: tcp
-  sni: hk.catxstar.com
+- name: VMESS | @PulseConfigs | 65e7b1
+  type: vmess
+  server: 104.21.7.133
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
   udp: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 5662ed
+  type: vmess
+  server: 172.67.167.78
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 11d785
   type: vmess
@@ -313,7 +328,8 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 8f2f2e
   - TROJAN | @PulseConfigs | 5ab166
   - TROJAN | @PulseConfigs | 3bd5b8
-  - TROJAN | @PulseConfigs | 7b3d97
+  - VMESS | @PulseConfigs | 65e7b1
+  - VMESS | @PulseConfigs | 5662ed
   - VMESS | @PulseConfigs | 11d785
   - VMESS | @PulseConfigs | 846f84
   - VMESS | @PulseConfigs | c8ab40
