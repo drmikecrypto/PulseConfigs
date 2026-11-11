@@ -1,27 +1,28 @@
 {
   "project": "PulseConfigs",
   "version": 2,
-  "generated_at": "2026-11-11T00:02:40Z",
+  "generated_at": "2026-11-11T05:51:40Z",
   "update_interval_minutes": 15,
   "owner_repo": "drmikecrypto/PulseConfigs",
   "counts": {
-    "all": 28437,
-    "verified": 199,
+    "all": 28453,
+    "verified": 172,
     "fast": 0,
-    "secure": 30,
+    "secure": 23,
     "top100": 100,
     "top5": 5,
     "top5_speed": 5,
     "top5_iran": 5,
-    "reality": 2341,
-    "vision": 2304,
+    "reality": 2334,
+    "vision": 2311,
     "by_protocol": {
-      "shadowsocks": 2420,
-      "trojan": 2836,
-      "vmess": 1782,
-      "hysteria2": 71,
-      "vless": 21325,
-      "socks": 3
+      "shadowsocks": 2423,
+      "trojan": 2837,
+      "vmess": 1793,
+      "hysteria2": 69,
+      "vless": 21329,
+      "socks": 1,
+      "tuic": 1
     }
   },
   "urls": {
@@ -164,6 +165,18 @@
         "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/hysteria2_base64.txt",
         "path": "protocols/hysteria2_base64.txt",
         "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/protocols/hysteria2_base64.txt"
+      },
+      "tuic": {
+        "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/tuic.txt",
+        "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/tuic.txt",
+        "path": "protocols/tuic.txt",
+        "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/protocols/tuic.txt"
+      },
+      "tuic_base64": {
+        "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/tuic_base64.txt",
+        "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/tuic_base64.txt",
+        "path": "protocols/tuic_base64.txt",
+        "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/protocols/tuic_base64.txt"
       }
     }
   },
@@ -234,7 +247,9 @@
       "socks": "protocols/socks.txt",
       "socks_base64": "protocols/socks_base64.txt",
       "hysteria2": "protocols/hysteria2.txt",
-      "hysteria2_base64": "protocols/hysteria2_base64.txt"
+      "hysteria2_base64": "protocols/hysteria2_base64.txt",
+      "tuic": "protocols/tuic.txt",
+      "tuic_base64": "protocols/tuic_base64.txt"
     },
     "features": {
       "reality": "features/reality.txt",
