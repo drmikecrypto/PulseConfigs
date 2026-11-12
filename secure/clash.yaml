@@ -39,15 +39,6 @@ proxies:
   sni: courses.iloverussia2026.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | f38b19
-  type: trojan
-  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  password: f0eb8c92ce8946aaba856569cff1a16b
-  network: tcp
-  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | a6f1e9
   type: trojan
   server: 64.176.7.205
@@ -129,15 +120,6 @@ proxies:
   sni: hk.catxstar.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 1db625
-  type: trojan
-  server: 216.152.147.79
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: blog.connectingpeoplewithgreatjobs.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 175578
   type: trojan
   server: 149.28.130.108
@@ -156,24 +138,6 @@ proxies:
   sni: resources.iloverussia2026.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 21441c
-  type: trojan
-  server: 66.163.127.225
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: cdn.indyourperfectremotetechjobfromthecomfortofhome.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 5ab166
-  type: trojan
-  server: 216.152.147.93
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: connectingpeoplewithgreatjobs.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | f4301c
   type: trojan
   server: 158.247.253.243
@@ -181,24 +145,6 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   network: tcp
   sni: connectgraduateswithjobopeningsandgrowprofessionally.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 3bd5b8
-  type: trojan
-  server: 208.69.78.33
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: courses.yourultimateprofessionalcareerhub.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 7b3d97
-  type: trojan
-  server: sclass-00.catcat321.com
-  port: 20123
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  network: tcp
-  sni: hk.catxstar.com
   udp: true
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | a778a0
@@ -237,24 +183,6 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | b3f5ed
-  type: trojan
-  server: 216.152.147.201
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: resources.connectingpeoplewithgreatjobs.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | c9e3f5
-  type: trojan
-  server: 15.235.184.127
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: exploredigitaljobplatformandfindonlinework.com
-  udp: true
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
@@ -263,7 +191,6 @@ proxy-groups:
   - TROJAN | @PulseConfigs | c699e4
   - TROJAN | @PulseConfigs | 4db3ca
   - TROJAN | @PulseConfigs | ac89e5
-  - TROJAN | @PulseConfigs | f38b19
   - TROJAN | @PulseConfigs | a6f1e9
   - TROJAN | @PulseConfigs | a94a71
   - TROJAN | @PulseConfigs | cc54cf
@@ -273,18 +200,11 @@ proxy-groups:
   - TROJAN | @PulseConfigs | f1feb0
   - TROJAN | @PulseConfigs | b55044
   - TROJAN | @PulseConfigs | 992d36
-  - TROJAN | @PulseConfigs | 1db625
   - TROJAN | @PulseConfigs | 175578
   - TROJAN | @PulseConfigs | eedbad
-  - TROJAN | @PulseConfigs | 21441c
-  - TROJAN | @PulseConfigs | 5ab166
   - TROJAN | @PulseConfigs | f4301c
-  - TROJAN | @PulseConfigs | 3bd5b8
-  - TROJAN | @PulseConfigs | 7b3d97
   - VMESS | @PulseConfigs | a778a0
   - VMESS | @PulseConfigs | a5f50f
   - VMESS | @PulseConfigs | 846f84
-  - TROJAN | @PulseConfigs | b3f5ed
-  - TROJAN | @PulseConfigs | c9e3f5
 rules:
 - MATCH,PROXY
