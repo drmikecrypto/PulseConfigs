@@ -1,26 +1,27 @@
 {
   "project": "PulseConfigs",
   "version": 2,
-  "generated_at": "2026-11-12T18:26:52Z",
+  "generated_at": "2026-11-12T23:52:05Z",
   "update_interval_minutes": 15,
   "owner_repo": "drmikecrypto/PulseConfigs",
   "counts": {
-    "all": 28349,
-    "verified": 164,
+    "all": 28194,
+    "verified": 202,
     "fast": 0,
-    "secure": 19,
+    "secure": 30,
     "top100": 100,
     "top5": 5,
     "top5_speed": 5,
     "top5_iran": 5,
-    "reality": 2411,
-    "vision": 2355,
+    "reality": 2344,
+    "vision": 2316,
     "by_protocol": {
-      "shadowsocks": 2500,
-      "trojan": 2550,
-      "vmess": 1816,
-      "hysteria2": 62,
-      "vless": 21421
+      "shadowsocks": 2687,
+      "trojan": 2258,
+      "vmess": 1848,
+      "hysteria2": 69,
+      "vless": 21331,
+      "socks": 1
     }
   },
   "urls": {
@@ -140,6 +141,18 @@
         "path": "protocols/shadowsocks_base64.txt",
         "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/protocols/shadowsocks_base64.txt"
       },
+      "socks": {
+        "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/socks.txt",
+        "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/socks.txt",
+        "path": "protocols/socks.txt",
+        "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/protocols/socks.txt"
+      },
+      "socks_base64": {
+        "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/socks_base64.txt",
+        "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/socks_base64.txt",
+        "path": "protocols/socks_base64.txt",
+        "worker": "https://pulseconfigs-mirror.drmikecrypto.workers.dev/protocols/socks_base64.txt"
+      },
       "hysteria2": {
         "raw": "https://raw.githubusercontent.com/drmikecrypto/PulseConfigs/main/protocols/hysteria2.txt",
         "cdn": "https://cdn.jsdelivr.net/gh/drmikecrypto/PulseConfigs@main/protocols/hysteria2.txt",
@@ -218,6 +231,8 @@
       "trojan_base64": "protocols/trojan_base64.txt",
       "shadowsocks": "protocols/shadowsocks.txt",
       "shadowsocks_base64": "protocols/shadowsocks_base64.txt",
+      "socks": "protocols/socks.txt",
+      "socks_base64": "protocols/socks_base64.txt",
       "hysteria2": "protocols/hysteria2.txt",
       "hysteria2_base64": "protocols/hysteria2_base64.txt"
     },
