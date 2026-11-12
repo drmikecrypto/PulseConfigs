@@ -181,6 +181,18 @@
     },
     {
       "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 5ab166",
+      "server": "216.152.147.93",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "connectingpeoplewithgreatjobs.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | 21441c",
       "server": "66.163.127.225",
       "server_port": 443,
@@ -188,18 +200,6 @@
       "tls": {
         "enabled": true,
         "server_name": "cdn.indyourperfectremotetechjobfromthecomfortofhome.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 37dede",
-      "server": "sclass-c1.catcat321.com",
-      "server_port": 20086,
-      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk.catxstar.com",
         "insecure": false
       }
     },
@@ -277,18 +277,6 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 92af05",
-      "server": "191.44.112.170.sslip.io",
-      "server_port": 443,
-      "password": "46d221fa-e9b4-748c-4eae-019a88e42991",
-      "tls": {
-        "enabled": true,
-        "server_name": "orbylume.my.to",
-        "insecure": false
-      }
-    },
-    {
       "type": "vmess",
       "tag": "VMESS | @PulseConfigs | 846f84",
       "server": "172.67.190.164",
@@ -326,31 +314,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | a22bb8",
-      "server": "172.66.0.1",
-      "server_port": 443,
-      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "vmess.lbw666.dpdns.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "vmess.lbw666.dpdns.org"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
@@ -368,17 +331,15 @@
         "TROJAN | @PulseConfigs | cc54cf",
         "TROJAN | @PulseConfigs | f4301c",
         "TROJAN | @PulseConfigs | 992d36",
+        "TROJAN | @PulseConfigs | 5ab166",
         "TROJAN | @PulseConfigs | 21441c",
-        "TROJAN | @PulseConfigs | 37dede",
         "TROJAN | @PulseConfigs | 7b3d97",
         "TROJAN | @PulseConfigs | f38b19",
         "TROJAN | @PulseConfigs | 48b6e5",
         "TROJAN | @PulseConfigs | 3bd5b8",
         "VMESS | @PulseConfigs | a5f50f",
-        "TROJAN | @PulseConfigs | 92af05",
         "VMESS | @PulseConfigs | 846f84",
-        "TROJAN | @PulseConfigs | b3f5ed",
-        "VMESS | @PulseConfigs | a22bb8"
+        "TROJAN | @PulseConfigs | b3f5ed"
       ]
     }
   ]
