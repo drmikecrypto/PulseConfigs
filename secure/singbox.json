@@ -230,18 +230,6 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 175578",
-      "server": "149.28.130.108",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "searchcreativejobsandshowcaseyourartistictalents.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "TROJAN | @PulseConfigs | a94a71",
       "server": "216.238.104.154",
       "server_port": 443,
@@ -278,22 +266,10 @@
     },
     {
       "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 043c29",
-      "server": "sclass-01.catcat321.com",
-      "server_port": 20103,
+      "tag": "TROJAN | @PulseConfigs | 9028a8",
+      "server": "sclass-b1.catcat321.com",
+      "server_port": 20051,
       "password": "d7563108-615c-4338-a7bd-77f359869a4a",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk.catxstar.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 7b3d97",
-      "server": "sclass-00.catcat321.com",
-      "server_port": 20123,
-      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
       "tls": {
         "enabled": true,
         "server_name": "hk.catxstar.com",
@@ -401,6 +377,31 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 882e74",
+      "server": "104.17.77.77",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
@@ -421,16 +422,15 @@
         "TROJAN | @PulseConfigs | b55044",
         "TROJAN | @PulseConfigs | 992d36",
         "TROJAN | @PulseConfigs | cc54cf",
-        "TROJAN | @PulseConfigs | 175578",
         "TROJAN | @PulseConfigs | a94a71",
         "TROJAN | @PulseConfigs | f4301c",
         "TROJAN | @PulseConfigs | c9e3f5",
-        "TROJAN | @PulseConfigs | 043c29",
-        "TROJAN | @PulseConfigs | 7b3d97",
+        "TROJAN | @PulseConfigs | 9028a8",
         "VMESS | @PulseConfigs | 6a1441",
         "VMESS | @PulseConfigs | a778a0",
         "VMESS | @PulseConfigs | a5f50f",
-        "VMESS | @PulseConfigs | 846f84"
+        "VMESS | @PulseConfigs | 846f84",
+        "VMESS | @PulseConfigs | 882e74"
       ]
     }
   ]
