@@ -403,6 +403,13 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: SHADOWSOCKS | @PulseConfigs | baa541
+  type: ss
+  server: 18.117.92.138
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: SHADOWSOCKS | @PulseConfigs | a0be68
   type: ss
   server: 172.111.38.72
@@ -862,13 +869,6 @@ proxies:
   cipher: aes-256-gcm
   password: zDNVedRFPQexG9v
   udp: true
-- name: SHADOWSOCKS | @PulseConfigs | af0c7a
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
-  udp: true
 - name: SHADOWSOCKS | @PulseConfigs | ee720e
   type: ss
   server: 185.22.153.117
@@ -995,12 +995,12 @@ proxies:
   cipher: aes-256-cfb
   password: qwerREWQ@@
   udp: true
-- name: SHADOWSOCKS | @PulseConfigs | fbc909
+- name: SHADOWSOCKS | @PulseConfigs | fe4450
   type: ss
   server: 5.188.181.201
-  port: 9041
+  port: 9001
   cipher: aes-256-cfb
-  password: U6qnYRhfyDmn8sgn
+  password: UkXRsXvR6buDMG2Y
   udp: true
 - name: SHADOWSOCKS | @PulseConfigs | 02c7b4
   type: ss
@@ -1015,13 +1015,6 @@ proxies:
   port: 9005
   cipher: aes-256-cfb
   password: ZET59LF6DvCC8KVt
-  udp: true
-- name: SHADOWSOCKS | @PulseConfigs | 3e50a0
-  type: ss
-  server: 5.188.181.201
-  port: 9003
-  cipher: aes-256-cfb
-  password: JdmRK9gMEqFgs8nP
   udp: true
 - name: SHADOWSOCKS | @PulseConfigs | 0817d5
   type: ss
@@ -1119,19 +1112,19 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: SHADOWSOCKS | @PulseConfigs | 074f74
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
 - name: SHADOWSOCKS | @PulseConfigs | 56a527
   type: ss
   server: 211.178.105.134
   port: 6123
   cipher: aes-256-cfb
   password: qwerREWQ@@
+  udp: true
+- name: SHADOWSOCKS | @PulseConfigs | ba9e50
+  type: ss
+  server: 185.213.23.63
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   udp: true
 - name: SHADOWSOCKS | @PulseConfigs | 898b0a
   type: ss
@@ -1198,18 +1191,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 29irqk0paakcx19v
   udp: true
-- name: VMESS | @PulseConfigs | d536ee
-  type: vmess
-  server: 47.244.120.197
-  port: 44867
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: ''
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 7b3d97
   type: trojan
   server: sclass-00.catcat321.com
@@ -1297,13 +1278,6 @@ proxies:
   cipher: aes-256-cfb
   password: EXN3S3eQpjE7EJu8
   udp: true
-- name: SHADOWSOCKS | @PulseConfigs | 046f68
-  type: ss
-  server: 5.188.181.201
-  port: 9025
-  cipher: aes-256-cfb
-  password: XPtzA9sCug3SPR4c
-  udp: true
 - name: SHADOWSOCKS | @PulseConfigs | eac99e
   type: ss
   server: 152.53.1.57
@@ -1311,6 +1285,18 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
   udp: true
+- name: VMESS | @PulseConfigs | 9fb7e9
+  type: vmess
+  server: 156.239.224.107
+  port: 57278
+  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: ''
+  skip-cert-verify: false
 - name: SHADOWSOCKS | @PulseConfigs | ff7e2d
   type: ss
   server: 54.37.240.40
@@ -1421,6 +1407,20 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
+- name: SHADOWSOCKS | @PulseConfigs | f21693
+  type: ss
+  server: 51.79.85.185
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: SHADOWSOCKS | @PulseConfigs | af35cc
+  type: ss
+  server: 51.79.64.198
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
 - name: SHADOWSOCKS | @PulseConfigs | b3a508
   type: ss
   server: 158.173.24.73
@@ -1435,12 +1435,12 @@ proxies:
   cipher: aes-256-gcm
   password: RexnBgU7EV5ADxG
   udp: true
-- name: SHADOWSOCKS | @PulseConfigs | 733488
+- name: SHADOWSOCKS | @PulseConfigs | 4bb556
   type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: 209.248.57.105
+  port: 8388
+  cipher: aes-256-gcm
+  password: AMok40FfaM+Ikwre16psBpVk6JHxsQZw
   udp: true
 - name: SHADOWSOCKS | @PulseConfigs | 70d645
   type: ss
@@ -1448,20 +1448,6 @@ proxies:
   port: 51628
   cipher: chacha20-ietf-poly1305
   password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
-  udp: true
-- name: SHADOWSOCKS | @PulseConfigs | fac0fb
-  type: ss
-  server: 194.68.44.42
-  port: 64546
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
-  udp: true
-- name: SHADOWSOCKS | @PulseConfigs | 627e7a
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
   udp: true
 - name: TROJAN | @PulseConfigs | b3f5ed
   type: trojan
@@ -1499,6 +1485,18 @@ proxies:
   sni: hk.catxstar.com
   udp: true
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 882e74
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
 - name: SHADOWSOCKS | @PulseConfigs | 14be61
   type: ss
   server: 15.235.121.109
@@ -1531,6 +1529,13 @@ proxies:
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: 2e555e46dbc421452416834962fd014f
+  udp: true
+- name: SHADOWSOCKS | @PulseConfigs | a6749b
+  type: ss
+  server: 158.173.20.171
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
 - name: SHADOWSOCKS | @PulseConfigs | 5b67b5
   type: ss
@@ -1605,6 +1610,7 @@ proxy-groups:
   - SHADOWSOCKS | @PulseConfigs | e4efa8
   - SHADOWSOCKS | @PulseConfigs | 03566c
   - SHADOWSOCKS | @PulseConfigs | 42b732
+  - SHADOWSOCKS | @PulseConfigs | baa541
   - SHADOWSOCKS | @PulseConfigs | a0be68
   - SHADOWSOCKS | @PulseConfigs | af76d9
   - SHADOWSOCKS | @PulseConfigs | dc6a6f
@@ -1668,7 +1674,6 @@ proxy-groups:
   - SHADOWSOCKS | @PulseConfigs | 53137a
   - SHADOWSOCKS | @PulseConfigs | 09de40
   - SHADOWSOCKS | @PulseConfigs | 3b05da
-  - SHADOWSOCKS | @PulseConfigs | af0c7a
   - SHADOWSOCKS | @PulseConfigs | ee720e
   - SHADOWSOCKS | @PulseConfigs | 42034b
   - SHADOWSOCKS | @PulseConfigs | b1da0f
@@ -1687,10 +1692,9 @@ proxy-groups:
   - SHADOWSOCKS | @PulseConfigs | 3d9907
   - SHADOWSOCKS | @PulseConfigs | 781bfb
   - SHADOWSOCKS | @PulseConfigs | 5a3312
-  - SHADOWSOCKS | @PulseConfigs | fbc909
+  - SHADOWSOCKS | @PulseConfigs | fe4450
   - SHADOWSOCKS | @PulseConfigs | 02c7b4
   - SHADOWSOCKS | @PulseConfigs | af0288
-  - SHADOWSOCKS | @PulseConfigs | 3e50a0
   - SHADOWSOCKS | @PulseConfigs | 0817d5
   - SHADOWSOCKS | @PulseConfigs | d4194e
   - SHADOWSOCKS | @PulseConfigs | ffaeff
@@ -1704,8 +1708,8 @@ proxy-groups:
   - VMESS | @PulseConfigs | a31514
   - SHADOWSOCKS | @PulseConfigs | fc8b06
   - SHADOWSOCKS | @PulseConfigs | 05dca8
-  - SHADOWSOCKS | @PulseConfigs | 074f74
   - SHADOWSOCKS | @PulseConfigs | 56a527
+  - SHADOWSOCKS | @PulseConfigs | ba9e50
   - SHADOWSOCKS | @PulseConfigs | 898b0a
   - SHADOWSOCKS | @PulseConfigs | c6a5e2
   - TROJAN | @PulseConfigs | c9e3f5
@@ -1715,7 +1719,6 @@ proxy-groups:
   - SHADOWSOCKS | @PulseConfigs | 419421
   - SHADOWSOCKS | @PulseConfigs | 538e12
   - SHADOWSOCKS | @PulseConfigs | f4fc14
-  - VMESS | @PulseConfigs | d536ee
   - TROJAN | @PulseConfigs | 7b3d97
   - TROJAN | @PulseConfigs | 043c29
   - SHADOWSOCKS | @PulseConfigs | 53149d
@@ -1727,8 +1730,8 @@ proxy-groups:
   - SHADOWSOCKS | @PulseConfigs | 83e1f5
   - SHADOWSOCKS | @PulseConfigs | 08f4f2
   - SHADOWSOCKS | @PulseConfigs | bdf6be
-  - SHADOWSOCKS | @PulseConfigs | 046f68
   - SHADOWSOCKS | @PulseConfigs | eac99e
+  - VMESS | @PulseConfigs | 9fb7e9
   - SHADOWSOCKS | @PulseConfigs | ff7e2d
   - TROJAN | @PulseConfigs | 9fb25b
   - TROJAN | @PulseConfigs | 37dede
@@ -1741,20 +1744,22 @@ proxy-groups:
   - VMESS | @PulseConfigs | 6a1441
   - VMESS | @PulseConfigs | a778a0
   - VMESS | @PulseConfigs | 846f84
+  - SHADOWSOCKS | @PulseConfigs | f21693
+  - SHADOWSOCKS | @PulseConfigs | af35cc
   - SHADOWSOCKS | @PulseConfigs | b3a508
   - SHADOWSOCKS | @PulseConfigs | b3ab5f
-  - SHADOWSOCKS | @PulseConfigs | 733488
+  - SHADOWSOCKS | @PulseConfigs | 4bb556
   - SHADOWSOCKS | @PulseConfigs | 70d645
-  - SHADOWSOCKS | @PulseConfigs | fac0fb
-  - SHADOWSOCKS | @PulseConfigs | 627e7a
   - TROJAN | @PulseConfigs | b3f5ed
   - TROJAN | @PulseConfigs | 1db625
   - TROJAN | @PulseConfigs | 21441c
   - TROJAN | @PulseConfigs | 9028a8
+  - VMESS | @PulseConfigs | 882e74
   - SHADOWSOCKS | @PulseConfigs | 14be61
   - SHADOWSOCKS | @PulseConfigs | 66ccf6
   - VMESS | @PulseConfigs | a5f50f
   - SHADOWSOCKS | @PulseConfigs | f71b7b
+  - SHADOWSOCKS | @PulseConfigs | a6749b
   - SHADOWSOCKS | @PulseConfigs | 5b67b5
   - SHADOWSOCKS | @PulseConfigs | 1d1e17
 rules:

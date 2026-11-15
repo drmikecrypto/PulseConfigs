@@ -294,6 +294,18 @@ proxies:
   sni: hk.catxstar.com
   udp: true
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 882e74
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | a5f50f
   type: vmess
   server: 172.64.145.93
@@ -341,6 +353,7 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 1db625
   - TROJAN | @PulseConfigs | 21441c
   - TROJAN | @PulseConfigs | 9028a8
+  - VMESS | @PulseConfigs | 882e74
   - VMESS | @PulseConfigs | a5f50f
 rules:
 - MATCH,PROXY
