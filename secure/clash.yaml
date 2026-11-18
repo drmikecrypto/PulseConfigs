@@ -102,10 +102,37 @@ proxies:
   sni: hk.catxstar.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 9028a8
+  type: trojan
+  server: sclass-b1.catcat321.com
+  port: 20051
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  network: tcp
+  sni: hk.catxstar.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 043c29
+  type: trojan
+  server: sclass-01.catcat321.com
+  port: 20103
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  network: tcp
+  sni: hk.catxstar.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 9fb25b
   type: trojan
   server: sclass-c2.catcat321.com
   port: 20051
+  password: d9064589-74af-432a-9390-5d8a9da281bf
+  network: tcp
+  sni: hk.catxstar.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 37dede
+  type: trojan
+  server: sclass-c1.catcat321.com
+  port: 20086
   password: d9064589-74af-432a-9390-5d8a9da281bf
   network: tcp
   sni: hk.catxstar.com
@@ -174,7 +201,10 @@ proxy-groups:
   - TROJAN | @PulseConfigs | f4301c
   - TROJAN | @PulseConfigs | c9e3f5
   - TROJAN | @PulseConfigs | 7b3d97
+  - TROJAN | @PulseConfigs | 9028a8
+  - TROJAN | @PulseConfigs | 043c29
   - TROJAN | @PulseConfigs | 9fb25b
+  - TROJAN | @PulseConfigs | 37dede
   - VMESS | @PulseConfigs | 6a1441
   - VMESS | @PulseConfigs | a5f50f
   - VMESS | @PulseConfigs | 846f84
