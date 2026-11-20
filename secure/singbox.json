@@ -156,15 +156,28 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "TROJAN | @PulseConfigs | 3bd5b8",
-      "server": "208.69.78.33",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | 5662ed",
+      "server": "172.67.167.78",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "alter_id": 0,
       "tls": {
         "enabled": true,
-        "server_name": "courses.yourultimateprofessionalcareerhub.com",
-        "insecure": false
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
       }
     },
     {
@@ -345,7 +358,7 @@
         "TROJAN | @PulseConfigs | 5ab166",
         "TROJAN | @PulseConfigs | f38b19",
         "TROJAN | @PulseConfigs | 22615f",
-        "TROJAN | @PulseConfigs | 3bd5b8",
+        "VMESS | @PulseConfigs | 5662ed",
         "TROJAN | @PulseConfigs | c9e3f5",
         "VMESS | @PulseConfigs | 6a1441",
         "VMESS | @PulseConfigs | a778a0",
