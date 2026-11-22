@@ -39,40 +39,43 @@ proxies:
   sni: connectgraduateswithjobopeningsandgrowprofessionally.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | f38b19
+- name: TROJAN | @PulseConfigs | 3bd5b8
   type: trojan
-  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  password: f0eb8c92ce8946aaba856569cff1a16b
-  network: tcp
-  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 7b3d97
-  type: trojan
-  server: sclass-00.catcat321.com
-  port: 20123
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  network: tcp
-  sni: hk.catxstar.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 043c29
-  type: trojan
-  server: sclass-01.catcat321.com
-  port: 20103
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  network: tcp
-  sni: hk.catxstar.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 1db625
-  type: trojan
-  server: 216.152.147.79
+  server: 208.69.78.33
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   network: tcp
-  sni: blog.connectingpeoplewithgreatjobs.com
+  sni: courses.yourultimateprofessionalcareerhub.com
+  udp: true
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | e7bf53
+  type: vmess
+  server: 38.11.69.48
+  port: 30004
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: www.83761815.xyz
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 5ab166
+  type: trojan
+  server: 216.152.147.93
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: connectingpeoplewithgreatjobs.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 21441c
+  type: trojan
+  server: 66.163.127.225
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: cdn.indyourperfectremotetechjobfromthecomfortofhome.com
   udp: true
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | a858c0
@@ -99,18 +102,6 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | a778a0
-  type: vmess
-  server: 104.18.42.163
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: guanwang.awsno.com
-  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | a5f50f
   type: vmess
   server: 172.64.145.93
@@ -123,27 +114,21 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 3bd5b8
-  type: trojan
-  server: 208.69.78.33
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: courses.yourultimateprofessionalcareerhub.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 21441c
-  type: trojan
-  server: 66.163.127.225
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: cdn.indyourperfectremotetechjobfromthecomfortofhome.com
-  udp: true
-  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 846f84
   type: vmess
   server: 172.67.190.164
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: guanwang.awsno.com
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | a778a0
+  type: vmess
+  server: 104.18.42.163
   port: 443
   uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
@@ -161,16 +146,14 @@ proxy-groups:
   - TROJAN | @PulseConfigs | a6f1e9
   - TROJAN | @PulseConfigs | f1feb0
   - TROJAN | @PulseConfigs | f4301c
-  - TROJAN | @PulseConfigs | f38b19
-  - TROJAN | @PulseConfigs | 7b3d97
-  - TROJAN | @PulseConfigs | 043c29
-  - TROJAN | @PulseConfigs | 1db625
+  - TROJAN | @PulseConfigs | 3bd5b8
+  - VMESS | @PulseConfigs | e7bf53
+  - TROJAN | @PulseConfigs | 5ab166
+  - TROJAN | @PulseConfigs | 21441c
   - VMESS | @PulseConfigs | a858c0
   - VMESS | @PulseConfigs | 6a1441
-  - VMESS | @PulseConfigs | a778a0
   - VMESS | @PulseConfigs | a5f50f
-  - TROJAN | @PulseConfigs | 3bd5b8
-  - TROJAN | @PulseConfigs | 21441c
   - VMESS | @PulseConfigs | 846f84
+  - VMESS | @PulseConfigs | a778a0
 rules:
 - MATCH,PROXY
