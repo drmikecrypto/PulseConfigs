@@ -48,24 +48,6 @@ proxies:
   sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | d887a0
-  type: trojan
-  server: sclass-00.catcat321.com
-  port: 20103
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  network: tcp
-  sni: hk.catxstar.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 40af84
-  type: trojan
-  server: sclass-c1.catcat321.com
-  port: 20051
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  network: tcp
-  sni: hk.catxstar.com
-  udp: true
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 7b3d97
   type: trojan
   server: sclass-00.catcat321.com
@@ -82,24 +64,6 @@ proxies:
   password: d7563108-615c-4338-a7bd-77f359869a4a
   network: tcp
   sni: hk.catxstar.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 9028a8
-  type: trojan
-  server: sclass-b1.catcat321.com
-  port: 20051
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  network: tcp
-  sni: hk.catxstar.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 5ab166
-  type: trojan
-  server: 216.152.147.93
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: connectingpeoplewithgreatjobs.com
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 1db625
@@ -177,15 +141,6 @@ proxies:
   sni: cdn.indyourperfectremotetechjobfromthecomfortofhome.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 9fb25b
-  type: trojan
-  server: sclass-c2.catcat321.com
-  port: 20051
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  network: tcp
-  sni: hk.catxstar.com
-  udp: true
-  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 846f84
   type: vmess
   server: 172.67.190.164
@@ -207,12 +162,8 @@ proxy-groups:
   - TROJAN | @PulseConfigs | f1feb0
   - TROJAN | @PulseConfigs | f4301c
   - TROJAN | @PulseConfigs | f38b19
-  - TROJAN | @PulseConfigs | d887a0
-  - TROJAN | @PulseConfigs | 40af84
   - TROJAN | @PulseConfigs | 7b3d97
   - TROJAN | @PulseConfigs | 043c29
-  - TROJAN | @PulseConfigs | 9028a8
-  - TROJAN | @PulseConfigs | 5ab166
   - TROJAN | @PulseConfigs | 1db625
   - VMESS | @PulseConfigs | a858c0
   - VMESS | @PulseConfigs | 6a1441
@@ -220,7 +171,6 @@ proxy-groups:
   - VMESS | @PulseConfigs | a5f50f
   - TROJAN | @PulseConfigs | 3bd5b8
   - TROJAN | @PulseConfigs | 21441c
-  - TROJAN | @PulseConfigs | 9fb25b
   - VMESS | @PulseConfigs | 846f84
 rules:
 - MATCH,PROXY
