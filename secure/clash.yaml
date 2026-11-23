@@ -30,18 +30,6 @@ proxies:
   sni: connectgraduateswithjobopeningsandgrowprofessionally.com
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | e7bf53
-  type: vmess
-  server: 38.11.69.48
-  port: 30004
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: www.83761815.xyz
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 9028a8
   type: trojan
   server: sclass-b1.catcat321.com
@@ -58,15 +46,6 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   network: tcp
   sni: exploredigitaljobplatformandfindonlinework.com
-  udp: true
-  skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 043c29
-  type: trojan
-  server: sclass-01.catcat321.com
-  port: 20103
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  network: tcp
-  sni: hk.catxstar.com
   udp: true
   skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 7b3d97
@@ -105,6 +84,24 @@ proxies:
   sni: blog.connectingpeoplewithgreatjobs.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 3bd5b8
+  type: trojan
+  server: 208.69.78.33
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: courses.yourultimateprofessionalcareerhub.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | cf1f14
+  type: trojan
+  server: alireza.karamoz1.ir
+  port: 443
+  password: poimnap
+  network: tcp
+  sni: alireza.karamoz1.ir
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 21441c
   type: trojan
   server: 66.163.127.225
@@ -114,53 +111,41 @@ proxies:
   sni: cdn.indyourperfectremotetechjobfromthecomfortofhome.com
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 7e4ee5
+- name: VMESS | @PulseConfigs | 57ae3e
   type: vmess
-  server: 104.17.0.1
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
+  server: 104.24.0.1
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
   cipher: auto
   network: ws
   tls: true
   udp: true
-  servername: or3.sfacg.uk
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 453e83
-  type: vmess
-  server: 104.21.0.1
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: or3.sfacg.uk
-  skip-cert-verify: false
-- name: VMESS | @PulseConfigs | 0d89d9
-  type: vmess
-  server: 162.159.130.234
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: or3.sfacg.uk
-  skip-cert-verify: false
-- name: VMESS | @PulseConfigs | e64416
+- name: VMESS | @PulseConfigs | 260899
   type: vmess
   server: 188.114.99.137
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
   cipher: auto
   network: ws
   tls: true
   udp: true
-  servername: or3.sfacg.uk
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | c71d5f
+  type: vmess
+  server: 172.67.137.158
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: nomino.11hi8itbaf.workers.dev
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | a858c0
   type: vmess
@@ -229,19 +214,18 @@ proxy-groups:
   - TROJAN | @PulseConfigs | c699e4
   - TROJAN | @PulseConfigs | a6f1e9
   - TROJAN | @PulseConfigs | f4301c
-  - VMESS | @PulseConfigs | e7bf53
   - TROJAN | @PulseConfigs | 9028a8
   - TROJAN | @PulseConfigs | c9e3f5
-  - TROJAN | @PulseConfigs | 043c29
   - TROJAN | @PulseConfigs | 7b3d97
   - TROJAN | @PulseConfigs | f1feb0
   - TROJAN | @PulseConfigs | 5ab166
   - TROJAN | @PulseConfigs | 1db625
+  - TROJAN | @PulseConfigs | 3bd5b8
+  - TROJAN | @PulseConfigs | cf1f14
   - TROJAN | @PulseConfigs | 21441c
-  - VMESS | @PulseConfigs | 7e4ee5
-  - VMESS | @PulseConfigs | 453e83
-  - VMESS | @PulseConfigs | 0d89d9
-  - VMESS | @PulseConfigs | e64416
+  - VMESS | @PulseConfigs | 57ae3e
+  - VMESS | @PulseConfigs | 260899
+  - VMESS | @PulseConfigs | c71d5f
   - VMESS | @PulseConfigs | a858c0
   - VMESS | @PulseConfigs | 6a1441
   - VMESS | @PulseConfigs | a5f50f
