@@ -21,6 +21,24 @@ proxies:
   sni: exploredigitaljobplatformandfindonlinework.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 3bd5b8
+  type: trojan
+  server: 208.69.78.33
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: courses.yourultimateprofessionalcareerhub.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 21441c
+  type: trojan
+  server: 66.163.127.225
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: cdn.indyourperfectremotetechjobfromthecomfortofhome.com
+  udp: true
+  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 6a1441
   type: vmess
   server: 188.114.99.137
@@ -75,6 +93,8 @@ proxy-groups:
   proxies:
   - TROJAN | @PulseConfigs | c699e4
   - TROJAN | @PulseConfigs | c9e3f5
+  - TROJAN | @PulseConfigs | 3bd5b8
+  - TROJAN | @PulseConfigs | 21441c
   - VMESS | @PulseConfigs | 6a1441
   - VMESS | @PulseConfigs | 846f84
   - VMESS | @PulseConfigs | a5f50f
