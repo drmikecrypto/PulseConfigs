@@ -51,18 +51,6 @@ proxies:
   udp: true
   servername: www.83761815.xyz
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | ff7643
-  type: vmess
-  server: 47.86.90.31
-  port: 443
-  uuid: 234a8041-2b4d-44a3-a8d8-523cbfd58dc4
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: bywxdhirqkjj8xaz.v.3dns.vip
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 21441c
   type: trojan
   server: 66.163.127.225
@@ -141,7 +129,6 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 5ab166
   - TROJAN | @PulseConfigs | 3bd5b8
   - VMESS | @PulseConfigs | e7bf53
-  - VMESS | @PulseConfigs | ff7643
   - TROJAN | @PulseConfigs | 21441c
   - VMESS | @PulseConfigs | a858c0
   - VMESS | @PulseConfigs | 6a1441
