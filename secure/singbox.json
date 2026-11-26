@@ -110,6 +110,18 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "TROJAN | @PulseConfigs | 21441c",
+      "server": "66.163.127.225",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.indyourperfectremotetechjobfromthecomfortofhome.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "vmess",
       "tag": "VMESS | @PulseConfigs | a858c0",
       "server": "www.shopify.com",
@@ -235,31 +247,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | d524a5",
-      "server": "104.18.0.1",
-      "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lMnsZUN4/",
-        "headers": {
-          "Host": "v2ray1.dozapp.xyz"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
@@ -269,12 +256,12 @@
         "TROJAN | @PulseConfigs | 3bd5b8",
         "VMESS | @PulseConfigs | e7bf53",
         "VMESS | @PulseConfigs | ff7643",
+        "TROJAN | @PulseConfigs | 21441c",
         "VMESS | @PulseConfigs | a858c0",
         "VMESS | @PulseConfigs | 6a1441",
         "VMESS | @PulseConfigs | a778a0",
         "VMESS | @PulseConfigs | a5f50f",
-        "VMESS | @PulseConfigs | 846f84",
-        "VMESS | @PulseConfigs | d524a5"
+        "VMESS | @PulseConfigs | 846f84"
       ]
     }
   ]

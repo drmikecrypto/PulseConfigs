@@ -63,6 +63,15 @@ proxies:
   udp: true
   servername: bywxdhirqkjj8xaz.v.3dns.vip
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 21441c
+  type: trojan
+  server: 66.163.127.225
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: cdn.indyourperfectremotetechjobfromthecomfortofhome.com
+  udp: true
+  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | a858c0
   type: vmess
   server: www.shopify.com
@@ -123,18 +132,6 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | d524a5
-  type: vmess
-  server: 104.18.0.1
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
@@ -145,11 +142,11 @@ proxy-groups:
   - TROJAN | @PulseConfigs | 3bd5b8
   - VMESS | @PulseConfigs | e7bf53
   - VMESS | @PulseConfigs | ff7643
+  - TROJAN | @PulseConfigs | 21441c
   - VMESS | @PulseConfigs | a858c0
   - VMESS | @PulseConfigs | 6a1441
   - VMESS | @PulseConfigs | a778a0
   - VMESS | @PulseConfigs | a5f50f
   - VMESS | @PulseConfigs | 846f84
-  - VMESS | @PulseConfigs | d524a5
 rules:
 - MATCH,PROXY
