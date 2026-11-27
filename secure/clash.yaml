@@ -12,6 +12,42 @@ proxies:
   sni: courses.browseseniorrolesandenhanceyourcareertoday.com
   udp: true
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | cc54cf
+  type: trojan
+  server: 66.163.112.13
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: blog.unlockyourfuturefindyourperfectcareer.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 886be7
+  type: trojan
+  server: 66.163.114.106
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: www.findconnectwithemployersandbuildprofessionalnetwork.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | b1afb2
+  type: trojan
+  server: 66.163.114.166
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: blog.findconnectwithemployersandbuildprofessionalnetwork.com
+  udp: true
+  skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | 57443d
+  type: trojan
+  server: 66.163.122.25
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: cdn.searchnationwidecareerchangehelperandguidancetoday.com
+  udp: true
+  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 1db625
   type: trojan
   server: 216.152.147.79
@@ -30,27 +66,6 @@ proxies:
   sni: connectingpeoplewithgreatjobs.com
   udp: true
   skip-cert-verify: false
-- name: TROJAN | @PulseConfigs | 3bd5b8
-  type: trojan
-  server: 208.69.78.33
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  network: tcp
-  sni: courses.yourultimateprofessionalcareerhub.com
-  udp: true
-  skip-cert-verify: false
-- name: VMESS | @PulseConfigs | e7bf53
-  type: vmess
-  server: 38.11.69.48
-  port: 30004
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: www.83761815.xyz
-  skip-cert-verify: false
 - name: TROJAN | @PulseConfigs | 21441c
   type: trojan
   server: 66.163.127.225
@@ -60,33 +75,18 @@ proxies:
   sni: cdn.indyourperfectremotetechjobfromthecomfortofhome.com
   udp: true
   skip-cert-verify: false
-- name: VMESS | @PulseConfigs | a858c0
-  type: vmess
-  server: www.shopify.com
+- name: TROJAN | @PulseConfigs | 3bd5b8
+  type: trojan
+  server: 208.69.78.33
   port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  network: tcp
+  sni: courses.yourultimateprofessionalcareerhub.com
   udp: true
-  servername: guanwang.awsno.com
   skip-cert-verify: false
 - name: VMESS | @PulseConfigs | 6a1441
   type: vmess
   server: 188.114.99.137
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  servername: guanwang.awsno.com
-  skip-cert-verify: false
-- name: VMESS | @PulseConfigs | a778a0
-  type: vmess
-  server: 104.18.42.163
   port: 443
   uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
@@ -120,20 +120,34 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
+- name: VMESS | @PulseConfigs | a778a0
+  type: vmess
+  server: 104.18.42.163
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: guanwang.awsno.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
   - TROJAN | @PulseConfigs | c699e4
+  - TROJAN | @PulseConfigs | cc54cf
+  - TROJAN | @PulseConfigs | 886be7
+  - TROJAN | @PulseConfigs | b1afb2
+  - TROJAN | @PulseConfigs | 57443d
   - TROJAN | @PulseConfigs | 1db625
   - TROJAN | @PulseConfigs | 5ab166
-  - TROJAN | @PulseConfigs | 3bd5b8
-  - VMESS | @PulseConfigs | e7bf53
   - TROJAN | @PulseConfigs | 21441c
-  - VMESS | @PulseConfigs | a858c0
+  - TROJAN | @PulseConfigs | 3bd5b8
   - VMESS | @PulseConfigs | 6a1441
-  - VMESS | @PulseConfigs | a778a0
   - VMESS | @PulseConfigs | a5f50f
   - VMESS | @PulseConfigs | 846f84
+  - VMESS | @PulseConfigs | a778a0
 rules:
 - MATCH,PROXY
