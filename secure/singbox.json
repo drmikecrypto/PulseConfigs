@@ -13,6 +13,56 @@
     },
     {
       "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | be37e5",
+      "server": "172.64.80.1",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | a858c0",
+      "server": "www.shopify.com",
+      "server_port": 443,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "guanwang.awsno.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hls/cctv5phd.m3u8",
+        "headers": {
+          "Host": "guanwang.awsno.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "VMESS | @PulseConfigs | 6a1441",
       "server": "188.114.99.137",
       "server_port": 443,
@@ -38,8 +88,8 @@
     },
     {
       "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | 846f84",
-      "server": "172.67.190.164",
+      "tag": "VMESS | @PulseConfigs | a778a0",
+      "server": "104.18.42.163",
       "server_port": 443,
       "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
       "security": "auto",
@@ -88,8 +138,8 @@
     },
     {
       "type": "vmess",
-      "tag": "VMESS | @PulseConfigs | a778a0",
-      "server": "104.18.42.163",
+      "tag": "VMESS | @PulseConfigs | 846f84",
+      "server": "172.67.190.164",
       "server_port": 443,
       "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
       "security": "auto",
@@ -112,13 +162,41 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "VMESS | @PulseConfigs | d524a5",
+      "server": "104.18.0.1",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "proxy",
       "outbounds": [
+        "VMESS | @PulseConfigs | be37e5",
+        "VMESS | @PulseConfigs | a858c0",
         "VMESS | @PulseConfigs | 6a1441",
-        "VMESS | @PulseConfigs | 846f84",
+        "VMESS | @PulseConfigs | a778a0",
         "VMESS | @PulseConfigs | a5f50f",
-        "VMESS | @PulseConfigs | a778a0"
+        "VMESS | @PulseConfigs | 846f84",
+        "VMESS | @PulseConfigs | d524a5"
       ]
     }
   ]
