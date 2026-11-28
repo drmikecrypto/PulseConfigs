@@ -3,6 +3,42 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- name: VMESS | @PulseConfigs | 882e74
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 358141
+  type: vmess
+  server: 104.21.0.1
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
+- name: VMESS | @PulseConfigs | 26a001
+  type: vmess
+  server: chatgpt.com
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | be37e5
   type: vmess
   server: 172.64.80.1
@@ -75,6 +111,15 @@ proxies:
   udp: true
   servername: guanwang.awsno.com
   skip-cert-verify: false
+- name: TROJAN | @PulseConfigs | f3dd80
+  type: trojan
+  server: 188.114.96.3
+  port: 2096
+  password: vP!XvZBNdw.e*ddSgmH!
+  network: ws
+  sni: n0q4XPrJ2D4X4PRCQ29L8JKCZd0.pAGES.dev
+  udp: true
+  skip-cert-verify: false
 - name: VMESS | @PulseConfigs | d524a5
   type: vmess
   server: 104.18.0.1
@@ -91,12 +136,16 @@ proxy-groups:
 - name: PROXY
   type: select
   proxies:
+  - VMESS | @PulseConfigs | 882e74
+  - VMESS | @PulseConfigs | 358141
+  - VMESS | @PulseConfigs | 26a001
   - VMESS | @PulseConfigs | be37e5
   - VMESS | @PulseConfigs | a858c0
   - VMESS | @PulseConfigs | 6a1441
   - VMESS | @PulseConfigs | a778a0
   - VMESS | @PulseConfigs | a5f50f
   - VMESS | @PulseConfigs | 846f84
+  - TROJAN | @PulseConfigs | f3dd80
   - VMESS | @PulseConfigs | d524a5
 rules:
 - MATCH,PROXY
